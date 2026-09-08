@@ -1,0 +1,8189 @@
+{
+  "startedAt": "2026-09-07T07:04:11.934Z",
+  "completedAt": "2026-09-07T07:04:45.435Z",
+  "language": "python",
+  "source": "Locally authored reference algorithms executed by the application Runner against the official public examples; not official judge results.",
+  "codeHashes": {
+    "data/problems.json": "55bf4e8073bb21fa2eafbbf7512c585d9a0e7e5438d52cde2c7b23d0d42d975b",
+    "data/cases.json": "693a8cf49242beac3a46cb34f2ffa8ae2b62b155e5a429c477b1f629946449f5",
+    "electron/runner.cjs": "cf56518a170ce7b1ac42f6eb4c59fd70440bc04453419bca2f80a6f2c0fa82d2",
+    "electron/runner-harness.cjs": "c101374d44fe0c825c199e4c6a283a6865ed9764202f481002e832299f4be6df",
+    "scripts/catalog-reference-solutions.py": "97fb4d46a52ab0a516b49d86a6230c4daf64c3367a7eb73cd1f12d69cc0b9235",
+    "docs/catalog-reference-sources.json": "c18c96a05ae38cd1c71e47101d29d4e15e6696ec7036901335cd9b3399816c6c"
+  },
+  "totalProblems": 100,
+  "passedProblems": 100,
+  "totalCases": 247,
+  "passedCases": 247,
+  "failedIds": [],
+  "records": [
+    {
+      "id": "1",
+      "title": "两数之和",
+      "slug": "two-sum",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              2,
+              7,
+              11,
+              15
+            ],
+            9
+          ],
+          "expected": [
+            0,
+            1
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.cn/problems/two-sum/；2026-09-06 原始内容缓存",
+          "actual": [
+            0,
+            1
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 439
+        },
+        {
+          "input": [
+            [
+              3,
+              2,
+              4
+            ],
+            6
+          ],
+          "expected": [
+            1,
+            2
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.cn/problems/two-sum/；2026-09-06 原始内容缓存",
+          "actual": [
+            1,
+            2
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 383
+        },
+        {
+          "input": [
+            [
+              3,
+              3
+            ],
+            6
+          ],
+          "expected": [
+            0,
+            1
+          ],
+          "source": "官方公开题面示例 3：https://leetcode.cn/problems/two-sum/；2026-09-06 原始内容缓存",
+          "actual": [
+            0,
+            1
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 332
+        }
+      ],
+      "durationMs": 1351,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "49",
+      "title": "字母异位词分组",
+      "slug": "group-anagrams",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              "eat",
+              "tea",
+              "tan",
+              "ate",
+              "nat",
+              "bat"
+            ]
+          ],
+          "expected": [
+            [
+              "bat"
+            ],
+            [
+              "nat",
+              "tan"
+            ],
+            [
+              "ate",
+              "eat",
+              "tea"
+            ]
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.cn/problems/group-anagrams/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              "eat",
+              "tea",
+              "ate"
+            ],
+            [
+              "tan",
+              "nat"
+            ],
+            [
+              "bat"
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 455
+        },
+        {
+          "input": [
+            [
+              ""
+            ]
+          ],
+          "expected": [
+            [
+              ""
+            ]
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.cn/problems/group-anagrams/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              ""
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 371
+        },
+        {
+          "input": [
+            [
+              "a"
+            ]
+          ],
+          "expected": [
+            [
+              "a"
+            ]
+          ],
+          "source": "官方公开题面示例 3：https://leetcode.cn/problems/group-anagrams/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              "a"
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 345
+        }
+      ],
+      "durationMs": 1314,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "128",
+      "title": "最长连续序列",
+      "slug": "longest-consecutive-sequence",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              100,
+              4,
+              200,
+              1,
+              3,
+              2
+            ]
+          ],
+          "expected": 4,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/longest-consecutive-sequence/；2026-09-06 原始内容缓存",
+          "actual": 4,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 453
+        },
+        {
+          "input": [
+            [
+              0,
+              3,
+              7,
+              2,
+              5,
+              8,
+              4,
+              6,
+              0,
+              1
+            ]
+          ],
+          "expected": 9,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/longest-consecutive-sequence/；2026-09-06 原始内容缓存",
+          "actual": 9,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 372
+        },
+        {
+          "input": [
+            [
+              1,
+              0,
+              1,
+              2
+            ]
+          ],
+          "expected": 3,
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/longest-consecutive-sequence/；2026-09-06 原始内容缓存",
+          "actual": 3,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 338
+        }
+      ],
+      "durationMs": 1314,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "283",
+      "title": "移动零",
+      "slug": "move-zeroes",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              0,
+              1,
+              0,
+              3,
+              12
+            ]
+          ],
+          "expected": [
+            1,
+            3,
+            12,
+            0,
+            0
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/move-zeroes/；2026-09-06 原始内容缓存",
+          "actual": [
+            1,
+            3,
+            12,
+            0,
+            0
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 420
+        },
+        {
+          "input": [
+            [
+              0
+            ]
+          ],
+          "expected": [
+            0
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/move-zeroes/；2026-09-06 原始内容缓存",
+          "actual": [
+            0
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 309
+        }
+      ],
+      "durationMs": 855,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "11",
+      "title": "盛最多水的容器",
+      "slug": "container-with-most-water",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              8,
+              6,
+              2,
+              5,
+              4,
+              8,
+              3,
+              7
+            ]
+          ],
+          "expected": 49,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/container-with-most-water/；2026-09-06 原始内容缓存",
+          "actual": 49,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 450
+        },
+        {
+          "input": [
+            [
+              1,
+              1
+            ]
+          ],
+          "expected": 1,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/container-with-most-water/；2026-09-06 原始内容缓存",
+          "actual": 1,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 361
+        }
+      ],
+      "durationMs": 896,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "15",
+      "title": "三数之和",
+      "slug": "3sum",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              -1,
+              0,
+              1,
+              2,
+              -1,
+              -4
+            ]
+          ],
+          "expected": [
+            [
+              -1,
+              -1,
+              2
+            ],
+            [
+              -1,
+              0,
+              1
+            ]
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/3sum/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              -1,
+              -1,
+              2
+            ],
+            [
+              -1,
+              0,
+              1
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 449
+        },
+        {
+          "input": [
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "expected": [],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/3sum/；2026-09-06 原始内容缓存",
+          "actual": [],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 360
+        },
+        {
+          "input": [
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "expected": [
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/3sum/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 268
+        }
+      ],
+      "durationMs": 1164,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "42",
+      "title": "接雨水",
+      "slug": "trapping-rain-water",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              0,
+              1,
+              0,
+              2,
+              1,
+              0,
+              1,
+              3,
+              2,
+              1,
+              2,
+              1
+            ]
+          ],
+          "expected": 6,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/trapping-rain-water/；2026-09-06 原始内容缓存",
+          "actual": 6,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 292
+        },
+        {
+          "input": [
+            [
+              4,
+              2,
+              0,
+              3,
+              2,
+              5
+            ]
+          ],
+          "expected": 9,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/trapping-rain-water/；2026-09-06 原始内容缓存",
+          "actual": 9,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 317
+        }
+      ],
+      "durationMs": 743,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "3",
+      "title": "无重复字符的最长子串",
+      "slug": "longest-substring-without-repeating-characters",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            "abcabcbb"
+          ],
+          "expected": 3,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/longest-substring-without-repeating-characters/；2026-09-06 原始内容缓存",
+          "actual": 3,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 291
+        },
+        {
+          "input": [
+            "bbbbb"
+          ],
+          "expected": 1,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/longest-substring-without-repeating-characters/；2026-09-06 原始内容缓存",
+          "actual": 1,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 329
+        },
+        {
+          "input": [
+            "pwwkew"
+          ],
+          "expected": 3,
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/longest-substring-without-repeating-characters/；2026-09-06 原始内容缓存",
+          "actual": 3,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 268
+        }
+      ],
+      "durationMs": 971,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "438",
+      "title": "找到字符串中所有字母异位词",
+      "slug": "find-all-anagrams-in-a-string",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            "cbaebabacd",
+            "abc"
+          ],
+          "expected": [
+            0,
+            6
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/find-all-anagrams-in-a-string/；2026-09-06 原始内容缓存",
+          "actual": [
+            0,
+            6
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 366
+        },
+        {
+          "input": [
+            "abab",
+            "ab"
+          ],
+          "expected": [
+            0,
+            1,
+            2
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/find-all-anagrams-in-a-string/；2026-09-06 原始内容缓存",
+          "actual": [
+            0,
+            1,
+            2
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 267
+        }
+      ],
+      "durationMs": 729,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "560",
+      "title": "和为 K 的子数组",
+      "slug": "subarray-sum-equals-k",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              1,
+              1
+            ],
+            2
+          ],
+          "expected": 2,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/subarray-sum-equals-k/；2026-09-06 原始内容缓存",
+          "actual": 2,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 288
+        },
+        {
+          "input": [
+            [
+              1,
+              2,
+              3
+            ],
+            3
+          ],
+          "expected": 2,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/subarray-sum-equals-k/；2026-09-06 原始内容缓存",
+          "actual": 2,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 267
+        }
+      ],
+      "durationMs": 671,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "239",
+      "title": "滑动窗口最大值",
+      "slug": "sliding-window-maximum",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              3,
+              -1,
+              -3,
+              5,
+              3,
+              6,
+              7
+            ],
+            3
+          ],
+          "expected": [
+            3,
+            3,
+            5,
+            5,
+            6,
+            7
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/sliding-window-maximum/；2026-09-06 原始内容缓存",
+          "actual": [
+            3,
+            3,
+            5,
+            5,
+            6,
+            7
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 295
+        },
+        {
+          "input": [
+            [
+              1
+            ],
+            1
+          ],
+          "expected": [
+            1
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/sliding-window-maximum/；2026-09-06 原始内容缓存",
+          "actual": [
+            1
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 291
+        }
+      ],
+      "durationMs": 684,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "76",
+      "title": "最小覆盖子串",
+      "slug": "minimum-window-substring",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            "ADOBECODEBANC",
+            "ABC"
+          ],
+          "expected": "BANC",
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/minimum-window-substring/；2026-09-06 原始内容缓存",
+          "actual": "BANC",
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 296
+        },
+        {
+          "input": [
+            "a",
+            "a"
+          ],
+          "expected": "a",
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/minimum-window-substring/；2026-09-06 原始内容缓存",
+          "actual": "a",
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 306
+        },
+        {
+          "input": [
+            "a",
+            "aa"
+          ],
+          "expected": "",
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/minimum-window-substring/；2026-09-06 原始内容缓存",
+          "actual": "",
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 433
+        }
+      ],
+      "durationMs": 1108,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "53",
+      "title": "最大子数组和",
+      "slug": "maximum-subarray",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              -2,
+              1,
+              -3,
+              4,
+              -1,
+              2,
+              1,
+              -5,
+              4
+            ]
+          ],
+          "expected": 6,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/maximum-subarray/；2026-09-06 原始内容缓存",
+          "actual": 6,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 342
+        },
+        {
+          "input": [
+            [
+              1
+            ]
+          ],
+          "expected": 1,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/maximum-subarray/；2026-09-06 原始内容缓存",
+          "actual": 1,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 468
+        },
+        {
+          "input": [
+            [
+              5,
+              4,
+              -1,
+              7,
+              8
+            ]
+          ],
+          "expected": 23,
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/maximum-subarray/；2026-09-06 原始内容缓存",
+          "actual": 23,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 425
+        }
+      ],
+      "durationMs": 1315,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "56",
+      "title": "合并区间",
+      "slug": "merge-intervals",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                8,
+                10
+              ],
+              [
+                15,
+                18
+              ]
+            ]
+          ],
+          "expected": [
+            [
+              1,
+              6
+            ],
+            [
+              8,
+              10
+            ],
+            [
+              15,
+              18
+            ]
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/merge-intervals/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              1,
+              6
+            ],
+            [
+              8,
+              10
+            ],
+            [
+              15,
+              18
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 492
+        },
+        {
+          "input": [
+            [
+              [
+                1,
+                4
+              ],
+              [
+                4,
+                5
+              ]
+            ]
+          ],
+          "expected": [
+            [
+              1,
+              5
+            ]
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/merge-intervals/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              1,
+              5
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 435
+        },
+        {
+          "input": [
+            [
+              [
+                4,
+                7
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          ],
+          "expected": [
+            [
+              1,
+              7
+            ]
+          ],
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/merge-intervals/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              1,
+              7
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 427
+        }
+      ],
+      "durationMs": 1471,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "189",
+      "title": "轮转数组",
+      "slug": "rotate-array",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            3
+          ],
+          "expected": [
+            5,
+            6,
+            7,
+            1,
+            2,
+            3,
+            4
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/rotate-array/；2026-09-06 原始内容缓存",
+          "actual": [
+            5,
+            6,
+            7,
+            1,
+            2,
+            3,
+            4
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 448
+        },
+        {
+          "input": [
+            [
+              -1,
+              -100,
+              3,
+              99
+            ],
+            2
+          ],
+          "expected": [
+            3,
+            99,
+            -1,
+            -100
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/rotate-array/；2026-09-06 原始内容缓存",
+          "actual": [
+            3,
+            99,
+            -1,
+            -100
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 449
+        }
+      ],
+      "durationMs": 1061,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "238",
+      "title": "除了自身以外数组的乘积",
+      "slug": "product-of-array-except-self",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              2,
+              3,
+              4
+            ]
+          ],
+          "expected": [
+            24,
+            12,
+            8,
+            6
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/product-of-array-except-self/；2026-09-06 原始内容缓存",
+          "actual": [
+            24,
+            12,
+            8,
+            6
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 477
+        },
+        {
+          "input": [
+            [
+              -1,
+              1,
+              0,
+              -3,
+              3
+            ]
+          ],
+          "expected": [
+            0,
+            0,
+            9,
+            0,
+            0
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/product-of-array-except-self/；2026-09-06 原始内容缓存",
+          "actual": [
+            0,
+            0,
+            9,
+            0,
+            0
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 454
+        }
+      ],
+      "durationMs": 1066,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "41",
+      "title": "缺失的第一个正数",
+      "slug": "first-missing-positive",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              2,
+              0
+            ]
+          ],
+          "expected": 3,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/first-missing-positive/；2026-09-06 原始内容缓存",
+          "actual": 3,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 533
+        },
+        {
+          "input": [
+            [
+              3,
+              4,
+              -1,
+              1
+            ]
+          ],
+          "expected": 2,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/first-missing-positive/；2026-09-06 原始内容缓存",
+          "actual": 2,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 498
+        },
+        {
+          "input": [
+            [
+              7,
+              8,
+              9,
+              11,
+              12
+            ]
+          ],
+          "expected": 1,
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/first-missing-positive/；2026-09-06 原始内容缓存",
+          "actual": 1,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 363
+        }
+      ],
+      "durationMs": 1539,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "73",
+      "title": "矩阵置零",
+      "slug": "set-matrix-zeroes",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              [
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1
+              ]
+            ]
+          ],
+          "expected": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/set-matrix-zeroes/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 534
+        },
+        {
+          "input": [
+            [
+              [
+                0,
+                1,
+                2,
+                0
+              ],
+              [
+                3,
+                4,
+                5,
+                2
+              ],
+              [
+                1,
+                3,
+                1,
+                5
+              ]
+            ]
+          ],
+          "expected": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              5,
+              0
+            ],
+            [
+              0,
+              3,
+              1,
+              0
+            ]
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/set-matrix-zeroes/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              5,
+              0
+            ],
+            [
+              0,
+              3,
+              1,
+              0
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 466
+        }
+      ],
+      "durationMs": 1117,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "54",
+      "title": "螺旋矩阵",
+      "slug": "spiral-matrix",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              [
+                1,
+                2,
+                3
+              ],
+              [
+                4,
+                5,
+                6
+              ],
+              [
+                7,
+                8,
+                9
+              ]
+            ]
+          ],
+          "expected": [
+            1,
+            2,
+            3,
+            6,
+            9,
+            8,
+            7,
+            4,
+            5
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/spiral-matrix/；2026-09-06 原始内容缓存",
+          "actual": [
+            1,
+            2,
+            3,
+            6,
+            9,
+            8,
+            7,
+            4,
+            5
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 526
+        },
+        {
+          "input": [
+            [
+              [
+                1,
+                2,
+                3,
+                4
+              ],
+              [
+                5,
+                6,
+                7,
+                8
+              ],
+              [
+                9,
+                10,
+                11,
+                12
+              ]
+            ]
+          ],
+          "expected": [
+            1,
+            2,
+            3,
+            4,
+            8,
+            12,
+            11,
+            10,
+            9,
+            5,
+            6,
+            7
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/spiral-matrix/；2026-09-06 原始内容缓存",
+          "actual": [
+            1,
+            2,
+            3,
+            4,
+            8,
+            12,
+            11,
+            10,
+            9,
+            5,
+            6,
+            7
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 366
+        }
+      ],
+      "durationMs": 1020,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "48",
+      "title": "旋转图像",
+      "slug": "rotate-image",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              [
+                1,
+                2,
+                3
+              ],
+              [
+                4,
+                5,
+                6
+              ],
+              [
+                7,
+                8,
+                9
+              ]
+            ]
+          ],
+          "expected": [
+            [
+              7,
+              4,
+              1
+            ],
+            [
+              8,
+              5,
+              2
+            ],
+            [
+              9,
+              6,
+              3
+            ]
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/rotate-image/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              7,
+              4,
+              1
+            ],
+            [
+              8,
+              5,
+              2
+            ],
+            [
+              9,
+              6,
+              3
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 321
+        },
+        {
+          "input": [
+            [
+              [
+                5,
+                1,
+                9,
+                11
+              ],
+              [
+                2,
+                4,
+                8,
+                10
+              ],
+              [
+                13,
+                3,
+                6,
+                7
+              ],
+              [
+                15,
+                14,
+                12,
+                16
+              ]
+            ]
+          ],
+          "expected": [
+            [
+              15,
+              13,
+              2,
+              5
+            ],
+            [
+              14,
+              3,
+              4,
+              1
+            ],
+            [
+              12,
+              6,
+              8,
+              9
+            ],
+            [
+              16,
+              7,
+              10,
+              11
+            ]
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/rotate-image/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              15,
+              13,
+              2,
+              5
+            ],
+            [
+              14,
+              3,
+              4,
+              1
+            ],
+            [
+              12,
+              6,
+              8,
+              9
+            ],
+            [
+              16,
+              7,
+              10,
+              11
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 343
+        }
+      ],
+      "durationMs": 801,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "240",
+      "title": "搜索二维矩阵 II",
+      "slug": "search-a-2d-matrix-ii",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              [
+                1,
+                4,
+                7,
+                11,
+                15
+              ],
+              [
+                2,
+                5,
+                8,
+                12,
+                19
+              ],
+              [
+                3,
+                6,
+                9,
+                16,
+                22
+              ],
+              [
+                10,
+                13,
+                14,
+                17,
+                24
+              ],
+              [
+                18,
+                21,
+                23,
+                26,
+                30
+              ]
+            ],
+            5
+          ],
+          "expected": true,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/search-a-2d-matrix-ii/；2026-09-06 原始内容缓存",
+          "actual": true,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 383
+        },
+        {
+          "input": [
+            [
+              [
+                1,
+                4,
+                7,
+                11,
+                15
+              ],
+              [
+                2,
+                5,
+                8,
+                12,
+                19
+              ],
+              [
+                3,
+                6,
+                9,
+                16,
+                22
+              ],
+              [
+                10,
+                13,
+                14,
+                17,
+                24
+              ],
+              [
+                18,
+                21,
+                23,
+                26,
+                30
+              ]
+            ],
+            20
+          ],
+          "expected": false,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/search-a-2d-matrix-ii/；2026-09-06 原始内容缓存",
+          "actual": false,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 374
+        }
+      ],
+      "durationMs": 866,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "160",
+      "title": "相交链表",
+      "slug": "intersection-of-two-linked-lists",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            8,
+            [
+              4,
+              1,
+              8,
+              4,
+              5
+            ],
+            [
+              5,
+              6,
+              1,
+              8,
+              4,
+              5
+            ],
+            2,
+            3
+          ],
+          "expected": 8,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/intersection-of-two-linked-lists/；2026-09-06 原始内容缓存；文本输出规范化为交点值（无交点 null）",
+          "actual": 8,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 326
+        },
+        {
+          "input": [
+            2,
+            [
+              1,
+              9,
+              1,
+              2,
+              4
+            ],
+            [
+              3,
+              2,
+              4
+            ],
+            3,
+            1
+          ],
+          "expected": 2,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/intersection-of-two-linked-lists/；2026-09-06 原始内容缓存；文本输出规范化为交点值（无交点 null）",
+          "actual": 2,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 362
+        },
+        {
+          "input": [
+            0,
+            [
+              2,
+              6,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            3,
+            2
+          ],
+          "expected": null,
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/intersection-of-two-linked-lists/；2026-09-06 原始内容缓存；文本输出规范化为交点值（无交点 null）",
+          "actual": null,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 290
+        }
+      ],
+      "durationMs": 1082,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "206",
+      "title": "反转链表",
+      "slug": "reverse-linked-list",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          ],
+          "expected": [
+            5,
+            4,
+            3,
+            2,
+            1
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/reverse-linked-list/；2026-09-06 原始内容缓存",
+          "actual": [
+            5,
+            4,
+            3,
+            2,
+            1
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 319
+        },
+        {
+          "input": [
+            [
+              1,
+              2
+            ]
+          ],
+          "expected": [
+            2,
+            1
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/reverse-linked-list/；2026-09-06 原始内容缓存",
+          "actual": [
+            2,
+            1
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 283
+        },
+        {
+          "input": [
+            []
+          ],
+          "expected": [],
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/reverse-linked-list/；2026-09-06 原始内容缓存",
+          "actual": [],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 273
+        }
+      ],
+      "durationMs": 959,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "234",
+      "title": "回文链表",
+      "slug": "palindrome-linked-list",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              2,
+              2,
+              1
+            ]
+          ],
+          "expected": true,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/palindrome-linked-list/；2026-09-06 原始内容缓存",
+          "actual": true,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 289
+        },
+        {
+          "input": [
+            [
+              1,
+              2
+            ]
+          ],
+          "expected": false,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/palindrome-linked-list/；2026-09-06 原始内容缓存",
+          "actual": false,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 277
+        }
+      ],
+      "durationMs": 667,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "141",
+      "title": "环形链表",
+      "slug": "linked-list-cycle",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              3,
+              2,
+              0,
+              -4
+            ],
+            1
+          ],
+          "expected": true,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/linked-list-cycle/；2026-09-06 原始内容缓存",
+          "actual": true,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 277
+        },
+        {
+          "input": [
+            [
+              1,
+              2
+            ],
+            0
+          ],
+          "expected": true,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/linked-list-cycle/；2026-09-06 原始内容缓存",
+          "actual": true,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 288
+        },
+        {
+          "input": [
+            [
+              1
+            ],
+            -1
+          ],
+          "expected": false,
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/linked-list-cycle/；2026-09-06 原始内容缓存",
+          "actual": false,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 297
+        }
+      ],
+      "durationMs": 944,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "142",
+      "title": "环形链表 II",
+      "slug": "linked-list-cycle-ii",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              3,
+              2,
+              0,
+              -4
+            ],
+            1
+          ],
+          "expected": 1,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/linked-list-cycle-ii/；2026-09-06 原始内容缓存；文本输出规范化为环入口索引（无环 -1）",
+          "actual": 1,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 300
+        },
+        {
+          "input": [
+            [
+              1,
+              2
+            ],
+            0
+          ],
+          "expected": 0,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/linked-list-cycle-ii/；2026-09-06 原始内容缓存；文本输出规范化为环入口索引（无环 -1）",
+          "actual": 0,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 277
+        },
+        {
+          "input": [
+            [
+              1
+            ],
+            -1
+          ],
+          "expected": -1,
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/linked-list-cycle-ii/；2026-09-06 原始内容缓存；文本输出规范化为环入口索引（无环 -1）",
+          "actual": -1,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 288
+        }
+      ],
+      "durationMs": 950,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "21",
+      "title": "合并两个有序链表",
+      "slug": "merge-two-sorted-lists",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              2,
+              4
+            ],
+            [
+              1,
+              3,
+              4
+            ]
+          ],
+          "expected": [
+            1,
+            1,
+            2,
+            3,
+            4,
+            4
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/merge-two-sorted-lists/；2026-09-06 原始内容缓存",
+          "actual": [
+            1,
+            1,
+            2,
+            3,
+            4,
+            4
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 267
+        },
+        {
+          "input": [
+            [],
+            []
+          ],
+          "expected": [],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/merge-two-sorted-lists/；2026-09-06 原始内容缓存",
+          "actual": [],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 287
+        },
+        {
+          "input": [
+            [],
+            [
+              0
+            ]
+          ],
+          "expected": [
+            0
+          ],
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/merge-two-sorted-lists/；2026-09-06 原始内容缓存",
+          "actual": [
+            0
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 312
+        }
+      ],
+      "durationMs": 941,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "2",
+      "title": "两数相加",
+      "slug": "add-two-numbers",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              2,
+              4,
+              3
+            ],
+            [
+              5,
+              6,
+              4
+            ]
+          ],
+          "expected": [
+            7,
+            0,
+            8
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/add-two-numbers/；2026-09-06 原始内容缓存",
+          "actual": [
+            7,
+            0,
+            8
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 317
+        },
+        {
+          "input": [
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "expected": [
+            0
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/add-two-numbers/；2026-09-06 原始内容缓存",
+          "actual": [
+            0
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 429
+        },
+        {
+          "input": [
+            [
+              9,
+              9,
+              9,
+              9,
+              9,
+              9,
+              9
+            ],
+            [
+              9,
+              9,
+              9,
+              9
+            ]
+          ],
+          "expected": [
+            8,
+            9,
+            9,
+            9,
+            0,
+            0,
+            0,
+            1
+          ],
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/add-two-numbers/；2026-09-06 原始内容缓存",
+          "actual": [
+            8,
+            9,
+            9,
+            9,
+            0,
+            0,
+            0,
+            1
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 599
+        }
+      ],
+      "durationMs": 1440,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "19",
+      "title": "删除链表的倒数第 N 个结点",
+      "slug": "remove-nth-node-from-end-of-list",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            2
+          ],
+          "expected": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/remove-nth-node-from-end-of-list/；2026-09-06 原始内容缓存",
+          "actual": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 396
+        },
+        {
+          "input": [
+            [
+              1
+            ],
+            1
+          ],
+          "expected": [],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/remove-nth-node-from-end-of-list/；2026-09-06 原始内容缓存",
+          "actual": [],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 560
+        },
+        {
+          "input": [
+            [
+              1,
+              2
+            ],
+            1
+          ],
+          "expected": [
+            1
+          ],
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/remove-nth-node-from-end-of-list/；2026-09-06 原始内容缓存",
+          "actual": [
+            1
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 573
+        }
+      ],
+      "durationMs": 1615,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "24",
+      "title": "两两交换链表中的节点",
+      "slug": "swap-nodes-in-pairs",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 4,
+      "total": 4,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              2,
+              3,
+              4
+            ]
+          ],
+          "expected": [
+            2,
+            1,
+            4,
+            3
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/swap-nodes-in-pairs/；2026-09-06 原始内容缓存",
+          "actual": [
+            2,
+            1,
+            4,
+            3
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 486
+        },
+        {
+          "input": [
+            []
+          ],
+          "expected": [],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/swap-nodes-in-pairs/；2026-09-06 原始内容缓存",
+          "actual": [],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 562
+        },
+        {
+          "input": [
+            [
+              1
+            ]
+          ],
+          "expected": [
+            1
+          ],
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/swap-nodes-in-pairs/；2026-09-06 原始内容缓存",
+          "actual": [
+            1
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 567
+        },
+        {
+          "input": [
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "expected": [
+            2,
+            1,
+            3
+          ],
+          "source": "官方公开题面示例 4：https://leetcode.com/problems/swap-nodes-in-pairs/；2026-09-06 原始内容缓存",
+          "actual": [
+            2,
+            1,
+            3
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 429
+        }
+      ],
+      "durationMs": 2144,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "25",
+      "title": "K 个一组翻转链表",
+      "slug": "reverse-nodes-in-k-group",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            2
+          ],
+          "expected": [
+            2,
+            1,
+            4,
+            3,
+            5
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/reverse-nodes-in-k-group/；2026-09-06 原始内容缓存",
+          "actual": [
+            2,
+            1,
+            4,
+            3,
+            5
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 615
+        },
+        {
+          "input": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            3
+          ],
+          "expected": [
+            3,
+            2,
+            1,
+            4,
+            5
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/reverse-nodes-in-k-group/；2026-09-06 原始内容缓存",
+          "actual": [
+            3,
+            2,
+            1,
+            4,
+            5
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 410
+        }
+      ],
+      "durationMs": 1164,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "138",
+      "title": "随机链表的复制",
+      "slug": "copy-list-with-random-pointer",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              [
+                7,
+                null
+              ],
+              [
+                13,
+                0
+              ],
+              [
+                11,
+                4
+              ],
+              [
+                10,
+                2
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          ],
+          "expected": [
+            [
+              7,
+              null
+            ],
+            [
+              13,
+              0
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/copy-list-with-random-pointer/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              7,
+              null
+            ],
+            [
+              13,
+              0
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 470
+        },
+        {
+          "input": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          ],
+          "expected": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/copy-list-with-random-pointer/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 354
+        },
+        {
+          "input": [
+            [
+              [
+                3,
+                null
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3,
+                null
+              ]
+            ]
+          ],
+          "expected": [
+            [
+              3,
+              null
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              3,
+              null
+            ]
+          ],
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/copy-list-with-random-pointer/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              3,
+              null
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              3,
+              null
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 256
+        }
+      ],
+      "durationMs": 1234,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "148",
+      "title": "排序链表",
+      "slug": "sort-list",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              4,
+              2,
+              1,
+              3
+            ]
+          ],
+          "expected": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/sort-list/；2026-09-06 原始内容缓存",
+          "actual": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 308
+        },
+        {
+          "input": [
+            [
+              -1,
+              5,
+              3,
+              4,
+              0
+            ]
+          ],
+          "expected": [
+            -1,
+            0,
+            3,
+            4,
+            5
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/sort-list/；2026-09-06 原始内容缓存",
+          "actual": [
+            -1,
+            0,
+            3,
+            4,
+            5
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 257
+        },
+        {
+          "input": [
+            []
+          ],
+          "expected": [],
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/sort-list/；2026-09-06 原始内容缓存",
+          "actual": [],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 326
+        }
+      ],
+      "durationMs": 1022,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "23",
+      "title": "合并 K 个升序链表",
+      "slug": "merge-k-sorted-lists",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              [
+                1,
+                4,
+                5
+              ],
+              [
+                1,
+                3,
+                4
+              ],
+              [
+                2,
+                6
+              ]
+            ]
+          ],
+          "expected": [
+            1,
+            1,
+            2,
+            3,
+            4,
+            4,
+            5,
+            6
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/merge-k-sorted-lists/；2026-09-06 原始内容缓存",
+          "actual": [
+            1,
+            1,
+            2,
+            3,
+            4,
+            4,
+            5,
+            6
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 296
+        },
+        {
+          "input": [
+            []
+          ],
+          "expected": [],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/merge-k-sorted-lists/；2026-09-06 原始内容缓存",
+          "actual": [],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 256
+        },
+        {
+          "input": [
+            [
+              []
+            ]
+          ],
+          "expected": [],
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/merge-k-sorted-lists/；2026-09-06 原始内容缓存",
+          "actual": [],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 310
+        }
+      ],
+      "durationMs": 973,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "146",
+      "title": "LRU 缓存",
+      "slug": "lru-cache",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 1,
+      "total": 1,
+      "cases": [
+        {
+          "input": [
+            [
+              "LRUCache",
+              "put",
+              "put",
+              "get",
+              "put",
+              "get",
+              "put",
+              "get",
+              "get",
+              "get"
+            ],
+            [
+              [
+                2
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                1
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                2
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                1
+              ],
+              [
+                3
+              ],
+              [
+                4
+              ]
+            ]
+          ],
+          "expected": [
+            null,
+            null,
+            null,
+            1,
+            null,
+            -1,
+            null,
+            -1,
+            3,
+            4
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/lru-cache/；2026-09-06 原始内容缓存",
+          "actual": [
+            null,
+            null,
+            null,
+            1,
+            null,
+            -1,
+            null,
+            -1,
+            3,
+            4
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 321
+        }
+      ],
+      "durationMs": 389,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "94",
+      "title": "二叉树的中序遍历",
+      "slug": "binary-tree-inorder-traversal",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 4,
+      "total": 4,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              null,
+              2,
+              3
+            ]
+          ],
+          "expected": [
+            1,
+            3,
+            2
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/binary-tree-inorder-traversal/；2026-09-06 原始内容缓存",
+          "actual": [
+            1,
+            3,
+            2
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 310
+        },
+        {
+          "input": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              null,
+              8,
+              null,
+              null,
+              6,
+              7,
+              9
+            ]
+          ],
+          "expected": [
+            4,
+            2,
+            6,
+            5,
+            7,
+            1,
+            3,
+            9,
+            8
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/binary-tree-inorder-traversal/；2026-09-06 原始内容缓存",
+          "actual": [
+            4,
+            2,
+            6,
+            5,
+            7,
+            1,
+            3,
+            9,
+            8
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 319
+        },
+        {
+          "input": [
+            []
+          ],
+          "expected": [],
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/binary-tree-inorder-traversal/；2026-09-06 原始内容缓存",
+          "actual": [],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 283
+        },
+        {
+          "input": [
+            [
+              1
+            ]
+          ],
+          "expected": [
+            1
+          ],
+          "source": "官方公开题面示例 4：https://leetcode.com/problems/binary-tree-inorder-traversal/；2026-09-06 原始内容缓存",
+          "actual": [
+            1
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 247
+        }
+      ],
+      "durationMs": 1262,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "104",
+      "title": "二叉树的最大深度",
+      "slug": "maximum-depth-of-binary-tree",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              3,
+              9,
+              20,
+              null,
+              null,
+              15,
+              7
+            ]
+          ],
+          "expected": 3,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/maximum-depth-of-binary-tree/；2026-09-06 原始内容缓存",
+          "actual": 3,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 288
+        },
+        {
+          "input": [
+            [
+              1,
+              null,
+              2
+            ]
+          ],
+          "expected": 2,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/maximum-depth-of-binary-tree/；2026-09-06 原始内容缓存",
+          "actual": 2,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 259
+        }
+      ],
+      "durationMs": 633,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "226",
+      "title": "翻转二叉树",
+      "slug": "invert-binary-tree",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              4,
+              2,
+              7,
+              1,
+              3,
+              6,
+              9
+            ]
+          ],
+          "expected": [
+            4,
+            7,
+            2,
+            9,
+            6,
+            3,
+            1
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/invert-binary-tree/；2026-09-06 原始内容缓存",
+          "actual": [
+            4,
+            7,
+            2,
+            9,
+            6,
+            3,
+            1
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 278
+        },
+        {
+          "input": [
+            [
+              2,
+              1,
+              3
+            ]
+          ],
+          "expected": [
+            2,
+            3,
+            1
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/invert-binary-tree/；2026-09-06 原始内容缓存",
+          "actual": [
+            2,
+            3,
+            1
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 293
+        },
+        {
+          "input": [
+            []
+          ],
+          "expected": [],
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/invert-binary-tree/；2026-09-06 原始内容缓存",
+          "actual": [],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 295
+        }
+      ],
+      "durationMs": 952,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "101",
+      "title": "对称二叉树",
+      "slug": "symmetric-tree",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              2,
+              2,
+              3,
+              4,
+              4,
+              3
+            ]
+          ],
+          "expected": true,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/symmetric-tree/；2026-09-06 原始内容缓存",
+          "actual": true,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 291
+        },
+        {
+          "input": [
+            [
+              1,
+              2,
+              2,
+              null,
+              3,
+              null,
+              3
+            ]
+          ],
+          "expected": false,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/symmetric-tree/；2026-09-06 原始内容缓存",
+          "actual": false,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 241
+        }
+      ],
+      "durationMs": 621,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "543",
+      "title": "二叉树的直径",
+      "slug": "diameter-of-binary-tree",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          ],
+          "expected": 3,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/diameter-of-binary-tree/；2026-09-06 原始内容缓存",
+          "actual": 3,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 280
+        },
+        {
+          "input": [
+            [
+              1,
+              2
+            ]
+          ],
+          "expected": 1,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/diameter-of-binary-tree/；2026-09-06 原始内容缓存",
+          "actual": 1,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 264
+        }
+      ],
+      "durationMs": 619,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "102",
+      "title": "二叉树的层序遍历",
+      "slug": "binary-tree-level-order-traversal",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              3,
+              9,
+              20,
+              null,
+              null,
+              15,
+              7
+            ]
+          ],
+          "expected": [
+            [
+              3
+            ],
+            [
+              9,
+              20
+            ],
+            [
+              15,
+              7
+            ]
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/binary-tree-level-order-traversal/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              3
+            ],
+            [
+              9,
+              20
+            ],
+            [
+              15,
+              7
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 253
+        },
+        {
+          "input": [
+            [
+              1
+            ]
+          ],
+          "expected": [
+            [
+              1
+            ]
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/binary-tree-level-order-traversal/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              1
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 274
+        },
+        {
+          "input": [
+            []
+          ],
+          "expected": [],
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/binary-tree-level-order-traversal/；2026-09-06 原始内容缓存",
+          "actual": [],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 276
+        }
+      ],
+      "durationMs": 891,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "108",
+      "title": "将有序数组转换为二叉搜索树",
+      "slug": "convert-sorted-array-to-binary-search-tree",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              -10,
+              -3,
+              0,
+              5,
+              9
+            ]
+          ],
+          "expected": [
+            0,
+            -3,
+            9,
+            -10,
+            null,
+            5
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/；2026-09-06 原始内容缓存",
+          "actual": [
+            0,
+            -3,
+            9,
+            -10,
+            null,
+            5
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 280
+        },
+        {
+          "input": [
+            [
+              1,
+              3
+            ]
+          ],
+          "expected": [
+            3,
+            1
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/；2026-09-06 原始内容缓存",
+          "actual": [
+            3,
+            1
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 277
+        }
+      ],
+      "durationMs": 655,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "98",
+      "title": "验证二叉搜索树",
+      "slug": "validate-binary-search-tree",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              2,
+              1,
+              3
+            ]
+          ],
+          "expected": true,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/validate-binary-search-tree/；2026-09-06 原始内容缓存",
+          "actual": true,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 287
+        },
+        {
+          "input": [
+            [
+              5,
+              1,
+              4,
+              null,
+              null,
+              3,
+              6
+            ]
+          ],
+          "expected": false,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/validate-binary-search-tree/；2026-09-06 原始内容缓存",
+          "actual": false,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 266
+        }
+      ],
+      "durationMs": 635,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "230",
+      "title": "二叉搜索树中第 K 小的元素",
+      "slug": "kth-smallest-element-in-a-bst",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              3,
+              1,
+              4,
+              null,
+              2
+            ],
+            1
+          ],
+          "expected": 1,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/kth-smallest-element-in-a-bst/；2026-09-06 原始内容缓存",
+          "actual": 1,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 268
+        },
+        {
+          "input": [
+            [
+              5,
+              3,
+              6,
+              2,
+              4,
+              null,
+              null,
+              1
+            ],
+            3
+          ],
+          "expected": 3,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/kth-smallest-element-in-a-bst/；2026-09-06 原始内容缓存",
+          "actual": 3,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 262
+        }
+      ],
+      "durationMs": 623,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "199",
+      "title": "二叉树的右视图",
+      "slug": "binary-tree-right-side-view",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 4,
+      "total": 4,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              2,
+              3,
+              null,
+              5,
+              null,
+              4
+            ]
+          ],
+          "expected": [
+            1,
+            3,
+            4
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/binary-tree-right-side-view/；2026-09-06 原始内容缓存",
+          "actual": [
+            1,
+            3,
+            4
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 269
+        },
+        {
+          "input": [
+            [
+              1,
+              2,
+              3,
+              4,
+              null,
+              null,
+              null,
+              5
+            ]
+          ],
+          "expected": [
+            1,
+            3,
+            4,
+            5
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/binary-tree-right-side-view/；2026-09-06 原始内容缓存",
+          "actual": [
+            1,
+            3,
+            4,
+            5
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 312
+        },
+        {
+          "input": [
+            [
+              1,
+              null,
+              3
+            ]
+          ],
+          "expected": [
+            1,
+            3
+          ],
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/binary-tree-right-side-view/；2026-09-06 原始内容缓存",
+          "actual": [
+            1,
+            3
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 418
+        },
+        {
+          "input": [
+            []
+          ],
+          "expected": [],
+          "source": "官方公开题面示例 4：https://leetcode.com/problems/binary-tree-right-side-view/；2026-09-06 原始内容缓存",
+          "actual": [],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 550
+        }
+      ],
+      "durationMs": 1624,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "114",
+      "title": "二叉树展开为链表",
+      "slug": "flatten-binary-tree-to-linked-list",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              2,
+              5,
+              3,
+              4,
+              null,
+              6
+            ]
+          ],
+          "expected": [
+            1,
+            null,
+            2,
+            null,
+            3,
+            null,
+            4,
+            null,
+            5,
+            null,
+            6
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/flatten-binary-tree-to-linked-list/；2026-09-06 原始内容缓存",
+          "actual": [
+            1,
+            null,
+            2,
+            null,
+            3,
+            null,
+            4,
+            null,
+            5,
+            null,
+            6
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 273
+        },
+        {
+          "input": [
+            []
+          ],
+          "expected": [],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/flatten-binary-tree-to-linked-list/；2026-09-06 原始内容缓存",
+          "actual": [],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 400
+        },
+        {
+          "input": [
+            [
+              0
+            ]
+          ],
+          "expected": [
+            0
+          ],
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/flatten-binary-tree-to-linked-list/；2026-09-06 原始内容缓存",
+          "actual": [
+            0
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 464
+        }
+      ],
+      "durationMs": 1216,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "105",
+      "title": "从前序与中序遍历序列构造二叉树",
+      "slug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              3,
+              9,
+              20,
+              15,
+              7
+            ],
+            [
+              9,
+              3,
+              15,
+              20,
+              7
+            ]
+          ],
+          "expected": [
+            3,
+            9,
+            20,
+            null,
+            null,
+            15,
+            7
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/；2026-09-06 原始内容缓存",
+          "actual": [
+            3,
+            9,
+            20,
+            null,
+            null,
+            15,
+            7
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 410
+        },
+        {
+          "input": [
+            [
+              -1
+            ],
+            [
+              -1
+            ]
+          ],
+          "expected": [
+            -1
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/；2026-09-06 原始内容缓存",
+          "actual": [
+            -1
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 462
+        }
+      ],
+      "durationMs": 970,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "437",
+      "title": "路径总和 III",
+      "slug": "path-sum-iii",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              10,
+              5,
+              -3,
+              3,
+              2,
+              null,
+              11,
+              3,
+              -2,
+              null,
+              1
+            ],
+            8
+          ],
+          "expected": 3,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/path-sum-iii/；2026-09-06 原始内容缓存",
+          "actual": 3,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 525
+        },
+        {
+          "input": [
+            [
+              5,
+              4,
+              8,
+              11,
+              null,
+              13,
+              4,
+              7,
+              2,
+              null,
+              null,
+              5,
+              1
+            ],
+            22
+          ],
+          "expected": 3,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/path-sum-iii/；2026-09-06 原始内容缓存",
+          "actual": 3,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 522
+        }
+      ],
+      "durationMs": 1208,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "236",
+      "title": "二叉树的最近公共祖先",
+      "slug": "lowest-common-ancestor-of-a-binary-tree",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              3,
+              5,
+              1,
+              6,
+              2,
+              0,
+              8,
+              null,
+              null,
+              7,
+              4
+            ],
+            5,
+            1
+          ],
+          "expected": 3,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/；2026-09-06 原始内容缓存",
+          "actual": 3,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 531
+        },
+        {
+          "input": [
+            [
+              3,
+              5,
+              1,
+              6,
+              2,
+              0,
+              8,
+              null,
+              null,
+              7,
+              4
+            ],
+            5,
+            4
+          ],
+          "expected": 5,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/；2026-09-06 原始内容缓存",
+          "actual": 5,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 552
+        },
+        {
+          "input": [
+            [
+              1,
+              2
+            ],
+            1,
+            2
+          ],
+          "expected": 1,
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/；2026-09-06 原始内容缓存",
+          "actual": 1,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 441
+        }
+      ],
+      "durationMs": 1700,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "124",
+      "title": "二叉树中的最大路径和",
+      "slug": "binary-tree-maximum-path-sum",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "expected": 6,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/binary-tree-maximum-path-sum/；2026-09-06 原始内容缓存",
+          "actual": 6,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 547
+        },
+        {
+          "input": [
+            [
+              -10,
+              9,
+              20,
+              null,
+              null,
+              15,
+              7
+            ]
+          ],
+          "expected": 42,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/binary-tree-maximum-path-sum/；2026-09-06 原始内容缓存",
+          "actual": 42,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 509
+        }
+      ],
+      "durationMs": 1197,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "200",
+      "title": "岛屿数量",
+      "slug": "number-of-islands",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              [
+                "1",
+                "1",
+                "1",
+                "1",
+                "0"
+              ],
+              [
+                "1",
+                "1",
+                "0",
+                "1",
+                "0"
+              ],
+              [
+                "1",
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            ]
+          ],
+          "expected": 1,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/number-of-islands/；2026-09-06 原始内容缓存",
+          "actual": 1,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 411
+        },
+        {
+          "input": [
+            [
+              [
+                "1",
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "1",
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "1",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "1",
+                "1"
+              ]
+            ]
+          ],
+          "expected": 3,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/number-of-islands/；2026-09-06 原始内容缓存",
+          "actual": 3,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 326
+        }
+      ],
+      "durationMs": 898,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "994",
+      "title": "腐烂的橘子",
+      "slug": "rotting-oranges",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              [
+                2,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1
+              ]
+            ]
+          ],
+          "expected": 4,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/rotting-oranges/；2026-09-06 原始内容缓存",
+          "actual": 4,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 345
+        },
+        {
+          "input": [
+            [
+              [
+                2,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                1
+              ]
+            ]
+          ],
+          "expected": -1,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/rotting-oranges/；2026-09-06 原始内容缓存",
+          "actual": -1,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 314
+        },
+        {
+          "input": [
+            [
+              [
+                0,
+                2
+              ]
+            ]
+          ],
+          "expected": 0,
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/rotting-oranges/；2026-09-06 原始内容缓存",
+          "actual": 0,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 291
+        }
+      ],
+      "durationMs": 1079,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "207",
+      "title": "课程表",
+      "slug": "course-schedule",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            2,
+            [
+              [
+                1,
+                0
+              ]
+            ]
+          ],
+          "expected": true,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/course-schedule/；2026-09-06 原始内容缓存",
+          "actual": true,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 341
+        },
+        {
+          "input": [
+            2,
+            [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          ],
+          "expected": false,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/course-schedule/；2026-09-06 原始内容缓存",
+          "actual": false,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 280
+        }
+      ],
+      "durationMs": 709,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "208",
+      "title": "实现 Trie (前缀树)",
+      "slug": "implement-trie-prefix-tree",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 1,
+      "total": 1,
+      "cases": [
+        {
+          "input": [
+            [
+              "Trie",
+              "insert",
+              "search",
+              "search",
+              "startsWith",
+              "insert",
+              "search"
+            ],
+            [
+              [],
+              [
+                "apple"
+              ],
+              [
+                "apple"
+              ],
+              [
+                "app"
+              ],
+              [
+                "app"
+              ],
+              [
+                "app"
+              ],
+              [
+                "app"
+              ]
+            ]
+          ],
+          "expected": [
+            null,
+            null,
+            true,
+            false,
+            true,
+            null,
+            true
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/implement-trie-prefix-tree/；2026-09-06 原始内容缓存",
+          "actual": [
+            null,
+            null,
+            true,
+            false,
+            true,
+            null,
+            true
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 295
+        }
+      ],
+      "durationMs": 381,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "46",
+      "title": "全排列",
+      "slug": "permutations",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "expected": [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              3,
+              2
+            ],
+            [
+              2,
+              1,
+              3
+            ],
+            [
+              2,
+              3,
+              1
+            ],
+            [
+              3,
+              1,
+              2
+            ],
+            [
+              3,
+              2,
+              1
+            ]
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/permutations/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              3,
+              2
+            ],
+            [
+              2,
+              1,
+              3
+            ],
+            [
+              2,
+              3,
+              1
+            ],
+            [
+              3,
+              1,
+              2
+            ],
+            [
+              3,
+              2,
+              1
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 315
+        },
+        {
+          "input": [
+            [
+              0,
+              1
+            ]
+          ],
+          "expected": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/permutations/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 355
+        },
+        {
+          "input": [
+            [
+              1
+            ]
+          ],
+          "expected": [
+            [
+              1
+            ]
+          ],
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/permutations/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              1
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 348
+        }
+      ],
+      "durationMs": 1104,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "78",
+      "title": "子集",
+      "slug": "subsets",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "expected": [
+            [],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              3
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/subsets/；2026-09-06 原始内容缓存",
+          "actual": [
+            [],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              3
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 288
+        },
+        {
+          "input": [
+            [
+              0
+            ]
+          ],
+          "expected": [
+            [],
+            [
+              0
+            ]
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/subsets/；2026-09-06 原始内容缓存",
+          "actual": [
+            [],
+            [
+              0
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 316
+        }
+      ],
+      "durationMs": 715,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "17",
+      "title": "电话号码的字母组合",
+      "slug": "letter-combinations-of-a-phone-number",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            "23"
+          ],
+          "expected": [
+            "ad",
+            "ae",
+            "af",
+            "bd",
+            "be",
+            "bf",
+            "cd",
+            "ce",
+            "cf"
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/letter-combinations-of-a-phone-number/；2026-09-06 原始内容缓存",
+          "actual": [
+            "ad",
+            "ae",
+            "af",
+            "bd",
+            "be",
+            "bf",
+            "cd",
+            "ce",
+            "cf"
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 317
+        },
+        {
+          "input": [
+            "2"
+          ],
+          "expected": [
+            "a",
+            "b",
+            "c"
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/letter-combinations-of-a-phone-number/；2026-09-06 原始内容缓存",
+          "actual": [
+            "a",
+            "b",
+            "c"
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 314
+        }
+      ],
+      "durationMs": 722,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "39",
+      "title": "组合总和",
+      "slug": "combination-sum",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              2,
+              3,
+              6,
+              7
+            ],
+            7
+          ],
+          "expected": [
+            [
+              2,
+              2,
+              3
+            ],
+            [
+              7
+            ]
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/combination-sum/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              2,
+              2,
+              3
+            ],
+            [
+              7
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 342
+        },
+        {
+          "input": [
+            [
+              2,
+              3,
+              5
+            ],
+            8
+          ],
+          "expected": [
+            [
+              2,
+              2,
+              2,
+              2
+            ],
+            [
+              2,
+              3,
+              3
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/combination-sum/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              2,
+              2,
+              2,
+              2
+            ],
+            [
+              2,
+              3,
+              3
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 316
+        },
+        {
+          "input": [
+            [
+              2
+            ],
+            1
+          ],
+          "expected": [],
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/combination-sum/；2026-09-06 原始内容缓存",
+          "actual": [],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 255
+        }
+      ],
+      "durationMs": 1029,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "22",
+      "title": "括号生成",
+      "slug": "generate-parentheses",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            3
+          ],
+          "expected": [
+            "((()))",
+            "(()())",
+            "(())()",
+            "()(())",
+            "()()()"
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/generate-parentheses/；2026-09-06 原始内容缓存",
+          "actual": [
+            "((()))",
+            "(()())",
+            "(())()",
+            "()(())",
+            "()()()"
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 328
+        },
+        {
+          "input": [
+            1
+          ],
+          "expected": [
+            "()"
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/generate-parentheses/；2026-09-06 原始内容缓存",
+          "actual": [
+            "()"
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 290
+        }
+      ],
+      "durationMs": 725,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "79",
+      "title": "单词搜索",
+      "slug": "word-search",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              [
+                "A",
+                "B",
+                "C",
+                "E"
+              ],
+              [
+                "S",
+                "F",
+                "C",
+                "S"
+              ],
+              [
+                "A",
+                "D",
+                "E",
+                "E"
+              ]
+            ],
+            "ABCCED"
+          ],
+          "expected": true,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/word-search/；2026-09-06 原始内容缓存",
+          "actual": true,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 309
+        },
+        {
+          "input": [
+            [
+              [
+                "A",
+                "B",
+                "C",
+                "E"
+              ],
+              [
+                "S",
+                "F",
+                "C",
+                "S"
+              ],
+              [
+                "A",
+                "D",
+                "E",
+                "E"
+              ]
+            ],
+            "SEE"
+          ],
+          "expected": true,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/word-search/；2026-09-06 原始内容缓存",
+          "actual": true,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 252
+        },
+        {
+          "input": [
+            [
+              [
+                "A",
+                "B",
+                "C",
+                "E"
+              ],
+              [
+                "S",
+                "F",
+                "C",
+                "S"
+              ],
+              [
+                "A",
+                "D",
+                "E",
+                "E"
+              ]
+            ],
+            "ABCB"
+          ],
+          "expected": false,
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/word-search/；2026-09-06 原始内容缓存",
+          "actual": false,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 267
+        }
+      ],
+      "durationMs": 925,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "131",
+      "title": "分割回文串",
+      "slug": "palindrome-partitioning",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            "aab"
+          ],
+          "expected": [
+            [
+              "a",
+              "a",
+              "b"
+            ],
+            [
+              "aa",
+              "b"
+            ]
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/palindrome-partitioning/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              "a",
+              "a",
+              "b"
+            ],
+            [
+              "aa",
+              "b"
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 242
+        },
+        {
+          "input": [
+            "a"
+          ],
+          "expected": [
+            [
+              "a"
+            ]
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/palindrome-partitioning/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              "a"
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 262
+        }
+      ],
+      "durationMs": 587,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "51",
+      "title": "N 皇后",
+      "slug": "n-queens",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            4
+          ],
+          "expected": [
+            [
+              ".Q..",
+              "...Q",
+              "Q...",
+              "..Q."
+            ],
+            [
+              "..Q.",
+              "Q...",
+              "...Q",
+              ".Q.."
+            ]
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/n-queens/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              ".Q..",
+              "...Q",
+              "Q...",
+              "..Q."
+            ],
+            [
+              "..Q.",
+              "Q...",
+              "...Q",
+              ".Q.."
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 254
+        },
+        {
+          "input": [
+            1
+          ],
+          "expected": [
+            [
+              "Q"
+            ]
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/n-queens/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              "Q"
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 312
+        }
+      ],
+      "durationMs": 636,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "35",
+      "title": "搜索插入位置",
+      "slug": "search-insert-position",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              3,
+              5,
+              6
+            ],
+            5
+          ],
+          "expected": 2,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/search-insert-position/；2026-09-06 原始内容缓存",
+          "actual": 2,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 316
+        },
+        {
+          "input": [
+            [
+              1,
+              3,
+              5,
+              6
+            ],
+            2
+          ],
+          "expected": 1,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/search-insert-position/；2026-09-06 原始内容缓存",
+          "actual": 1,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 242
+        },
+        {
+          "input": [
+            [
+              1,
+              3,
+              5,
+              6
+            ],
+            7
+          ],
+          "expected": 4,
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/search-insert-position/；2026-09-06 原始内容缓存",
+          "actual": 4,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 249
+        }
+      ],
+      "durationMs": 877,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "74",
+      "title": "搜索二维矩阵",
+      "slug": "search-a-2d-matrix",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              [
+                1,
+                3,
+                5,
+                7
+              ],
+              [
+                10,
+                11,
+                16,
+                20
+              ],
+              [
+                23,
+                30,
+                34,
+                60
+              ]
+            ],
+            3
+          ],
+          "expected": true,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/search-a-2d-matrix/；2026-09-06 原始内容缓存",
+          "actual": true,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 279
+        },
+        {
+          "input": [
+            [
+              [
+                1,
+                3,
+                5,
+                7
+              ],
+              [
+                10,
+                11,
+                16,
+                20
+              ],
+              [
+                23,
+                30,
+                34,
+                60
+              ]
+            ],
+            13
+          ],
+          "expected": false,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/search-a-2d-matrix/；2026-09-06 原始内容缓存",
+          "actual": false,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 250
+        }
+      ],
+      "durationMs": 619,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "34",
+      "title": "在排序数组中查找元素的第一个和最后一个位置",
+      "slug": "find-first-and-last-position-of-element-in-sorted-array",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              5,
+              7,
+              7,
+              8,
+              8,
+              10
+            ],
+            8
+          ],
+          "expected": [
+            3,
+            4
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/；2026-09-06 原始内容缓存",
+          "actual": [
+            3,
+            4
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 285
+        },
+        {
+          "input": [
+            [
+              5,
+              7,
+              7,
+              8,
+              8,
+              10
+            ],
+            6
+          ],
+          "expected": [
+            -1,
+            -1
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/；2026-09-06 原始内容缓存",
+          "actual": [
+            -1,
+            -1
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 248
+        },
+        {
+          "input": [
+            [],
+            0
+          ],
+          "expected": [
+            -1,
+            -1
+          ],
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/；2026-09-06 原始内容缓存",
+          "actual": [
+            -1,
+            -1
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 254
+        }
+      ],
+      "durationMs": 868,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "33",
+      "title": "搜索旋转排序数组",
+      "slug": "search-in-rotated-sorted-array",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              4,
+              5,
+              6,
+              7,
+              0,
+              1,
+              2
+            ],
+            0
+          ],
+          "expected": 4,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/search-in-rotated-sorted-array/；2026-09-06 原始内容缓存",
+          "actual": 4,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 256
+        },
+        {
+          "input": [
+            [
+              4,
+              5,
+              6,
+              7,
+              0,
+              1,
+              2
+            ],
+            3
+          ],
+          "expected": -1,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/search-in-rotated-sorted-array/；2026-09-06 原始内容缓存",
+          "actual": -1,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 274
+        },
+        {
+          "input": [
+            [
+              1
+            ],
+            0
+          ],
+          "expected": -1,
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/search-in-rotated-sorted-array/；2026-09-06 原始内容缓存",
+          "actual": -1,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 288
+        }
+      ],
+      "durationMs": 896,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "153",
+      "title": "寻找旋转排序数组中的最小值",
+      "slug": "find-minimum-in-rotated-sorted-array",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              3,
+              4,
+              5,
+              1,
+              2
+            ]
+          ],
+          "expected": 1,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/；2026-09-06 原始内容缓存",
+          "actual": 1,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 252
+        },
+        {
+          "input": [
+            [
+              4,
+              5,
+              6,
+              7,
+              0,
+              1,
+              2
+            ]
+          ],
+          "expected": 0,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/；2026-09-06 原始内容缓存",
+          "actual": 0,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 262
+        },
+        {
+          "input": [
+            [
+              11,
+              13,
+              15,
+              17
+            ]
+          ],
+          "expected": 11,
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/；2026-09-06 原始内容缓存",
+          "actual": 11,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 395
+        }
+      ],
+      "durationMs": 978,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "4",
+      "title": "寻找两个正序数组的中位数",
+      "slug": "median-of-two-sorted-arrays",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "expected": 2,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/median-of-two-sorted-arrays/；2026-09-06 原始内容缓存",
+          "actual": 2,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 270
+        },
+        {
+          "input": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "expected": 2.5,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/median-of-two-sorted-arrays/；2026-09-06 原始内容缓存",
+          "actual": 2.5,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 459
+        }
+      ],
+      "durationMs": 813,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "20",
+      "title": "有效的括号",
+      "slug": "valid-parentheses",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 5,
+      "total": 5,
+      "cases": [
+        {
+          "input": [
+            "()"
+          ],
+          "expected": true,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/valid-parentheses/；2026-09-06 原始内容缓存",
+          "actual": true,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 1016
+        },
+        {
+          "input": [
+            "()[]{}"
+          ],
+          "expected": true,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/valid-parentheses/；2026-09-06 原始内容缓存",
+          "actual": true,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 1980
+        },
+        {
+          "input": [
+            "(]"
+          ],
+          "expected": false,
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/valid-parentheses/；2026-09-06 原始内容缓存",
+          "actual": false,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 337
+        },
+        {
+          "input": [
+            "([])"
+          ],
+          "expected": true,
+          "source": "官方公开题面示例 4：https://leetcode.com/problems/valid-parentheses/；2026-09-06 原始内容缓存",
+          "actual": true,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 475
+        },
+        {
+          "input": [
+            "([)]"
+          ],
+          "expected": false,
+          "source": "官方公开题面示例 5：https://leetcode.com/problems/valid-parentheses/；2026-09-06 原始内容缓存",
+          "actual": false,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 321
+        }
+      ],
+      "durationMs": 4257,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "155",
+      "title": "最小栈",
+      "slug": "min-stack",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 1,
+      "total": 1,
+      "cases": [
+        {
+          "input": [
+            [
+              "MinStack",
+              "push",
+              "push",
+              "push",
+              "getMin",
+              "pop",
+              "top",
+              "getMin"
+            ],
+            [
+              [],
+              [
+                -2
+              ],
+              [
+                0
+              ],
+              [
+                -3
+              ],
+              [],
+              [],
+              [],
+              []
+            ]
+          ],
+          "expected": [
+            null,
+            null,
+            null,
+            null,
+            -3,
+            null,
+            0,
+            -2
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/min-stack/；2026-09-06 原始内容缓存",
+          "actual": [
+            null,
+            null,
+            null,
+            null,
+            -3,
+            null,
+            0,
+            -2
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 2683
+        }
+      ],
+      "durationMs": 2802,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "394",
+      "title": "字符串解码",
+      "slug": "decode-string",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            "3[a]2[bc]"
+          ],
+          "expected": "aaabcbc",
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/decode-string/；2026-09-06 原始内容缓存",
+          "actual": "aaabcbc",
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 1109
+        },
+        {
+          "input": [
+            "3[a2[c]]"
+          ],
+          "expected": "accaccacc",
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/decode-string/；2026-09-06 原始内容缓存",
+          "actual": "accaccacc",
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 308
+        },
+        {
+          "input": [
+            "2[abc]3[cd]ef"
+          ],
+          "expected": "abcabccdcdcdef",
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/decode-string/；2026-09-06 原始内容缓存",
+          "actual": "abcabccdcdcdef",
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 483
+        }
+      ],
+      "durationMs": 3545,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "739",
+      "title": "每日温度",
+      "slug": "daily-temperatures",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              73,
+              74,
+              75,
+              71,
+              69,
+              72,
+              76,
+              73
+            ]
+          ],
+          "expected": [
+            1,
+            1,
+            4,
+            2,
+            1,
+            1,
+            0,
+            0
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/daily-temperatures/；2026-09-06 原始内容缓存",
+          "actual": [
+            1,
+            1,
+            4,
+            2,
+            1,
+            1,
+            0,
+            0
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 332
+        },
+        {
+          "input": [
+            [
+              30,
+              40,
+              50,
+              60
+            ]
+          ],
+          "expected": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/daily-temperatures/；2026-09-06 原始内容缓存",
+          "actual": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 449
+        },
+        {
+          "input": [
+            [
+              30,
+              60,
+              90
+            ]
+          ],
+          "expected": [
+            1,
+            1,
+            0
+          ],
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/daily-temperatures/；2026-09-06 原始内容缓存",
+          "actual": [
+            1,
+            1,
+            0
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 374
+        }
+      ],
+      "durationMs": 1264,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "84",
+      "title": "柱状图中最大的矩形",
+      "slug": "largest-rectangle-in-histogram",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              2,
+              1,
+              5,
+              6,
+              2,
+              3
+            ]
+          ],
+          "expected": 10,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/largest-rectangle-in-histogram/；2026-09-06 原始内容缓存",
+          "actual": 10,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 323
+        },
+        {
+          "input": [
+            [
+              2,
+              4
+            ]
+          ],
+          "expected": 4,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/largest-rectangle-in-histogram/；2026-09-06 原始内容缓存",
+          "actual": 4,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 387
+        }
+      ],
+      "durationMs": 809,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "215",
+      "title": "数组中的第K个最大元素",
+      "slug": "kth-largest-element-in-an-array",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              3,
+              2,
+              1,
+              5,
+              6,
+              4
+            ],
+            2
+          ],
+          "expected": 5,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/kth-largest-element-in-an-array/；2026-09-06 原始内容缓存",
+          "actual": 5,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 358
+        },
+        {
+          "input": [
+            [
+              3,
+              2,
+              3,
+              1,
+              2,
+              4,
+              5,
+              5,
+              6
+            ],
+            4
+          ],
+          "expected": 4,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/kth-largest-element-in-an-array/；2026-09-06 原始内容缓存",
+          "actual": 4,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 378
+        }
+      ],
+      "durationMs": 838,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "347",
+      "title": "前 K 个高频元素",
+      "slug": "top-k-frequent-elements",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              1,
+              1,
+              2,
+              2,
+              3
+            ],
+            2
+          ],
+          "expected": [
+            1,
+            2
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/top-k-frequent-elements/；2026-09-06 原始内容缓存",
+          "actual": [
+            1,
+            2
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 380
+        },
+        {
+          "input": [
+            [
+              1
+            ],
+            1
+          ],
+          "expected": [
+            1
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/top-k-frequent-elements/；2026-09-06 原始内容缓存",
+          "actual": [
+            1
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 400
+        },
+        {
+          "input": [
+            [
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              3,
+              1,
+              3,
+              2
+            ],
+            2
+          ],
+          "expected": [
+            1,
+            2
+          ],
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/top-k-frequent-elements/；2026-09-06 原始内容缓存",
+          "actual": [
+            1,
+            2
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 327
+        }
+      ],
+      "durationMs": 1206,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "295",
+      "title": "数据流的中位数",
+      "slug": "find-median-from-data-stream",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 1,
+      "total": 1,
+      "cases": [
+        {
+          "input": [
+            [
+              "MedianFinder",
+              "addNum",
+              "addNum",
+              "findMedian",
+              "addNum",
+              "findMedian"
+            ],
+            [
+              [],
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [],
+              [
+                3
+              ],
+              []
+            ]
+          ],
+          "expected": [
+            null,
+            null,
+            null,
+            1.5,
+            null,
+            2
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/find-median-from-data-stream/；2026-09-06 原始内容缓存",
+          "actual": [
+            null,
+            null,
+            null,
+            1.5,
+            null,
+            2
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 398
+        }
+      ],
+      "durationMs": 519,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "121",
+      "title": "买卖股票的最佳时机",
+      "slug": "best-time-to-buy-and-sell-stock",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              7,
+              1,
+              5,
+              3,
+              6,
+              4
+            ]
+          ],
+          "expected": 5,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/best-time-to-buy-and-sell-stock/；2026-09-06 原始内容缓存",
+          "actual": 5,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 323
+        },
+        {
+          "input": [
+            [
+              7,
+              6,
+              4,
+              3,
+              1
+            ]
+          ],
+          "expected": 0,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/best-time-to-buy-and-sell-stock/；2026-09-06 原始内容缓存",
+          "actual": 0,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 249
+        }
+      ],
+      "durationMs": 680,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "55",
+      "title": "跳跃游戏",
+      "slug": "jump-game",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              2,
+              3,
+              1,
+              1,
+              4
+            ]
+          ],
+          "expected": true,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/jump-game/；2026-09-06 原始内容缓存",
+          "actual": true,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 284
+        },
+        {
+          "input": [
+            [
+              3,
+              2,
+              1,
+              0,
+              4
+            ]
+          ],
+          "expected": false,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/jump-game/；2026-09-06 原始内容缓存",
+          "actual": false,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 241
+        }
+      ],
+      "durationMs": 614,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "45",
+      "title": "跳跃游戏 II",
+      "slug": "jump-game-ii",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              2,
+              3,
+              1,
+              1,
+              4
+            ]
+          ],
+          "expected": 2,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/jump-game-ii/；2026-09-06 原始内容缓存",
+          "actual": 2,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 247
+        },
+        {
+          "input": [
+            [
+              2,
+              3,
+              0,
+              1,
+              4
+            ]
+          ],
+          "expected": 2,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/jump-game-ii/；2026-09-06 原始内容缓存",
+          "actual": 2,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 265
+        }
+      ],
+      "durationMs": 599,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "763",
+      "title": "划分字母区间",
+      "slug": "partition-labels",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            "ababcbacadefegdehijhklij"
+          ],
+          "expected": [
+            9,
+            7,
+            8
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/partition-labels/；2026-09-06 原始内容缓存",
+          "actual": [
+            9,
+            7,
+            8
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 241
+        },
+        {
+          "input": [
+            "eccbbbbdec"
+          ],
+          "expected": [
+            10
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/partition-labels/；2026-09-06 原始内容缓存",
+          "actual": [
+            10
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 247
+        }
+      ],
+      "durationMs": 560,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "70",
+      "title": "爬楼梯",
+      "slug": "climbing-stairs",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            2
+          ],
+          "expected": 2,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/climbing-stairs/；2026-09-06 原始内容缓存",
+          "actual": 2,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 248
+        },
+        {
+          "input": [
+            3
+          ],
+          "expected": 3,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/climbing-stairs/；2026-09-06 原始内容缓存",
+          "actual": 3,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 249
+        }
+      ],
+      "durationMs": 574,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "118",
+      "title": "杨辉三角",
+      "slug": "pascals-triangle",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            5
+          ],
+          "expected": [
+            [
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              3,
+              1
+            ],
+            [
+              1,
+              4,
+              6,
+              4,
+              1
+            ]
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/pascals-triangle/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              3,
+              1
+            ],
+            [
+              1,
+              4,
+              6,
+              4,
+              1
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 255
+        },
+        {
+          "input": [
+            1
+          ],
+          "expected": [
+            [
+              1
+            ]
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/pascals-triangle/；2026-09-06 原始内容缓存",
+          "actual": [
+            [
+              1
+            ]
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 301
+        }
+      ],
+      "durationMs": 625,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "198",
+      "title": "打家劫舍",
+      "slug": "house-robber",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              2,
+              3,
+              1
+            ]
+          ],
+          "expected": 4,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/house-robber/；2026-09-06 原始内容缓存",
+          "actual": 4,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 285
+        },
+        {
+          "input": [
+            [
+              2,
+              7,
+              9,
+              3,
+              1
+            ]
+          ],
+          "expected": 12,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/house-robber/；2026-09-06 原始内容缓存",
+          "actual": 12,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 264
+        }
+      ],
+      "durationMs": 619,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "279",
+      "title": "完全平方数",
+      "slug": "perfect-squares",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            12
+          ],
+          "expected": 3,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/perfect-squares/；2026-09-06 原始内容缓存",
+          "actual": 3,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 267
+        },
+        {
+          "input": [
+            13
+          ],
+          "expected": 2,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/perfect-squares/；2026-09-06 原始内容缓存",
+          "actual": 2,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 283
+        }
+      ],
+      "durationMs": 633,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "322",
+      "title": "零钱兑换",
+      "slug": "coin-change",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              2,
+              5
+            ],
+            11
+          ],
+          "expected": 3,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/coin-change/；2026-09-06 原始内容缓存",
+          "actual": 3,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 277
+        },
+        {
+          "input": [
+            [
+              2
+            ],
+            3
+          ],
+          "expected": -1,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/coin-change/；2026-09-06 原始内容缓存",
+          "actual": -1,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 261
+        },
+        {
+          "input": [
+            [
+              1
+            ],
+            0
+          ],
+          "expected": 0,
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/coin-change/；2026-09-06 原始内容缓存",
+          "actual": 0,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 255
+        }
+      ],
+      "durationMs": 867,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "139",
+      "title": "单词拆分",
+      "slug": "word-break",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            "leetcode",
+            [
+              "leet",
+              "code"
+            ]
+          ],
+          "expected": true,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/word-break/；2026-09-06 原始内容缓存",
+          "actual": true,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 268
+        },
+        {
+          "input": [
+            "applepenapple",
+            [
+              "apple",
+              "pen"
+            ]
+          ],
+          "expected": true,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/word-break/；2026-09-06 原始内容缓存",
+          "actual": true,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 260
+        },
+        {
+          "input": [
+            "catsandog",
+            [
+              "cats",
+              "dog",
+              "sand",
+              "and",
+              "cat"
+            ]
+          ],
+          "expected": false,
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/word-break/；2026-09-06 原始内容缓存",
+          "actual": false,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 241
+        }
+      ],
+      "durationMs": 854,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "300",
+      "title": "最长递增子序列",
+      "slug": "longest-increasing-subsequence",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              10,
+              9,
+              2,
+              5,
+              3,
+              7,
+              101,
+              18
+            ]
+          ],
+          "expected": 4,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/longest-increasing-subsequence/；2026-09-06 原始内容缓存",
+          "actual": 4,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 245
+        },
+        {
+          "input": [
+            [
+              0,
+              1,
+              0,
+              3,
+              2,
+              3
+            ]
+          ],
+          "expected": 4,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/longest-increasing-subsequence/；2026-09-06 原始内容缓存",
+          "actual": 4,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 261
+        },
+        {
+          "input": [
+            [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ]
+          ],
+          "expected": 1,
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/longest-increasing-subsequence/；2026-09-06 原始内容缓存",
+          "actual": 1,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 221
+        }
+      ],
+      "durationMs": 802,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "152",
+      "title": "乘积最大子数组",
+      "slug": "maximum-product-subarray",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              2,
+              3,
+              -2,
+              4
+            ]
+          ],
+          "expected": 6,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/maximum-product-subarray/；2026-09-06 原始内容缓存",
+          "actual": 6,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 237
+        },
+        {
+          "input": [
+            [
+              -2,
+              0,
+              -1
+            ]
+          ],
+          "expected": 0,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/maximum-product-subarray/；2026-09-06 原始内容缓存",
+          "actual": 0,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 226
+        }
+      ],
+      "durationMs": 533,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "416",
+      "title": "分割等和子集",
+      "slug": "partition-equal-subset-sum",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              5,
+              11,
+              5
+            ]
+          ],
+          "expected": true,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/partition-equal-subset-sum/；2026-09-06 原始内容缓存",
+          "actual": true,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 235
+        },
+        {
+          "input": [
+            [
+              1,
+              2,
+              3,
+              5
+            ]
+          ],
+          "expected": false,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/partition-equal-subset-sum/；2026-09-06 原始内容缓存",
+          "actual": false,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 213
+        }
+      ],
+      "durationMs": 509,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "32",
+      "title": "最长有效括号",
+      "slug": "longest-valid-parentheses",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            "(()"
+          ],
+          "expected": 2,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/longest-valid-parentheses/；2026-09-06 原始内容缓存",
+          "actual": 2,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 218
+        },
+        {
+          "input": [
+            ")()())"
+          ],
+          "expected": 4,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/longest-valid-parentheses/；2026-09-06 原始内容缓存",
+          "actual": 4,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 217
+        },
+        {
+          "input": [
+            ""
+          ],
+          "expected": 0,
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/longest-valid-parentheses/；2026-09-06 原始内容缓存",
+          "actual": 0,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 238
+        }
+      ],
+      "durationMs": 740,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "62",
+      "title": "不同路径",
+      "slug": "unique-paths",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            3,
+            7
+          ],
+          "expected": 28,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/unique-paths/；2026-09-06 原始内容缓存",
+          "actual": 28,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 219
+        },
+        {
+          "input": [
+            3,
+            2
+          ],
+          "expected": 3,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/unique-paths/；2026-09-06 原始内容缓存",
+          "actual": 3,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 220
+        }
+      ],
+      "durationMs": 507,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "64",
+      "title": "最小路径和",
+      "slug": "minimum-path-sum",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              [
+                1,
+                3,
+                1
+              ],
+              [
+                1,
+                5,
+                1
+              ],
+              [
+                4,
+                2,
+                1
+              ]
+            ]
+          ],
+          "expected": 7,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/minimum-path-sum/；2026-09-06 原始内容缓存",
+          "actual": 7,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 223
+        },
+        {
+          "input": [
+            [
+              [
+                1,
+                2,
+                3
+              ],
+              [
+                4,
+                5,
+                6
+              ]
+            ]
+          ],
+          "expected": 12,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/minimum-path-sum/；2026-09-06 原始内容缓存",
+          "actual": 12,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 239
+        }
+      ],
+      "durationMs": 529,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "5",
+      "title": "最长回文子串",
+      "slug": "longest-palindromic-substring",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            "babad"
+          ],
+          "expected": "bab",
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/longest-palindromic-substring/；2026-09-06 原始内容缓存",
+          "actual": "bab",
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 279
+        },
+        {
+          "input": [
+            "cbbd"
+          ],
+          "expected": "bb",
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/longest-palindromic-substring/；2026-09-06 原始内容缓存",
+          "actual": "bb",
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 261
+        }
+      ],
+      "durationMs": 629,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "1143",
+      "title": "最长公共子序列",
+      "slug": "longest-common-subsequence",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            "abcde",
+            "ace"
+          ],
+          "expected": 3,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/longest-common-subsequence/；2026-09-06 原始内容缓存",
+          "actual": 3,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 281
+        },
+        {
+          "input": [
+            "abc",
+            "abc"
+          ],
+          "expected": 3,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/longest-common-subsequence/；2026-09-06 原始内容缓存",
+          "actual": 3,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 274
+        },
+        {
+          "input": [
+            "abc",
+            "def"
+          ],
+          "expected": 0,
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/longest-common-subsequence/；2026-09-06 原始内容缓存",
+          "actual": 0,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 298
+        }
+      ],
+      "durationMs": 918,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "72",
+      "title": "编辑距离",
+      "slug": "edit-distance",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            "horse",
+            "ros"
+          ],
+          "expected": 3,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/edit-distance/；2026-09-06 原始内容缓存",
+          "actual": 3,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 287
+        },
+        {
+          "input": [
+            "intention",
+            "execution"
+          ],
+          "expected": 5,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/edit-distance/；2026-09-06 原始内容缓存",
+          "actual": 5,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 286
+        }
+      ],
+      "durationMs": 649,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "136",
+      "title": "只出现一次的数字",
+      "slug": "single-number",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              2,
+              2,
+              1
+            ]
+          ],
+          "expected": 1,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/single-number/；2026-09-06 原始内容缓存",
+          "actual": 1,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 310
+        },
+        {
+          "input": [
+            [
+              4,
+              1,
+              2,
+              1,
+              2
+            ]
+          ],
+          "expected": 4,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/single-number/；2026-09-06 原始内容缓存",
+          "actual": 4,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 278
+        },
+        {
+          "input": [
+            [
+              1
+            ]
+          ],
+          "expected": 1,
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/single-number/；2026-09-06 原始内容缓存",
+          "actual": 1,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 320
+        }
+      ],
+      "durationMs": 990,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "169",
+      "title": "多数元素",
+      "slug": "majority-element",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              3,
+              2,
+              3
+            ]
+          ],
+          "expected": 3,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/majority-element/；2026-09-06 原始内容缓存",
+          "actual": 3,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 298
+        },
+        {
+          "input": [
+            [
+              2,
+              2,
+              1,
+              1,
+              1,
+              2,
+              2
+            ]
+          ],
+          "expected": 2,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/majority-element/；2026-09-06 原始内容缓存",
+          "actual": 2,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 298
+        }
+      ],
+      "durationMs": 685,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "75",
+      "title": "颜色分类",
+      "slug": "sort-colors",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "cases": [
+        {
+          "input": [
+            [
+              2,
+              0,
+              2,
+              1,
+              1,
+              0
+            ]
+          ],
+          "expected": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/sort-colors/；2026-09-06 原始内容缓存",
+          "actual": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 287
+        },
+        {
+          "input": [
+            [
+              2,
+              0,
+              1
+            ]
+          ],
+          "expected": [
+            0,
+            1,
+            2
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/sort-colors/；2026-09-06 原始内容缓存",
+          "actual": [
+            0,
+            1,
+            2
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 318
+        }
+      ],
+      "durationMs": 694,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "31",
+      "title": "下一个排列",
+      "slug": "next-permutation",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "expected": [
+            1,
+            3,
+            2
+          ],
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/next-permutation/；2026-09-06 原始内容缓存",
+          "actual": [
+            1,
+            3,
+            2
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 341
+        },
+        {
+          "input": [
+            [
+              3,
+              2,
+              1
+            ]
+          ],
+          "expected": [
+            1,
+            2,
+            3
+          ],
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/next-permutation/；2026-09-06 原始内容缓存",
+          "actual": [
+            1,
+            2,
+            3
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 299
+        },
+        {
+          "input": [
+            [
+              1,
+              1,
+              5
+            ]
+          ],
+          "expected": [
+            1,
+            5,
+            1
+          ],
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/next-permutation/；2026-09-06 原始内容缓存",
+          "actual": [
+            1,
+            5,
+            1
+          ],
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 258
+        }
+      ],
+      "durationMs": 1002,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    },
+    {
+      "id": "287",
+      "title": "寻找重复数",
+      "slug": "find-the-duplicate-number",
+      "referenceSource": "scripts/catalog-reference-solutions.py",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "cases": [
+        {
+          "input": [
+            [
+              1,
+              3,
+              4,
+              2,
+              2
+            ]
+          ],
+          "expected": 2,
+          "source": "官方公开题面示例 1：https://leetcode.com/problems/find-the-duplicate-number/；2026-09-06 原始内容缓存",
+          "actual": 2,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 346
+        },
+        {
+          "input": [
+            [
+              3,
+              1,
+              3,
+              4,
+              2
+            ]
+          ],
+          "expected": 3,
+          "source": "官方公开题面示例 2：https://leetcode.com/problems/find-the-duplicate-number/；2026-09-06 原始内容缓存",
+          "actual": 3,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 292
+        },
+        {
+          "input": [
+            [
+              3,
+              3,
+              3,
+              3,
+              3
+            ]
+          ],
+          "expected": 3,
+          "source": "官方公开题面示例 3：https://leetcode.com/problems/find-the-duplicate-number/；2026-09-06 原始内容缓存",
+          "actual": 3,
+          "passed": true,
+          "stdout": "",
+          "stderr": "",
+          "error": null,
+          "durationMs": 246
+        }
+      ],
+      "durationMs": 979,
+      "language": "python",
+      "limits": {
+        "timeoutMs": 3000,
+        "outputBytes": 262144,
+        "memoryMb": 256
+      },
+      "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+    }
+  ]
+}

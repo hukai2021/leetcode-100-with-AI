@@ -1,0 +1,228 @@
+{
+  "generatedAt": "2026-09-08T01:03:39.772373+00:00",
+  "scope": "从本机真实记录按字段白名单提取；省略账户资料、对话正文、会话标识和本机路径。原始记录保留在开发机，不在公开仓库或源码附件中。",
+  "runs": [
+    {
+      "record": "desktop-flow.json",
+      "startedAt": "2026-09-07T01:57:00.785Z",
+      "completedAt": "2026-09-07T07:05:52.233Z",
+      "checks": [
+        {
+          "name": "独立 Windows 窗口已加载题面、Monaco、聊天",
+          "status": "passed",
+          "time": "2026-09-07T01:57:03.359Z"
+        },
+        {
+          "name": "官方账户认证可用",
+          "status": "passed",
+          "time": "2026-09-07T01:57:07.444Z"
+        },
+        {
+          "name": "真实错误代码批改",
+          "status": "passed",
+          "time": "2026-09-07T01:57:39.792Z"
+        },
+        {
+          "name": "独立 Windows 窗口已加载题面、Monaco、聊天",
+          "status": "passed",
+          "time": "2026-09-07T07:04:38.916Z"
+        },
+        {
+          "name": "官方账户认证可用",
+          "status": "passed",
+          "time": "2026-09-07T07:04:43.969Z"
+        },
+        {
+          "name": "真实错误代码批改",
+          "status": "passed",
+          "time": "2026-09-07T07:04:44.485Z"
+        },
+        {
+          "name": "右侧聊天窗口真实连续追问",
+          "status": "passed",
+          "time": "2026-09-07T07:05:16.178Z"
+        },
+        {
+          "name": "修正代码真实本地测试通过",
+          "status": "passed",
+          "time": "2026-09-07T07:05:17.768Z"
+        },
+        {
+          "name": "关闭并重启恢复草稿、笔记、进度、批改和对话",
+          "status": "passed",
+          "time": "2026-09-07T07:05:20.588Z"
+        },
+        {
+          "name": "重启后官方 thread/resume 连续对话",
+          "status": "passed",
+          "time": "2026-09-07T07:05:52.084Z"
+        }
+      ]
+    },
+    {
+      "record": "desktop-ai-controls.json",
+      "testedAt": "2026-09-07T07:17:21.612Z",
+      "completedAt": "2026-09-07T07:17:57.920Z",
+      "checks": [
+        {
+          "name": "正确代码真实AI批改完成",
+          "passed": true
+        },
+        {
+          "name": "生成过程中bootstrap可序列化，弹出窗口不会因活动任务失败",
+          "passed": true
+        },
+        {
+          "name": "真实 turn/interrupt 停止生成",
+          "passed": true
+        },
+        {
+          "name": "渲染器不暴露Node或进程API",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "record": "desktop-offline.json",
+      "testedAt": "2026-09-07T07:21:49.976Z",
+      "completedAt": "2026-09-07T07:22:11.640Z",
+      "checks": [
+        {
+          "name": "无浏览器网络时100题缓存及双语言模板可读取",
+          "passed": true
+        },
+        {
+          "name": "点击运行按钮执行Python代码，3个样例通过",
+          "passed": true
+        },
+        {
+          "name": "真实Python/C++格式化器可用",
+          "passed": true
+        },
+        {
+          "name": "点击运行按钮编译执行C++17代码，3个样例通过",
+          "passed": true
+        },
+        {
+          "name": "切题独立草稿/对话上下文",
+          "passed": true
+        },
+        {
+          "name": "切题、切语言后双语言草稿保持",
+          "passed": true
+        },
+        {
+          "name": "重置前快照可恢复",
+          "passed": true
+        },
+        {
+          "name": "独立聊天窗口可启动并读取本题上下文",
+          "passed": true
+        },
+        {
+          "name": "1366宽与125%缩放：无横向溢出，聊天输入框完整位于视口",
+          "passed": true
+        },
+        {
+          "name": "题面折叠/展开及可键盘调节分隔条",
+          "passed": true
+        },
+        {
+          "name": "最后输入后立即关闭窗口，重启笔记完整恢复",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "record": "chinese-desktop.json",
+      "testedAt": "2026-09-07T12:38:13.372Z",
+      "completedAt": "2026-09-07T12:38:53.157Z",
+      "checks": [
+        {
+          "name": "100道中文题面与247个原有样例加载",
+          "passed": true
+        },
+        {
+          "name": "逐题实际切换100道题：中文示例/约束/来源标识与离线图片均可见",
+          "passed": true
+        },
+        {
+          "name": "中文题面下 Python 代表题真实运行 128",
+          "passed": true
+        },
+        {
+          "name": "中文题面下 Python 代表题真实运行 160",
+          "passed": true
+        },
+        {
+          "name": "中文题面下 Python 代表题真实运行 142",
+          "passed": true
+        },
+        {
+          "name": "中文题面下 Python 代表题真实运行 146",
+          "passed": true
+        },
+        {
+          "name": "中文题面下 Python 代表题真实运行 31",
+          "passed": true
+        },
+        {
+          "name": "中文移动零题面下 C++17 真实编译运行",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "record": "chinese-installed.json",
+      "testedAt": "2026-09-08T00:43:13.024Z",
+      "completedAt": "2026-09-08T00:43:35.884Z",
+      "version": "0.1.1",
+      "checks": [
+        {
+          "name": "100道中文题面与247个原有样例加载",
+          "passed": true
+        },
+        {
+          "name": "逐题实际切换100道题：中文示例/约束/来源标识与离线图片均可见",
+          "passed": true
+        },
+        {
+          "name": "中文题面下 Python 代表题真实运行 128",
+          "passed": true
+        },
+        {
+          "name": "中文题面下 Python 代表题真实运行 160",
+          "passed": true
+        },
+        {
+          "name": "中文题面下 Python 代表题真实运行 142",
+          "passed": true
+        },
+        {
+          "name": "中文题面下 Python 代表题真实运行 146",
+          "passed": true
+        },
+        {
+          "name": "中文题面下 Python 代表题真实运行 31",
+          "passed": true
+        },
+        {
+          "name": "中文移动零题面下 C++17 真实编译运行",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "upgrade": {
+    "completedAt": "2026-09-07T12:43:59.9899727Z",
+    "version": "0.1.1",
+    "exitCode": 0,
+    "databaseUnchanged": true,
+    "installerBytes": 357610847,
+    "sha256": "D957F33B79F0126866C48C6446FE9DB5B32B1614E59F05D320B3CC3E3069EE9E",
+    "signature": "NotSigned",
+    "launchMethod": "Windows ShellExecute desktop shortcut",
+    "relaunchedAt": "2026-09-08T00:45:06.3899555Z"
+  },
+  "previousFailure": "首次连续追问遇到真实账户额度耗尽，后续额度恢复并重试成功；原始记录保留失败。"
+}

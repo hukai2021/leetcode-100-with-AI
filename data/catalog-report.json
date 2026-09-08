@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-09-07T07:03:04.109208+00:00",
+  "target": "https://leetcode.cn/studyplan/top-100-liked/",
+  "catalogCount": 100,
+  "availableCount": 100,
+  "chineseContentCount": 100,
+  "caseProblemCount": 100,
+  "caseCount": 247,
+  "missingCaseIds": [],
+  "failedIds": [],
+  "blockedRequests": [
+    "2026-09-06: leetcode.cn HTML and GraphQL from Python/Node returned HTTP 403 Cloudflare; no challenge bypass used."
+  ],
+  "scope": "100题中文题面（2题官方中文、98题基于缓存官方原文的本地译文），Python3/C++模板及247个官方公开样例；本次仅更新正文与来源元数据，用例、模板和函数签名不变。示意图全部离线嵌入。既有算法实测见历史报告，无官方判题或隐藏测试结果。",
+  "finalizedAt": "2026-09-07T12:34:28.086974+00:00",
+  "categoryCount": 17,
+  "difficultyCounts": {
+    "Easy": 20,
+    "Medium": 68,
+    "Hard": 12
+  },
+  "contentLanguages": {
+    "zh-CN": 100
+  },
+  "localPythonVerification": {
+    "problemsPassed": 100,
+    "problemsTotal": 100,
+    "casesPassed": 247,
+    "casesTotal": 247,
+    "executedAt": "2026-09-07T07:04:45.435Z",
+    "report": "docs/catalog-validation.json",
+    "referenceSource": "scripts/catalog-reference-solutions.py"
+  },
+  "offlineImages": {
+    "cachedUniqueUrls": 69,
+    "embeddedElements": 73,
+    "missing": [],
+    "report": "docs/catalog-assets.json",
+    "integrityReport": "docs/catalog-asset-integrity.json"
+  },
+  "localization": {
+    "officialChineseCount": 2,
+    "localTranslationCount": 98,
+    "report": "docs/chinese-localization.json"
+  }
+}

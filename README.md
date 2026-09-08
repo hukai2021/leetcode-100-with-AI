@@ -1,12 +1,16 @@
 # Hot100 AI Coach
 
+[下载 Windows 安装包](https://github.com/hukai2021/leetcode-100-with-AI/releases/download/v0.1.1/Hot100-AI-Coach-Setup-0.1.1-x64.exe) · [版本与附件](https://github.com/hukai2021/leetcode-100-with-AI/releases/tag/v0.1.1) · [验收摘要](docs/ACCEPTANCE.md)
+
 Windows 10/11 x64 桌面刷题软件：本地题库、Python 3 / C++17 编辑与真实运行、通过官方 Codex App Server 使用 ChatGPT 账户批改代码，以及每题独立的右侧辅导对话。
 
 已在 Windows Electron 窗口完成真实账户识别、算法代码批改、连续追问、修正代码测试、关闭重启恢复，并在重启后继续同一官方对话。准确验收范围和证据见 [验收记录](docs/ACCEPTANCE.md)。
 
-**已构建并安装验证。** 安装包为 `release/Hot100-AI-Coach-Setup-0.1.0-x64.exe`（357,608,574 字节，约 341 MiB）。已安装至 `%LOCALAPPDATA%\Programs\Hot100 AI Coach`，桌面已有「Hot100 AI Coach」快捷方式；通过 Windows 快捷方式启动后实际窗口已打开。安装版的账户连接、随包 Python/C++ 运行及格式化均已测试通过。
+**0.1.1 中文题面版已构建并安装验证。** 安装包为 `release/Hot100-AI-Coach-Setup-0.1.1-x64.exe`（357,610,847 字节，约 341 MiB）。安装后可通过桌面「Hot100 AI Coach」快捷方式启动。100 道题均显示中文题意、示例解释、约束及进阶要求；学习数据保留。
 
 安装包未做数字签名；Windows 可能显示未知发布者。本次已在 Windows 10 x64 实机安装运行，Windows 11 干净机器和多显示器环境尚未逐一验证。
+
+![中文题面与代码编辑界面](docs/screenshots/chinese-ui.png)
 
 ## 安装与首次登录
 
@@ -39,7 +43,7 @@ Windows 10/11 x64 桌面刷题软件：本地题库、Python 3 / C++17 编辑与
 
 ## 题库与本地判题范围
 
-当前缓存为官方 Hot 100 的 **100 题、247 个官方题面样例、两种语言模板**。中文标题及分类已核对；正文目前 **2 题中文、98 题官方英文**。中文站批量请求曾返回 HTTP 403，因此未伪造中文全文。可打开原题或导入合法获得的中文内容。69 个图示来源均已缓存，42 题中的 73 个图片元素已内嵌，题面文字、图片和用例均可离线读取。
+当前缓存为官方 Hot 100 的 **100 题中文题面、247 个官方题面样例、两种语言模板**。其中 2 题为官方中文正文，98 题依据项目已缓存的官方英文原文逐题翻译并交叉核对，在界面标记为「中文译文」，来源详情保留原文链接。原始英文缓存仍随源码保存。69 个图示来源均已缓存，42 题中的 73 个图片元素已内嵌；变量、公式、示例数据、代码模板及判题用例保持不变。
 
 Python 本地参考实现已通过全部 100 题的 247 个样例。C++ 已完成全部 100 题官方模板的编译与调用适配验证，另有代表性题型的真实算法测试；这不等于已经对全部 100 题 C++ 算法做过正确性验证。详见 [运行器与测试说明](docs/RUNNER.md)。
 
@@ -137,7 +141,7 @@ Markdown 文件的开头必须是 **JSON 元数据，不是 YAML**：把元数�
 
 ## 从源码构建
 
-已验证开发环境为 Windows x64、Node.js **24.19.0**。建议使用 Node 24；不要使用本机旧 Node 20。依赖版本锁在 `package-lock.json`。以下命令在项目根目录运行：
+已验证开发环境为 Windows x64、Node.js **24.19.0**。建议使用 Node 24，最低需要 Node 22.12。依赖版本锁在 `package-lock.json`。以下命令在项目根目录运行：
 
 ```powershell
 npm ci
@@ -179,9 +183,6 @@ node tests/desktop-flow.cjs
 | `data` | 官方题库、样例和来源记录 |
 | `runtime` | 随包运行依赖、许可、SHA256 清单 |
 | `scripts`、`tests` | 构建、采集、参考实现及实际测试 |
-| `docs` | 使用边界、验收 JSON 和桌面截图 |
+| `docs` | 使用边界、公开验收摘要、算法测试JSON和无账户信息的界面截图 |
 
-上游题目及运行依赖保留各自权利和许可。GCC 等依赖对应的完整上游源码压缩包作为单独附件保存在 `runtime/downloads/w64devkit-source-v2.9.1.tar`，不装入日常安装包；分发软件时应同时提供对应第三方许可与源码附件。
-
-#   l e e t c o d e - 1 0 0 - w i t h - A I  
- 
+上游题目及运行依赖保留各自权利和许可。GCC 等依赖对应的完整上游源码压缩包作为单独附件保存在 `runtime/downloads/w64devkit-source-v2.9.1.tar`，不装入日常安装包；[Release](https://github.com/hukai2021/leetcode-100-with-AI/releases/tag/v0.1.1) 提供该源码附件及许可。

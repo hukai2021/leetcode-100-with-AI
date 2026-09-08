@@ -1,0 +1,79 @@
+{
+  "name": "hot100-ai-coach",
+  "productName": "Hot100 AI Coach",
+  "version": "0.1.1",
+  "description": "本地刷题、真实测试与 ChatGPT 算法辅导",
+  "author": "Hot100 AI Coach",
+  "private": true,
+  "main": "electron/main.cjs",
+  "scripts": {
+    "build": "tsc --noEmit && vite build",
+    "start": "electron .",
+    "dev": "vite",
+    "test": "node --test tests/*.test.cjs",
+    "package": "npm run build && node scripts/prepare-package.cjs && electron-builder --win nsis --x64",
+    "package:dir": "npm run build && node scripts/prepare-package.cjs && electron-builder --win dir --x64"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "4.7.0",
+    "dompurify": "3.4.15",
+    "lucide-react": "1.41.0",
+    "monaco-editor": "0.56.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "react-markdown": "10.1.0",
+    "sql.js": "1.14.2"
+  },
+  "devDependencies": {
+    "@openai/codex": "0.153.4",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "@vitejs/plugin-react": "4.7.0",
+    "electron": "44.2.0",
+    "electron-builder": "26.15.3",
+    "playwright": "1.63.0",
+    "typescript": "7.0.2",
+    "vite": "6.4.3"
+  },
+  "build": {
+    "appId": "local.hot100.aicoach",
+    "productName": "Hot100 AI Coach",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "assets/**/*",
+      "data/problems.json",
+      "data/cases.json",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "runtime",
+        "to": "runtime",
+        "filter": [
+          "**/*",
+          "!downloads/**/*"
+        ]
+      }
+    ],
+    "asar": true,
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico",
+      "artifactName": "Hot100-AI-Coach-Setup-${version}-${arch}.${ext}",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Hot100 AI Coach",
+      "deleteAppDataOnUninstall": false
+    }
+  }
+}

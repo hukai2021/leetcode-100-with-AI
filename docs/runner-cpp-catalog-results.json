@@ -1,0 +1,710 @@
+{
+  "testedAt": "2026-09-07T02:00:46.442Z",
+  "kind": "Official C++17 template compile and adapter invocation. Deliberate exceptions; not algorithm correctness.",
+  "summary": {
+    "passed": 100,
+    "total": 100
+  },
+  "records": [
+    {
+      "id": "1",
+      "slug": "two-sum",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 5564
+    },
+    {
+      "id": "49",
+      "slug": "group-anagrams",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 5845
+    },
+    {
+      "id": "128",
+      "slug": "longest-consecutive-sequence",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 6637
+    },
+    {
+      "id": "283",
+      "slug": "move-zeroes",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 6285
+    },
+    {
+      "id": "11",
+      "slug": "container-with-most-water",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 5062
+    },
+    {
+      "id": "15",
+      "slug": "3sum",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 5516
+    },
+    {
+      "id": "42",
+      "slug": "trapping-rain-water",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 7183
+    },
+    {
+      "id": "3",
+      "slug": "longest-substring-without-repeating-characters",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 4969
+    },
+    {
+      "id": "438",
+      "slug": "find-all-anagrams-in-a-string",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 5373
+    },
+    {
+      "id": "560",
+      "slug": "subarray-sum-equals-k",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 4443
+    },
+    {
+      "id": "239",
+      "slug": "sliding-window-maximum",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 5680
+    },
+    {
+      "id": "76",
+      "slug": "minimum-window-substring",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 6988
+    },
+    {
+      "id": "53",
+      "slug": "maximum-subarray",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 6563
+    },
+    {
+      "id": "56",
+      "slug": "merge-intervals",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 5870
+    },
+    {
+      "id": "189",
+      "slug": "rotate-array",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 4706
+    },
+    {
+      "id": "238",
+      "slug": "product-of-array-except-self",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 5210
+    },
+    {
+      "id": "41",
+      "slug": "first-missing-positive",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 4956
+    },
+    {
+      "id": "73",
+      "slug": "set-matrix-zeroes",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 4001
+    },
+    {
+      "id": "54",
+      "slug": "spiral-matrix",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 4027
+    },
+    {
+      "id": "48",
+      "slug": "rotate-image",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 5375
+    },
+    {
+      "id": "240",
+      "slug": "search-a-2d-matrix-ii",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3727
+    },
+    {
+      "id": "160",
+      "slug": "intersection-of-two-linked-lists",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 5201
+    },
+    {
+      "id": "206",
+      "slug": "reverse-linked-list",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 4107
+    },
+    {
+      "id": "234",
+      "slug": "palindrome-linked-list",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 4407
+    },
+    {
+      "id": "141",
+      "slug": "linked-list-cycle",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 4109
+    },
+    {
+      "id": "142",
+      "slug": "linked-list-cycle-ii",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 4993
+    },
+    {
+      "id": "21",
+      "slug": "merge-two-sorted-lists",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 4324
+    },
+    {
+      "id": "2",
+      "slug": "add-two-numbers",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 4683
+    },
+    {
+      "id": "19",
+      "slug": "remove-nth-node-from-end-of-list",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 6014
+    },
+    {
+      "id": "24",
+      "slug": "swap-nodes-in-pairs",
+      "passed": true,
+      "cases": 4,
+      "durationMs": 5477
+    },
+    {
+      "id": "25",
+      "slug": "reverse-nodes-in-k-group",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 4818
+    },
+    {
+      "id": "138",
+      "slug": "copy-list-with-random-pointer",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 4683
+    },
+    {
+      "id": "148",
+      "slug": "sort-list",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 4323
+    },
+    {
+      "id": "23",
+      "slug": "merge-k-sorted-lists",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 6901
+    },
+    {
+      "id": "146",
+      "slug": "lru-cache",
+      "passed": true,
+      "cases": 1,
+      "durationMs": 3714
+    },
+    {
+      "id": "94",
+      "slug": "binary-tree-inorder-traversal",
+      "passed": true,
+      "cases": 4,
+      "durationMs": 5555
+    },
+    {
+      "id": "104",
+      "slug": "maximum-depth-of-binary-tree",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 5991
+    },
+    {
+      "id": "226",
+      "slug": "invert-binary-tree",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 3988
+    },
+    {
+      "id": "101",
+      "slug": "symmetric-tree",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 4018
+    },
+    {
+      "id": "543",
+      "slug": "diameter-of-binary-tree",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 4561
+    },
+    {
+      "id": "102",
+      "slug": "binary-tree-level-order-traversal",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 5281
+    },
+    {
+      "id": "108",
+      "slug": "convert-sorted-array-to-binary-search-tree",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 4795
+    },
+    {
+      "id": "98",
+      "slug": "validate-binary-search-tree",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 4940
+    },
+    {
+      "id": "230",
+      "slug": "kth-smallest-element-in-a-bst",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 4582
+    },
+    {
+      "id": "199",
+      "slug": "binary-tree-right-side-view",
+      "passed": true,
+      "cases": 4,
+      "durationMs": 3638
+    },
+    {
+      "id": "114",
+      "slug": "flatten-binary-tree-to-linked-list",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 4054
+    },
+    {
+      "id": "105",
+      "slug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3630
+    },
+    {
+      "id": "437",
+      "slug": "path-sum-iii",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3223
+    },
+    {
+      "id": "236",
+      "slug": "lowest-common-ancestor-of-a-binary-tree",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 3518
+    },
+    {
+      "id": "124",
+      "slug": "binary-tree-maximum-path-sum",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3208
+    },
+    {
+      "id": "200",
+      "slug": "number-of-islands",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3225
+    },
+    {
+      "id": "994",
+      "slug": "rotting-oranges",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 3653
+    },
+    {
+      "id": "207",
+      "slug": "course-schedule",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3270
+    },
+    {
+      "id": "208",
+      "slug": "implement-trie-prefix-tree",
+      "passed": true,
+      "cases": 1,
+      "durationMs": 2726
+    },
+    {
+      "id": "46",
+      "slug": "permutations",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 3347
+    },
+    {
+      "id": "78",
+      "slug": "subsets",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3156
+    },
+    {
+      "id": "17",
+      "slug": "letter-combinations-of-a-phone-number",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3141
+    },
+    {
+      "id": "39",
+      "slug": "combination-sum",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 3426
+    },
+    {
+      "id": "22",
+      "slug": "generate-parentheses",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3086
+    },
+    {
+      "id": "79",
+      "slug": "word-search",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 3330
+    },
+    {
+      "id": "131",
+      "slug": "palindrome-partitioning",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3437
+    },
+    {
+      "id": "51",
+      "slug": "n-queens",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3565
+    },
+    {
+      "id": "35",
+      "slug": "search-insert-position",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 3343
+    },
+    {
+      "id": "74",
+      "slug": "search-a-2d-matrix",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3191
+    },
+    {
+      "id": "34",
+      "slug": "find-first-and-last-position-of-element-in-sorted-array",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 3277
+    },
+    {
+      "id": "33",
+      "slug": "search-in-rotated-sorted-array",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 3210
+    },
+    {
+      "id": "153",
+      "slug": "find-minimum-in-rotated-sorted-array",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 3310
+    },
+    {
+      "id": "4",
+      "slug": "median-of-two-sorted-arrays",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3206
+    },
+    {
+      "id": "20",
+      "slug": "valid-parentheses",
+      "passed": true,
+      "cases": 5,
+      "durationMs": 3669
+    },
+    {
+      "id": "155",
+      "slug": "min-stack",
+      "passed": true,
+      "cases": 1,
+      "durationMs": 2866
+    },
+    {
+      "id": "394",
+      "slug": "decode-string",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 3426
+    },
+    {
+      "id": "739",
+      "slug": "daily-temperatures",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 3292
+    },
+    {
+      "id": "84",
+      "slug": "largest-rectangle-in-histogram",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3125
+    },
+    {
+      "id": "215",
+      "slug": "kth-largest-element-in-an-array",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3069
+    },
+    {
+      "id": "347",
+      "slug": "top-k-frequent-elements",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 3298
+    },
+    {
+      "id": "295",
+      "slug": "find-median-from-data-stream",
+      "passed": true,
+      "cases": 1,
+      "durationMs": 2828
+    },
+    {
+      "id": "121",
+      "slug": "best-time-to-buy-and-sell-stock",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3151
+    },
+    {
+      "id": "55",
+      "slug": "jump-game",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3113
+    },
+    {
+      "id": "45",
+      "slug": "jump-game-ii",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3101
+    },
+    {
+      "id": "763",
+      "slug": "partition-labels",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3078
+    },
+    {
+      "id": "70",
+      "slug": "climbing-stairs",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3219
+    },
+    {
+      "id": "118",
+      "slug": "pascals-triangle",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3136
+    },
+    {
+      "id": "198",
+      "slug": "house-robber",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3211
+    },
+    {
+      "id": "279",
+      "slug": "perfect-squares",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3256
+    },
+    {
+      "id": "322",
+      "slug": "coin-change",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 3340
+    },
+    {
+      "id": "139",
+      "slug": "word-break",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 3432
+    },
+    {
+      "id": "300",
+      "slug": "longest-increasing-subsequence",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 3382
+    },
+    {
+      "id": "152",
+      "slug": "maximum-product-subarray",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3070
+    },
+    {
+      "id": "416",
+      "slug": "partition-equal-subset-sum",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3368
+    },
+    {
+      "id": "32",
+      "slug": "longest-valid-parentheses",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 3482
+    },
+    {
+      "id": "62",
+      "slug": "unique-paths",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3179
+    },
+    {
+      "id": "64",
+      "slug": "minimum-path-sum",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3216
+    },
+    {
+      "id": "5",
+      "slug": "longest-palindromic-substring",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3162
+    },
+    {
+      "id": "1143",
+      "slug": "longest-common-subsequence",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 3247
+    },
+    {
+      "id": "72",
+      "slug": "edit-distance",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3125
+    },
+    {
+      "id": "136",
+      "slug": "single-number",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 3292
+    },
+    {
+      "id": "169",
+      "slug": "majority-element",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3153
+    },
+    {
+      "id": "75",
+      "slug": "sort-colors",
+      "passed": true,
+      "cases": 2,
+      "durationMs": 3138
+    },
+    {
+      "id": "31",
+      "slug": "next-permutation",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 3193
+    },
+    {
+      "id": "287",
+      "slug": "find-the-duplicate-number",
+      "passed": true,
+      "cases": 3,
+      "durationMs": 3239
+    }
+  ]
+}

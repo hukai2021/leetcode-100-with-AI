@@ -1,0 +1,17 @@
+{
+  "testedAt": "2026-09-07T07:05:15.338Z",
+  "results": [
+    {
+      "language": "python",
+      "formatter": "autopep8 2.3.2",
+      "formatted": "# 保留注释\nclass Solution:\n    def twoSum(self, nums, target):\n        return [0, 1]\n",
+      "executionPassed": true
+    },
+    {
+      "language": "cpp",
+      "formatter": "clang-format 23.1.0",
+      "formatted": "// 保留注释\nclass Solution {\n  public:\n    vector<int> twoSum(vector<int> &nums, int target) { return {0, 1}; }\n};",
+      "executionPassed": true
+    }
+  ]
+}

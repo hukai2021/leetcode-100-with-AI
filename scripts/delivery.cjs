@@ -1,0 +1,11 @@
+const fs=require('node:fs');const path=require('node:path');const {createHash}=require('node:crypto');
+fs.mkdirSync('release',{recursive:true});
+const hash=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const version=require('../package.json').version;
+const installer=`release/Hot100-AI-Coach-Setup-${version}-x64.exe`;
+const dependencies=Object.entries(require('../package.json').dependencies).map(([name,version])=>{const p=require(path.resolve('node_modules',name,'package.json'));return {name,version,license:p.license||null,repository:p.repository||p.homepage||null}});
+const manifest={version,generatedAt:new Date().toISOString(),platform:'Windows 10 x64 build 19045 (Windows 11 clean-machine testing not performed)',installer:{file:path.basename(installer),bytes:fs.statSync(installer).size,sha256:hash(installer),signature:'NotSigned'},sourceDirectories:['src','electron','data','assets','scripts','tests','docs'],runtime:JSON.parse(fs.readFileSync('runtime/manifest.json','utf8').replace(/^\uFEFF/,'')),dependencies,excludedFromSource:['.local','node_modules','release','dist','credential stores','learning databases'],tests:{chinese:'docs/chinese-localization.json',chineseDesktop:'docs/test-evidence/chinese-desktop.json',chineseInstalled:'docs/test-evidence/chinese-installed.json',chineseUpgrade:'docs/test-evidence/chinese-upgrade.json',ai:'docs/test-evidence/desktop-flow.json',aiControls:'docs/test-evidence/desktop-ai-controls.json',desktop:'docs/test-evidence/desktop-offline.json',installed:'docs/test-evidence/installed-smoke.json',pythonCatalog:'docs/catalog-validation.json',cppAdapters:'docs/runner-cpp-catalog-results.json',runtime:'docs/runner-test-results.json'}};
+fs.writeFileSync('release/DELIVERY.json',JSON.stringify(manifest,null,2));
+fs.writeFileSync('docs/DEPENDENCIES.json',JSON.stringify({generatedAt:manifest.generatedAt,dependencies,runtime:manifest.runtime},null,2));
+fs.copyFileSync('README.md','release/中文使用说明.md');fs.copyFileSync('docs/ACCEPTANCE.md','release/实际测试与验收记录.md');
+console.log('交付清单及说明已生成');

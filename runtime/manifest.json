@@ -1,0 +1,25 @@
+{
+  "platform": "win32-x64",
+  "verifiedAt": "2026-09-06",
+  "python": {
+    "version": "3.13.15",
+    "upstream": "https://www.python.org/downloads/windows/",
+    "url": "https://www.python.org/ftp/python/3.13.15/python-3.13.15-embed-amd64.zip",
+    "sha256": "d1f04d990aee1253d8569e8e5104e30fa9f5fa830899f14843448872d936a2cf",
+    "license": "python/LICENSE.txt"
+  },
+  "cpp": {
+    "distribution": "w64devkit 2.9.1",
+    "version": "GCC 16.2.0",
+    "upstream": "https://github.com/skeeto/w64devkit/releases/tag/v2.9.1",
+    "url": "https://github.com/skeeto/w64devkit/releases/download/v2.9.1/w64devkit-x64-2.9.1.7z.exe",
+    "sha256": "9208c19755cd4964b7915b9afcf02c66d493a4c870c4b3e83f6c538d9c1237a5",
+    "sourceUrl": "https://github.com/skeeto/w64devkit/releases/download/v2.9.1/source.tar",
+    "sourceSha256": "d9be3950813fef00404e9ba5d9b42fa9a229fb29b7b375053beca592d5da809c",
+    "sourceArchive": "downloads/w64devkit-source-v2.9.1.tar",
+    "licenses": "licenses/COPYING*; w64devkit/COPYING.MinGW-w64-runtime.txt; additional component licenses are contained in the matching source archive"
+  },
+  "jobLauncher": "Built from scripts/runner-job.cs using Windows .NET Framework 4 C# compiler",
+  "formatters": {"autopep8": "2.3.2", "pycodestyle": "2.14.0", "clang-format": "23.1.0", "source": "https://pypi.org/", "licenses": "formatters/*dist-info/LICENSE or licenses/"},
+  "security": "Job Object is a resource/lifetime guard, not a filesystem or network sandbox. Runtime code has the current user permissions."
+}

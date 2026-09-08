@@ -1,0 +1,623 @@
+{
+  "https://assets.leetcode.com/uploads/2018/10/22/rainwatertrap.png": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2018/10/22/rainwatertrap.png",
+    "verifiedAt": "2026-09-07T07:09:00.356476+00:00",
+    "path": "data/assets/b016d05ee3a8eed86b50.png",
+    "mimeType": "image/png",
+    "bytes": 7848,
+    "sha256": "b016d05ee3a8eed86b505df491b6c8e424e47c4b964c13c009870b9b717b1ea2"
+  },
+  "https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png",
+    "verifiedAt": "2026-09-07T07:09:00.357592+00:00",
+    "path": "data/assets/0d20ad91997e3af0b018.png",
+    "mimeType": "image/png",
+    "bytes": 9685,
+    "sha256": "0d20ad91997e3af0b01800691e56c7d1e5aa6c00fb2984d87e3193f34029b540"
+  },
+  "https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png",
+    "verifiedAt": "2026-09-07T07:09:00.359164+00:00",
+    "path": "data/assets/1869c60c6fe4c1a59fdc.png",
+    "mimeType": "image/png",
+    "bytes": 11301,
+    "sha256": "1869c60c6fe4c1a59fdcfb853132b00d57f538b45c443ffbc10cc44cb1ddf567"
+  },
+  "https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png",
+    "verifiedAt": "2026-09-07T07:09:01.501929+00:00",
+    "path": "data/assets/cc15a23b6081e840d87c.png",
+    "mimeType": "image/png",
+    "bytes": 4582,
+    "sha256": "cc15a23b6081e840d87cf7a2dd98273b6f63c0864183754ce2d1e72261471b2a"
+  },
+  "https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png",
+    "verifiedAt": "2026-09-07T07:09:01.526508+00:00",
+    "path": "data/assets/034aa9d397f09df7c03f.png",
+    "mimeType": "image/png",
+    "bytes": 1963,
+    "sha256": "034aa9d397f09df7c03fd0064fa71a775a84ef6f6be220d2270381a38157208d"
+  },
+  "https://assets.leetcode.com/uploads/2018/12/14/binarytree.png": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2018/12/14/binarytree.png",
+    "verifiedAt": "2026-09-07T07:09:01.737278+00:00",
+    "path": "data/assets/feae798280dd6256de43.png",
+    "mimeType": "image/png",
+    "bytes": 7530,
+    "sha256": "feae798280dd6256de4340295d6a87b90787ca9aaac859d92fbc5708fbd4c9f0"
+  },
+  "https://assets.leetcode.com/uploads/2019/02/16/oranges.png": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2019/02/16/oranges.png",
+    "verifiedAt": "2026-09-07T07:09:02.302168+00:00",
+    "path": "data/assets/389e767470d1f33e7330.png",
+    "mimeType": "image/png",
+    "bytes": 42586,
+    "sha256": "389e767470d1f33e7330168071a721a71f16ad08f0ce42bc621cfa9b374661c8"
+  },
+  "https://assets.leetcode.com/uploads/2019/12/18/e1.png": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2019/12/18/e1.png",
+    "verifiedAt": "2026-09-07T07:09:02.435781+00:00",
+    "path": "data/assets/fbaaa1177b5822dffbc4.png",
+    "mimeType": "image/png",
+    "bytes": 62511,
+    "sha256": "fbaaa1177b5822dffbc432c38e86e2915622661427c6710cf1a1d315b4eb5583"
+  },
+  "https://assets.leetcode.com/uploads/2019/12/18/e2.png": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2019/12/18/e2.png",
+    "verifiedAt": "2026-09-07T07:09:02.835143+00:00",
+    "path": "data/assets/0976f258daf2b2a54c0a.png",
+    "mimeType": "image/png",
+    "bytes": 36354,
+    "sha256": "0976f258daf2b2a54c0a8160b5c38cf23a4d804bde462930ebdee78e8a780fe2"
+  },
+  "https://assets.leetcode.com/uploads/2019/12/18/e3.png": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2019/12/18/e3.png",
+    "verifiedAt": "2026-09-07T07:09:02.857756+00:00",
+    "path": "data/assets/2b825a8b0e4ed32c98b0.png",
+    "mimeType": "image/png",
+    "bytes": 48603,
+    "sha256": "2b825a8b0e4ed32c98b0c9e74d8b0bd0cf1caa1af6f906a6e1a6f198be811fb9"
+  },
+  "https://assets.leetcode.com/uploads/2020/08/17/mat1.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/08/17/mat1.jpg",
+    "verifiedAt": "2026-09-07T07:09:03.172073+00:00",
+    "path": "data/assets/e78d0a6c3007c1563be2.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 13796,
+    "sha256": "e78d0a6c3007c1563be2a0fd708c95a9fa2986ec7878320ef22ea52156f50a4e"
+  },
+  "https://assets.leetcode.com/uploads/2020/08/17/mat2.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/08/17/mat2.jpg",
+    "verifiedAt": "2026-09-07T07:09:03.427349+00:00",
+    "path": "data/assets/b6a8cf837160d5551a10.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 21603,
+    "sha256": "b6a8cf837160d5551a108abb010206b60b43c0425df595cda20a8cf324a6438c"
+  },
+  "https://assets.leetcode.com/uploads/2020/08/28/mat1.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/08/28/mat1.jpg",
+    "verifiedAt": "2026-09-07T07:09:03.676534+00:00",
+    "path": "data/assets/d906842cd222e68cfbcd.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 16754,
+    "sha256": "d906842cd222e68cfbcd8ce98c052b5100c2388a23e959411a1221376464db58"
+  },
+  "https://assets.leetcode.com/uploads/2020/08/28/mat2.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/08/28/mat2.jpg",
+    "verifiedAt": "2026-09-07T07:09:03.916774+00:00",
+    "path": "data/assets/0339cf8f3f7ab69964af.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 31770,
+    "sha256": "0339cf8f3f7ab69964affe676241648ac2a6ada6b63c3f0c7c737b458e97df01"
+  },
+  "https://assets.leetcode.com/uploads/2020/09/14/sort_list_1.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/09/14/sort_list_1.jpg",
+    "verifiedAt": "2026-09-07T07:09:04.314532+00:00",
+    "path": "data/assets/2a44783a0482196a9693.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 21123,
+    "sha256": "2a44783a0482196a9693236ac88abdb9dbb2a37d914ed5fc0796d8d98d56b1f9"
+  },
+  "https://assets.leetcode.com/uploads/2020/09/14/sort_list_2.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/09/14/sort_list_2.jpg",
+    "verifiedAt": "2026-09-07T07:09:04.337555+00:00",
+    "path": "data/assets/6dee45205ce844da7eff.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 26470,
+    "sha256": "6dee45205ce844da7effa5083b9e467047d82395ff016dda461d8f447dbe7f06"
+  },
+  "https://assets.leetcode.com/uploads/2020/10/02/addtwonumber1.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/10/02/addtwonumber1.jpg",
+    "verifiedAt": "2026-09-07T07:09:04.584348+00:00",
+    "path": "data/assets/cca5af59ccd4e3eed06f.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 19627,
+    "sha256": "cca5af59ccd4e3eed06f079e54c8e05cd4c0561c596e1dee7d1ff11fb6710d76"
+  },
+  "https://assets.leetcode.com/uploads/2020/10/03/merge_ex1.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/10/03/merge_ex1.jpg",
+    "verifiedAt": "2026-09-07T07:09:04.706418+00:00",
+    "path": "data/assets/90a091941ce944f57435.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 26408,
+    "sha256": "90a091941ce944f574352dab91c97e5e754aef7a4b12598097414d7afe5fcff9"
+  },
+  "https://assets.leetcode.com/uploads/2020/10/03/remove_ex1.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/10/03/remove_ex1.jpg",
+    "verifiedAt": "2026-09-07T07:09:04.928203+00:00",
+    "path": "data/assets/35c75c8b745680a95679.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 18128,
+    "sha256": "35c75c8b745680a95679103724e8cf2be5997140952b9925a2f35ec653421a38"
+  },
+  "https://assets.leetcode.com/uploads/2020/10/03/reverse_ex1.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/10/03/reverse_ex1.jpg",
+    "verifiedAt": "2026-09-07T07:09:05.095650+00:00",
+    "path": "data/assets/7132640c7a542c3525aa.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 19377,
+    "sha256": "7132640c7a542c3525aa21e4af4dfb5e2ffa237accc3fc8b070fae1195681093"
+  },
+  "https://assets.leetcode.com/uploads/2020/10/03/reverse_ex2.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/10/03/reverse_ex2.jpg",
+    "verifiedAt": "2026-09-07T07:09:05.223371+00:00",
+    "path": "data/assets/004975cbc7a9fa40fd5a.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 18884,
+    "sha256": "004975cbc7a9fa40fd5adf505ad6e74282de4cc8bac33136c12025db0fb4cd33"
+  },
+  "https://assets.leetcode.com/uploads/2020/10/03/swap_ex1.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/10/03/swap_ex1.jpg",
+    "verifiedAt": "2026-09-07T07:09:05.735481+00:00",
+    "path": "data/assets/a577d7e6175fd9975e14.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 15677,
+    "sha256": "a577d7e6175fd9975e14adc261a27377dc29a769e3096578f2610007e35cbe76"
+  },
+  "https://assets.leetcode.com/uploads/2020/10/05/mat.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/10/05/mat.jpg",
+    "verifiedAt": "2026-09-07T07:09:05.764114+00:00",
+    "path": "data/assets/9c223e910078177c855f.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 13466,
+    "sha256": "9c223e910078177c855f1b3b1a9b0d9449e440e414c9fa44cff88e1b20add3af"
+  },
+  "https://assets.leetcode.com/uploads/2020/10/05/mat2.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/10/05/mat2.jpg",
+    "verifiedAt": "2026-09-07T07:09:07.899165+00:00",
+    "path": "data/assets/81a828f24e23829eb89a.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 13298,
+    "sha256": "81a828f24e23829eb89a1c0367fb9da8b3e56737d2e7712f515fa9d0f680baf2"
+  },
+  "https://assets.leetcode.com/uploads/2020/10/13/exx1.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/10/13/exx1.jpg",
+    "verifiedAt": "2026-09-07T07:09:07.948468+00:00",
+    "path": "data/assets/26b8c8c3a57643297660.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 6990,
+    "sha256": "26b8c8c3a57643297660340b141f258ae57d12a4d1599d022cff01b0fbad6338"
+  },
+  "https://assets.leetcode.com/uploads/2020/10/13/exx2.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/10/13/exx2.jpg",
+    "verifiedAt": "2026-09-07T07:09:08.059507+00:00",
+    "path": "data/assets/952a26627d709d426f01.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 13062,
+    "sha256": "952a26627d709d426f0103faa4a36a8384342bd99cf8ed7ab8f33096c720554f"
+  },
+  "https://assets.leetcode.com/uploads/2020/10/15/word3.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/10/15/word3.jpg",
+    "verifiedAt": "2026-09-07T07:09:08.509812+00:00",
+    "path": "data/assets/e8c1ea8e6ae801764fed.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 11280,
+    "sha256": "e8c1ea8e6ae801764fed4d4b460407165e3781d2a9c87e2eadc356ca583acc6f"
+  },
+  "https://assets.leetcode.com/uploads/2020/11/04/word-1.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/11/04/word-1.jpg",
+    "verifiedAt": "2026-09-07T07:09:08.604260+00:00",
+    "path": "data/assets/af467dec65006220adbe.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 12448,
+    "sha256": "af467dec65006220adbeb983ea594fdf6f9bb8f92b4a18e208c41be3764233be"
+  },
+  "https://assets.leetcode.com/uploads/2020/11/04/word2.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/11/04/word2.jpg",
+    "verifiedAt": "2026-09-07T07:09:08.613904+00:00",
+    "path": "data/assets/79918439c4ca50a4ea84.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 13241,
+    "sha256": "79918439c4ca50a4ea84c23c14bf5f75465c6cf5a9ddf2052a768eff232b33d6"
+  },
+  "https://assets.leetcode.com/uploads/2020/11/05/minpath.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/11/05/minpath.jpg",
+    "verifiedAt": "2026-09-07T07:09:08.838478+00:00",
+    "path": "data/assets/f00d3337e1b710fa8534.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 8495,
+    "sha256": "f00d3337e1b710fa8534344caf8c3ef18d15ddc8e7e4af3280f83d804377f552"
+  },
+  "https://assets.leetcode.com/uploads/2020/11/13/queens.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/11/13/queens.jpg",
+    "verifiedAt": "2026-09-07T07:09:08.874323+00:00",
+    "path": "data/assets/9e4a12ea5d25e23b1c1f.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 31523,
+    "sha256": "9e4a12ea5d25e23b1c1f40c84208997d0f1559c478afc33d0f6e3fe0e04a516f"
+  },
+  "https://assets.leetcode.com/uploads/2020/11/13/spiral.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/11/13/spiral.jpg",
+    "verifiedAt": "2026-09-07T07:09:11.027386+00:00",
+    "path": "data/assets/9bf084bc4106f0b6cf78.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 14152,
+    "sha256": "9bf084bc4106f0b6cf78822f53eaba27c79277a49efe3f3cd6ca185e8f8eeb17"
+  },
+  "https://assets.leetcode.com/uploads/2020/11/13/spiral1.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/11/13/spiral1.jpg",
+    "verifiedAt": "2026-09-07T07:09:15.102704+00:00",
+    "path": "data/assets/aaafaf48b199b8cbcbe5.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 10159,
+    "sha256": "aaafaf48b199b8cbcbe59c169de2a03dcde8f4623c410b941d69184df0e4b18a"
+  },
+  "https://assets.leetcode.com/uploads/2020/11/24/searchgrid.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/11/24/searchgrid.jpg",
+    "verifiedAt": "2026-09-07T07:09:16.019565+00:00",
+    "path": "data/assets/67d37fa2323519f1ea2c.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 26187,
+    "sha256": "67d37fa2323519f1ea2c5e952db3ff32bea34ced98b284d587fb43f6dfee09d5"
+  },
+  "https://assets.leetcode.com/uploads/2020/11/24/searchgrid2.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/11/24/searchgrid2.jpg",
+    "verifiedAt": "2026-09-07T07:09:17.031393+00:00",
+    "path": "data/assets/4fe09cd4bf1c32016d2d.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 26336,
+    "sha256": "4fe09cd4bf1c32016d2d7c7b12835ecf9604516a79010ec0136f3c2ae409b51f"
+  },
+  "https://assets.leetcode.com/uploads/2020/11/26/tmp-tree.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/11/26/tmp-tree.jpg",
+    "verifiedAt": "2026-09-07T07:09:21.032254+00:00",
+    "path": "data/assets/dd545aade79ce83d6f39.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 12823,
+    "sha256": "dd545aade79ce83d6f39b96421c9c4fa57e7a1a6f33cb7a1ed5af6cd2469f00c"
+  },
+  "https://assets.leetcode.com/uploads/2020/12/01/tree1.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/12/01/tree1.jpg",
+    "verifiedAt": "2026-09-07T07:09:21.060891+00:00",
+    "path": "data/assets/10ee346df62af0e4339b.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 6825,
+    "sha256": "10ee346df62af0e4339b8483ba21a6c8fb8c7cf9e1d1bc0018b5a2922741bb74"
+  },
+  "https://assets.leetcode.com/uploads/2020/12/01/tree2.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2020/12/01/tree2.jpg",
+    "verifiedAt": "2026-09-07T07:09:22.026013+00:00",
+    "path": "data/assets/9e5b68796e3137c3037c.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 12328,
+    "sha256": "9e5b68796e3137c3037cbd7126ad0b2c9e2214c2334c808f08ba3c30cebe6339"
+  },
+  "https://assets.leetcode.com/uploads/2021/01/04/histogram-1.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/01/04/histogram-1.jpg",
+    "verifiedAt": "2026-09-07T07:09:31.236786+00:00",
+    "path": "data/assets/65c572040fc605a08e06.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 6900,
+    "sha256": "65c572040fc605a08e0674592fdb730a62ccf5bc3b478ec2788240e4e20c7ccf"
+  },
+  "https://assets.leetcode.com/uploads/2021/01/04/histogram.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/01/04/histogram.jpg",
+    "verifiedAt": "2026-09-07T07:09:35.029956+00:00",
+    "path": "data/assets/ff27f42456cd292f2f7f.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 12560,
+    "sha256": "ff27f42456cd292f2f7f875f6b1fdb8b3a997a6da8cc6355978cdfa1de10702a"
+  },
+  "https://assets.leetcode.com/uploads/2021/01/14/flaten.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/01/14/flaten.jpg",
+    "verifiedAt": "2026-09-07T07:09:37.448620+00:00",
+    "path": "data/assets/5c002b3a1fd3f0a3e58c.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 29570,
+    "sha256": "5c002b3a1fd3f0a3e58c0bd47b063ca7846a66a4d9f154fe4f3885d8d91534b4"
+  },
+  "https://assets.leetcode.com/uploads/2021/01/28/kthtree1.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/01/28/kthtree1.jpg",
+    "verifiedAt": "2026-09-07T07:09:38.033577+00:00",
+    "path": "data/assets/e2cf52270df27182d656.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 8694,
+    "sha256": "e2cf52270df27182d65661247fb2c23a0ce37c535b9275d9d98d82b663edc548"
+  },
+  "https://assets.leetcode.com/uploads/2021/01/28/kthtree2.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/01/28/kthtree2.jpg",
+    "verifiedAt": "2026-09-07T07:09:38.106856+00:00",
+    "path": "data/assets/797c3a7eec5f92a7915c.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 11740,
+    "sha256": "797c3a7eec5f92a7915c85761245aa75015cafaf3d9eb7ff948539475e52c646"
+  },
+  "https://assets.leetcode.com/uploads/2021/02/18/btree.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/02/18/btree.jpg",
+    "verifiedAt": "2026-09-07T07:09:38.152079+00:00",
+    "path": "data/assets/44e573815bdd5860ffd6.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 7104,
+    "sha256": "44e573815bdd5860ffd6f8ced2401c20abc0ea1942f0261701883c7300b6cefa"
+  },
+  "https://assets.leetcode.com/uploads/2021/02/18/btree1.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/02/18/btree1.jpg",
+    "verifiedAt": "2026-09-07T07:09:38.396993+00:00",
+    "path": "data/assets/210eeb59efbf6872e954.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 9860,
+    "sha256": "210eeb59efbf6872e954866b653424de4117cadc43b3f3ab9710b97bfcea7e1b"
+  },
+  "https://assets.leetcode.com/uploads/2021/02/18/btree2.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/02/18/btree2.jpg",
+    "verifiedAt": "2026-09-07T07:09:38.433068+00:00",
+    "path": "data/assets/08b46463fa36ed1db4b1.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 9935,
+    "sha256": "08b46463fa36ed1db4b171f0511e19b2dfe7c18f2801a80867a9050a6593d823"
+  },
+  "https://assets.leetcode.com/uploads/2021/02/19/rev1ex1.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/02/19/rev1ex1.jpg",
+    "verifiedAt": "2026-09-07T07:09:39.904893+00:00",
+    "path": "data/assets/8a1642bcf208c4cd5abb.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 19131,
+    "sha256": "8a1642bcf208c4cd5abb60f9c1abf1a8a959e0350197831d824b235475711d6e"
+  },
+  "https://assets.leetcode.com/uploads/2021/02/19/rev1ex2.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/02/19/rev1ex2.jpg",
+    "verifiedAt": "2026-09-07T07:09:39.948273+00:00",
+    "path": "data/assets/e9b523f585c797841822.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 7808,
+    "sha256": "e9b523f585c79784182250e04a258156e4ab62ce0057de144ee0395e411ab220"
+  },
+  "https://assets.leetcode.com/uploads/2021/02/19/symtree1.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/02/19/symtree1.jpg",
+    "verifiedAt": "2026-09-07T07:09:40.292247+00:00",
+    "path": "data/assets/3168cbae5b75f2f7d61b.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 15374,
+    "sha256": "3168cbae5b75f2f7d61b67e1a06c0ec35aaf87359383c903c188f0f983ca8485"
+  },
+  "https://assets.leetcode.com/uploads/2021/02/19/symtree2.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/02/19/symtree2.jpg",
+    "verifiedAt": "2026-09-07T07:09:40.665948+00:00",
+    "path": "data/assets/61aa11cb1873dd7812ea.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 10207,
+    "sha256": "61aa11cb1873dd7812ea0d6f9ea21ab848e993aa9746733e44c764a5d97ef87b"
+  },
+  "https://assets.leetcode.com/uploads/2021/02/19/tree.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/02/19/tree.jpg",
+    "verifiedAt": "2026-09-07T07:09:40.697481+00:00",
+    "path": "data/assets/3eb710807f6f5b8c8d0d.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 11138,
+    "sha256": "3eb710807f6f5b8c8d0d8b09c12c866b6eacfa56614aea0f48c062dc78ff0817"
+  },
+  "https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg",
+    "verifiedAt": "2026-09-07T07:09:40.880220+00:00",
+    "path": "data/assets/a7b9a0e897e18faeb48b.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 11387,
+    "sha256": "a7b9a0e897e18faeb48b320153e58043a8d1fbc25287fb8ac9aad99ddd973510"
+  },
+  "https://assets.leetcode.com/uploads/2021/03/03/pal1linked-list.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/03/03/pal1linked-list.jpg",
+    "verifiedAt": "2026-09-07T07:09:40.903934+00:00",
+    "path": "data/assets/36a34896fbbf8c55a096.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 7140,
+    "sha256": "36a34896fbbf8c55a096d4a52bdc4734ce9ed1c74d83ac9a1db0f9f896cd50e1"
+  },
+  "https://assets.leetcode.com/uploads/2021/03/03/pal2linked-list.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/03/03/pal2linked-list.jpg",
+    "verifiedAt": "2026-09-07T07:09:41.734788+00:00",
+    "path": "data/assets/94f7ec420fdefbbe16bc.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 3572,
+    "sha256": "94f7ec420fdefbbe16bc93bca2645c1ab9267141d829672e5d5d7825f57e862d"
+  },
+  "https://assets.leetcode.com/uploads/2021/03/05/160_example_1_1.png": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/03/05/160_example_1_1.png",
+    "verifiedAt": "2026-09-07T07:09:41.907686+00:00",
+    "path": "data/assets/96c9fa196ea5a3980524.png",
+    "mimeType": "image/png",
+    "bytes": 18901,
+    "sha256": "96c9fa196ea5a3980524083fbb71db53e9d9a64cd1e347a1b35b64352cf3f845"
+  },
+  "https://assets.leetcode.com/uploads/2021/03/05/160_example_2.png": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/03/05/160_example_2.png",
+    "verifiedAt": "2026-09-07T07:09:42.043408+00:00",
+    "path": "data/assets/6d7a8104bb64e883fce0.png",
+    "mimeType": "image/png",
+    "bytes": 16391,
+    "sha256": "6d7a8104bb64e883fce08cd667193e27e71d48eb45093a874dfc8ac81e383188"
+  },
+  "https://assets.leetcode.com/uploads/2021/03/05/160_example_3.png": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/03/05/160_example_3.png",
+    "verifiedAt": "2026-09-07T07:09:42.185833+00:00",
+    "path": "data/assets/598e301421e11df1fee6.png",
+    "mimeType": "image/png",
+    "bytes": 11092,
+    "sha256": "598e301421e11df1fee6c64747cb9440146aa9cc37b45cfec992449527906d6c"
+  },
+  "https://assets.leetcode.com/uploads/2021/03/05/160_statement.png": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/03/05/160_statement.png",
+    "verifiedAt": "2026-09-07T07:09:42.245319+00:00",
+    "path": "data/assets/fc8be34b561dc5256723.png",
+    "mimeType": "image/png",
+    "bytes": 19796,
+    "sha256": "fc8be34b561dc52567230e7c4622bb40546a19839a0244d6d1634dd42f38bf66"
+  },
+  "https://assets.leetcode.com/uploads/2021/03/06/diamtree.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/03/06/diamtree.jpg",
+    "verifiedAt": "2026-09-07T07:09:42.685124+00:00",
+    "path": "data/assets/e6df9a0813b186564598.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 10828,
+    "sha256": "e6df9a0813b1865645988243a6092a75234330dbf3e7d878ed6d64e8f3dda3c2"
+  },
+  "https://assets.leetcode.com/uploads/2021/03/14/invert1-tree.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/03/14/invert1-tree.jpg",
+    "verifiedAt": "2026-09-07T07:09:43.016566+00:00",
+    "path": "data/assets/3241d90c7458408b21f1.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 34272,
+    "sha256": "3241d90c7458408b21f146e36a60fb75840fdeca199ac0bfdb11e172e40856c7"
+  },
+  "https://assets.leetcode.com/uploads/2021/03/14/invert2-tree.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/03/14/invert2-tree.jpg",
+    "verifiedAt": "2026-09-07T07:09:43.318585+00:00",
+    "path": "data/assets/fda8a199fd912ec4282d.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 15045,
+    "sha256": "fda8a199fd912ec4282d3244e182612e7b144b0834e07f880da610d000eae796"
+  },
+  "https://assets.leetcode.com/uploads/2021/04/09/pathsum3-1-tree.jpg": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2021/04/09/pathsum3-1-tree.jpg",
+    "verifiedAt": "2026-09-07T07:09:43.540516+00:00",
+    "path": "data/assets/60a1cbeee66911115d23.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 42148,
+    "sha256": "60a1cbeee66911115d238328ee26890e006b74955d83a5b575a7cdb50cdf945e"
+  },
+  "https://assets.leetcode.com/uploads/2022/03/15/1200px-telephone-keypad2svg.png": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2022/03/15/1200px-telephone-keypad2svg.png",
+    "verifiedAt": "2026-09-07T07:09:44.160540+00:00",
+    "path": "data/assets/298134a0c91db5427f86.png",
+    "mimeType": "image/png",
+    "bytes": 310876,
+    "sha256": "298134a0c91db5427f8624b243e95e3dbc17fbf98beca0156b5a67c024d3daf6"
+  },
+  "https://assets.leetcode.com/uploads/2024/08/29/screenshot-2024-08-29-202743.png": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2024/08/29/screenshot-2024-08-29-202743.png",
+    "verifiedAt": "2026-09-07T07:09:44.167955+00:00",
+    "path": "data/assets/5a16da4cb2647424eef8.png",
+    "mimeType": "image/png",
+    "bytes": 9438,
+    "sha256": "5a16da4cb2647424eef84a810a4776e27f84f6d0b1822e01a15c527fdc8f08b9"
+  },
+  "https://assets.leetcode.com/uploads/2024/08/29/tree_2.png": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2024/08/29/tree_2.png",
+    "verifiedAt": "2026-09-07T07:09:44.618100+00:00",
+    "path": "data/assets/8aa6d57e639930cfb1de.png",
+    "mimeType": "image/png",
+    "bytes": 26052,
+    "sha256": "8aa6d57e639930cfb1de9c0337c7b71dbd03c52f08bce71ae3f6ba74271994d9"
+  },
+  "https://assets.leetcode.com/uploads/2024/11/24/tmpd5jn43fs-1.png": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2024/11/24/tmpd5jn43fs-1.png",
+    "verifiedAt": "2026-09-07T07:09:44.774936+00:00",
+    "path": "data/assets/9069af61e5fcb28e78ea.png",
+    "mimeType": "image/png",
+    "bytes": 13025,
+    "sha256": "9069af61e5fcb28e78ea0dc43c0343f5c2d4a65d7d5a9b150d22d9280ac332a3"
+  },
+  "https://assets.leetcode.com/uploads/2024/11/24/tmpkpe40xeh-1.png": {
+    "status": "cached",
+    "url": "https://assets.leetcode.com/uploads/2024/11/24/tmpkpe40xeh-1.png",
+    "verifiedAt": "2026-09-07T07:09:45.040196+00:00",
+    "path": "data/assets/53ec82a4f77d9d683102.png",
+    "mimeType": "image/png",
+    "bytes": 16028,
+    "sha256": "53ec82a4f77d9d683102239e6c5ba2efcc36685629d7e6046cf941c5532f8e6a"
+  },
+  "https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg": {
+    "status": "cached",
+    "url": "https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg",
+    "verifiedAt": "2026-09-07T07:15:44.203957+00:00",
+    "path": "data/assets/400006d6c28fdfacef38.jpg",
+    "mimeType": "image/jpeg",
+    "bytes": 18362,
+    "sha256": "400006d6c28fdfacef3877d3c2ab499157cd30a9f3813c9de0875d2fe1a5d9f0"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif": {
+    "status": "cached",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif",
+    "verifiedAt": "2026-09-07T07:15:44.204948+00:00",
+    "path": "data/assets/d54f3ab6962f87e227fc.gif",
+    "mimeType": "image/gif",
+    "bytes": 27342,
+    "sha256": "d54f3ab6962f87e227fc77619d86a0208feb795dc2a17a7543ee93fbf634c624"
+  }
+}

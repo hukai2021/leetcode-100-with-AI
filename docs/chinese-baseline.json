@@ -1,0 +1,1711 @@
+{
+  "capturedAt": "2026-09-07T12:33:34.883432+00:00",
+  "casesSha256": "693a8cf49242beac3a46cb34f2ffa8ae2b62b155e5a429c477b1f629946449f5",
+  "problemsSha256": "91ce10171fbe8141fcc263643a1fccfd8a728c2a61d4ed693084ccbea98c953f",
+  "problems": {
+    "1": {
+      "immutableSha256": "ba0576181c8ef569ba207429e19ea323b0110b5c91c96d6b720338b41df9a624",
+      "contentSha256": "f2c46de4e080a83a066e23923cb720aeaadf2b2c885621f4170de2d4cebecfff",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.cn/problems/two-sum/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "zh-CN",
+        "metaSource": "official GraphQL metaData",
+        "contentMethod": "官方网页可见 DOM"
+      }
+    },
+    "49": {
+      "immutableSha256": "469350efd110bb38ba4378d035551ab48b656da16975ecbc9414b923686bb73d",
+      "contentSha256": "474a9adcf9b4ccdb251623dc94c862368efda257cf60c9c0785451cb96d13785",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.cn/problems/group-anagrams/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "zh-CN",
+        "metaSource": "official GraphQL metaData",
+        "contentMethod": "官方网页可见 DOM"
+      }
+    },
+    "128": {
+      "immutableSha256": "1a46d007f7453ff950dc8c3e49069a7c1145f6e69322c257a2383ffd3057d4f5",
+      "contentSha256": "90ca1b590a881b7ead2c7019287edbf53fbb12ee94614736dc2dd7efe56b9009",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/longest-consecutive-sequence/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "283": {
+      "immutableSha256": "0e3e15f5b390faed705efc5cecbbf43e0b170205711b0cbcd5fbbc2e09129600",
+      "contentSha256": "ab81a1cba477b7b63cf46293b5848de2fc0533aef75993d3f1fdd81a6d60f1fa",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/move-zeroes/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "11": {
+      "immutableSha256": "67018c9e705fbe981ca8d1baa8314a0c5134617b31490b0385c12d147d1f27c6",
+      "contentSha256": "25b69a5fe6c3693df92d66a2811de256e17f28fbb477e9df3ff82726c7c4e501",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/container-with-most-water/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg",
+              "sha256": "400006d6c28fdfacef3877d3c2ab499157cd30a9f3813c9de0875d2fe1a5d9f0"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "15": {
+      "immutableSha256": "5540d5c3548422c219b734afeaf3660e2b1c602d9bb982165bf9ac0ee44df014",
+      "contentSha256": "9f34b422d56fde7a0f9d615b37e238d4cf55463fbee8f1855a4568efefbe4a95",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/3sum/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "42": {
+      "immutableSha256": "767dffcb6c383afd625837b732c490d7a99bfcdf2f49a4b25e19f14a97a27ee3",
+      "contentSha256": "664c47c6ef809ea2b0a9de796f8f0abc1ca52756f89617c2d896d961af63224c",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/trapping-rain-water/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2018/10/22/rainwatertrap.png",
+              "sha256": "b016d05ee3a8eed86b505df491b6c8e424e47c4b964c13c009870b9b717b1ea2"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "3": {
+      "immutableSha256": "af1f6a53259faf40e214fa0949ab478aa545d4001cf2d442a641507f6ac7a6fb",
+      "contentSha256": "e68064bd5d9a07df76a178b4892397f024564ba7b4f2169ae2489e7755b19c3e",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "438": {
+      "immutableSha256": "0ab272c9e049cae4dd7dc1fe0683933c98016be3f1e3828dce6fdb8f43559130",
+      "contentSha256": "3aa57c190589f29af94b0d8c22ec1e1493c9421975902183f1b7311459bbeefc",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/find-all-anagrams-in-a-string/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "560": {
+      "immutableSha256": "e1e505ae7566859cb49f665b1204a9db775bf51f5c2027b563d6d020a331f938",
+      "contentSha256": "e941354bb8e02f82f8ffb26a2407ab9e9285ba1921045a4f4dd9e808057c57d9",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/subarray-sum-equals-k/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "239": {
+      "immutableSha256": "70be77f78675a12e0397db57d52d3a74f79d4298190a5e8afac1b0a7be599549",
+      "contentSha256": "23c14ebad3e9b9d8cdaee368ad6ae99bee11f812126d30469abfe988ddabebaf",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/sliding-window-maximum/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "76": {
+      "immutableSha256": "6841d503ed7dbc8267546cb40c134432aee4f65a3866e44e3c27ba4c73031c3f",
+      "contentSha256": "dd07cca075be32b5aa5b63facf44100d23215cf31fcb36cb21d77531a90a4417",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/minimum-window-substring/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "53": {
+      "immutableSha256": "1e901f30f4536cdf7418374fdcde39deebe4e99bdef2f5d80c6615858cb5eb7e",
+      "contentSha256": "a32cdf15ddb6650f8a8675da40875b7598a2e2ac0b3008bb7109411ad02c1eb9",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/maximum-subarray/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "56": {
+      "immutableSha256": "03c2d5bde5d7e4fa0ea79452fc2d4ba973b17e94b7a795e43288fac860458062",
+      "contentSha256": "466841fc41fec5adb9076e8ef26f72b06dbd33af68752eeb214d42452042c5c5",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/merge-intervals/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "189": {
+      "immutableSha256": "8d7d91e346813abe3ac6c95783ee057344fe3c3e20cbcfb1b2cb7ab74af8870d",
+      "contentSha256": "1d5cae5d1e5d272a40610c3f5a050eb86dd91f948f9fc4ca0b9a48b9bc13501a",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/rotate-array/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "238": {
+      "immutableSha256": "3cbac5da1d91341b6f27eb0ac137256cad42169b1a12529cde3b8db0d616364a",
+      "contentSha256": "f648667ff9097d0d86709a1e7cac317aa873fe2d29ae50c806966a4571576798",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/product-of-array-except-self/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "41": {
+      "immutableSha256": "afd1eafe59e8fcb5818647f52e6ba6bf9e53e2d8d1123d21ab1b9437ce333139",
+      "contentSha256": "ecb118101260ae953f49b91a1901681fef1ae49e7692b75b33913f20eaa25da7",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/first-missing-positive/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "73": {
+      "immutableSha256": "34001703c43d8ac1f1d853633c6ec49f08cf64b98ee13593063618fb061027f8",
+      "contentSha256": "acdd4bc3d67c632ce2211b26157d2081437b3263e22ae0ea42a00b09e38791a5",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/set-matrix-zeroes/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/08/17/mat1.jpg",
+              "sha256": "e78d0a6c3007c1563be2a0fd708c95a9fa2986ec7878320ef22ea52156f50a4e"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/08/17/mat2.jpg",
+              "sha256": "b6a8cf837160d5551a108abb010206b60b43c0425df595cda20a8cf324a6438c"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "54": {
+      "immutableSha256": "54a625de1a7d9f4cf1fc58a3683850dc424053a98710bd69f7f035c441a365d9",
+      "contentSha256": "5443068b35f2914362c008e447b0df3d239b1b8e106b4ed575a62d87f5eceac6",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/spiral-matrix/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/11/13/spiral1.jpg",
+              "sha256": "aaafaf48b199b8cbcbe59c169de2a03dcde8f4623c410b941d69184df0e4b18a"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/11/13/spiral.jpg",
+              "sha256": "9bf084bc4106f0b6cf78822f53eaba27c79277a49efe3f3cd6ca185e8f8eeb17"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "48": {
+      "immutableSha256": "c42c21566cee99358fe27e7aea22ca7133ed87bd1799c8fd6289539085438e39",
+      "contentSha256": "17fc1d51450ed8720d5115768239b118f979daeceeea22099a450b424edb99b6",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/rotate-image/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/08/28/mat1.jpg",
+              "sha256": "d906842cd222e68cfbcd8ce98c052b5100c2388a23e959411a1221376464db58"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/08/28/mat2.jpg",
+              "sha256": "0339cf8f3f7ab69964affe676241648ac2a6ada6b63c3f0c7c737b458e97df01"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "240": {
+      "immutableSha256": "e1ab16ab50fb7aefb9f7a2e8e416c43802d82706623ddee3faed7c3acb65d8de",
+      "contentSha256": "1db1391becb92d32e80e8a6e82d9d07508ab766c78e360598f8fb4fe9a7a9fc4",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/search-a-2d-matrix-ii/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/11/24/searchgrid2.jpg",
+              "sha256": "4fe09cd4bf1c32016d2d7c7b12835ecf9604516a79010ec0136f3c2ae409b51f"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/11/24/searchgrid.jpg",
+              "sha256": "67d37fa2323519f1ea2c5e952db3ff32bea34ced98b284d587fb43f6dfee09d5"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "160": {
+      "immutableSha256": "8070ce85384a324cded2c659afb4c47d8f5d11f614acbaf7d6ed0d22b8c881df",
+      "contentSha256": "4bebb7b043a1934eec38a2683977aa8b8d0a8fa5e21329736212620c7823c348",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/intersection-of-two-linked-lists/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/03/05/160_statement.png",
+              "sha256": "fc8be34b561dc52567230e7c4622bb40546a19839a0244d6d1634dd42f38bf66"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/03/05/160_example_1_1.png",
+              "sha256": "96c9fa196ea5a3980524083fbb71db53e9d9a64cd1e347a1b35b64352cf3f845"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/03/05/160_example_2.png",
+              "sha256": "6d7a8104bb64e883fce08cd667193e27e71d48eb45093a874dfc8ac81e383188"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/03/05/160_example_3.png",
+              "sha256": "598e301421e11df1fee6c64747cb9440146aa9cc37b45cfec992449527906d6c"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "206": {
+      "immutableSha256": "1cf9677f8267ac0dd88cbbc54ac24b2ba78aa49d0a970ac410f022fc30222972",
+      "contentSha256": "302199160fea80c3e4288c7ed5bb8ec937fb6bcbe0094cd223113f418a1fd622",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/reverse-linked-list/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/02/19/rev1ex1.jpg",
+              "sha256": "8a1642bcf208c4cd5abb60f9c1abf1a8a959e0350197831d824b235475711d6e"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/02/19/rev1ex2.jpg",
+              "sha256": "e9b523f585c79784182250e04a258156e4ab62ce0057de144ee0395e411ab220"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "234": {
+      "immutableSha256": "b3b249528e0ddf771695cb04d49a990e76fae6b6c5a491aab305bf2e2001b995",
+      "contentSha256": "6c9ac1251ec91a0913baccbfdebf9e049978639e4cdf1134d88f0b273d02b202",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/palindrome-linked-list/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/03/03/pal1linked-list.jpg",
+              "sha256": "36a34896fbbf8c55a096d4a52bdc4734ce9ed1c74d83ac9a1db0f9f896cd50e1"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/03/03/pal2linked-list.jpg",
+              "sha256": "94f7ec420fdefbbe16bc93bca2645c1ab9267141d829672e5d5d7825f57e862d"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "141": {
+      "immutableSha256": "9c5f29071660332a7c6ddc6ade0cfa832e60b1af3667e38b07d0450f17d2d6e2",
+      "contentSha256": "a7aed73b5b489c26a78238085a62c5b1e3a0dec2e733559344b82787682052f8",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/linked-list-cycle/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png",
+              "sha256": "1869c60c6fe4c1a59fdcfb853132b00d57f538b45c443ffbc10cc44cb1ddf567"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png",
+              "sha256": "cc15a23b6081e840d87cf7a2dd98273b6f63c0864183754ce2d1e72261471b2a"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png",
+              "sha256": "034aa9d397f09df7c03fd0064fa71a775a84ef6f6be220d2270381a38157208d"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "142": {
+      "immutableSha256": "2b8b161151597d691bae4718b61a0439eafe33f4ec6aa6d320dc5612f10d1871",
+      "contentSha256": "0f457c34be77d44aa603b359411df6be221366344e87ec5e9a6b3fcc4ed4fab1",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/linked-list-cycle-ii/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png",
+              "sha256": "1869c60c6fe4c1a59fdcfb853132b00d57f538b45c443ffbc10cc44cb1ddf567"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png",
+              "sha256": "cc15a23b6081e840d87cf7a2dd98273b6f63c0864183754ce2d1e72261471b2a"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png",
+              "sha256": "034aa9d397f09df7c03fd0064fa71a775a84ef6f6be220d2270381a38157208d"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "21": {
+      "immutableSha256": "d537f446e12b638eecd54ef8ad88b4371df786d218f9bc0fe3c56bb36e34d733",
+      "contentSha256": "7a5e1e4da343e40b13ded18492fb8e7a401e3ae2d12a0cefcb2eb10d832ba0e9",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/merge-two-sorted-lists/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/10/03/merge_ex1.jpg",
+              "sha256": "90a091941ce944f574352dab91c97e5e754aef7a4b12598097414d7afe5fcff9"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "2": {
+      "immutableSha256": "377b0df8eb9d31d663234cebebfb8654e6e5786730a6c8310d264f23d0bfdad5",
+      "contentSha256": "8e1958c1b0663ef1a46ad6d87a6652a37711f60a4e8176b558a6d10cea8e60f5",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/add-two-numbers/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/10/02/addtwonumber1.jpg",
+              "sha256": "cca5af59ccd4e3eed06f079e54c8e05cd4c0561c596e1dee7d1ff11fb6710d76"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "19": {
+      "immutableSha256": "7d856845520eabfe91abf0e41bd1c46c39f39cd79783c102f70d0730d222b050",
+      "contentSha256": "90b2fe3fc79a3ec83f1d593693b02989aeaa70c613569444902675dd90c2e7ea",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/10/03/remove_ex1.jpg",
+              "sha256": "35c75c8b745680a95679103724e8cf2be5997140952b9925a2f35ec653421a38"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "24": {
+      "immutableSha256": "5cd73ab2d8e7d0b8b4b39e5f1275df644cd74bbef9bf1dea28a3d061c13f6b00",
+      "contentSha256": "c7d6179d7e1e85254e223bc17515edffe5dfaf9af15595743a9e7ce5c9eb68fd",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/swap-nodes-in-pairs/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/10/03/swap_ex1.jpg",
+              "sha256": "a577d7e6175fd9975e14adc261a27377dc29a769e3096578f2610007e35cbe76"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "25": {
+      "immutableSha256": "939e2afe7f979216231521e13c84ec3a98d5e03737d366d8c33a7a468ea3facf",
+      "contentSha256": "1254e5e82e5c01ee5508e19422eb6e91c1072258f3f0e7a4687a7ff234ebea73",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/10/03/reverse_ex1.jpg",
+              "sha256": "7132640c7a542c3525aa21e4af4dfb5e2ffa237accc3fc8b070fae1195681093"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/10/03/reverse_ex2.jpg",
+              "sha256": "004975cbc7a9fa40fd5adf505ad6e74282de4cc8bac33136c12025db0fb4cd33"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "138": {
+      "immutableSha256": "9d3b553f3893c9e43ed2d1d946ceb95ff2e9402df8dd68d7b42acaded286a1a2",
+      "contentSha256": "50c164be80bd567a8f0227dded50f39e998bbe72149a1ce5f72ddaa9b888ecba",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/copy-list-with-random-pointer/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2019/12/18/e1.png",
+              "sha256": "fbaaa1177b5822dffbc432c38e86e2915622661427c6710cf1a1d315b4eb5583"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2019/12/18/e2.png",
+              "sha256": "0976f258daf2b2a54c0a8160b5c38cf23a4d804bde462930ebdee78e8a780fe2"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2019/12/18/e3.png",
+              "sha256": "2b825a8b0e4ed32c98b0c9e74d8b0bd0cf1caa1af6f906a6e1a6f198be811fb9"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "148": {
+      "immutableSha256": "d8ce797a324b4b30e2f0d1303a6c71ddd6bb718cfa4dbdce9ca3945fdc26f4f4",
+      "contentSha256": "232d957498201089bb57f0739d31bf615a6eac48ae7fb5ae2a26b10606b43161",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/sort-list/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/09/14/sort_list_1.jpg",
+              "sha256": "2a44783a0482196a9693236ac88abdb9dbb2a37d914ed5fc0796d8d98d56b1f9"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/09/14/sort_list_2.jpg",
+              "sha256": "6dee45205ce844da7effa5083b9e467047d82395ff016dda461d8f447dbe7f06"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "23": {
+      "immutableSha256": "503f1018163c2ede3c80bfde774cb0f0327c05400e717d0d818029e24dcca3b7",
+      "contentSha256": "6086732c938506825474834d84b88522254d43ae5d64fcfb7fdc968993b48eb5",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/merge-k-sorted-lists/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "146": {
+      "immutableSha256": "845d268a01b0f09d9c7634884437a70296f2eeb17774907c873ed1b4bdec8cd0",
+      "contentSha256": "504d91352213e4a90f8a51d0ee28f0f5f1668ef489b09b2f88d5e62e306c7fc8",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/lru-cache/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "94": {
+      "immutableSha256": "508577baf78ace793a775cc3259d159b0c30b53f2a4f982ee388a191aaec376b",
+      "contentSha256": "45a31cc297945278fdd4f0797a725cb7e8c5973705c9c0a567de2e38f34f79f0",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2024/08/29/screenshot-2024-08-29-202743.png",
+              "sha256": "5a16da4cb2647424eef84a810a4776e27f84f6d0b1822e01a15c527fdc8f08b9"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2024/08/29/tree_2.png",
+              "sha256": "8aa6d57e639930cfb1de9c0337c7b71dbd03c52f08bce71ae3f6ba74271994d9"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "104": {
+      "immutableSha256": "70c67224c223d811749e84af8c0ad92a02b97a8f0c31c61978016b7462ba0007",
+      "contentSha256": "3b1a9e8168c61144ad7e81e207be15ae69389fb50acc8a1e7590fcdab923b01c",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/11/26/tmp-tree.jpg",
+              "sha256": "dd545aade79ce83d6f39b96421c9c4fa57e7a1a6f33cb7a1ed5af6cd2469f00c"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "226": {
+      "immutableSha256": "ff99903542bee20c43ef575f94ab4a5ab81c297df94ea01ff9663e5ed635fc14",
+      "contentSha256": "2b679ec32863f6b03437e8fbb05275a3bb47f666d39aad3ca219a1b99fcea998",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/invert-binary-tree/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/03/14/invert1-tree.jpg",
+              "sha256": "3241d90c7458408b21f146e36a60fb75840fdeca199ac0bfdb11e172e40856c7"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/03/14/invert2-tree.jpg",
+              "sha256": "fda8a199fd912ec4282d3244e182612e7b144b0834e07f880da610d000eae796"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "101": {
+      "immutableSha256": "6b6707227ba612ee56d1e89c933c909eb58e3b0ace518b59e10ea161256c3c6f",
+      "contentSha256": "a25407196e1a6177675bfdb54c6cc50c9c280cf5fb307469be9e99f72da02f39",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/symmetric-tree/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/02/19/symtree1.jpg",
+              "sha256": "3168cbae5b75f2f7d61b67e1a06c0ec35aaf87359383c903c188f0f983ca8485"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/02/19/symtree2.jpg",
+              "sha256": "61aa11cb1873dd7812ea0d6f9ea21ab848e993aa9746733e44c764a5d97ef87b"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "543": {
+      "immutableSha256": "9119e81264f4ffdde615c428b4b83ab20d35ce2ee523f544f0294687820e7528",
+      "contentSha256": "a04be3aec49b58e8c585e341e40f4c5a9efc82aee9727ae855441261c6d27409",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/diameter-of-binary-tree/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/03/06/diamtree.jpg",
+              "sha256": "e6df9a0813b1865645988243a6092a75234330dbf3e7d878ed6d64e8f3dda3c2"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "102": {
+      "immutableSha256": "9cccbbcddd0e1ae628b829c265c6057d9848a1d8dc0d91220fa6a16df11e0f08",
+      "contentSha256": "4183769c9962bcfef165d902411b00f74ab803528cc8c4cb2c37342beb2d4446",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg",
+              "sha256": "a7b9a0e897e18faeb48b320153e58043a8d1fbc25287fb8ac9aad99ddd973510"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "108": {
+      "immutableSha256": "260ad3e2fc12f44ae1cf586cc9de818aba22ca4e94be9f9fe81a8459b728da81",
+      "contentSha256": "9a2ceb293ddfd387884adb84981bb9f4b6db80de8454c903807f17756273e539",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/02/18/btree1.jpg",
+              "sha256": "210eeb59efbf6872e954866b653424de4117cadc43b3f3ab9710b97bfcea7e1b"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/02/18/btree2.jpg",
+              "sha256": "08b46463fa36ed1db4b171f0511e19b2dfe7c18f2801a80867a9050a6593d823"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/02/18/btree.jpg",
+              "sha256": "44e573815bdd5860ffd6f8ced2401c20abc0ea1942f0261701883c7300b6cefa"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "98": {
+      "immutableSha256": "8e4048e05bf9f5d0a1483f561be39780734fd9a1c02db1c9c8a239def6b66170",
+      "contentSha256": "4f3a289723c7a524f0f613aebe8848044001f7570a7b7fe38a7bfc835e498732",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/validate-binary-search-tree/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/12/01/tree1.jpg",
+              "sha256": "10ee346df62af0e4339b8483ba21a6c8fb8c7cf9e1d1bc0018b5a2922741bb74"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/12/01/tree2.jpg",
+              "sha256": "9e5b68796e3137c3037cbd7126ad0b2c9e2214c2334c808f08ba3c30cebe6339"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "230": {
+      "immutableSha256": "e0f90255702657c52e6e6c162283f2a2e6243a2faf28e67c6f434dac4f37ac4a",
+      "contentSha256": "94cf9337e1352c9148ce9d16f45ac12b83367f3384329eb80a283ef782d8c94c",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/01/28/kthtree1.jpg",
+              "sha256": "e2cf52270df27182d65661247fb2c23a0ce37c535b9275d9d98d82b663edc548"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/01/28/kthtree2.jpg",
+              "sha256": "797c3a7eec5f92a7915c85761245aa75015cafaf3d9eb7ff948539475e52c646"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "199": {
+      "immutableSha256": "25c25048dcdd263fab86093f593d618cb7dc74ef047c502add9b411cba8b8857",
+      "contentSha256": "d96221395dda14cee9b956c06905b340893352742437183881709f03fbf83cf6",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/binary-tree-right-side-view/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2024/11/24/tmpd5jn43fs-1.png",
+              "sha256": "9069af61e5fcb28e78ea0dc43c0343f5c2d4a65d7d5a9b150d22d9280ac332a3"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2024/11/24/tmpkpe40xeh-1.png",
+              "sha256": "53ec82a4f77d9d683102239e6c5ba2efcc36685629d7e6046cf941c5532f8e6a"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "114": {
+      "immutableSha256": "65b74827ae02b90e2d2a13bf9f6fc554c69662a14e3954d4fdd1a399f4b22749",
+      "contentSha256": "2887f4ccc090b66e593d413df157bff5f5a1221c89c65ec732d589fdf56e4a3a",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/01/14/flaten.jpg",
+              "sha256": "5c002b3a1fd3f0a3e58c0bd47b063ca7846a66a4d9f154fe4f3885d8d91534b4"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "105": {
+      "immutableSha256": "30fa82943be27a78b05b8f32845aceeac89e83347662e37dbd5aeb1896977952",
+      "contentSha256": "8c1c6f027319d9f9decdaed1a8791a2a4a39bd6790b2df8da87d948a2bc4b4cb",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/02/19/tree.jpg",
+              "sha256": "3eb710807f6f5b8c8d0d8b09c12c866b6eacfa56614aea0f48c062dc78ff0817"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "437": {
+      "immutableSha256": "2745897366cbbd2eacb5ddeec45a9afec64a91786762b496cfa2cef3ce36a9d5",
+      "contentSha256": "b99fd8be3797d1cbc0cb56a64921e0e830c4bd15a9168e12330e3fc4d0809f1f",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/path-sum-iii/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/04/09/pathsum3-1-tree.jpg",
+              "sha256": "60a1cbeee66911115d238328ee26890e006b74955d83a5b575a7cdb50cdf945e"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "236": {
+      "immutableSha256": "53b7084609206dea84064878de03afa1a94c13c09e4cd9f41c0641f9fe7e3369",
+      "contentSha256": "023de82d08ba6cc24b489461fb5ef6b64f93f5859fa084dc154c91df180f2388",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2018/12/14/binarytree.png",
+              "sha256": "feae798280dd6256de4340295d6a87b90787ca9aaac859d92fbc5708fbd4c9f0"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2018/12/14/binarytree.png",
+              "sha256": "feae798280dd6256de4340295d6a87b90787ca9aaac859d92fbc5708fbd4c9f0"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "124": {
+      "immutableSha256": "09bb0620ec1d5b398c1c68dfc221deafc3c7cf23cd04ebec8f75f6a61d4770bb",
+      "contentSha256": "6c27b4a306b7dc5616094ede5046f959cef672f13bcaca4b374fd8a780027c3e",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/10/13/exx1.jpg",
+              "sha256": "26b8c8c3a57643297660340b141f258ae57d12a4d1599d022cff01b0fbad6338"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/10/13/exx2.jpg",
+              "sha256": "952a26627d709d426f0103faa4a36a8384342bd99cf8ed7ab8f33096c720554f"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "200": {
+      "immutableSha256": "ee6019751ae6ab379c6267548130af845767a4d437c954e70610bf9c2aeddf9f",
+      "contentSha256": "71a78ddce0450d4eab3ed0bdb2a3752c125817284484e8fa119dcec19c6de74a",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/number-of-islands/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "994": {
+      "immutableSha256": "8a4981e627af286fd65b93ac962d58300415b8ab2bd8410c0352504e4eb2decf",
+      "contentSha256": "4b23fada89cbe1cc01b97bc2da0738bf58b4726b6bf1278ab86a7e5d6f74b52e",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/rotting-oranges/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2019/02/16/oranges.png",
+              "sha256": "389e767470d1f33e7330168071a721a71f16ad08f0ce42bc621cfa9b374661c8"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "207": {
+      "immutableSha256": "0b2a8a0678e231c16a288f1ef03676bcca203155465f1d0ede69fd8d891d3d84",
+      "contentSha256": "6056ce365acd0aeabee9a75f1a46d57e360c1166b8aa303983cfe1bb4c7bccf5",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/course-schedule/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "208": {
+      "immutableSha256": "246b912f49368b2dffe0d76ea720131129b234f73e0f8c040c1b03ad12b00293",
+      "contentSha256": "a5edcf3889f34152fd5b1ff56b04ca88a4fd4146508f65c7c6c6af61590c1c77",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "46": {
+      "immutableSha256": "807a4fbca43f09c18536b41741efc235f61bfbc9840aebae1c7dc1a78bb69857",
+      "contentSha256": "9ccb8cb1b907dd2dab948916d990652d048fefdf3d79ccb1c9fae7a5a32e172c",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/permutations/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "78": {
+      "immutableSha256": "c39e20d16241ac6c9e60a150c0819bbf9871762078a77506757669917970b2fa",
+      "contentSha256": "3848bc76dd7bdfd38d9e9f8166768c34d105d90ee3d1e69c82d1ee558ff5b95e",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/subsets/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "17": {
+      "immutableSha256": "5ecedec4888cdaf04c76974d74834b8dbf0de421cdd598be484cedf0de842080",
+      "contentSha256": "f3ae750dc37ed86ae0961d072d49aa6286722f29be486173da6e9f27040394d5",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2022/03/15/1200px-telephone-keypad2svg.png",
+              "sha256": "298134a0c91db5427f8624b243e95e3dbc17fbf98beca0156b5a67c024d3daf6"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "39": {
+      "immutableSha256": "8f56906be4ad5734f9ea91b0431098bb984fa5ca62f192e0c655038a619a5ad4",
+      "contentSha256": "e42f934c75a151e702272f994b0a4c5e036845eca8ae152561cdd84924cecd69",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/combination-sum/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "22": {
+      "immutableSha256": "854e776e90bdb630b825e4adf3c43da01e70c76207b95fed387f247dfb2b405b",
+      "contentSha256": "ec075ea14e800551a0c36e19f8ba393aefc3f0f01f8e3b70dede7dd0ff8830ca",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/generate-parentheses/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "79": {
+      "immutableSha256": "09c397e799c7c78ef7c9f81d4e4156bc68fad2f21f9c5e7dcf03dad76ad0abc9",
+      "contentSha256": "815baa694516efc450367feb8ba94207ef023f568f3bca1c8f196f5c7921c75a",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/word-search/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/11/04/word2.jpg",
+              "sha256": "79918439c4ca50a4ea84c23c14bf5f75465c6cf5a9ddf2052a768eff232b33d6"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/11/04/word-1.jpg",
+              "sha256": "af467dec65006220adbeb983ea594fdf6f9bb8f92b4a18e208c41be3764233be"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/10/15/word3.jpg",
+              "sha256": "e8c1ea8e6ae801764fed4d4b460407165e3781d2a9c87e2eadc356ca583acc6f"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "131": {
+      "immutableSha256": "6929730ffd10b6cbe3ecb4be0f8be639f3741dc317a17a1ade716060e94b1fdd",
+      "contentSha256": "bc42c48324195fde8b22b64698266be9529954cd0c0353ca45782ea5f5cc0970",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/palindrome-partitioning/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "51": {
+      "immutableSha256": "c7343d4a96300dd75cab564ee101d1312654a86c9ba891074531d1aef0443548",
+      "contentSha256": "edf4c5988e83e7049c7e88c0b50c87c74ac6810881030c347c62ed9873c2464e",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/n-queens/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/11/13/queens.jpg",
+              "sha256": "9e4a12ea5d25e23b1c1f40c84208997d0f1559c478afc33d0f6e3fe0e04a516f"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "35": {
+      "immutableSha256": "e3eae5a95eac1c35fbc315052cf4cfcc1641aef2621e49ab554c8cf15f5be251",
+      "contentSha256": "5894e33ec6dd69ccdb0fbcadae6851752f2b8e4e1940480f5d0c5f3b8f371a1c",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/search-insert-position/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "74": {
+      "immutableSha256": "b50de5b768dea6ec93386a1493e2fbb20cb3cc6d09624a8aa69ae479abc302b1",
+      "contentSha256": "7c236dee9f76586efd06a651e282f337b30105bcf8d59cfe4f82635f0308f178",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/search-a-2d-matrix/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/10/05/mat.jpg",
+              "sha256": "9c223e910078177c855f1b3b1a9b0d9449e440e414c9fa44cff88e1b20add3af"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/10/05/mat2.jpg",
+              "sha256": "81a828f24e23829eb89a1c0367fb9da8b3e56737d2e7712f515fa9d0f680baf2"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "34": {
+      "immutableSha256": "e68cb5821e0d92ebbfa3f7854d0381b2cf04f0d39f92a309b1d53018d2c68145",
+      "contentSha256": "9e5c5dabbea884dc572c08885d3f0e1b6cbdb05535e5f7e8f726d293e09344b2",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "33": {
+      "immutableSha256": "a7dba4203e15c21956fcc5dd69bc1358d5d0ab9ee3fb1353b87e126a35caca00",
+      "contentSha256": "e2deefbbabc34c74dacdb61bf8d5f155a53331bcfbbc625483f47b7d2022e5dc",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "153": {
+      "immutableSha256": "4c39843d59ed70552dd363ad59488a8c74efcd55f023d6aeb159533179f891b8",
+      "contentSha256": "872e82fb831ffde7482b2b7b2d4e95e38a35dbd5da18f1c9674ce5199b1867d0",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "4": {
+      "immutableSha256": "034b48145bb550a141c30b08ff603e87f377b32c28ddd92c40c9c2409289c89a",
+      "contentSha256": "969de50fa972f735b63db35007f77081193cd45a44147cf5160dd9808e2781c7",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "20": {
+      "immutableSha256": "4537ac0594435ffcb46b2258154f57ba1190adc827b70dcab9df8186e2c9061c",
+      "contentSha256": "cc58a8cb40b43cc316752d6cb347af35054c0217ffb5dbe8a61dfd7aa86777e6",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/valid-parentheses/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "155": {
+      "immutableSha256": "c25c39da93216ce40c1b583abcfa329b572d4a79377864abfd8376289ffe9665",
+      "contentSha256": "949507f6f720a7ad7af75599a3760138b888fbed11f74f72987aff42a94d9297",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/min-stack/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "394": {
+      "immutableSha256": "f849cfaf47f1d20a62eb6cf85c5606fdb5e823cb8b82c977e942faf76af98a58",
+      "contentSha256": "8641889e2cf2a8e8256947581a60bcaffe0898a0d6de820f7012008624c83842",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/decode-string/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "739": {
+      "immutableSha256": "be12778e0482cc60c3281d45fb40cb795a81cd5b493fe540cfef613a64006f27",
+      "contentSha256": "f1a931045a045cb0e7b5b77303c28291dfd0a85a990491e6ab07a7f963f73e9b",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/daily-temperatures/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "84": {
+      "immutableSha256": "eaeab6118e18a999a1475ebde79956393817c4e5e7e69172520582216ff743eb",
+      "contentSha256": "36b95bf5940a9c9888b8e463c74a515c1d19f58c38b615500f1d2db21ec364a7",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/largest-rectangle-in-histogram/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/01/04/histogram.jpg",
+              "sha256": "ff27f42456cd292f2f7f875f6b1fdb8b3a997a6da8cc6355978cdfa1de10702a"
+            },
+            {
+              "url": "https://assets.leetcode.com/uploads/2021/01/04/histogram-1.jpg",
+              "sha256": "65c572040fc605a08e0674592fdb730a62ccf5bc3b478ec2788240e4e20c7ccf"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "215": {
+      "immutableSha256": "168e7e58af841f831ffa8115a9fd9fc8d2498b335dc9691c969a2f629fe0da0d",
+      "contentSha256": "35f0aefaa222be2b2944cd0ec7767432454660a0023599f83404c118b2c58195",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "347": {
+      "immutableSha256": "29399d5d2260a0e4a042ffcdfa4efafda2c15b24fd83ea2e21fa615dcc66977f",
+      "contentSha256": "6dedfcf3030799c9c162e7ae58a9eac1013af8ed694230150a112523e5b3646d",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/top-k-frequent-elements/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "295": {
+      "immutableSha256": "c6ea5abfa8eeb2899ab995898d9bb6abf8205183507b7ae3fe83afd9a21942ad",
+      "contentSha256": "0999c0f77b136846ceec19a74af251e3d265ac2ed70e57502f0266c0e0ba58b1",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/find-median-from-data-stream/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "121": {
+      "immutableSha256": "19cca3d45e9d0d832719ca3c23997a46f979c505c852a362c98ac5e6b30c67b7",
+      "contentSha256": "fbac1d1612e669d39ef6e998e047318d10a2c8bd191a2924b2ea820d80af7171",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "55": {
+      "immutableSha256": "60f2060368a712a6865c0d20a843dcfd729e70de37db894712e8ad88c00ec8d6",
+      "contentSha256": "f41392e092cd967693c5abb428f236903c1f6f485f09b803ce319df21944ccf6",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/jump-game/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "45": {
+      "immutableSha256": "5a6f2e7c4f42be5ea6c509413c0cd9ab07f2f85f9ac612e825c01930800ae41b",
+      "contentSha256": "8b21b212ede1c30159453ea1c9d4fef9fb8d9da9c28042c485a441854fa37186",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/jump-game-ii/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "763": {
+      "immutableSha256": "22a4d8ad6662441280ebd286cbd0f6c5d1fab39529da844efa27ca7e56258fc8",
+      "contentSha256": "ec08dbae8f06b155b9f3fb9535fbe4ee62444955b8afdbdc9176b35d23fb6d3b",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/partition-labels/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "70": {
+      "immutableSha256": "658ebfcb2e90a8fd38d4ec92a93a5168e8f750c8b93006c6d3ea085198f786f4",
+      "contentSha256": "4b9b4d2d973d177fa8d0d02968ababdc17858917c50f7b240741c2a04234e0e0",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/climbing-stairs/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "118": {
+      "immutableSha256": "c00df1342f71dba3c10640ecadc38eb602c5f276842580e7908d694748b7a6f7",
+      "contentSha256": "0929873e8e987ea1ba9418c08ffdc06bc39f3c87dc8056968f8912447aa56a85",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/pascals-triangle/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif",
+              "sha256": "d54f3ab6962f87e227fc77619d86a0208feb795dc2a17a7543ee93fbf634c624"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "198": {
+      "immutableSha256": "70a579e3f692590f040c4ad55dd9938f15e40eca48aebdbcdf59af15f8557b2a",
+      "contentSha256": "1361b0436ed37bef9dad224bf73ae05f3a4aa0e10ec807287f35aedc52941766",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/house-robber/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "279": {
+      "immutableSha256": "0dbe92cefca9f01add61f85b78655a925132cda306499a7d1408f60e7f46d7fc",
+      "contentSha256": "c596df0f103d039e03e583c4338cc9859c61ca2705cae733e70c2591be8e3a9d",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/perfect-squares/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "322": {
+      "immutableSha256": "e5488627c1260b4158d172aa8dce6fae57fe0ad2a30a0d1ad062d22ce241877a",
+      "contentSha256": "e7f881e12c7a6d6b778dfb62cf13407fb5a5efaa78c703949fd1264c660b5124",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/coin-change/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "139": {
+      "immutableSha256": "39c34c1c420c0d8ae9b4acc3ee4f44ba145a189b7fa10039cc7687e9600bfb1d",
+      "contentSha256": "4382abb58113752eb8f2207e0212bc315d55c13b851f88ca44020f80666e6bbd",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/word-break/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "300": {
+      "immutableSha256": "fe99d526e3a17dd5f83a762dcb6a0ffd051d5249a3b4acf434e6e2026aa97f03",
+      "contentSha256": "671191eb69912892f8f5ae44c79acb303cc7ca8f1da6a8f0edaafbc00878ebab",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/longest-increasing-subsequence/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "152": {
+      "immutableSha256": "b1807983006d4a3ff92d66a87b8ffd159246200760aad9b901c4bfcd8d7fff16",
+      "contentSha256": "89aa9172789528050cbe019b327df7c820bcaa91fccd067c91edf1075f3102c0",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/maximum-product-subarray/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "416": {
+      "immutableSha256": "5e520a72e442e437fecd7b73815ad3aa261a87034ef35e9190de9cf21955c21f",
+      "contentSha256": "1097eb64291e0ef210d6a700171a36323acd40d2fcf4814b15e9ec5f3c537f8f",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/partition-equal-subset-sum/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "32": {
+      "immutableSha256": "968b5aeb55f75b52eb04911f0941e6e022df52d4b39182312c72e4dbd4082577",
+      "contentSha256": "6bd002d044ae467e6cb53b71197dcc4290d497bd3c3448635827480d214b14c2",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/longest-valid-parentheses/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "62": {
+      "immutableSha256": "bd3d11c0ebb760618dae3f54c4eaa609993940c35ba12d9a3755e59411e680ae",
+      "contentSha256": "c71316a1619abeb5d33f554585e22646fcd6be91804f71d16922e4c514da43c7",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/unique-paths/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png",
+              "sha256": "0d20ad91997e3af0b01800691e56c7d1e5aa6c00fb2984d87e3193f34029b540"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "64": {
+      "immutableSha256": "7294eaf0c42f51a17268d5ca41b42256f0ef7de4c8ed877919fe4bc17a7d8506",
+      "contentSha256": "cfc0c2d3239dc46572088da74a980beafc92a2d68ed0b9a5681f38dbbf744189",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/minimum-path-sum/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData",
+        "offlineImages": {
+          "cached": [
+            {
+              "url": "https://assets.leetcode.com/uploads/2020/11/05/minpath.jpg",
+              "sha256": "f00d3337e1b710fa8534344caf8c3ef18d15ddc8e7e4af3280f83d804377f552"
+            }
+          ],
+          "missing": []
+        }
+      }
+    },
+    "5": {
+      "immutableSha256": "cbc4c98ad3753b477e68da35c0b1775e168547826f70a99426061b6c262db5c7",
+      "contentSha256": "fe71ae19c9073d056d62f0fdd8aedf551d0c13569718cdb7a6bbbe2bdf5e7eb7",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/longest-palindromic-substring/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "1143": {
+      "immutableSha256": "ad0a95163a95d50245a9b70165e9c0ea5cee311f9e65ad6492fef3e26693362c",
+      "contentSha256": "b8a804c1747271743d0fe8bd6924441d65d79a5b96375d5b0d2b30fe2388eed9",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/longest-common-subsequence/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "72": {
+      "immutableSha256": "048d8e4a3ad353056521ef935ffa7ed3d90eddd49ba65853d5a863f46607fe04",
+      "contentSha256": "a0bc8fe5153b3224a2107387768902cd78c423c4baba1f483d1e9e4001078c8c",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/edit-distance/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "136": {
+      "immutableSha256": "aad3ad3f4fd7d69392ed9b824fe7e3a5166904ae93e97131a0dfe2d9b8527ccc",
+      "contentSha256": "e79abfc772e2472ac714164144f4046d18f4c29de83739faf42ea92ef5490187",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/single-number/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "169": {
+      "immutableSha256": "58baec7f21b08cb0f652f2594ec1779fb7c783ca0b1b77a562054b1d98e05e82",
+      "contentSha256": "eeaef09513032568eaec177ca6e2f94d9b9e2479a32424612c893e36fcc4c827",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/majority-element/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "75": {
+      "immutableSha256": "69d7c3731fa5f2f558cd4e27ba58b9625bae6c24135a0ea5fda9b4894c147e2f",
+      "contentSha256": "dffce90f7b01586de1077a5e7fa1754bdf498abf397e8312e72ba3e81e050ab3",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/sort-colors/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "31": {
+      "immutableSha256": "552829c8a7dc1957eca28883eccb97d09a5564b66b147f82325c57a9dee8ffc0",
+      "contentSha256": "b95602aabd96218f5905cb5cf7db2139f19f2c3907ce10a4e27a244980d6f0c8",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/next-permutation/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    },
+    "287": {
+      "immutableSha256": "6fd644a7c6faec146c159a737009179c4d62f4f28d891bad9c522de7b5d09095",
+      "contentSha256": "c028672cfeb07cd1c3cd5251fdb260c62bd2157190b08143f69fb9b9fbb3ea05",
+      "source": {
+        "url": "https://leetcode.cn/studyplan/top-100-liked/",
+        "verifiedAt": "2026-09-06T14:09:29+00:00",
+        "contentUrl": "https://leetcode.com/problems/find-the-duplicate-number/",
+        "method": "官方中文题单可见标题/分类 + 官方国际站匿名 GraphQL 元数据",
+        "contentLanguage": "en",
+        "metaSource": "official GraphQL metaData"
+      }
+    }
+  }
+}

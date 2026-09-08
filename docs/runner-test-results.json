@@ -1,0 +1,339 @@
+{
+  "testedAt": "2026-09-07T07:05:25.813Z",
+  "platform": "win32",
+  "environment": {
+    "python": {
+      "available": true,
+      "path": "<PROJECT_ROOT>\\runtime\\python\\python.exe",
+      "version": "Python 3.13.15"
+    },
+    "cpp": {
+      "available": true,
+      "path": "<PROJECT_ROOT>\\runtime\\w64devkit\\bin\\g++.exe",
+      "version": "g++.exe (GCC) 16.2.0"
+    },
+    "isolation": "独立工作目录、最小环境变量、Windows Job Object 超时/256 MiB 内存/进程树回收；不是安全沙箱，仍有当前用户的文件和网络权限，请仅运行可信代码。"
+  },
+  "summary": {
+    "passed": 32,
+    "total": 32
+  },
+  "records": [
+    {
+      "name": "python two-sum: normal, duplicate, negative, alternate order",
+      "passed": true,
+      "durationMs": 1251,
+      "detail": {
+        "passed": 4,
+        "total": 4,
+        "durationMs": 1246
+      }
+    },
+    {
+      "name": "python reverse linked list: list and empty",
+      "passed": true,
+      "durationMs": 662,
+      "detail": {
+        "passed": 2,
+        "total": 2,
+        "durationMs": 659
+      }
+    },
+    {
+      "name": "python tree serialize and in-place flatten",
+      "passed": true,
+      "durationMs": 670,
+      "detail": {
+        "passed": 2,
+        "total": 2,
+        "durationMs": 667
+      }
+    },
+    {
+      "name": "python in-place array mutation",
+      "passed": true,
+      "durationMs": 366,
+      "detail": {
+        "passed": 1,
+        "total": 1,
+        "durationMs": 363
+      }
+    },
+    {
+      "name": "python cycle entry identity",
+      "passed": true,
+      "durationMs": 798,
+      "detail": {
+        "passed": 2,
+        "total": 2,
+        "durationMs": 794
+      }
+    },
+    {
+      "name": "python shared intersection identity",
+      "passed": true,
+      "durationMs": 831,
+      "detail": {
+        "passed": 2,
+        "total": 2,
+        "durationMs": 824
+      }
+    },
+    {
+      "name": "python LCA node references",
+      "passed": true,
+      "durationMs": 561,
+      "detail": {
+        "passed": 1,
+        "total": 1,
+        "durationMs": 557
+      }
+    },
+    {
+      "name": "python random pointer list",
+      "passed": true,
+      "durationMs": 976,
+      "detail": {
+        "passed": 2,
+        "total": 2,
+        "durationMs": 973
+      }
+    },
+    {
+      "name": "python design MinStack",
+      "passed": true,
+      "durationMs": 407,
+      "detail": {
+        "passed": 1,
+        "total": 1,
+        "durationMs": 401
+      }
+    },
+    {
+      "name": "python rejects incorrect answer",
+      "passed": true,
+      "durationMs": 492,
+      "detail": {
+        "input": [
+          [
+            2,
+            7
+          ],
+          9
+        ],
+        "expected": [
+          0,
+          1
+        ],
+        "actual": [
+          0,
+          0
+        ],
+        "passed": false,
+        "stdout": "",
+        "stderr": "",
+        "error": null,
+        "durationMs": 394
+      }
+    },
+    {
+      "name": "cpp two-sum: normal, duplicate, negative, alternate order",
+      "passed": true,
+      "durationMs": 12195,
+      "detail": {
+        "passed": 4,
+        "total": 4,
+        "durationMs": 12193
+      }
+    },
+    {
+      "name": "cpp reverse linked list: list and empty",
+      "passed": true,
+      "durationMs": 6655,
+      "detail": {
+        "passed": 2,
+        "total": 2,
+        "durationMs": 6651
+      }
+    },
+    {
+      "name": "cpp tree serialize and in-place flatten",
+      "passed": true,
+      "durationMs": 5682,
+      "detail": {
+        "passed": 2,
+        "total": 2,
+        "durationMs": 5679
+      }
+    },
+    {
+      "name": "cpp in-place array mutation",
+      "passed": true,
+      "durationMs": 4853,
+      "detail": {
+        "passed": 1,
+        "total": 1,
+        "durationMs": 4850
+      }
+    },
+    {
+      "name": "cpp cycle entry identity",
+      "passed": true,
+      "durationMs": 4428,
+      "detail": {
+        "passed": 2,
+        "total": 2,
+        "durationMs": 4426
+      }
+    },
+    {
+      "name": "cpp shared intersection identity",
+      "passed": true,
+      "durationMs": 3453,
+      "detail": {
+        "passed": 2,
+        "total": 2,
+        "durationMs": 3450
+      }
+    },
+    {
+      "name": "cpp LCA node references",
+      "passed": true,
+      "durationMs": 4390,
+      "detail": {
+        "passed": 1,
+        "total": 1,
+        "durationMs": 4388
+      }
+    },
+    {
+      "name": "cpp random pointer list",
+      "passed": true,
+      "durationMs": 5217,
+      "detail": {
+        "passed": 2,
+        "total": 2,
+        "durationMs": 5213
+      }
+    },
+    {
+      "name": "cpp design MinStack",
+      "passed": true,
+      "durationMs": 3384,
+      "detail": {
+        "passed": 1,
+        "total": 1,
+        "durationMs": 3382
+      }
+    },
+    {
+      "name": "cpp rejects incorrect answer",
+      "passed": true,
+      "durationMs": 4254,
+      "detail": {
+        "input": [
+          [
+            2,
+            7
+          ],
+          9
+        ],
+        "expected": [
+          0,
+          1
+        ],
+        "actual": [
+          0,
+          0
+        ],
+        "passed": false,
+        "stdout": "",
+        "stderr": "",
+        "error": null,
+        "durationMs": 499
+      }
+    },
+    {
+      "name": "comparator unordered nested + alternate longest palindrome",
+      "passed": true,
+      "durationMs": 14,
+      "detail": "10 assertions"
+    },
+    {
+      "name": "Python timeout enforced",
+      "passed": true,
+      "durationMs": 404,
+      "detail": "执行超时"
+    },
+    {
+      "name": "Python stdout limit enforced",
+      "passed": true,
+      "durationMs": 496,
+      "detail": "输出超过 256 KiB 上限"
+    },
+    {
+      "name": "Python memory limit enforced",
+      "passed": true,
+      "durationMs": 622,
+      "detail": "Traceback (most recent call last):\r\n  File \"<PROJECT_ROOT>\\.local\\runner-tests\\run-quyKJU\\main.py\", line 103, in <module>\r\n    _result=getattr(Solution(),_meta['name'])(*_args)\r\n  File \"<PROJECT_ROOT>\\.local\\runner-tests\\run-quyKJU\\main.py\", line 73, in twoSum\r\n    x=bytearray(400*1024*1024)\r\nMemoryError\r\n"
+    },
+    {
+      "name": "Python minimal env excludes credentials",
+      "passed": true,
+      "durationMs": 494,
+      "detail": "No credential environment variables inherited"
+    },
+    {
+      "name": "Stop cancels live task",
+      "passed": true,
+      "durationMs": 851,
+      "detail": {
+        "status": "cancelled",
+        "durationMs": 849
+      }
+    },
+    {
+      "name": "Job Object reaps descendant process after completion",
+      "passed": true,
+      "durationMs": 445,
+      "detail": {
+        "descendantPid": 3108,
+        "reaped": true
+      }
+    },
+    {
+      "name": "python deep-copy identity violation rejected",
+      "passed": true,
+      "durationMs": 330,
+      "detail": " _slug=='copy-list-with-random-pointer' and any(n in _original for n in _nodes(_result)): raise ValueError('深拷贝结果不能复用原链表节点')\r\n                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nValueError: 深拷贝结果不能复用原链表节点\r\n"
+    },
+    {
+      "name": "cpp deep-copy identity violation rejected",
+      "passed": true,
+      "durationMs": 5478,
+      "detail": "deep copy must not reuse original nodes\r\n"
+    },
+    {
+      "name": "C++ vector bounds assertion captured",
+      "passed": true,
+      "durationMs": 5218,
+      "detail": {
+        "error": "进程退出（代码 3）",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "C++ compiler errors captured",
+      "passed": true,
+      "durationMs": 3177,
+      "detail": "编译失败：进程退出（代码 1）\n<PROJECT_ROOT>\\.local\\runner-tests\\run-vgcx3Y\\main.cpp:21:18: error: 'broken' does not name a type\n   21 | class Solution { broken };\n      |                  ^~~~~~\n<PROJECT_ROOT>\\.local\\runner-tests\\run-vgcx3Y\\main.cpp: In function 'int main(int, c"
+    },
+    {
+      "name": "Custom case missing expected rejected",
+      "passed": true,
+      "durationMs": 0,
+      "detail": "用例缺少 expected，无法判定通过"
+    }
+  ],
+  "publicRedaction": "仅替换本机项目/用户目录；实际输入、输出、状态与时间未改动。"
+}

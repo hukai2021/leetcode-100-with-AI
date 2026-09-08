@@ -1,0 +1,17 @@
+node_modules/
+dist/
+release/
+runtime/*
+!runtime/manifest.json
+.local/
+*.log
+*.sqlite*
+*.db
+auth.json
+.env*
+test-results/
+
+.vs/
+*.lnk
+__pycache__/
+docs/test-evidence/

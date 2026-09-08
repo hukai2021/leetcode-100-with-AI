@@ -1,0 +1,14 @@
+{
+  "verifiedAt": "2026-09-07T07:18:44.110832+00:00",
+  "algorithmTestsRerun": false,
+  "casesUnchangedSinceExecution": true,
+  "onlyImageEmbeddingAndImageSourceMetadataChanged": true,
+  "originalProblemsSha256": "55bf4e8073bb21fa2eafbbf7512c585d9a0e7e5438d52cde2c7b23d0d42d975b",
+  "reconstructedOriginalProblemsSha256": "55bf4e8073bb21fa2eafbbf7512c585d9a0e7e5438d52cde2c7b23d0d42d975b",
+  "deliveredProblemsSha256": "91ce10171fbe8141fcc263643a1fccfd8a728c2a61d4ed693084ccbea98c953f",
+  "casesSha256": "693a8cf49242beac3a46cb34f2ffa8ae2b62b155e5a429c477b1f629946449f5",
+  "embeddedImageElements": 73,
+  "cachedUniqueImageUrls": 69,
+  "uncachedImageElements": [],
+  "imageFileSignaturesAndBase64Verified": true
+}
