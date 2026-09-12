@@ -5,7 +5,7 @@ const save=(name,detail)=>{report.checks.push({name,passed:true,detail});fs.writ
 const call=(m,p)=>page.evaluate(([m,p])=>window.coach.invoke(m,p),[m,p]);
 (async()=>{try{
  app=await _electron.launch({executablePath:exe,args:[]});page=await app.firstWindow();await page.getByRole('button',{name:'提交并让 GPT 批改',exact:true}).waitFor({timeout:45000});
- const b=await call('bootstrap');assert.equal(b.problems.length,100);assert.ok(b.runtime.python.path.includes('resources'));assert.ok(b.runtime.cpp.path.includes('resources'));save('安装后的独立窗口与100题加载，使用随包解释器和编译器',b.runtime);
+ const b=await call('bootstrap');assert.equal(b.problems.filter(p=>p.collection==='hot100').length,100);assert.ok(b.runtime.python.path.includes('resources'));assert.ok(b.runtime.cpp.path.includes('resources'));save('安装后的独立窗口与100题加载，使用随包解释器和编译器',b.runtime);
  const account=await call('account');assert.equal(account.account.type,'chatgpt');assert.ok(account.models.length);save('随包官方 App Server 连接且保留已有 ChatGPT 登录',{type:account.account.type,modelCount:account.models.length,hasRateLimits:!!account.rateLimits});
  await page.context().setOffline(true);
  const codes={python:'class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        seen = {}\n        for i, x in enumerate(nums):\n            if target - x in seen:\n                return [seen[target - x], i]\n            seen[x] = i\n        return []\n',cpp:'class Solution { public: vector<int> twoSum(vector<int>& nums,int target){unordered_map<int,int> m;for(int i=0;i<(int)nums.size();i++){if(m.count(target-nums[i]))return {m[target-nums[i]],i};m[nums[i]]=i;}return {};} };'};

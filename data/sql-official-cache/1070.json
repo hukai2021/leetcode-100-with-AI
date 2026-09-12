@@ -1,0 +1,47 @@
+{
+  "questionFrontendId": "1070",
+  "title": "Product Sales Analysis III",
+  "titleSlug": "product-sales-analysis-iii",
+  "difficulty": "Medium",
+  "isPaidOnly": false,
+  "content": "<p>Table: <code>Sales</code></p>\n\n<pre>\n+-------------+-------+\n| Column Name | Type  |\n+-------------+-------+\n| sale_id     | int   |\n| product_id  | int   |\n| year        | int   |\n| quantity    | int   |\n| price       | int   |\n+-------------+-------+\n(sale_id, year) is the primary key (combination of columns with unique values) of this table.\nEach row records a sale of a product in a given year.\nA product may have multiple sales entries in the same year.\nNote that the per-unit price.\n\n</pre>\n\n<p>Write a solution to find all sales that occurred in the <strong data-end=\"967\" data-start=\"953\">first year</strong> each product was sold.</p>\n\n<ul data-end=\"1234\" data-start=\"992\">\n\t<li data-end=\"1078\" data-start=\"992\">\n\t<p data-end=\"1078\" data-start=\"994\">For each <code data-end=\"1015\" data-start=\"1003\">product_id</code>, identify the earliest <code data-end=\"1045\" data-start=\"1039\">year</code> it appears in the <code data-end=\"1071\" data-start=\"1064\">Sales</code> table.</p>\n\t</li>\n\t<li data-end=\"1140\" data-start=\"1079\">\n\t<p data-end=\"1140\" data-start=\"1081\">Return <strong data-end=\"1095\" data-start=\"1088\">all</strong> sales entries for that product in that year.</p>\n\t</li>\n</ul>\n\n<p data-end=\"1234\" data-start=\"1143\">Return a table with the following columns: <strong>product_id</strong>,<strong> first_year</strong>, <strong>quantity, </strong>and<strong> price</strong>.<br />\nReturn the result in any order.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> \nSales table:\n+---------+------------+------+----------+-------+\n| sale_id | product_id | year | quantity | price |\n+---------+------------+------+----------+-------+ \n| 1       | 100        | 2008 | 10       | 5000  |\n| 2       | 100        | 2009 | 12       | 5000  |\n| 7       | 200        | 2011 | 15       | 9000  |\n+---------+------------+------+----------+-------+\n\n<strong>Output:</strong> \n+------------+------------+----------+-------+\n| product_id | first_year | quantity | price |\n+------------+------------+----------+-------+ \n| 100        | 2008       | 10       | 5000  |\n| 200        | 2011       | 15       | 9000  |\n+------------+------------+----------+-------+\n</pre>\n",
+  "translatedTitle": null,
+  "translatedContent": null,
+  "codeSnippets": [
+    {
+      "lang": "MySQL",
+      "langSlug": "mysql",
+      "code": "# Write your MySQL query statement below\n"
+    },
+    {
+      "lang": "MS SQL Server",
+      "langSlug": "mssql",
+      "code": "/* Write your T-SQL query statement below */\n"
+    },
+    {
+      "lang": "PostgreSQL",
+      "langSlug": "postgresql",
+      "code": "-- Write your PostgreSQL query statement below\n"
+    },
+    {
+      "lang": "Oracle",
+      "langSlug": "oraclesql",
+      "code": "/* Write your PL/SQL query statement below */\n"
+    },
+    {
+      "lang": "Pandas",
+      "langSlug": "pythondata",
+      "code": "import pandas as pd\n\ndef sales_analysis(sales: pd.DataFrame) -> pd.DataFrame:\n    "
+    }
+  ],
+  "metaData": "{\"mysql\": [\"Create table If Not Exists Sales (sale_id int, product_id int, year int, quantity int, price int)\"], \"mssql\": [\"Create table Sales (sale_id int, product_id int, year int, quantity int, price int)\"], \"oraclesql\": [\"Create table Sales (sale_id int, product_id int, year int, quantity int, price int)\"], \"database\": true, \"name\": \"sales_analysis\", \"pythondata\": [\"Sales = pd.DataFrame([], columns=['sale_id', 'product_id', 'year', 'quantity', 'price']).astype({'sale_id':'Int64', 'product_id':'Int64', 'year':'Int64', 'quantity':'Int64', 'price':'Int64'})\"], \"postgresql\": [\"Create table If Not Exists Sales (sale_id int, product_id int, year int, quantity int, price int)\\n\"], \"database_schema\": {\"Sales\": {\"sale_id\": \"INT\", \"product_id\": \"INT\", \"year\": \"INT\", \"quantity\": \"INT\", \"price\": \"INT\"}}}",
+  "exampleTestcases": "{\"headers\":{\"Sales\":[\"sale_id\",\"product_id\",\"year\",\"quantity\",\"price\"]},\"rows\":{\"Sales\":[[1,100,2008,10,5000],[2,100,2009,12,5000],[7,200,2011,15,9000]]}}",
+  "sampleTestCase": "{\"headers\":{\"Sales\":[\"sale_id\",\"product_id\",\"year\",\"quantity\",\"price\"]},\"rows\":{\"Sales\":[[1,100,2008,10,5000],[2,100,2009,12,5000],[7,200,2011,15,9000]]}}",
+  "topicTags": [
+    {
+      "name": "Database",
+      "slug": "database",
+      "translatedName": null
+    }
+  ]
+}

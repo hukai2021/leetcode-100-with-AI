@@ -1,0 +1,245 @@
+{
+  "version": "0.2.0",
+  "testedAt": "2026-09-12T15:22:21.412Z",
+  "dialect": "SQLite 3.50.4",
+  "totalProblems": 50,
+  "passedProblems": 50,
+  "totalCases": 103,
+  "passedCases": 103,
+  "officialExamples": 53,
+  "independentBoundaryCases": 50,
+  "correctedOfficialExampleIds": [
+    "sql-1484"
+  ],
+  "rejectedWrongCount": 5,
+  "hashes": {
+    "data/sql-problems.json": "585c2e531730c9ba680a8ac66b2abe3cd8c80bd20f3c55ecfdefda76a4153f7a",
+    "data/sql-cases.json": "5397efdfa5f34e1bae6ffde8e28cb698af5adddf5f066c0b74e3030d23f3682b",
+    "scripts/sql-reference-solutions.json": "acd4d59972edc0cee802cd6ff89e92a3e7ea67148de5bd661b73f5c29ef78226",
+    "electron/sql-runner.cjs": "d64aa2c6ea4be07d842cbdd17a27e2e248077792b9278883bf30f13b36c23a63",
+    "electron/sql-harness.py": "98065efc77a9b53ff4fb9e618483a37ec1e39472fb67527bcbbf0240152b0c05"
+  },
+  "tests": {
+    "unitAndIntegration": {
+      "passed": 27,
+      "failed": 0,
+      "command": "node --test tests/sql-catalog.test.cjs tests/sql-service.test.cjs tests/sql-runner.test.cjs tests/store.test.cjs"
+    }
+  },
+  "hot100Unchanged": {
+    "data/problems.json": "86f0cd334a6d8f3bf823ebe39c0516a6d01c9b1a6651a327f1e1123c1998bd1f",
+    "data/cases.json": "693a8cf49242beac3a46cb34f2ffa8ae2b62b155e5a429c477b1f629946449f5",
+    "electron/runner.cjs": "cf56518a170ce7b1ac42f6eb4c59fd70440bc04453419bca2f80a6f2c0fa82d2",
+    "electron/runner-harness.cjs": "c101374d44fe0c825c199e4c6a283a6865ed9764202f481002e832299f4be6df"
+  },
+  "desktop": {
+    "completedAt": "2026-09-12T10:15:51.395Z",
+    "passed": true,
+    "checks": [
+      {
+        "name": "旧版仅保存 language=cpp 的档案：首次跨库后题目/语言/草稿保持",
+        "passed": true
+      },
+      {
+        "name": "独立桌面加载 Hot100 + SQL50 与随包 SQLite",
+        "passed": true
+      },
+      {
+        "name": "断开渲染器网络后，按钮执行错误/正确 SQL 并展示结果表格",
+        "passed": true
+      },
+      {
+        "name": "实际逐题打开全部 50 道 SQL 中文题面",
+        "passed": true
+      },
+      {
+        "name": "切库恢复原算法语言/草稿/笔记，SQL 上下题导航限定本题库",
+        "passed": true
+      },
+      {
+        "name": "第196题真实 DELETE 执行并校验剩余数据",
+        "passed": true
+      },
+      {
+        "name": "增加 SQL 后，原 C++17 本地编译执行仍通过",
+        "passed": true
+      },
+      {
+        "name": "重启恢复 SQL 草稿、笔记、收藏、完成状态与本题历史",
+        "passed": true
+      },
+      {
+        "name": "全过程无 renderer pageerror",
+        "passed": true
+      }
+    ]
+  },
+  "live": {
+    "completedAt": "2026-09-12T10:08:25.370Z",
+    "passed": true,
+    "checks": [
+      {
+        "name": "独立桌面加载 Hot100 + SQL50 与随包 SQLite",
+        "passed": true
+      },
+      {
+        "name": "断开渲染器网络后，按钮执行错误/正确 SQL 并展示结果表格",
+        "passed": true
+      },
+      {
+        "name": "实际逐题打开全部 50 道 SQL 中文题面",
+        "passed": true
+      },
+      {
+        "name": "切库恢复原算法语言/草稿/笔记，SQL 上下题导航限定本题库",
+        "passed": true
+      },
+      {
+        "name": "第196题真实 DELETE 执行并校验剩余数据",
+        "passed": true
+      },
+      {
+        "name": "增加 SQL 后，原 C++17 本地编译执行仍通过",
+        "passed": true
+      },
+      {
+        "name": "官方 App Server 复用现有 ChatGPT 认证；学习数据使用独立测试档案",
+        "passed": true
+      },
+      {
+        "name": "一次真实 SQL 错解批改完成",
+        "passed": true
+      },
+      {
+        "name": "右侧聊天窗口真实连续追问",
+        "passed": true
+      },
+      {
+        "name": "修正 SQL 后本地通过，旧提交保持原错误代码快照",
+        "passed": true
+      },
+      {
+        "name": "重启恢复 SQL 草稿、笔记、收藏、完成状态与本题历史",
+        "passed": true
+      },
+      {
+        "name": "全过程无 renderer pageerror",
+        "passed": true
+      }
+    ]
+  },
+  "realAI": {
+    "accountType": "chatgpt",
+    "route": "official Codex App Server stdio",
+    "model": "gpt-6-astra",
+    "localPassedBeforeFix": 0,
+    "localTotal": 2,
+    "reviewCharacters": 1014,
+    "followUpCharacters": 206,
+    "correctedLocalPassed": true,
+    "originalLearningProfileModified": false
+  },
+  "hot100Regression": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "无浏览器网络时100题缓存及双语言模板可读取",
+        "passed": true
+      },
+      {
+        "name": "点击运行按钮执行Python代码，3个样例通过",
+        "passed": true
+      },
+      {
+        "name": "真实Python/C++格式化器可用",
+        "passed": true
+      },
+      {
+        "name": "点击运行按钮编译执行C++17代码，3个样例通过",
+        "passed": true
+      },
+      {
+        "name": "切题独立草稿/对话上下文",
+        "passed": true
+      },
+      {
+        "name": "切题、切语言后双语言草稿保持",
+        "passed": true
+      },
+      {
+        "name": "重置前快照可恢复",
+        "passed": true
+      },
+      {
+        "name": "独立聊天窗口可启动并读取本题上下文",
+        "passed": true
+      },
+      {
+        "name": "1366宽与125%缩放：无横向溢出，聊天输入框完整位于视口",
+        "passed": true
+      },
+      {
+        "name": "题面折叠/展开及可键盘调节分隔条",
+        "passed": true
+      },
+      {
+        "name": "最后输入后立即关闭窗口，重启笔记完整恢复",
+        "passed": true
+      }
+    ]
+  },
+  "installed": {
+    "completedAt": "2026-09-12T10:20:46.563Z",
+    "passed": true,
+    "checks": [
+      {
+        "name": "旧版仅保存 language=cpp 的档案：首次跨库后题目/语言/草稿保持",
+        "passed": true
+      },
+      {
+        "name": "独立桌面加载 Hot100 + SQL50 与随包 SQLite",
+        "passed": true
+      },
+      {
+        "name": "断开渲染器网络后，按钮执行错误/正确 SQL 并展示结果表格",
+        "passed": true
+      },
+      {
+        "name": "实际逐题打开全部 50 道 SQL 中文题面",
+        "passed": true
+      },
+      {
+        "name": "切库恢复原算法语言/草稿/笔记，SQL 上下题导航限定本题库",
+        "passed": true
+      },
+      {
+        "name": "第196题真实 DELETE 执行并校验剩余数据",
+        "passed": true
+      },
+      {
+        "name": "增加 SQL 后，原 C++17 本地编译执行仍通过",
+        "passed": true
+      },
+      {
+        "name": "重启恢复 SQL 草稿、笔记、收藏、完成状态与本题历史",
+        "passed": true
+      },
+      {
+        "name": "全过程无 renderer pageerror",
+        "passed": true
+      }
+    ]
+  },
+  "upgrade": {
+    "version": "0.2.0",
+    "testedAt": "2026-09-12T10:19:34.8915138Z",
+    "installerExitCode": 0,
+    "installedExecutableExists": true,
+    "learningUnchanged": true,
+    "shortcutTargetVerified": true,
+    "shortcutLaunched": true,
+    "signature": "NotSigned",
+    "installerBytes": 357629693,
+    "installerSHA256": "d7eb0b921a463075826fa64ddb218e9294d352a4c694476e082d83faf8f5971a"
+  }
+}

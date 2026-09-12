@@ -13,3 +13,20 @@ html,body,#root,.app{width:100%;max-width:100%;min-width:0}.app-body{position:re
 @media(max-height:620px){.app-header{height:49px;min-height:49px}.problem-toolbar{height:35px;min-height:35px}.app-footer{height:21px;min-height:21px}.editor-area{min-height:60px}.test-panel{min-height:74px;height:26%}.run-actions{padding:6px 8px}.code-status{padding:4px 10px}.chat-heading{height:37px;min-height:37px}.chat-context{height:29px;min-height:29px}.chat-compose{padding:7px 10px}.compose-box textarea{min-height:43px}.quick-actions{margin-bottom:6px}.messages{padding-top:13px}.chat-welcome h3{font-size:17px}.coach-avatar{margin-bottom:13px}.chat-welcome>small{margin-top:15px}.quiet-empty{min-height:55px;gap:5px}.quiet-empty>svg{display:none}}
 
 @media(max-width:1100px) and (max-height:620px){.study-main{grid-template-rows:minmax(90px,var(--statement-height,32%)) 5px minmax(0,1fr)}.study-main.statement-collapsed{grid-template-rows:minmax(0,1fr)}}
+
+.collection-switch{display:flex;gap:4px;margin:0 14px 10px;padding:4px;background:var(--subtle);border:1px solid var(--line);border-radius:8px;flex-shrink:0}
+.collection-switch button{flex:1;padding:8px 3px;border:0;border-radius:5px;background:transparent;color:var(--muted);font-size:12px;font-weight:600}
+.collection-switch button[aria-pressed=true]{background:var(--surface);color:var(--accent);box-shadow:0 1px 4px #0001}
+.sql-dialect-note{background:var(--subtle);border:1px solid var(--line);border-radius:6px;padding:10px 12px;margin:0 0 14px;font-size:11px;line-height:1.7}
+.sql-dialect-note b{color:var(--accent)}.sql-dialect-note p{margin:6px 0 0}
+.sql-table-block{min-width:0;margin:10px 0}.sql-table-block>small{display:block;margin-top:5px;color:var(--muted);font-size:10px}
+.sql-table-scroll{overflow:auto;max-width:100%;border:1px solid var(--line);border-radius:5px;max-height:260px}
+.sql-data-table{border-collapse:collapse;width:100%;font-family:Consolas,monospace;font-size:12px;text-align:left}
+.sql-data-table caption{text-align:left;padding:8px;font-family:inherit;font-weight:600;color:var(--text);background:var(--subtle)}
+.sql-data-table th,.sql-data-table td{padding:7px 10px;border-bottom:1px solid var(--line);white-space:pre}
+.sql-data-table th{background:var(--subtle);position:sticky;top:0;font-weight:600}
+.sql-null,.sql-empty{color:var(--muted);font-style:italic}.sql-empty-result{padding:8px;color:var(--muted);font-size:11px}
+.sql-case .case-grid{display:flex;flex-direction:column;gap:8px}.sql-input-tables{min-width:0}.case-value-label{font-size:11px}
+.sql-library .problem-content table{border-collapse:collapse;display:block;overflow:auto;max-width:100%;margin:12px 0;font-size:12px}
+.sql-library .problem-content table th,.sql-library .problem-content table td{padding:7px 10px;border:1px solid var(--line);white-space:nowrap}
+.sql-library .problem-content table th{background:var(--subtle)}

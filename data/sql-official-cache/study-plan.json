@@ -1,0 +1,398 @@
+{
+  "name": "SQL 50",
+  "slug": "top-sql-50",
+  "planSubGroups": [
+    {
+      "name": "Select",
+      "slug": "top-sql-50-128-cxxp",
+      "questions": [
+        {
+          "titleSlug": "recyclable-and-low-fat-products",
+          "title": "Recyclable and Low Fat Products",
+          "translatedTitle": null,
+          "questionFrontendId": "1757",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "find-customer-referee",
+          "title": "Find Customer Referee",
+          "translatedTitle": null,
+          "questionFrontendId": "584",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "big-countries",
+          "title": "Big Countries",
+          "translatedTitle": null,
+          "questionFrontendId": "595",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "article-views-i",
+          "title": "Article Views I",
+          "translatedTitle": null,
+          "questionFrontendId": "1148",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "invalid-tweets",
+          "title": "Invalid Tweets",
+          "translatedTitle": null,
+          "questionFrontendId": "1683",
+          "difficulty": "EASY"
+        }
+      ]
+    },
+    {
+      "name": "Basic Joins",
+      "slug": "top-sql-50-129-ggw5",
+      "questions": [
+        {
+          "titleSlug": "replace-employee-id-with-the-unique-identifier",
+          "title": "Replace Employee ID With The Unique Identifier",
+          "translatedTitle": null,
+          "questionFrontendId": "1378",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "product-sales-analysis-i",
+          "title": "Product Sales Analysis I",
+          "translatedTitle": null,
+          "questionFrontendId": "1068",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "customer-who-visited-but-did-not-make-any-transactions",
+          "title": "Customer Who Visited but Did Not Make Any Transactions",
+          "translatedTitle": null,
+          "questionFrontendId": "1581",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "rising-temperature",
+          "title": "Rising Temperature",
+          "translatedTitle": null,
+          "questionFrontendId": "197",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "average-time-of-process-per-machine",
+          "title": "Average Time of Process per Machine",
+          "translatedTitle": null,
+          "questionFrontendId": "1661",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "employee-bonus",
+          "title": "Employee Bonus",
+          "translatedTitle": null,
+          "questionFrontendId": "577",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "students-and-examinations",
+          "title": "Students and Examinations",
+          "translatedTitle": null,
+          "questionFrontendId": "1280",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "managers-with-at-least-5-direct-reports",
+          "title": "Managers with at Least 5 Direct Reports",
+          "translatedTitle": null,
+          "questionFrontendId": "570",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "titleSlug": "confirmation-rate",
+          "title": "Confirmation Rate",
+          "translatedTitle": null,
+          "questionFrontendId": "1934",
+          "difficulty": "MEDIUM"
+        }
+      ]
+    },
+    {
+      "name": "Basic Aggregate Functions",
+      "slug": "top-sql-50-130-9fkf",
+      "questions": [
+        {
+          "titleSlug": "not-boring-movies",
+          "title": "Not Boring Movies",
+          "translatedTitle": null,
+          "questionFrontendId": "620",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "average-selling-price",
+          "title": "Average Selling Price",
+          "translatedTitle": null,
+          "questionFrontendId": "1251",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "project-employees-i",
+          "title": "Project Employees I",
+          "translatedTitle": null,
+          "questionFrontendId": "1075",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "percentage-of-users-attended-a-contest",
+          "title": "Percentage of Users Attended a Contest",
+          "translatedTitle": null,
+          "questionFrontendId": "1633",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "queries-quality-and-percentage",
+          "title": "Queries Quality and Percentage",
+          "translatedTitle": null,
+          "questionFrontendId": "1211",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "monthly-transactions-i",
+          "title": "Monthly Transactions I",
+          "translatedTitle": null,
+          "questionFrontendId": "1193",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "titleSlug": "immediate-food-delivery-ii",
+          "title": "Immediate Food Delivery II",
+          "translatedTitle": null,
+          "questionFrontendId": "1174",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "titleSlug": "game-play-analysis-iv",
+          "title": "Game Play Analysis IV",
+          "translatedTitle": null,
+          "questionFrontendId": "550",
+          "difficulty": "MEDIUM"
+        }
+      ]
+    },
+    {
+      "name": "Sorting and Grouping",
+      "slug": "top-sql-50-131-ouut",
+      "questions": [
+        {
+          "titleSlug": "number-of-unique-subjects-taught-by-each-teacher",
+          "title": "Number of Unique Subjects Taught by Each Teacher",
+          "translatedTitle": null,
+          "questionFrontendId": "2356",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "user-activity-for-the-past-30-days-i",
+          "title": "User Activity for the Past 30 Days I",
+          "translatedTitle": null,
+          "questionFrontendId": "1141",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "product-sales-analysis-iii",
+          "title": "Product Sales Analysis III",
+          "translatedTitle": null,
+          "questionFrontendId": "1070",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "titleSlug": "classes-with-at-least-5-students",
+          "title": "Classes With at Least 5 Students",
+          "translatedTitle": null,
+          "questionFrontendId": "596",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "find-followers-count",
+          "title": "Find Followers Count",
+          "translatedTitle": null,
+          "questionFrontendId": "1729",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "biggest-single-number",
+          "title": "Biggest Single Number",
+          "translatedTitle": null,
+          "questionFrontendId": "619",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "customers-who-bought-all-products",
+          "title": "Customers Who Bought All Products",
+          "translatedTitle": null,
+          "questionFrontendId": "1045",
+          "difficulty": "MEDIUM"
+        }
+      ]
+    },
+    {
+      "name": "Advanced Select and Joins",
+      "slug": "top-sql-50-132-oc5p",
+      "questions": [
+        {
+          "titleSlug": "the-number-of-employees-which-report-to-each-employee",
+          "title": "The Number of Employees Which Report to Each Employee",
+          "translatedTitle": null,
+          "questionFrontendId": "1731",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "primary-department-for-each-employee",
+          "title": "Primary Department for Each Employee",
+          "translatedTitle": null,
+          "questionFrontendId": "1789",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "triangle-judgement",
+          "title": "Triangle Judgement",
+          "translatedTitle": null,
+          "questionFrontendId": "610",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "consecutive-numbers",
+          "title": "Consecutive Numbers",
+          "translatedTitle": null,
+          "questionFrontendId": "180",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "titleSlug": "product-price-at-a-given-date",
+          "title": "Product Price at a Given Date",
+          "translatedTitle": null,
+          "questionFrontendId": "1164",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "titleSlug": "last-person-to-fit-in-the-bus",
+          "title": "Last Person to Fit in the Bus",
+          "translatedTitle": null,
+          "questionFrontendId": "1204",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "titleSlug": "count-salary-categories",
+          "title": "Count Salary Categories",
+          "translatedTitle": null,
+          "questionFrontendId": "1907",
+          "difficulty": "MEDIUM"
+        }
+      ]
+    },
+    {
+      "name": "Subqueries",
+      "slug": "top-sql-50-133-0stx",
+      "questions": [
+        {
+          "titleSlug": "employees-whose-manager-left-the-company",
+          "title": "Employees Whose Manager Left the Company",
+          "translatedTitle": null,
+          "questionFrontendId": "1978",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "exchange-seats",
+          "title": "Exchange Seats",
+          "translatedTitle": null,
+          "questionFrontendId": "626",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "titleSlug": "movie-rating",
+          "title": "Movie Rating",
+          "translatedTitle": null,
+          "questionFrontendId": "1341",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "titleSlug": "restaurant-growth",
+          "title": "Restaurant Growth",
+          "translatedTitle": null,
+          "questionFrontendId": "1321",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "titleSlug": "friend-requests-ii-who-has-the-most-friends",
+          "title": "Friend Requests II: Who Has the Most Friends",
+          "translatedTitle": null,
+          "questionFrontendId": "602",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "titleSlug": "investments-in-2016",
+          "title": "Investments in 2016",
+          "translatedTitle": null,
+          "questionFrontendId": "585",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "titleSlug": "department-top-three-salaries",
+          "title": "Department Top Three Salaries",
+          "translatedTitle": null,
+          "questionFrontendId": "185",
+          "difficulty": "HARD"
+        }
+      ]
+    },
+    {
+      "name": "Advanced String Functions / Regex / Clause",
+      "slug": "top-sql-50-134-jwwc",
+      "questions": [
+        {
+          "titleSlug": "fix-names-in-a-table",
+          "title": "Fix Names in a Table",
+          "translatedTitle": null,
+          "questionFrontendId": "1667",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "patients-with-a-condition",
+          "title": "Patients With a Condition",
+          "translatedTitle": null,
+          "questionFrontendId": "1527",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "delete-duplicate-emails",
+          "title": "Delete Duplicate Emails",
+          "translatedTitle": null,
+          "questionFrontendId": "196",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "second-highest-salary",
+          "title": "Second Highest Salary",
+          "translatedTitle": null,
+          "questionFrontendId": "176",
+          "difficulty": "MEDIUM"
+        },
+        {
+          "titleSlug": "group-sold-products-by-the-date",
+          "title": "Group Sold Products By The Date",
+          "translatedTitle": null,
+          "questionFrontendId": "1484",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "list-the-products-ordered-in-a-period",
+          "title": "List the Products Ordered in a Period",
+          "translatedTitle": null,
+          "questionFrontendId": "1327",
+          "difficulty": "EASY"
+        },
+        {
+          "titleSlug": "find-users-with-valid-e-mails",
+          "title": "Find Users With Valid E-Mails",
+          "translatedTitle": null,
+          "questionFrontendId": "1517",
+          "difficulty": "EASY"
+        }
+      ]
+    }
+  ]
+}

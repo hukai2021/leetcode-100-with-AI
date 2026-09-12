@@ -1,8 +1,8 @@
 {
   "name": "hot100-ai-coach",
   "productName": "Hot100 AI Coach",
-  "version": "0.1.1",
-  "description": "本地刷题、真实测试与 ChatGPT 算法辅导",
+  "version": "0.2.0",
+  "description": "本地 Hot 100、SQL 50 刷题、真实测试与 ChatGPT 辅导",
   "author": "Hot100 AI Coach",
   "private": true,
   "main": "electron/main.cjs",
@@ -47,6 +47,8 @@
       "assets/**/*",
       "data/problems.json",
       "data/cases.json",
+      "data/sql-problems.json",
+      "data/sql-cases.json",
       "package.json"
     ],
     "extraResources": [

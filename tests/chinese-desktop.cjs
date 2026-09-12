@@ -18,6 +18,8 @@ const call=(m,p)=>page.evaluate(([m,p])=>window.coach.invoke(m,p),[m,p]);
   await page.context().setOffline(true);
   const version=await app.evaluate(({app})=>app.getVersion());assert.equal(version,require('../package.json').version);report.version=version;
   const boot=await call('bootstrap');
+  boot.problems=boot.problems.filter(p=>p.collection==='hot100');
+  boot.cases=Object.fromEntries(boot.problems.map(p=>[p.id,boot.cases[p.id]]));
   assert.equal(boot.problems.length,100);assert.ok(boot.problems.every(p=>p.source?.contentLanguage==='zh-CN'&&/[\u4e00-\u9fff]/.test(p.content)));
   assert.equal(boot.problems.filter(p=>p.source.translation).length,98);
   assert.equal(Object.values(boot.cases).reduce((a,c)=>a+c.length,0),247);

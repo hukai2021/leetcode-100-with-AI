@@ -1,0 +1,3195 @@
+[
+  {
+    "id": "sql-1757",
+    "displayId": "1757",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "可回收且低脂的产品",
+    "slug": "recyclable-and-low-fat-products",
+    "difficulty": "Easy",
+    "category": "查询基础",
+    "tags": [
+      "SQL",
+      "查询基础"
+    ],
+    "url": "https://leetcode.com/problems/recyclable-and-low-fat-products/",
+    "content": "<p>找出同时属于低脂产品并且可回收的产品，返回 product_id。</p><h3>表结构</h3><h4>Products</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>product_id</td><td>INTEGER</td></tr><tr><td>low_fats</td><td>TEXT</td></tr><tr><td>recyclable</td><td>TEXT</td></tr></tbody></table><h3>说明与约束</h3><p>Products.product_id 唯一。low_fats 和 recyclable 的取值都是 Y 或 N，Y 分别表示低脂、可回收。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Products</h4><table><thead><tr><th>product_id</th><th>low_fats</th><th>recyclable</th></tr></thead><tbody><tr><td>0</td><td>Y</td><td>N</td></tr><tr><td>1</td><td>Y</td><td>Y</td></tr><tr><td>2</td><td>N</td><td>Y</td></tr><tr><td>3</td><td>Y</td><td>Y</td></tr><tr><td>4</td><td>N</td><td>N</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>product_id</th></tr></thead><tbody><tr><td>1</td></tr><tr><td>3</td></tr></tbody></table><p>解释：产品 1 和 3 的两个标记都是 Y，因此满足条件。</p><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Products",
+          "columns": [
+            {
+              "name": "product_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "low_fats",
+              "type": "TEXT"
+            },
+            {
+              "name": "recyclable",
+              "type": "TEXT"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/recyclable-and-low-fat-products/",
+      "verifiedAt": "2026-09-12T10:04:26.393314+00:00",
+      "contentUrl": "https://leetcode.com/problems/recyclable-and-low-fat-products/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "59a0d15153c81b8cae20baa2398ebc7530ad38b242a5ceb5f53fdd5079fc1e7e"
+      }
+    }
+  },
+  {
+    "id": "sql-584",
+    "displayId": "584",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "寻找用户推荐人",
+    "slug": "find-customer-referee",
+    "difficulty": "Easy",
+    "category": "查询基础",
+    "tags": [
+      "SQL",
+      "查询基础"
+    ],
+    "url": "https://leetcode.com/problems/find-customer-referee/",
+    "content": "<p>返回推荐人编号不等于 2，或者没有推荐人的顾客姓名 name。</p><h3>表结构</h3><h4>Customer</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>id</td><td>INTEGER</td></tr><tr><td>name</td><td>TEXT</td></tr><tr><td>referee_id</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Customer.id 是主键；name 为姓名，referee_id 是推荐人编号，没有推荐人时为 NULL。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Customer</h4><table><thead><tr><th>id</th><th>name</th><th>referee_id</th></tr></thead><tbody><tr><td>1</td><td>Will</td><td><em>NULL</em></td></tr><tr><td>2</td><td>Jane</td><td><em>NULL</em></td></tr><tr><td>3</td><td>Alex</td><td>2</td></tr><tr><td>4</td><td>Bill</td><td><em>NULL</em></td></tr><tr><td>5</td><td>Zack</td><td>1</td></tr><tr><td>6</td><td>Mark</td><td>2</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>name</th></tr></thead><tbody><tr><td>Will</td></tr><tr><td>Jane</td></tr><tr><td>Bill</td></tr><tr><td>Zack</td></tr></tbody></table><p>解释：没有推荐人的顾客也应保留；不能只使用 referee_id <> 2。</p><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Customer",
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "name",
+              "type": "TEXT"
+            },
+            {
+              "name": "referee_id",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/find-customer-referee/",
+      "verifiedAt": "2026-09-12T10:04:26.393314+00:00",
+      "contentUrl": "https://leetcode.com/problems/find-customer-referee/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "748751997f45ec10da903211b3ab6daf7b4d2652c9e570997175d5ca23b46d60"
+      }
+    }
+  },
+  {
+    "id": "sql-595",
+    "displayId": "595",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "大的国家",
+    "slug": "big-countries",
+    "difficulty": "Easy",
+    "category": "查询基础",
+    "tags": [
+      "SQL",
+      "查询基础"
+    ],
+    "url": "https://leetcode.com/problems/big-countries/",
+    "content": "<p>面积至少为 3000000 平方千米，或者人口至少为 25000000 的国家是大国。返回 name、population、area。</p><h3>表结构</h3><h4>World</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>name</td><td>TEXT</td></tr><tr><td>continent</td><td>TEXT</td></tr><tr><td>area</td><td>INTEGER</td></tr><tr><td>population</td><td>INTEGER</td></tr><tr><td>gdp</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>World.name 是主键；continent 为所属洲，area 为面积，population 为人口，gdp 为国内生产总值。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>World</h4><table><thead><tr><th>name</th><th>continent</th><th>area</th><th>population</th><th>gdp</th></tr></thead><tbody><tr><td>Afghanistan</td><td>Asia</td><td>652230</td><td>25500100</td><td>20343000000</td></tr><tr><td>Albania</td><td>Europe</td><td>28748</td><td>2831741</td><td>12960000000</td></tr><tr><td>Algeria</td><td>Africa</td><td>2381741</td><td>37100000</td><td>188681000000</td></tr><tr><td>Andorra</td><td>Europe</td><td>468</td><td>78115</td><td>3712000000</td></tr><tr><td>Angola</td><td>Africa</td><td>1246700</td><td>20609294</td><td>100990000000</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>name</th><th>population</th><th>area</th></tr></thead><tbody><tr><td>Afghanistan</td><td>25500100</td><td>652230</td></tr><tr><td>Algeria</td><td>37100000</td><td>2381741</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "World",
+          "columns": [
+            {
+              "name": "name",
+              "type": "TEXT"
+            },
+            {
+              "name": "continent",
+              "type": "TEXT"
+            },
+            {
+              "name": "area",
+              "type": "INTEGER"
+            },
+            {
+              "name": "population",
+              "type": "INTEGER"
+            },
+            {
+              "name": "gdp",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/big-countries/",
+      "verifiedAt": "2026-09-12T10:04:26.394326+00:00",
+      "contentUrl": "https://leetcode.com/problems/big-countries/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "c35be12dd035462c746357d34dec070a7ba013f15319ac8c2004a0aed138d82b"
+      }
+    }
+  },
+  {
+    "id": "sql-1148",
+    "displayId": "1148",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "文章浏览 I",
+    "slug": "article-views-i",
+    "difficulty": "Easy",
+    "category": "查询基础",
+    "tags": [
+      "SQL",
+      "查询基础"
+    ],
+    "url": "https://leetcode.com/problems/article-views-i/",
+    "content": "<p>找出至少浏览过一篇自己文章的作者，作者编号输出为 id，去重后按 id 升序返回。</p><h3>表结构</h3><h4>Views</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>article_id</td><td>INTEGER</td></tr><tr><td>author_id</td><td>INTEGER</td></tr><tr><td>viewer_id</td><td>INTEGER</td></tr><tr><td>view_date</td><td>TEXT</td></tr></tbody></table><h3>说明与约束</h3><p>Views 没有主键，可能有重复行。article_id 为文章编号，author_id 为作者，viewer_id 为读者，view_date 为浏览日期。author_id 和 viewer_id 相同表示同一个人。</p><p>结果按上述要求排序。</p><h3>示例 1</h3><p>输入：</p><h4>Views</h4><table><thead><tr><th>article_id</th><th>author_id</th><th>viewer_id</th><th>view_date</th></tr></thead><tbody><tr><td>1</td><td>3</td><td>5</td><td>2019-08-01</td></tr><tr><td>1</td><td>3</td><td>6</td><td>2019-08-02</td></tr><tr><td>2</td><td>7</td><td>7</td><td>2019-08-01</td></tr><tr><td>2</td><td>7</td><td>6</td><td>2019-08-02</td></tr><tr><td>4</td><td>7</td><td>1</td><td>2019-07-22</td></tr><tr><td>3</td><td>4</td><td>4</td><td>2019-07-21</td></tr><tr><td>3</td><td>4</td><td>4</td><td>2019-07-21</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>id</th></tr></thead><tbody><tr><td>4</td></tr><tr><td>7</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Views",
+          "columns": [
+            {
+              "name": "article_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "author_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "viewer_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "view_date",
+              "type": "TEXT"
+            }
+          ]
+        }
+      ],
+      "orderMatters": true,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/article-views-i/",
+      "verifiedAt": "2026-09-12T10:04:26.394326+00:00",
+      "contentUrl": "https://leetcode.com/problems/article-views-i/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "8f2e3a983a1d33859e2e12939cf540761187a32e8f8d10a7b8288c398fcfb646"
+      }
+    }
+  },
+  {
+    "id": "sql-1683",
+    "displayId": "1683",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "无效的推文",
+    "slug": "invalid-tweets",
+    "difficulty": "Easy",
+    "category": "查询基础",
+    "tags": [
+      "SQL",
+      "查询基础"
+    ],
+    "url": "https://leetcode.com/problems/invalid-tweets/",
+    "content": "<p>找出内容字符数严格大于 15 的无效推文，返回 tweet_id。</p><h3>表结构</h3><h4>Tweets</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>tweet_id</td><td>INTEGER</td></tr><tr><td>content</td><td>TEXT</td></tr></tbody></table><h3>说明与约束</h3><p>Tweets.tweet_id 是主键。content 只包含字母、数字、感叹号和空格。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Tweets</h4><table><thead><tr><th>tweet_id</th><th>content</th></tr></thead><tbody><tr><td>1</td><td>Let us Code</td></tr><tr><td>2</td><td>More than fifteen chars are here!</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>tweet_id</th></tr></thead><tbody><tr><td>2</td></tr></tbody></table><p>解释：示例中两条推文长度分别为 11 和 33，只有第二条超过 15。</p><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。SQLite 使用 length(content) 统计字符数；原题其他方言可能使用 CHAR_LENGTH。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Tweets",
+          "columns": [
+            {
+              "name": "tweet_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "content",
+              "type": "TEXT"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": "SQLite 使用 length(content) 统计字符数；原题其他方言可能使用 CHAR_LENGTH。"
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/invalid-tweets/",
+      "verifiedAt": "2026-09-12T10:04:26.395323+00:00",
+      "contentUrl": "https://leetcode.com/problems/invalid-tweets/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "09c4d998452e2af95dce200f4c6c9c9b581653b93a6b54dfd5651254e45d30ea"
+      }
+    }
+  },
+  {
+    "id": "sql-1378",
+    "displayId": "1378",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "使用唯一标识码替换员工 ID",
+    "slug": "replace-employee-id-with-the-unique-identifier",
+    "difficulty": "Easy",
+    "category": "基础连接",
+    "tags": [
+      "SQL",
+      "基础连接"
+    ],
+    "url": "https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/",
+    "content": "<p>返回每位员工的 unique_id 和 name。没有对应唯一标识码时，unique_id 显示为 NULL。</p><h3>表结构</h3><h4>Employees</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>id</td><td>INTEGER</td></tr><tr><td>name</td><td>TEXT</td></tr></tbody></table><h4>EmployeeUNI</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>id</td><td>INTEGER</td></tr><tr><td>unique_id</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Employees.id 是主键。EmployeeUNI 的联合主键为 (id, unique_id)，保存员工编号及对应唯一标识码。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Employees</h4><table><thead><tr><th>id</th><th>name</th></tr></thead><tbody><tr><td>1</td><td>Alice</td></tr><tr><td>7</td><td>Bob</td></tr><tr><td>11</td><td>Meir</td></tr><tr><td>90</td><td>Winston</td></tr><tr><td>3</td><td>Jonathan</td></tr></tbody></table><h4>EmployeeUNI</h4><table><thead><tr><th>id</th><th>unique_id</th></tr></thead><tbody><tr><td>3</td><td>1</td></tr><tr><td>11</td><td>2</td></tr><tr><td>90</td><td>3</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>unique_id</th><th>name</th></tr></thead><tbody><tr><td><em>NULL</em></td><td>Alice</td></tr><tr><td><em>NULL</em></td><td>Bob</td></tr><tr><td>2</td><td>Meir</td></tr><tr><td>3</td><td>Winston</td></tr><tr><td>1</td><td>Jonathan</td></tr></tbody></table><p>解释：Alice 和 Bob 没有对应标识码，结果仍须包含他们，并显示 NULL。</p><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Employees",
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "name",
+              "type": "TEXT"
+            }
+          ]
+        },
+        {
+          "name": "EmployeeUNI",
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "unique_id",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/",
+      "verifiedAt": "2026-09-12T10:04:26.395323+00:00",
+      "contentUrl": "https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "79431b809ebc3dea44f71fefd901d660cf56e008c95194b7be2b8525041210dc"
+      }
+    }
+  },
+  {
+    "id": "sql-1068",
+    "displayId": "1068",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "产品销售分析 I",
+    "slug": "product-sales-analysis-i",
+    "difficulty": "Easy",
+    "category": "基础连接",
+    "tags": [
+      "SQL",
+      "基础连接"
+    ],
+    "url": "https://leetcode.com/problems/product-sales-analysis-i/",
+    "content": "<p>对 Sales 中的每条销售记录，返回 product_name、year 和 price。price 表示单价，保留不同销售记录形成的重复结果行。</p><h3>表结构</h3><h4>Sales</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>sale_id</td><td>INTEGER</td></tr><tr><td>product_id</td><td>INTEGER</td></tr><tr><td>year</td><td>INTEGER</td></tr><tr><td>quantity</td><td>INTEGER</td></tr><tr><td>price</td><td>INTEGER</td></tr></tbody></table><h4>Product</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>product_id</td><td>INTEGER</td></tr><tr><td>product_name</td><td>TEXT</td></tr></tbody></table><h3>说明与约束</h3><p>Sales 的联合主键为 (sale_id, year)，product_id 引用 Product.product_id。quantity 为销售数量。Product.product_id 是主键。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Sales</h4><table><thead><tr><th>sale_id</th><th>product_id</th><th>year</th><th>quantity</th><th>price</th></tr></thead><tbody><tr><td>1</td><td>100</td><td>2008</td><td>10</td><td>5000</td></tr><tr><td>2</td><td>100</td><td>2009</td><td>12</td><td>5000</td></tr><tr><td>7</td><td>200</td><td>2011</td><td>15</td><td>9000</td></tr></tbody></table><h4>Product</h4><table><thead><tr><th>product_id</th><th>product_name</th></tr></thead><tbody><tr><td>100</td><td>Nokia</td></tr><tr><td>200</td><td>Apple</td></tr><tr><td>300</td><td>Samsung</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>product_name</th><th>year</th><th>price</th></tr></thead><tbody><tr><td>Nokia</td><td>2008</td><td>5000</td></tr><tr><td>Nokia</td><td>2009</td><td>5000</td></tr><tr><td>Apple</td><td>2011</td><td>9000</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Sales",
+          "columns": [
+            {
+              "name": "sale_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "product_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "year",
+              "type": "INTEGER"
+            },
+            {
+              "name": "quantity",
+              "type": "INTEGER"
+            },
+            {
+              "name": "price",
+              "type": "INTEGER"
+            }
+          ]
+        },
+        {
+          "name": "Product",
+          "columns": [
+            {
+              "name": "product_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "product_name",
+              "type": "TEXT"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/product-sales-analysis-i/",
+      "verifiedAt": "2026-09-12T10:04:26.396322+00:00",
+      "contentUrl": "https://leetcode.com/problems/product-sales-analysis-i/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "0a58dd3916ad83ebbfdd1c0ccb33166f0994ec1c6c2540c845151aefbc4da46d"
+      }
+    }
+  },
+  {
+    "id": "sql-1581",
+    "displayId": "1581",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "进店却未进行过交易的顾客",
+    "slug": "customer-who-visited-but-did-not-make-any-transactions",
+    "difficulty": "Easy",
+    "category": "基础连接",
+    "tags": [
+      "SQL",
+      "基础连接"
+    ],
+    "url": "https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/",
+    "content": "<p>找出曾进店但该次访问没有发生任何交易的顾客，返回 customer_id，以及这种访问的次数 count_no_trans。</p><h3>表结构</h3><h4>Visits</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>visit_id</td><td>INTEGER</td></tr><tr><td>customer_id</td><td>INTEGER</td></tr></tbody></table><h4>Transactions</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>transaction_id</td><td>INTEGER</td></tr><tr><td>visit_id</td><td>INTEGER</td></tr><tr><td>amount</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Visits.visit_id 唯一，每行表示一次进店。Transactions.transaction_id 唯一，visit_id 表示交易所属的访问，一次访问可能有多笔交易。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Visits</h4><table><thead><tr><th>visit_id</th><th>customer_id</th></tr></thead><tbody><tr><td>1</td><td>23</td></tr><tr><td>2</td><td>9</td></tr><tr><td>4</td><td>30</td></tr><tr><td>5</td><td>54</td></tr><tr><td>6</td><td>96</td></tr><tr><td>7</td><td>54</td></tr><tr><td>8</td><td>54</td></tr></tbody></table><h4>Transactions</h4><table><thead><tr><th>transaction_id</th><th>visit_id</th><th>amount</th></tr></thead><tbody><tr><td>2</td><td>5</td><td>310</td></tr><tr><td>3</td><td>5</td><td>300</td></tr><tr><td>9</td><td>5</td><td>200</td></tr><tr><td>12</td><td>1</td><td>910</td></tr><tr><td>13</td><td>2</td><td>970</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>customer_id</th><th>count_no_trans</th></tr></thead><tbody><tr><td>54</td><td>2</td></tr><tr><td>30</td><td>1</td></tr><tr><td>96</td><td>1</td></tr></tbody></table><p>解释：顾客 54 有两次无交易访问；顾客 30 和 96 各有一次。一次访问有多笔交易也不能算作无交易访问。</p><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Visits",
+          "columns": [
+            {
+              "name": "visit_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "customer_id",
+              "type": "INTEGER"
+            }
+          ]
+        },
+        {
+          "name": "Transactions",
+          "columns": [
+            {
+              "name": "transaction_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "visit_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "amount",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/",
+      "verifiedAt": "2026-09-12T10:04:26.396322+00:00",
+      "contentUrl": "https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "33ef8148416fe6ad9b36ac758f25927dbbf6e3c934b5cb1bd5508dd2d468100b"
+      }
+    }
+  },
+  {
+    "id": "sql-197",
+    "displayId": "197",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "上升的温度",
+    "slug": "rising-temperature",
+    "difficulty": "Easy",
+    "category": "基础连接",
+    "tags": [
+      "SQL",
+      "基础连接"
+    ],
+    "url": "https://leetcode.com/problems/rising-temperature/",
+    "content": "<p>找出温度比前一个自然日更高的记录，返回 id。前一天没有记录时不应纳入结果。</p><h3>表结构</h3><h4>Weather</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>id</td><td>INTEGER</td></tr><tr><td>recordDate</td><td>TEXT</td></tr><tr><td>temperature</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Weather.id 唯一；recordDate 不重复；temperature 为该日温度。日期不保证连续，id 不表示日期顺序。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Weather</h4><table><thead><tr><th>id</th><th>recordDate</th><th>temperature</th></tr></thead><tbody><tr><td>1</td><td>2015-01-01</td><td>10</td></tr><tr><td>2</td><td>2015-01-02</td><td>25</td></tr><tr><td>3</td><td>2015-01-03</td><td>20</td></tr><tr><td>4</td><td>2015-01-04</td><td>30</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>id</th></tr></thead><tbody><tr><td>2</td></tr><tr><td>4</td></tr></tbody></table><p>解释：2015-01-02 和 2015-01-04 的温度分别高于其前一个自然日。</p><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。SQLite 可使用 date(recordDate, '-1 day')；不支持 MySQL 的 DATEDIFF 函数。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Weather",
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "recordDate",
+              "type": "TEXT"
+            },
+            {
+              "name": "temperature",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": "SQLite 可使用 date(recordDate, '-1 day')；不支持 MySQL 的 DATEDIFF 函数。"
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/rising-temperature/",
+      "verifiedAt": "2026-09-12T10:04:26.396322+00:00",
+      "contentUrl": "https://leetcode.com/problems/rising-temperature/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "6aa01815f3d549aa078a3c779bbe710efc8809b69ae1f9962033b12bf4c6dbbd"
+      }
+    }
+  },
+  {
+    "id": "sql-1661",
+    "displayId": "1661",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "每台机器的进程平均运行时间",
+    "slug": "average-time-of-process-per-machine",
+    "difficulty": "Easy",
+    "category": "基础连接",
+    "tags": [
+      "SQL",
+      "基础连接"
+    ],
+    "url": "https://leetcode.com/problems/average-time-of-process-per-machine/",
+    "content": "<p>每个进程的耗时等于 end 时间戳减去 start 时间戳。按机器求进程平均耗时，返回 machine_id、processing_time，平均值四舍五入到小数点后 3 位。</p><h3>表结构</h3><h4>Activity</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>machine_id</td><td>INTEGER</td></tr><tr><td>process_id</td><td>INTEGER</td></tr><tr><td>activity_type</td><td>TEXT</td></tr><tr><td>timestamp</td><td>REAL</td></tr></tbody></table><h3>说明与约束</h3><p>Activity 的联合主键为 (machine_id, process_id, activity_type)。activity_type 为 start 或 end；timestamp 的单位是秒。每个机器与进程组合恰有一条 start 和一条 end，start 早于 end；各机器运行相同数量的进程。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Activity</h4><table><thead><tr><th>machine_id</th><th>process_id</th><th>activity_type</th><th>timestamp</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>start</td><td>0.712</td></tr><tr><td>0</td><td>0</td><td>end</td><td>1.52</td></tr><tr><td>0</td><td>1</td><td>start</td><td>3.14</td></tr><tr><td>0</td><td>1</td><td>end</td><td>4.12</td></tr><tr><td>1</td><td>0</td><td>start</td><td>0.55</td></tr><tr><td>1</td><td>0</td><td>end</td><td>1.55</td></tr><tr><td>1</td><td>1</td><td>start</td><td>0.43</td></tr><tr><td>1</td><td>1</td><td>end</td><td>1.42</td></tr><tr><td>2</td><td>0</td><td>start</td><td>4.1</td></tr><tr><td>2</td><td>0</td><td>end</td><td>4.512</td></tr><tr><td>2</td><td>1</td><td>start</td><td>2.5</td></tr><tr><td>2</td><td>1</td><td>end</td><td>5.0</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>machine_id</th><th>processing_time</th></tr></thead><tbody><tr><td>0</td><td>0.894</td></tr><tr><td>1</td><td>0.995</td></tr><tr><td>2</td><td>1.456</td></tr></tbody></table><p>解释：三台机器各有两个进程；各自结束时间减开始时间后求平均，得到 0.894、0.995、1.456。</p><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Activity",
+          "columns": [
+            {
+              "name": "machine_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "process_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "activity_type",
+              "type": "TEXT"
+            },
+            {
+              "name": "timestamp",
+              "type": "REAL"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/average-time-of-process-per-machine/",
+      "verifiedAt": "2026-09-12T10:04:26.397323+00:00",
+      "contentUrl": "https://leetcode.com/problems/average-time-of-process-per-machine/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "8968dcb6c6a4875f1f2e6cd1b3f5e632d77e4aca2c93a93f7dd1536cf797ea25"
+      }
+    }
+  },
+  {
+    "id": "sql-577",
+    "displayId": "577",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "员工奖金",
+    "slug": "employee-bonus",
+    "difficulty": "Easy",
+    "category": "基础连接",
+    "tags": [
+      "SQL",
+      "基础连接"
+    ],
+    "url": "https://leetcode.com/problems/employee-bonus/",
+    "content": "<p>返回奖金严格少于 1000 的员工，以及没有奖金记录的员工，输出 name、bonus。没有奖金记录时保留 NULL。</p><h3>表结构</h3><h4>Employee</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>empId</td><td>INTEGER</td></tr><tr><td>name</td><td>TEXT</td></tr><tr><td>supervisor</td><td>INTEGER</td></tr><tr><td>salary</td><td>INTEGER</td></tr></tbody></table><h4>Bonus</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>empId</td><td>INTEGER</td></tr><tr><td>bonus</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Employee.empId 唯一；supervisor 为主管编号，salary 为工资。Bonus.empId 唯一并引用 Employee.empId。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Employee</h4><table><thead><tr><th>empId</th><th>name</th><th>supervisor</th><th>salary</th></tr></thead><tbody><tr><td>3</td><td>Brad</td><td><em>NULL</em></td><td>4000</td></tr><tr><td>1</td><td>John</td><td>3</td><td>1000</td></tr><tr><td>2</td><td>Dan</td><td>3</td><td>2000</td></tr><tr><td>4</td><td>Thomas</td><td>3</td><td>4000</td></tr></tbody></table><h4>Bonus</h4><table><thead><tr><th>empId</th><th>bonus</th></tr></thead><tbody><tr><td>2</td><td>500</td></tr><tr><td>4</td><td>2000</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>name</th><th>bonus</th></tr></thead><tbody><tr><td>Brad</td><td><em>NULL</em></td></tr><tr><td>John</td><td><em>NULL</em></td></tr><tr><td>Dan</td><td>500</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Employee",
+          "columns": [
+            {
+              "name": "empId",
+              "type": "INTEGER"
+            },
+            {
+              "name": "name",
+              "type": "TEXT"
+            },
+            {
+              "name": "supervisor",
+              "type": "INTEGER"
+            },
+            {
+              "name": "salary",
+              "type": "INTEGER"
+            }
+          ]
+        },
+        {
+          "name": "Bonus",
+          "columns": [
+            {
+              "name": "empId",
+              "type": "INTEGER"
+            },
+            {
+              "name": "bonus",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/employee-bonus/",
+      "verifiedAt": "2026-09-12T10:04:26.397323+00:00",
+      "contentUrl": "https://leetcode.com/problems/employee-bonus/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "6593f22908a7eb5d1b363aaee28bd400bf2dd0295bc707acbfb8d9db8c11e395"
+      }
+    }
+  },
+  {
+    "id": "sql-1280",
+    "displayId": "1280",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "学生们参加各科测试的次数",
+    "slug": "students-and-examinations",
+    "difficulty": "Easy",
+    "category": "基础连接",
+    "tags": [
+      "SQL",
+      "基础连接"
+    ],
+    "url": "https://leetcode.com/problems/students-and-examinations/",
+    "content": "<p>返回每位学生参加每门科目考试的次数，输出 student_id、student_name、subject_name、attended_exams。即使没有参加某科考试也应显示 0。按 student_id、subject_name 升序排列。</p><h3>表结构</h3><h4>Students</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>student_id</td><td>INTEGER</td></tr><tr><td>student_name</td><td>TEXT</td></tr></tbody></table><h4>Subjects</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>subject_name</td><td>TEXT</td></tr></tbody></table><h4>Examinations</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>student_id</td><td>INTEGER</td></tr><tr><td>subject_name</td><td>TEXT</td></tr></tbody></table><h3>说明与约束</h3><p>Students.student_id 和 Subjects.subject_name 分别是主键。每位学生都要学习 Subjects 中的全部科目。Examinations 没有主键，允许重复行，每行代表一次参加考试。</p><p>结果按上述要求排序。</p><h3>示例 1</h3><p>输入：</p><h4>Students</h4><table><thead><tr><th>student_id</th><th>student_name</th></tr></thead><tbody><tr><td>1</td><td>Alice</td></tr><tr><td>2</td><td>Bob</td></tr><tr><td>13</td><td>John</td></tr><tr><td>6</td><td>Alex</td></tr></tbody></table><h4>Subjects</h4><table><thead><tr><th>subject_name</th></tr></thead><tbody><tr><td>Math</td></tr><tr><td>Physics</td></tr><tr><td>Programming</td></tr></tbody></table><h4>Examinations</h4><table><thead><tr><th>student_id</th><th>subject_name</th></tr></thead><tbody><tr><td>1</td><td>Math</td></tr><tr><td>1</td><td>Physics</td></tr><tr><td>1</td><td>Programming</td></tr><tr><td>2</td><td>Programming</td></tr><tr><td>1</td><td>Physics</td></tr><tr><td>1</td><td>Math</td></tr><tr><td>13</td><td>Math</td></tr><tr><td>13</td><td>Programming</td></tr><tr><td>13</td><td>Physics</td></tr><tr><td>2</td><td>Math</td></tr><tr><td>1</td><td>Math</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>student_id</th><th>student_name</th><th>subject_name</th><th>attended_exams</th></tr></thead><tbody><tr><td>1</td><td>Alice</td><td>Math</td><td>3</td></tr><tr><td>1</td><td>Alice</td><td>Physics</td><td>2</td></tr><tr><td>1</td><td>Alice</td><td>Programming</td><td>1</td></tr><tr><td>2</td><td>Bob</td><td>Math</td><td>1</td></tr><tr><td>2</td><td>Bob</td><td>Physics</td><td>0</td></tr><tr><td>2</td><td>Bob</td><td>Programming</td><td>1</td></tr><tr><td>6</td><td>Alex</td><td>Math</td><td>0</td></tr><tr><td>6</td><td>Alex</td><td>Physics</td><td>0</td></tr><tr><td>6</td><td>Alex</td><td>Programming</td><td>0</td></tr><tr><td>13</td><td>John</td><td>Math</td><td>1</td></tr><tr><td>13</td><td>John</td><td>Physics</td><td>1</td></tr><tr><td>13</td><td>John</td><td>Programming</td><td>1</td></tr></tbody></table><p>解释：结果包含全部学生与科目的组合。Alice 的 Math、Physics、Programming 次数为 3、2、1；Alex 的各科次数均为 0。</p><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Students",
+          "columns": [
+            {
+              "name": "student_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "student_name",
+              "type": "TEXT"
+            }
+          ]
+        },
+        {
+          "name": "Subjects",
+          "columns": [
+            {
+              "name": "subject_name",
+              "type": "TEXT"
+            }
+          ]
+        },
+        {
+          "name": "Examinations",
+          "columns": [
+            {
+              "name": "student_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "subject_name",
+              "type": "TEXT"
+            }
+          ]
+        }
+      ],
+      "orderMatters": true,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/students-and-examinations/",
+      "verifiedAt": "2026-09-12T10:04:26.398324+00:00",
+      "contentUrl": "https://leetcode.com/problems/students-and-examinations/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "cb3577bde834058d87f4f9903efbab98584d8786b986ce50a910d6bcab3d956c"
+      }
+    }
+  },
+  {
+    "id": "sql-570",
+    "displayId": "570",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "至少有 5 名直接下属的经理",
+    "slug": "managers-with-at-least-5-direct-reports",
+    "difficulty": "Medium",
+    "category": "基础连接",
+    "tags": [
+      "SQL",
+      "基础连接"
+    ],
+    "url": "https://leetcode.com/problems/managers-with-at-least-5-direct-reports/",
+    "content": "<p>返回至少拥有 5 名直接下属的经理姓名 name。只统计直接汇报关系。</p><h3>表结构</h3><h4>Employee</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>id</td><td>INTEGER</td></tr><tr><td>name</td><td>TEXT</td></tr><tr><td>department</td><td>TEXT</td></tr><tr><td>managerId</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Employee.id 是主键；department 为部门，managerId 为经理编号。managerId 为 NULL 表示没有经理；员工不会是自己的经理。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Employee</h4><table><thead><tr><th>id</th><th>name</th><th>department</th><th>managerId</th></tr></thead><tbody><tr><td>101</td><td>John</td><td>A</td><td><em>NULL</em></td></tr><tr><td>102</td><td>Dan</td><td>A</td><td>101</td></tr><tr><td>103</td><td>James</td><td>A</td><td>101</td></tr><tr><td>104</td><td>Amy</td><td>A</td><td>101</td></tr><tr><td>105</td><td>Anne</td><td>A</td><td>101</td></tr><tr><td>106</td><td>Ron</td><td>B</td><td>101</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>name</th></tr></thead><tbody><tr><td>John</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Employee",
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "name",
+              "type": "TEXT"
+            },
+            {
+              "name": "department",
+              "type": "TEXT"
+            },
+            {
+              "name": "managerId",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/managers-with-at-least-5-direct-reports/",
+      "verifiedAt": "2026-09-12T10:04:26.398324+00:00",
+      "contentUrl": "https://leetcode.com/problems/managers-with-at-least-5-direct-reports/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "ee1a4d088433b6b04f9d8149acb66f6884c04e7b1c7e2634d8fe974168a44d2f"
+      }
+    }
+  },
+  {
+    "id": "sql-1934",
+    "displayId": "1934",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "确认率",
+    "slug": "confirmation-rate",
+    "difficulty": "Medium",
+    "category": "基础连接",
+    "tags": [
+      "SQL",
+      "基础连接"
+    ],
+    "url": "https://leetcode.com/problems/confirmation-rate/",
+    "content": "<p>确认率为 confirmed 消息数除以申请确认的总消息数；从未申请确认的用户确认率为 0。返回每位注册用户的 user_id、confirmation_rate，四舍五入到小数点后 2 位。</p><h3>表结构</h3><h4>Signups</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>user_id</td><td>INTEGER</td></tr><tr><td>time_stamp</td><td>TEXT</td></tr></tbody></table><h4>Confirmations</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>user_id</td><td>INTEGER</td></tr><tr><td>time_stamp</td><td>TEXT</td></tr><tr><td>action</td><td>TEXT</td></tr></tbody></table><h3>说明与约束</h3><p>Signups.user_id 唯一。Confirmations 的联合主键为 (user_id, time_stamp)，user_id 引用 Signups；action 为 confirmed 或 timeout，分别表示已确认、超时未确认。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Signups</h4><table><thead><tr><th>user_id</th><th>time_stamp</th></tr></thead><tbody><tr><td>3</td><td>2020-03-21 10:16:13</td></tr><tr><td>7</td><td>2020-01-04 13:57:59</td></tr><tr><td>2</td><td>2020-07-29 23:09:44</td></tr><tr><td>6</td><td>2020-12-09 10:39:37</td></tr></tbody></table><h4>Confirmations</h4><table><thead><tr><th>user_id</th><th>time_stamp</th><th>action</th></tr></thead><tbody><tr><td>3</td><td>2021-01-06 03:30:46</td><td>timeout</td></tr><tr><td>3</td><td>2021-07-14 14:00:00</td><td>timeout</td></tr><tr><td>7</td><td>2021-06-12 11:57:29</td><td>confirmed</td></tr><tr><td>7</td><td>2021-06-13 12:58:28</td><td>confirmed</td></tr><tr><td>7</td><td>2021-06-14 13:59:27</td><td>confirmed</td></tr><tr><td>2</td><td>2021-01-22 00:00:00</td><td>confirmed</td></tr><tr><td>2</td><td>2021-02-28 23:59:59</td><td>timeout</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>user_id</th><th>confirmation_rate</th></tr></thead><tbody><tr><td>6</td><td>0.0</td></tr><tr><td>3</td><td>0.0</td></tr><tr><td>7</td><td>1.0</td></tr><tr><td>2</td><td>0.5</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。SQLite 的整数相除会截断，计算比例时应使用实数，如 1.0 或 100.0。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Signups",
+          "columns": [
+            {
+              "name": "user_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "time_stamp",
+              "type": "TEXT"
+            }
+          ]
+        },
+        {
+          "name": "Confirmations",
+          "columns": [
+            {
+              "name": "user_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "time_stamp",
+              "type": "TEXT"
+            },
+            {
+              "name": "action",
+              "type": "TEXT"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": "SQLite 的整数相除会截断，计算比例时应使用实数，如 1.0 或 100.0。"
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/confirmation-rate/",
+      "verifiedAt": "2026-09-12T10:04:26.399315+00:00",
+      "contentUrl": "https://leetcode.com/problems/confirmation-rate/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "7e717b3a2caad931ef91b56c2c89008d7a433ba845b7b1e9aa7e3797132fbe59"
+      }
+    }
+  },
+  {
+    "id": "sql-620",
+    "displayId": "620",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "有趣的电影",
+    "slug": "not-boring-movies",
+    "difficulty": "Easy",
+    "category": "聚合函数",
+    "tags": [
+      "SQL",
+      "聚合函数"
+    ],
+    "url": "https://leetcode.com/problems/not-boring-movies/",
+    "content": "<p>返回 id 为奇数且 description 不等于 boring 的电影全部列，按 rating 降序排列。</p><h3>表结构</h3><h4>cinema</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>id</td><td>INTEGER</td></tr><tr><td>movie</td><td>TEXT</td></tr><tr><td>description</td><td>TEXT</td></tr><tr><td>rating</td><td>REAL</td></tr></tbody></table><h3>说明与约束</h3><p>Cinema.id 是主键；movie 为电影名，description 为描述。rating 为 [0,10] 范围内、保留两位小数的评分。</p><p>结果按上述要求排序。</p><h3>示例 1</h3><p>输入：</p><h4>cinema</h4><table><thead><tr><th>id</th><th>movie</th><th>description</th><th>rating</th></tr></thead><tbody><tr><td>1</td><td>War</td><td>great 3D</td><td>8.9</td></tr><tr><td>2</td><td>Science</td><td>fiction</td><td>8.5</td></tr><tr><td>3</td><td>irish</td><td>boring</td><td>6.2</td></tr><tr><td>4</td><td>Ice song</td><td>Fantacy</td><td>8.6</td></tr><tr><td>5</td><td>House card</td><td>Interesting</td><td>9.1</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>id</th><th>movie</th><th>description</th><th>rating</th></tr></thead><tbody><tr><td>5</td><td>House card</td><td>Interesting</td><td>9.1</td></tr><tr><td>1</td><td>War</td><td>great 3D</td><td>8.9</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "cinema",
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "movie",
+              "type": "TEXT"
+            },
+            {
+              "name": "description",
+              "type": "TEXT"
+            },
+            {
+              "name": "rating",
+              "type": "REAL"
+            }
+          ]
+        }
+      ],
+      "orderMatters": true,
+      "dialectNotes": "",
+      "orderBy": [
+        {
+          "column": "rating",
+          "direction": "desc"
+        }
+      ]
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/not-boring-movies/",
+      "verifiedAt": "2026-09-12T10:04:26.400316+00:00",
+      "contentUrl": "https://leetcode.com/problems/not-boring-movies/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "65c96baa343d29f26ec6e7e41998bf749de361ae07f4fd1f5e3a52d9f0314ced"
+      }
+    }
+  },
+  {
+    "id": "sql-1251",
+    "displayId": "1251",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "平均售价",
+    "slug": "average-selling-price",
+    "difficulty": "Easy",
+    "category": "聚合函数",
+    "tags": [
+      "SQL",
+      "聚合函数"
+    ],
+    "url": "https://leetcode.com/problems/average-selling-price/",
+    "content": "<p>按商品计算平均售价：销售总金额除以总销售件数，输出 product_id、average_price，四舍五入到小数点后 2 位。没有售出任何件数的商品平均售价为 0。每次销售须采用购买日期所在价格区间的单价。</p><h3>表结构</h3><h4>Prices</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>product_id</td><td>INTEGER</td></tr><tr><td>start_date</td><td>TEXT</td></tr><tr><td>end_date</td><td>TEXT</td></tr><tr><td>price</td><td>INTEGER</td></tr></tbody></table><h4>UnitsSold</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>product_id</td><td>INTEGER</td></tr><tr><td>purchase_date</td><td>TEXT</td></tr><tr><td>units</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Prices 联合主键为 (product_id, start_date, end_date)，同商品的价格区间互不重叠，起止日期都包含在区间内。UnitsSold 可能有重复行，units 为购买件数。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Prices</h4><table><thead><tr><th>product_id</th><th>start_date</th><th>end_date</th><th>price</th></tr></thead><tbody><tr><td>1</td><td>2019-02-17</td><td>2019-02-28</td><td>5</td></tr><tr><td>1</td><td>2019-03-01</td><td>2019-03-22</td><td>20</td></tr><tr><td>2</td><td>2019-02-01</td><td>2019-02-20</td><td>15</td></tr><tr><td>2</td><td>2019-02-21</td><td>2019-03-31</td><td>30</td></tr></tbody></table><h4>UnitsSold</h4><table><thead><tr><th>product_id</th><th>purchase_date</th><th>units</th></tr></thead><tbody><tr><td>1</td><td>2019-02-25</td><td>100</td></tr><tr><td>1</td><td>2019-03-01</td><td>15</td></tr><tr><td>2</td><td>2019-02-10</td><td>200</td></tr><tr><td>2</td><td>2019-03-22</td><td>30</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>product_id</th><th>average_price</th></tr></thead><tbody><tr><td>1</td><td>6.96</td></tr><tr><td>2</td><td>16.96</td></tr></tbody></table><p>解释：商品 1 的平均售价为 (100×5+15×20)/115=6.96；商品 2 为 (200×15+30×30)/230=16.96。</p><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。计算加权平均时保留实数，避免整数除法截断。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Prices",
+          "columns": [
+            {
+              "name": "product_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "start_date",
+              "type": "TEXT"
+            },
+            {
+              "name": "end_date",
+              "type": "TEXT"
+            },
+            {
+              "name": "price",
+              "type": "INTEGER"
+            }
+          ]
+        },
+        {
+          "name": "UnitsSold",
+          "columns": [
+            {
+              "name": "product_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "purchase_date",
+              "type": "TEXT"
+            },
+            {
+              "name": "units",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": "计算加权平均时保留实数，避免整数除法截断。"
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/average-selling-price/",
+      "verifiedAt": "2026-09-12T10:04:26.400316+00:00",
+      "contentUrl": "https://leetcode.com/problems/average-selling-price/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "b74a801fbea23dd433c2e3b671609ebe0e6141bc1c669fa3fc17c94d5fc42152"
+      }
+    }
+  },
+  {
+    "id": "sql-1075",
+    "displayId": "1075",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "项目员工 I",
+    "slug": "project-employees-i",
+    "difficulty": "Easy",
+    "category": "聚合函数",
+    "tags": [
+      "SQL",
+      "聚合函数"
+    ],
+    "url": "https://leetcode.com/problems/project-employees-i/",
+    "content": "<p>返回每个项目的 project_id 以及员工平均工作年限 average_years，四舍五入到小数点后 2 位。</p><h3>表结构</h3><h4>Project</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>project_id</td><td>INTEGER</td></tr><tr><td>employee_id</td><td>INTEGER</td></tr></tbody></table><h4>Employee</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>employee_id</td><td>INTEGER</td></tr><tr><td>name</td><td>TEXT</td></tr><tr><td>experience_years</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Project 的联合主键为 (project_id, employee_id)，employee_id 引用 Employee.employee_id。Employee.employee_id 是主键，experience_years 保证不为 NULL。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Project</h4><table><thead><tr><th>project_id</th><th>employee_id</th></tr></thead><tbody><tr><td>1</td><td>1</td></tr><tr><td>1</td><td>2</td></tr><tr><td>1</td><td>3</td></tr><tr><td>2</td><td>1</td></tr><tr><td>2</td><td>4</td></tr></tbody></table><h4>Employee</h4><table><thead><tr><th>employee_id</th><th>name</th><th>experience_years</th></tr></thead><tbody><tr><td>1</td><td>Khaled</td><td>3</td></tr><tr><td>2</td><td>Ali</td><td>2</td></tr><tr><td>3</td><td>John</td><td>1</td></tr><tr><td>4</td><td>Doe</td><td>2</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>project_id</th><th>average_years</th></tr></thead><tbody><tr><td>1</td><td>2.0</td></tr><tr><td>2</td><td>2.5</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Project",
+          "columns": [
+            {
+              "name": "project_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "employee_id",
+              "type": "INTEGER"
+            }
+          ]
+        },
+        {
+          "name": "Employee",
+          "columns": [
+            {
+              "name": "employee_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "name",
+              "type": "TEXT"
+            },
+            {
+              "name": "experience_years",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/project-employees-i/",
+      "verifiedAt": "2026-09-12T10:04:26.400316+00:00",
+      "contentUrl": "https://leetcode.com/problems/project-employees-i/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "9e6680e79f4a2725e2f905f1d75cc25948fcd0ade6bce1b419d8634a089fdd52"
+      }
+    }
+  },
+  {
+    "id": "sql-1633",
+    "displayId": "1633",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "各赛事的用户注册率",
+    "slug": "percentage-of-users-attended-a-contest",
+    "difficulty": "Easy",
+    "category": "聚合函数",
+    "tags": [
+      "SQL",
+      "聚合函数"
+    ],
+    "url": "https://leetcode.com/problems/percentage-of-users-attended-a-contest/",
+    "content": "<p>返回每个赛事的 contest_id、percentage；注册率等于该赛事报名人数占全部用户人数的百分比，四舍五入到小数点后 2 位。先按 percentage 降序，相同则按 contest_id 升序。</p><h3>表结构</h3><h4>Users</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>user_id</td><td>INTEGER</td></tr><tr><td>user_name</td><td>TEXT</td></tr></tbody></table><h4>Register</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>contest_id</td><td>INTEGER</td></tr><tr><td>user_id</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Users.user_id 是主键。Register 的联合主键为 (contest_id, user_id)，每行代表用户报名一个赛事。</p><p>结果按上述要求排序。</p><h3>示例 1</h3><p>输入：</p><h4>Users</h4><table><thead><tr><th>user_id</th><th>user_name</th></tr></thead><tbody><tr><td>6</td><td>Alice</td></tr><tr><td>2</td><td>Bob</td></tr><tr><td>7</td><td>Alex</td></tr></tbody></table><h4>Register</h4><table><thead><tr><th>contest_id</th><th>user_id</th></tr></thead><tbody><tr><td>215</td><td>6</td></tr><tr><td>209</td><td>2</td></tr><tr><td>208</td><td>2</td></tr><tr><td>210</td><td>6</td></tr><tr><td>208</td><td>6</td></tr><tr><td>209</td><td>7</td></tr><tr><td>209</td><td>6</td></tr><tr><td>215</td><td>7</td></tr><tr><td>208</td><td>7</td></tr><tr><td>210</td><td>2</td></tr><tr><td>207</td><td>2</td></tr><tr><td>210</td><td>7</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>contest_id</th><th>percentage</th></tr></thead><tbody><tr><td>208</td><td>100.0</td></tr><tr><td>209</td><td>100.0</td></tr><tr><td>210</td><td>100.0</td></tr><tr><td>215</td><td>66.67</td></tr><tr><td>207</td><td>33.33</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Users",
+          "columns": [
+            {
+              "name": "user_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "user_name",
+              "type": "TEXT"
+            }
+          ]
+        },
+        {
+          "name": "Register",
+          "columns": [
+            {
+              "name": "contest_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "user_id",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": true,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/percentage-of-users-attended-a-contest/",
+      "verifiedAt": "2026-09-12T10:04:26.401330+00:00",
+      "contentUrl": "https://leetcode.com/problems/percentage-of-users-attended-a-contest/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "c7610889b85c9de292da540cabe957843ed258a4778d1315b016049be7115cdc"
+      }
+    }
+  },
+  {
+    "id": "sql-1211",
+    "displayId": "1211",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "查询结果的质量和占比",
+    "slug": "queries-quality-and-percentage",
+    "difficulty": "Easy",
+    "category": "聚合函数",
+    "tags": [
+      "SQL",
+      "聚合函数"
+    ],
+    "url": "https://leetcode.com/problems/queries-quality-and-percentage/",
+    "content": "<p>按 query_name 返回 quality 和 poor_query_percentage。quality 是每条记录的 rating/position 的平均值；低质量查询为 rating<3，poor_query_percentage 是它们占该名称全部记录的百分比。两个数值均四舍五入到小数点后 2 位。</p><h3>表结构</h3><h4>Queries</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>query_name</td><td>TEXT</td></tr><tr><td>result</td><td>TEXT</td></tr><tr><td>position</td><td>INTEGER</td></tr><tr><td>rating</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Queries 可能包含重复行。position 在 1 到 500 之间，rating 在 1 到 5 之间；result 是查询结果。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Queries</h4><table><thead><tr><th>query_name</th><th>result</th><th>position</th><th>rating</th></tr></thead><tbody><tr><td>Dog</td><td>Golden Retriever</td><td>1</td><td>5</td></tr><tr><td>Dog</td><td>German Shepherd</td><td>2</td><td>5</td></tr><tr><td>Dog</td><td>Mule</td><td>200</td><td>1</td></tr><tr><td>Cat</td><td>Shirazi</td><td>5</td><td>2</td></tr><tr><td>Cat</td><td>Siamese</td><td>3</td><td>3</td></tr><tr><td>Cat</td><td>Sphynx</td><td>7</td><td>4</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>query_name</th><th>quality</th><th>poor_query_percentage</th></tr></thead><tbody><tr><td>Dog</td><td>2.5</td><td>33.33</td></tr><tr><td>Cat</td><td>0.66</td><td>33.33</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。rating/position 必须以实数计算，例如 rating*1.0/position。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Queries",
+          "columns": [
+            {
+              "name": "query_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "result",
+              "type": "TEXT"
+            },
+            {
+              "name": "position",
+              "type": "INTEGER"
+            },
+            {
+              "name": "rating",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": "rating/position 必须以实数计算，例如 rating*1.0/position。"
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/queries-quality-and-percentage/",
+      "verifiedAt": "2026-09-12T10:04:26.401330+00:00",
+      "contentUrl": "https://leetcode.com/problems/queries-quality-and-percentage/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "1d1e2359fef847ec225f335f097bff2c329ad1c5f1ecfa1d87dbe2aa40bdeabf"
+      }
+    }
+  },
+  {
+    "id": "sql-1193",
+    "displayId": "1193",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "每月交易 I",
+    "slug": "monthly-transactions-i",
+    "difficulty": "Medium",
+    "category": "聚合函数",
+    "tags": [
+      "SQL",
+      "聚合函数"
+    ],
+    "url": "https://leetcode.com/problems/monthly-transactions-i/",
+    "content": "<p>按月份与国家返回 month、country、trans_count、approved_count、trans_total_amount、approved_total_amount，分别表示月份、国家、交易数、已批准交易数、交易总金额和已批准交易总金额。month 格式为 YYYY-MM。</p><h3>表结构</h3><h4>Transactions</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>id</td><td>INTEGER</td></tr><tr><td>country</td><td>TEXT</td></tr><tr><td>state</td><td>TEXT</td></tr><tr><td>amount</td><td>INTEGER</td></tr><tr><td>trans_date</td><td>TEXT</td></tr></tbody></table><h3>说明与约束</h3><p>Transactions.id 是主键；state 为 approved 或 declined，amount 为金额，trans_date 为交易日期。country 可能为 NULL，应作为一个分组保留。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Transactions</h4><table><thead><tr><th>id</th><th>country</th><th>state</th><th>amount</th><th>trans_date</th></tr></thead><tbody><tr><td>121</td><td>US</td><td>approved</td><td>1000</td><td>2018-12-18</td></tr><tr><td>122</td><td>US</td><td>declined</td><td>2000</td><td>2018-12-19</td></tr><tr><td>123</td><td>US</td><td>approved</td><td>2000</td><td>2019-01-01</td></tr><tr><td>124</td><td>DE</td><td>approved</td><td>2000</td><td>2019-01-07</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>month</th><th>country</th><th>trans_count</th><th>approved_count</th><th>trans_total_amount</th><th>approved_total_amount</th></tr></thead><tbody><tr><td>2018-12</td><td>US</td><td>2</td><td>1</td><td>3000</td><td>1000</td></tr><tr><td>2019-01</td><td>US</td><td>1</td><td>1</td><td>2000</td><td>2000</td></tr><tr><td>2019-01</td><td>DE</td><td>1</td><td>1</td><td>2000</td><td>2000</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。SQLite 可用 strftime('%Y-%m', trans_date) 取年月；不支持 MySQL DATE_FORMAT。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Transactions",
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "country",
+              "type": "TEXT"
+            },
+            {
+              "name": "state",
+              "type": "TEXT"
+            },
+            {
+              "name": "amount",
+              "type": "INTEGER"
+            },
+            {
+              "name": "trans_date",
+              "type": "TEXT"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": "SQLite 可用 strftime('%Y-%m', trans_date) 取年月；不支持 MySQL DATE_FORMAT。"
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/monthly-transactions-i/",
+      "verifiedAt": "2026-09-12T10:04:26.402314+00:00",
+      "contentUrl": "https://leetcode.com/problems/monthly-transactions-i/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "69171201c4be4cfc24c18d97d38953ff68aa4d7e4481580312a3c0e36b7fb674"
+      }
+    }
+  },
+  {
+    "id": "sql-1174",
+    "displayId": "1174",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "即时食物配送 II",
+    "slug": "immediate-food-delivery-ii",
+    "difficulty": "Medium",
+    "category": "聚合函数",
+    "tags": [
+      "SQL",
+      "聚合函数"
+    ],
+    "url": "https://leetcode.com/problems/immediate-food-delivery-ii/",
+    "content": "<p>顾客期望配送日期与下单日期相同的订单称为即时订单，否则是计划订单。找出每位顾客最早下单的那一单，返回这些首单中即时订单的百分比 immediate_percentage，四舍五入到小数点后 2 位。</p><h3>表结构</h3><h4>Delivery</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>delivery_id</td><td>INTEGER</td></tr><tr><td>customer_id</td><td>INTEGER</td></tr><tr><td>order_date</td><td>TEXT</td></tr><tr><td>customer_pref_delivery_date</td><td>TEXT</td></tr></tbody></table><h3>说明与约束</h3><p>Delivery.delivery_id 唯一。期望配送日期不早于下单日期；每位顾客恰好有一笔最早订单。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Delivery</h4><table><thead><tr><th>delivery_id</th><th>customer_id</th><th>order_date</th><th>customer_pref_delivery_date</th></tr></thead><tbody><tr><td>1</td><td>1</td><td>2019-08-01</td><td>2019-08-02</td></tr><tr><td>2</td><td>2</td><td>2019-08-02</td><td>2019-08-02</td></tr><tr><td>3</td><td>1</td><td>2019-08-11</td><td>2019-08-12</td></tr><tr><td>4</td><td>3</td><td>2019-08-24</td><td>2019-08-24</td></tr><tr><td>5</td><td>3</td><td>2019-08-21</td><td>2019-08-22</td></tr><tr><td>6</td><td>2</td><td>2019-08-11</td><td>2019-08-13</td></tr><tr><td>7</td><td>4</td><td>2019-08-09</td><td>2019-08-09</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>immediate_percentage</th></tr></thead><tbody><tr><td>50.0</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Delivery",
+          "columns": [
+            {
+              "name": "delivery_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "customer_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "order_date",
+              "type": "TEXT"
+            },
+            {
+              "name": "customer_pref_delivery_date",
+              "type": "TEXT"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/immediate-food-delivery-ii/",
+      "verifiedAt": "2026-09-12T10:04:26.402314+00:00",
+      "contentUrl": "https://leetcode.com/problems/immediate-food-delivery-ii/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "93cec6c800a260a6728055fe893b900cf16c23872f37c590c88094e24ba5095d"
+      }
+    }
+  },
+  {
+    "id": "sql-550",
+    "displayId": "550",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "游戏玩法分析 IV",
+    "slug": "game-play-analysis-iv",
+    "difficulty": "Medium",
+    "category": "聚合函数",
+    "tags": [
+      "SQL",
+      "聚合函数"
+    ],
+    "url": "https://leetcode.com/problems/game-play-analysis-iv/",
+    "content": "<p>返回首次登录后的第二个自然日再次登录的玩家比例 fraction：符合条件的玩家数除以全部玩家数，四舍五入到小数点后 2 位。</p><h3>表结构</h3><h4>Activity</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>player_id</td><td>INTEGER</td></tr><tr><td>device_id</td><td>INTEGER</td></tr><tr><td>event_date</td><td>TEXT</td></tr><tr><td>games_played</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Activity 的联合主键为 (player_id, event_date)。每行记录玩家在某天使用某设备登录并玩游戏的数量 games_played，该值可能为 0。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Activity</h4><table><thead><tr><th>player_id</th><th>device_id</th><th>event_date</th><th>games_played</th></tr></thead><tbody><tr><td>1</td><td>2</td><td>2016-03-01</td><td>5</td></tr><tr><td>1</td><td>2</td><td>2016-03-02</td><td>6</td></tr><tr><td>2</td><td>3</td><td>2017-06-25</td><td>1</td></tr><tr><td>3</td><td>1</td><td>2016-03-02</td><td>0</td></tr><tr><td>3</td><td>4</td><td>2018-07-03</td><td>5</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>fraction</th></tr></thead><tbody><tr><td>0.33</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。SQLite 用 date(日期, '+1 day') 计算次日，日期以 TEXT 保存。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Activity",
+          "columns": [
+            {
+              "name": "player_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "device_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "event_date",
+              "type": "TEXT"
+            },
+            {
+              "name": "games_played",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": "SQLite 用 date(日期, '+1 day') 计算次日，日期以 TEXT 保存。"
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/game-play-analysis-iv/",
+      "verifiedAt": "2026-09-12T10:04:26.403321+00:00",
+      "contentUrl": "https://leetcode.com/problems/game-play-analysis-iv/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "ddbdb259d16dbaa64ae5bce9cfba41da4ad82ca8648bb6f1275b25e6d7378cc3"
+      }
+    }
+  },
+  {
+    "id": "sql-2356",
+    "displayId": "2356",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "每位教师所教授的科目种类的数量",
+    "slug": "number-of-unique-subjects-taught-by-each-teacher",
+    "difficulty": "Easy",
+    "category": "排序与分组",
+    "tags": [
+      "SQL",
+      "排序与分组"
+    ],
+    "url": "https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/",
+    "content": "<p>返回每位教师 teacher_id 及教授的不同科目数 cnt。同一科目在不同部门授课只算一次。</p><h3>表结构</h3><h4>Teacher</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>teacher_id</td><td>INTEGER</td></tr><tr><td>subject_id</td><td>INTEGER</td></tr><tr><td>dept_id</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>(subject_id, dept_id) 是联合主键，每行是一位教师在某部门教授的一门科目。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Teacher</h4><table><thead><tr><th>teacher_id</th><th>subject_id</th><th>dept_id</th></tr></thead><tbody><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>1</td><td>2</td><td>4</td></tr><tr><td>1</td><td>3</td><td>3</td></tr><tr><td>2</td><td>1</td><td>1</td></tr><tr><td>2</td><td>2</td><td>1</td></tr><tr><td>2</td><td>3</td><td>1</td></tr><tr><td>2</td><td>4</td><td>1</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>teacher_id</th><th>cnt</th></tr></thead><tbody><tr><td>1</td><td>2</td></tr><tr><td>2</td><td>4</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Teacher",
+          "columns": [
+            {
+              "name": "teacher_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "subject_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "dept_id",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/",
+      "verifiedAt": "2026-09-12T10:04:26.403321+00:00",
+      "contentUrl": "https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "65c0a7d79beeafafb7322016278476a70911be68992376d5d99aaa347fd3dbbb"
+      }
+    }
+  },
+  {
+    "id": "sql-1141",
+    "displayId": "1141",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "查询近30天活跃用户数",
+    "slug": "user-activity-for-the-past-30-days-i",
+    "difficulty": "Easy",
+    "category": "排序与分组",
+    "tags": [
+      "SQL",
+      "排序与分组"
+    ],
+    "url": "https://leetcode.com/problems/user-activity-for-the-past-30-days-i/",
+    "content": "<p>统计截至 2019-07-27（含当天）的 30 天内每天的活跃用户数，输出 day、active_users。同一用户当天有任意一种活动就算活跃，只计一次；没有活跃用户的日期不输出。</p><h3>表结构</h3><h4>Activity</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>user_id</td><td>INTEGER</td></tr><tr><td>session_id</td><td>INTEGER</td></tr><tr><td>activity_date</td><td>TEXT</td></tr><tr><td>activity_type</td><td>TEXT</td></tr></tbody></table><h3>说明与约束</h3><p>Activity 可有重复行；活动类型为 open_session、end_session、scroll_down、send_message。一个会话只属于一位用户。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Activity</h4><table><thead><tr><th>user_id</th><th>session_id</th><th>activity_date</th><th>activity_type</th></tr></thead><tbody><tr><td>1</td><td>1</td><td>2019-07-20</td><td>open_session</td></tr><tr><td>1</td><td>1</td><td>2019-07-20</td><td>scroll_down</td></tr><tr><td>1</td><td>1</td><td>2019-07-20</td><td>end_session</td></tr><tr><td>2</td><td>4</td><td>2019-07-20</td><td>open_session</td></tr><tr><td>2</td><td>4</td><td>2019-07-21</td><td>send_message</td></tr><tr><td>2</td><td>4</td><td>2019-07-21</td><td>end_session</td></tr><tr><td>3</td><td>2</td><td>2019-07-21</td><td>open_session</td></tr><tr><td>3</td><td>2</td><td>2019-07-21</td><td>send_message</td></tr><tr><td>3</td><td>2</td><td>2019-07-21</td><td>end_session</td></tr><tr><td>4</td><td>3</td><td>2019-06-25</td><td>open_session</td></tr><tr><td>4</td><td>3</td><td>2019-06-25</td><td>end_session</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>day</th><th>active_users</th></tr></thead><tbody><tr><td>2019-07-20</td><td>2</td></tr><tr><td>2019-07-21</td><td>2</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Activity",
+          "columns": [
+            {
+              "name": "user_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "session_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "activity_date",
+              "type": "TEXT"
+            },
+            {
+              "name": "activity_type",
+              "type": "TEXT"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/user-activity-for-the-past-30-days-i/",
+      "verifiedAt": "2026-09-12T10:04:26.403321+00:00",
+      "contentUrl": "https://leetcode.com/problems/user-activity-for-the-past-30-days-i/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "2c174b96e03560b887f2bd8832504f98eb410b04634278e6009e26d7389897e1"
+      }
+    }
+  },
+  {
+    "id": "sql-1070",
+    "displayId": "1070",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "产品销售分析 III",
+    "slug": "product-sales-analysis-iii",
+    "difficulty": "Medium",
+    "category": "排序与分组",
+    "tags": [
+      "SQL",
+      "排序与分组"
+    ],
+    "url": "https://leetcode.com/problems/product-sales-analysis-iii/",
+    "content": "<p>找出每种产品最早销售年份的全部销售记录，输出 product_id、first_year、quantity、price。同一产品首年可能有多笔销售，均须保留。</p><h3>表结构</h3><h4>Sales</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>sale_id</td><td>INTEGER</td></tr><tr><td>product_id</td><td>INTEGER</td></tr><tr><td>year</td><td>INTEGER</td></tr><tr><td>quantity</td><td>INTEGER</td></tr><tr><td>price</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Sales 的 (sale_id, year) 是联合主键。price 为单价，quantity 为销售数量。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Sales</h4><table><thead><tr><th>sale_id</th><th>product_id</th><th>year</th><th>quantity</th><th>price</th></tr></thead><tbody><tr><td>1</td><td>100</td><td>2008</td><td>10</td><td>5000</td></tr><tr><td>2</td><td>100</td><td>2009</td><td>12</td><td>5000</td></tr><tr><td>7</td><td>200</td><td>2011</td><td>15</td><td>9000</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>product_id</th><th>first_year</th><th>quantity</th><th>price</th></tr></thead><tbody><tr><td>100</td><td>2008</td><td>10</td><td>5000</td></tr><tr><td>200</td><td>2011</td><td>15</td><td>9000</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Sales",
+          "columns": [
+            {
+              "name": "sale_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "product_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "year",
+              "type": "INTEGER"
+            },
+            {
+              "name": "quantity",
+              "type": "INTEGER"
+            },
+            {
+              "name": "price",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/product-sales-analysis-iii/",
+      "verifiedAt": "2026-09-12T10:04:26.404322+00:00",
+      "contentUrl": "https://leetcode.com/problems/product-sales-analysis-iii/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "1dd1c58d49ac19ac3faff06789822b146d281da59d97a7a420703d377fc29ac4"
+      }
+    }
+  },
+  {
+    "id": "sql-596",
+    "displayId": "596",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "至少有5名学生的课",
+    "slug": "classes-with-at-least-5-students",
+    "difficulty": "Easy",
+    "category": "排序与分组",
+    "tags": [
+      "SQL",
+      "排序与分组"
+    ],
+    "url": "https://leetcode.com/problems/classes-with-at-least-5-students/",
+    "content": "<p>返回至少有 5 位学生选修的课程 class。</p><h3>表结构</h3><h4>Courses</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>student</td><td>TEXT</td></tr><tr><td>class</td><td>TEXT</td></tr></tbody></table><h3>说明与约束</h3><p>Courses 的 (student, class) 是联合主键；每行表示一位学生选修一门课。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Courses</h4><table><thead><tr><th>student</th><th>class</th></tr></thead><tbody><tr><td>A</td><td>Math</td></tr><tr><td>B</td><td>English</td></tr><tr><td>C</td><td>Math</td></tr><tr><td>D</td><td>Biology</td></tr><tr><td>E</td><td>Math</td></tr><tr><td>F</td><td>Computer</td></tr><tr><td>G</td><td>Math</td></tr><tr><td>H</td><td>Math</td></tr><tr><td>I</td><td>Math</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>class</th></tr></thead><tbody><tr><td>Math</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Courses",
+          "columns": [
+            {
+              "name": "student",
+              "type": "TEXT"
+            },
+            {
+              "name": "class",
+              "type": "TEXT"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/classes-with-at-least-5-students/",
+      "verifiedAt": "2026-09-12T10:04:26.404322+00:00",
+      "contentUrl": "https://leetcode.com/problems/classes-with-at-least-5-students/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "829361f4c19156fd6f725287c59973063e4a444e25c14995535f554cd2a0a3ff"
+      }
+    }
+  },
+  {
+    "id": "sql-1729",
+    "displayId": "1729",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "求关注者的数量",
+    "slug": "find-followers-count",
+    "difficulty": "Easy",
+    "category": "排序与分组",
+    "tags": [
+      "SQL",
+      "排序与分组"
+    ],
+    "url": "https://leetcode.com/problems/find-followers-count/",
+    "content": "<p>返回每个用户 user_id 的关注者数量 followers_count，按 user_id 升序排列。</p><h3>表结构</h3><h4>Followers</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>user_id</td><td>INTEGER</td></tr><tr><td>follower_id</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Followers 的 (user_id, follower_id) 是联合主键，每行表示 follower_id 关注 user_id。</p><p>结果按上述要求排序。</p><h3>示例 1</h3><p>输入：</p><h4>Followers</h4><table><thead><tr><th>user_id</th><th>follower_id</th></tr></thead><tbody><tr><td>0</td><td>1</td></tr><tr><td>1</td><td>0</td></tr><tr><td>2</td><td>0</td></tr><tr><td>2</td><td>1</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>user_id</th><th>followers_count</th></tr></thead><tbody><tr><td>0</td><td>1</td></tr><tr><td>1</td><td>1</td></tr><tr><td>2</td><td>2</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Followers",
+          "columns": [
+            {
+              "name": "user_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "follower_id",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": true,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/find-followers-count/",
+      "verifiedAt": "2026-09-12T10:04:26.405322+00:00",
+      "contentUrl": "https://leetcode.com/problems/find-followers-count/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "22ed1e4de26ddf5cfd954cba29cd2055584f71b47f91994a678d0569047b9bd3"
+      }
+    }
+  },
+  {
+    "id": "sql-619",
+    "displayId": "619",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "只出现一次的最大数字",
+    "slug": "biggest-single-number",
+    "difficulty": "Easy",
+    "category": "排序与分组",
+    "tags": [
+      "SQL",
+      "排序与分组"
+    ],
+    "url": "https://leetcode.com/problems/biggest-single-number/",
+    "content": "<p>找出 MyNumbers 中恰好出现一次的最大数字 num。如果没有只出现一次的数字，仍返回一行，其值为 NULL。</p><h3>表结构</h3><h4>MyNumbers</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>num</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>MyNumbers 没有主键，允许重复整数。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>MyNumbers</h4><table><thead><tr><th>num</th></tr></thead><tbody><tr><td>8</td></tr><tr><td>8</td></tr><tr><td>3</td></tr><tr><td>3</td></tr><tr><td>1</td></tr><tr><td>4</td></tr><tr><td>5</td></tr><tr><td>6</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>num</th></tr></thead><tbody><tr><td>6</td></tr></tbody></table><h3>示例 2</h3><p>输入：</p><h4>MyNumbers</h4><table><thead><tr><th>num</th></tr></thead><tbody><tr><td>8</td></tr><tr><td>8</td></tr><tr><td>7</td></tr><tr><td>7</td></tr><tr><td>3</td></tr><tr><td>3</td></tr><tr><td>3</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>num</th></tr></thead><tbody><tr><td><em>NULL</em></td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "MyNumbers",
+          "columns": [
+            {
+              "name": "num",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/biggest-single-number/",
+      "verifiedAt": "2026-09-12T10:04:26.405322+00:00",
+      "contentUrl": "https://leetcode.com/problems/biggest-single-number/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "3f7163a2d606d6b93c41efc407b13ab089f7641976c716af2930a48758d08301"
+      }
+    }
+  },
+  {
+    "id": "sql-1045",
+    "displayId": "1045",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "买下所有产品的客户",
+    "slug": "customers-who-bought-all-products",
+    "difficulty": "Medium",
+    "category": "排序与分组",
+    "tags": [
+      "SQL",
+      "排序与分组"
+    ],
+    "url": "https://leetcode.com/problems/customers-who-bought-all-products/",
+    "content": "<p>返回购买了 Product 表中全部产品的客户编号 customer_id。重复购买同一产品不能代替购买其他产品。</p><h3>表结构</h3><h4>Customer</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>customer_id</td><td>INTEGER</td></tr><tr><td>product_key</td><td>INTEGER</td></tr></tbody></table><h4>Product</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>product_key</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Customer 可重复，customer_id 不为 NULL，product_key 引用 Product；Product.product_key 是主键。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Customer</h4><table><thead><tr><th>customer_id</th><th>product_key</th></tr></thead><tbody><tr><td>1</td><td>5</td></tr><tr><td>2</td><td>6</td></tr><tr><td>3</td><td>5</td></tr><tr><td>3</td><td>6</td></tr><tr><td>1</td><td>6</td></tr></tbody></table><h4>Product</h4><table><thead><tr><th>product_key</th></tr></thead><tbody><tr><td>5</td></tr><tr><td>6</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>customer_id</th></tr></thead><tbody><tr><td>1</td></tr><tr><td>3</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Customer",
+          "columns": [
+            {
+              "name": "customer_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "product_key",
+              "type": "INTEGER"
+            }
+          ]
+        },
+        {
+          "name": "Product",
+          "columns": [
+            {
+              "name": "product_key",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/customers-who-bought-all-products/",
+      "verifiedAt": "2026-09-12T10:04:26.405322+00:00",
+      "contentUrl": "https://leetcode.com/problems/customers-who-bought-all-products/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "01c9c736694a97acb43092189fd597c101fe2bddf554ccd0912ff8ae766d430b"
+      }
+    }
+  },
+  {
+    "id": "sql-1731",
+    "displayId": "1731",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "每位经理的下属员工数量",
+    "slug": "the-number-of-employees-which-report-to-each-employee",
+    "difficulty": "Easy",
+    "category": "高级查询与连接",
+    "tags": [
+      "SQL",
+      "高级查询与连接"
+    ],
+    "url": "https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/",
+    "content": "<p>至少有一位直接下属的员工视为经理。输出其 employee_id、name、直接下属数 reports_count，以及下属平均年龄 average_age（四舍五入到整数）。按 employee_id 升序。</p><h3>表结构</h3><h4>Employees</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>employee_id</td><td>INTEGER</td></tr><tr><td>name</td><td>TEXT</td></tr><tr><td>reports_to</td><td>INTEGER</td></tr><tr><td>age</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Employees.employee_id 唯一；reports_to 表示直接上级，没有上级时为 NULL；age 是年龄。</p><p>结果按上述要求排序。</p><h3>示例 1</h3><p>输入：</p><h4>Employees</h4><table><thead><tr><th>employee_id</th><th>name</th><th>reports_to</th><th>age</th></tr></thead><tbody><tr><td>9</td><td>Hercy</td><td><em>NULL</em></td><td>43</td></tr><tr><td>6</td><td>Alice</td><td>9</td><td>41</td></tr><tr><td>4</td><td>Bob</td><td>9</td><td>36</td></tr><tr><td>2</td><td>Winston</td><td><em>NULL</em></td><td>37</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>employee_id</th><th>name</th><th>reports_count</th><th>average_age</th></tr></thead><tbody><tr><td>9</td><td>Hercy</td><td>2</td><td>39</td></tr></tbody></table><h3>示例 2</h3><p>输入：</p><h4>Employees</h4><table><thead><tr><th>employee_id</th><th>name</th><th>reports_to</th><th>age</th></tr></thead><tbody><tr><td>1</td><td>Michael</td><td><em>NULL</em></td><td>45</td></tr><tr><td>2</td><td>Alice</td><td>1</td><td>38</td></tr><tr><td>3</td><td>Bob</td><td>1</td><td>42</td></tr><tr><td>4</td><td>Charlie</td><td>2</td><td>34</td></tr><tr><td>5</td><td>David</td><td>2</td><td>40</td></tr><tr><td>6</td><td>Eve</td><td>3</td><td>37</td></tr><tr><td>7</td><td>Frank</td><td><em>NULL</em></td><td>50</td></tr><tr><td>8</td><td>Grace</td><td><em>NULL</em></td><td>48</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>employee_id</th><th>name</th><th>reports_count</th><th>average_age</th></tr></thead><tbody><tr><td>1</td><td>Michael</td><td>2</td><td>40</td></tr><tr><td>2</td><td>Alice</td><td>2</td><td>37</td></tr><tr><td>3</td><td>Bob</td><td>1</td><td>37</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Employees",
+          "columns": [
+            {
+              "name": "employee_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "name",
+              "type": "TEXT"
+            },
+            {
+              "name": "reports_to",
+              "type": "INTEGER"
+            },
+            {
+              "name": "age",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": true,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/",
+      "verifiedAt": "2026-09-12T10:04:26.406322+00:00",
+      "contentUrl": "https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "bc667ce701289d075e1678622ad8604965d3c3f11828c6c5f355d747f720d06a"
+      }
+    }
+  },
+  {
+    "id": "sql-1789",
+    "displayId": "1789",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "员工的直属部门",
+    "slug": "primary-department-for-each-employee",
+    "difficulty": "Easy",
+    "category": "高级查询与连接",
+    "tags": [
+      "SQL",
+      "高级查询与连接"
+    ],
+    "url": "https://leetcode.com/problems/primary-department-for-each-employee/",
+    "content": "<p>返回每位员工的 employee_id 和主要部门 department_id。属于多个部门时取 primary_flag=Y 的部门；仅属于一个部门时返回该唯一部门。</p><h3>表结构</h3><h4>Employee</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>employee_id</td><td>INTEGER</td></tr><tr><td>department_id</td><td>INTEGER</td></tr><tr><td>primary_flag</td><td>TEXT</td></tr></tbody></table><h3>说明与约束</h3><p>Employee 的 (employee_id, department_id) 是联合主键。primary_flag 为 Y 或 N；单部门员工的标志为 N，多部门员工有一个主要部门。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Employee</h4><table><thead><tr><th>employee_id</th><th>department_id</th><th>primary_flag</th></tr></thead><tbody><tr><td>1</td><td>1</td><td>N</td></tr><tr><td>2</td><td>1</td><td>Y</td></tr><tr><td>2</td><td>2</td><td>N</td></tr><tr><td>3</td><td>3</td><td>N</td></tr><tr><td>4</td><td>2</td><td>N</td></tr><tr><td>4</td><td>3</td><td>Y</td></tr><tr><td>4</td><td>4</td><td>N</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>employee_id</th><th>department_id</th></tr></thead><tbody><tr><td>1</td><td>1</td></tr><tr><td>2</td><td>1</td></tr><tr><td>3</td><td>3</td></tr><tr><td>4</td><td>3</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Employee",
+          "columns": [
+            {
+              "name": "employee_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "department_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "primary_flag",
+              "type": "TEXT"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/primary-department-for-each-employee/",
+      "verifiedAt": "2026-09-12T10:04:26.406322+00:00",
+      "contentUrl": "https://leetcode.com/problems/primary-department-for-each-employee/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "c285306c44f2443be28e7ebf938bd733ef3b0ed7fe0f41029140008532e6686c"
+      }
+    }
+  },
+  {
+    "id": "sql-610",
+    "displayId": "610",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "判断三角形",
+    "slug": "triangle-judgement",
+    "difficulty": "Easy",
+    "category": "高级查询与连接",
+    "tags": [
+      "SQL",
+      "高级查询与连接"
+    ],
+    "url": "https://leetcode.com/problems/triangle-judgement/",
+    "content": "<p>对每行三条线段长度 x、y、z，判断能否组成三角形。返回 x、y、z、triangle，可组成时为 Yes，否则为 No。</p><h3>表结构</h3><h4>Triangle</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>x</td><td>INTEGER</td></tr><tr><td>y</td><td>INTEGER</td></tr><tr><td>z</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Triangle 的 (x, y, z) 是联合主键。三角形需要任意两边之和严格大于第三边。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Triangle</h4><table><thead><tr><th>x</th><th>y</th><th>z</th></tr></thead><tbody><tr><td>13</td><td>15</td><td>30</td></tr><tr><td>10</td><td>20</td><td>15</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>x</th><th>y</th><th>z</th><th>triangle</th></tr></thead><tbody><tr><td>13</td><td>15</td><td>30</td><td>No</td></tr><tr><td>10</td><td>20</td><td>15</td><td>Yes</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Triangle",
+          "columns": [
+            {
+              "name": "x",
+              "type": "INTEGER"
+            },
+            {
+              "name": "y",
+              "type": "INTEGER"
+            },
+            {
+              "name": "z",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/triangle-judgement/",
+      "verifiedAt": "2026-09-12T10:04:26.407322+00:00",
+      "contentUrl": "https://leetcode.com/problems/triangle-judgement/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "9c9376832da86133913e6cad01ce231399cbe53926143d089f8a534315252e86"
+      }
+    }
+  },
+  {
+    "id": "sql-180",
+    "displayId": "180",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "连续出现的数字",
+    "slug": "consecutive-numbers",
+    "difficulty": "Medium",
+    "category": "高级查询与连接",
+    "tags": [
+      "SQL",
+      "高级查询与连接"
+    ],
+    "url": "https://leetcode.com/problems/consecutive-numbers/",
+    "content": "<p>找出至少连续出现 3 次的数字，去重后输出 ConsecutiveNums。连续性由日志的 id 顺序决定。</p><h3>表结构</h3><h4>Logs</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>id</td><td>INTEGER</td></tr><tr><td>num</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Logs.id 是从 1 开始自增的主键；num 为日志中的数字。本地按官方数据库元数据使用 INTEGER 保存 num。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Logs</h4><table><thead><tr><th>id</th><th>num</th></tr></thead><tbody><tr><td>1</td><td>1</td></tr><tr><td>2</td><td>1</td></tr><tr><td>3</td><td>1</td></tr><tr><td>4</td><td>2</td></tr><tr><td>5</td><td>1</td></tr><tr><td>6</td><td>2</td></tr><tr><td>7</td><td>2</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>ConsecutiveNums</th></tr></thead><tbody><tr><td>1</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Logs",
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "num",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/consecutive-numbers/",
+      "verifiedAt": "2026-09-12T10:04:26.407322+00:00",
+      "contentUrl": "https://leetcode.com/problems/consecutive-numbers/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "662fa0f08555ca0c1d7fcd5e479738613092ee1cc8e83b4ebf260b5e2035ac01"
+      }
+    }
+  },
+  {
+    "id": "sql-1164",
+    "displayId": "1164",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "指定日期的产品价格",
+    "slug": "product-price-at-a-given-date",
+    "difficulty": "Medium",
+    "category": "高级查询与连接",
+    "tags": [
+      "SQL",
+      "高级查询与连接"
+    ],
+    "url": "https://leetcode.com/problems/product-price-at-a-given-date/",
+    "content": "<p>返回所有产品在 2019-08-16 当天的 product_id 和 price。所有产品初始价格均为 10；有变价记录时取该日期或之前最近一次的新价格。</p><h3>表结构</h3><h4>Products</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>product_id</td><td>INTEGER</td></tr><tr><td>new_price</td><td>INTEGER</td></tr><tr><td>change_date</td><td>TEXT</td></tr></tbody></table><h3>说明与约束</h3><p>Products 的 (product_id, change_date) 是联合主键。new_price 表示从 change_date 当天起生效的新价格。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Products</h4><table><thead><tr><th>product_id</th><th>new_price</th><th>change_date</th></tr></thead><tbody><tr><td>1</td><td>20</td><td>2019-08-14</td></tr><tr><td>2</td><td>50</td><td>2019-08-14</td></tr><tr><td>1</td><td>30</td><td>2019-08-15</td></tr><tr><td>1</td><td>35</td><td>2019-08-16</td></tr><tr><td>2</td><td>65</td><td>2019-08-17</td></tr><tr><td>3</td><td>20</td><td>2019-08-18</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>product_id</th><th>price</th></tr></thead><tbody><tr><td>2</td><td>50</td></tr><tr><td>1</td><td>35</td></tr><tr><td>3</td><td>10</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Products",
+          "columns": [
+            {
+              "name": "product_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "new_price",
+              "type": "INTEGER"
+            },
+            {
+              "name": "change_date",
+              "type": "TEXT"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/product-price-at-a-given-date/",
+      "verifiedAt": "2026-09-12T10:04:26.407322+00:00",
+      "contentUrl": "https://leetcode.com/problems/product-price-at-a-given-date/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "174d68f94eb35f7927d859a8ce80a7a3e1d17cbfcf41938ac3df302fde2f42dc"
+      }
+    }
+  },
+  {
+    "id": "sql-1204",
+    "displayId": "1204",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "最后一个能进入巴士的人",
+    "slug": "last-person-to-fit-in-the-bus",
+    "difficulty": "Medium",
+    "category": "高级查询与连接",
+    "tags": [
+      "SQL",
+      "高级查询与连接"
+    ],
+    "url": "https://leetcode.com/problems/last-person-to-fit-in-the-bus/",
+    "content": "<p>乘客按 turn 从小到大依次上车，巴士载重上限为 1000。返回不超过载重上限的最后一位上车者 person_name，达到恰好 1000 仍可上车。</p><h3>表结构</h3><h4>Queue</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>person_id</td><td>INTEGER</td></tr><tr><td>person_name</td><td>TEXT</td></tr><tr><td>weight</td><td>INTEGER</td></tr><tr><td>turn</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>person_id 和 turn 都唯一，turn 为 1 到 n 的排列，weight 为体重。保证第一位乘客可上车；一轮只能上一人。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Queue</h4><table><thead><tr><th>person_id</th><th>person_name</th><th>weight</th><th>turn</th></tr></thead><tbody><tr><td>5</td><td>Alice</td><td>250</td><td>1</td></tr><tr><td>4</td><td>Bob</td><td>175</td><td>5</td></tr><tr><td>3</td><td>Alex</td><td>350</td><td>2</td></tr><tr><td>6</td><td>John Cena</td><td>400</td><td>3</td></tr><tr><td>1</td><td>Winston</td><td>500</td><td>6</td></tr><tr><td>2</td><td>Marie</td><td>200</td><td>4</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>person_name</th></tr></thead><tbody><tr><td>John Cena</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。SQLite 支持 SUM(...) OVER(ORDER BY ...) 窗口累计。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Queue",
+          "columns": [
+            {
+              "name": "person_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "person_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "weight",
+              "type": "INTEGER"
+            },
+            {
+              "name": "turn",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": "SQLite 支持 SUM(...) OVER(ORDER BY ...) 窗口累计。"
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/last-person-to-fit-in-the-bus/",
+      "verifiedAt": "2026-09-12T10:04:26.408318+00:00",
+      "contentUrl": "https://leetcode.com/problems/last-person-to-fit-in-the-bus/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "90bc1c03e32fb43dd84386a55a740b4e3089af856583cd9239056defbfec9f47"
+      }
+    }
+  },
+  {
+    "id": "sql-1907",
+    "displayId": "1907",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "按分类统计薪水",
+    "slug": "count-salary-categories",
+    "difficulty": "Medium",
+    "category": "高级查询与连接",
+    "tags": [
+      "SQL",
+      "高级查询与连接"
+    ],
+    "url": "https://leetcode.com/problems/count-salary-categories/",
+    "content": "<p>按收入统计账户数 accounts_count，返回三类 category：Low Salary（严格小于 20000）、Average Salary（20000 至 50000，含边界）、High Salary（严格大于 50000）。三类必须全部出现，没有账户的类别计为 0。</p><h3>表结构</h3><h4>Accounts</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>account_id</td><td>INTEGER</td></tr><tr><td>income</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Accounts.account_id 是主键，income 为月收入。类别字符串按题目英文保留。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Accounts</h4><table><thead><tr><th>account_id</th><th>income</th></tr></thead><tbody><tr><td>3</td><td>108939</td></tr><tr><td>2</td><td>12747</td></tr><tr><td>8</td><td>87709</td></tr><tr><td>6</td><td>91796</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>category</th><th>accounts_count</th></tr></thead><tbody><tr><td>Low Salary</td><td>1</td></tr><tr><td>Average Salary</td><td>0</td></tr><tr><td>High Salary</td><td>3</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Accounts",
+          "columns": [
+            {
+              "name": "account_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "income",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/count-salary-categories/",
+      "verifiedAt": "2026-09-12T10:04:26.408318+00:00",
+      "contentUrl": "https://leetcode.com/problems/count-salary-categories/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "3474ec3ef70a1bae75fcd0436602cc8537e37edfde803c16f5cef4895a00a4a4"
+      }
+    }
+  },
+  {
+    "id": "sql-1978",
+    "displayId": "1978",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "上级经理已离职的公司员工",
+    "slug": "employees-whose-manager-left-the-company",
+    "difficulty": "Easy",
+    "category": "子查询",
+    "tags": [
+      "SQL",
+      "子查询"
+    ],
+    "url": "https://leetcode.com/problems/employees-whose-manager-left-the-company/",
+    "content": "<p>返回工资严格小于 30000，且上级经理已经离职的员工 employee_id，按 employee_id 升序。没有上级的员工不属于此情况。</p><h3>表结构</h3><h4>Employees</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>employee_id</td><td>INTEGER</td></tr><tr><td>name</td><td>TEXT</td></tr><tr><td>manager_id</td><td>INTEGER</td></tr><tr><td>salary</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Employees.employee_id 是主键。经理离职后其记录会被删除，但下属的 manager_id 保留原编号；无经理时 manager_id 为 NULL。</p><p>结果按上述要求排序。</p><h3>示例 1</h3><p>输入：</p><h4>Employees</h4><table><thead><tr><th>employee_id</th><th>name</th><th>manager_id</th><th>salary</th></tr></thead><tbody><tr><td>3</td><td>Mila</td><td>9</td><td>60301</td></tr><tr><td>12</td><td>Antonella</td><td><em>NULL</em></td><td>31000</td></tr><tr><td>13</td><td>Emery</td><td><em>NULL</em></td><td>67084</td></tr><tr><td>1</td><td>Kalel</td><td>11</td><td>21241</td></tr><tr><td>9</td><td>Mikaela</td><td><em>NULL</em></td><td>50937</td></tr><tr><td>11</td><td>Joziah</td><td>6</td><td>28485</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>employee_id</th></tr></thead><tbody><tr><td>11</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Employees",
+          "columns": [
+            {
+              "name": "employee_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "name",
+              "type": "TEXT"
+            },
+            {
+              "name": "manager_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "salary",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": true,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/employees-whose-manager-left-the-company/",
+      "verifiedAt": "2026-09-12T10:04:26.408318+00:00",
+      "contentUrl": "https://leetcode.com/problems/employees-whose-manager-left-the-company/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "877d687a0958a6a8c26aadd83c80026b72561a15f6a0aff1035605e602fb76d9"
+      }
+    }
+  },
+  {
+    "id": "sql-626",
+    "displayId": "626",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "换座位",
+    "slug": "exchange-seats",
+    "difficulty": "Medium",
+    "category": "子查询",
+    "tags": [
+      "SQL",
+      "子查询"
+    ],
+    "url": "https://leetcode.com/problems/exchange-seats/",
+    "content": "<p>每两名相邻学生交换座位 id。学生数为奇数时，最后一人的座位不变。输出 id、student，按 id 升序。</p><h3>表结构</h3><h4>Seat</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>id</td><td>INTEGER</td></tr><tr><td>student</td><td>TEXT</td></tr></tbody></table><h3>说明与约束</h3><p>Seat.id 是从 1 开始连续递增的主键。student 为学生姓名。</p><p>结果按上述要求排序。</p><h3>示例 1</h3><p>输入：</p><h4>Seat</h4><table><thead><tr><th>id</th><th>student</th></tr></thead><tbody><tr><td>1</td><td>Abbot</td></tr><tr><td>2</td><td>Doris</td></tr><tr><td>3</td><td>Emerson</td></tr><tr><td>4</td><td>Green</td></tr><tr><td>5</td><td>Jeames</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>id</th><th>student</th></tr></thead><tbody><tr><td>1</td><td>Doris</td></tr><tr><td>2</td><td>Abbot</td></tr><tr><td>3</td><td>Green</td></tr><tr><td>4</td><td>Emerson</td></tr><tr><td>5</td><td>Jeames</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Seat",
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "student",
+              "type": "TEXT"
+            }
+          ]
+        }
+      ],
+      "orderMatters": true,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/exchange-seats/",
+      "verifiedAt": "2026-09-12T10:04:26.409315+00:00",
+      "contentUrl": "https://leetcode.com/problems/exchange-seats/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "c9270eba2df9033ac78fc858926e21d290e7358c54b0f166a8102739135639e0"
+      }
+    }
+  },
+  {
+    "id": "sql-1341",
+    "displayId": "1341",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "电影评分",
+    "slug": "movie-rating",
+    "difficulty": "Medium",
+    "category": "子查询",
+    "tags": [
+      "SQL",
+      "子查询"
+    ],
+    "url": "https://leetcode.com/problems/movie-rating/",
+    "content": "<p>输出一列 results、两行结果：第一行为评价电影数量最多的用户姓名，并列时取字典序最小的姓名；第二行为 2020 年 2 月平均评分最高的电影名，并列时取字典序最小的电影名。两项相同也须保留两行。</p><h3>表结构</h3><h4>Movies</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>movie_id</td><td>INTEGER</td></tr><tr><td>title</td><td>TEXT</td></tr></tbody></table><h4>Users</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>user_id</td><td>INTEGER</td></tr><tr><td>name</td><td>TEXT</td></tr></tbody></table><h4>MovieRating</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>movie_id</td><td>INTEGER</td></tr><tr><td>user_id</td><td>INTEGER</td></tr><tr><td>rating</td><td>INTEGER</td></tr><tr><td>created_at</td><td>TEXT</td></tr></tbody></table><h3>说明与约束</h3><p>Movies.movie_id、Users.user_id 为各自主键，Users.name 唯一。MovieRating 的 (movie_id, user_id) 是联合主键；created_at 为评分日期。</p><p>结果按上述要求排序。</p><h3>示例 1</h3><p>输入：</p><h4>Movies</h4><table><thead><tr><th>movie_id</th><th>title</th></tr></thead><tbody><tr><td>1</td><td>Avengers</td></tr><tr><td>2</td><td>Frozen 2</td></tr><tr><td>3</td><td>Joker</td></tr></tbody></table><h4>Users</h4><table><thead><tr><th>user_id</th><th>name</th></tr></thead><tbody><tr><td>1</td><td>Daniel</td></tr><tr><td>2</td><td>Monica</td></tr><tr><td>3</td><td>Maria</td></tr><tr><td>4</td><td>James</td></tr></tbody></table><h4>MovieRating</h4><table><thead><tr><th>movie_id</th><th>user_id</th><th>rating</th><th>created_at</th></tr></thead><tbody><tr><td>1</td><td>1</td><td>3</td><td>2020-01-12</td></tr><tr><td>1</td><td>2</td><td>4</td><td>2020-02-11</td></tr><tr><td>1</td><td>3</td><td>2</td><td>2020-02-12</td></tr><tr><td>1</td><td>4</td><td>1</td><td>2020-01-01</td></tr><tr><td>2</td><td>1</td><td>5</td><td>2020-02-17</td></tr><tr><td>2</td><td>2</td><td>2</td><td>2020-02-01</td></tr><tr><td>2</td><td>3</td><td>2</td><td>2020-03-01</td></tr><tr><td>3</td><td>1</td><td>3</td><td>2020-02-22</td></tr><tr><td>3</td><td>2</td><td>4</td><td>2020-02-25</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>results</th></tr></thead><tbody><tr><td>Daniel</td></tr><tr><td>Frozen 2</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。两行结果可能相同，UNION ALL 保留重复行。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Movies",
+          "columns": [
+            {
+              "name": "movie_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "title",
+              "type": "TEXT"
+            }
+          ]
+        },
+        {
+          "name": "Users",
+          "columns": [
+            {
+              "name": "user_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "name",
+              "type": "TEXT"
+            }
+          ]
+        },
+        {
+          "name": "MovieRating",
+          "columns": [
+            {
+              "name": "movie_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "user_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "rating",
+              "type": "INTEGER"
+            },
+            {
+              "name": "created_at",
+              "type": "TEXT"
+            }
+          ]
+        }
+      ],
+      "orderMatters": true,
+      "dialectNotes": "两行结果可能相同，UNION ALL 保留重复行。"
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/movie-rating/",
+      "verifiedAt": "2026-09-12T10:04:26.409315+00:00",
+      "contentUrl": "https://leetcode.com/problems/movie-rating/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "99ab5bbe69c07e27a4e18d70ae028a9eea8beb85c6f6bda2faa83c270eaa9894"
+      }
+    }
+  },
+  {
+    "id": "sql-1321",
+    "displayId": "1321",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "餐馆营业额变化增长",
+    "slug": "restaurant-growth",
+    "difficulty": "Medium",
+    "category": "子查询",
+    "tags": [
+      "SQL",
+      "子查询"
+    ],
+    "url": "https://leetcode.com/problems/restaurant-growth/",
+    "content": "<p>计算以当天及之前 6 天组成的 7 天窗口的总营业额 amount 和日均营业额 average_amount，输出 visited_on、amount、average_amount。只输出具有完整 7 天窗口的日期，均值四舍五入到两位小数，按 visited_on 升序。</p><h3>表结构</h3><h4>Customer</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>customer_id</td><td>INTEGER</td></tr><tr><td>name</td><td>TEXT</td></tr><tr><td>visited_on</td><td>TEXT</td></tr><tr><td>amount</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Customer 的 (customer_id, visited_on) 是联合主键。每天至少一位顾客；同一天可能多位顾客，amount 为每位顾客当天支付总额，应先汇总当日营业额。</p><p>结果按上述要求排序。</p><h3>示例 1</h3><p>输入：</p><h4>Customer</h4><table><thead><tr><th>customer_id</th><th>name</th><th>visited_on</th><th>amount</th></tr></thead><tbody><tr><td>1</td><td>Jhon</td><td>2019-01-01</td><td>100</td></tr><tr><td>2</td><td>Daniel</td><td>2019-01-02</td><td>110</td></tr><tr><td>3</td><td>Jade</td><td>2019-01-03</td><td>120</td></tr><tr><td>4</td><td>Khaled</td><td>2019-01-04</td><td>130</td></tr><tr><td>5</td><td>Winston</td><td>2019-01-05</td><td>110</td></tr><tr><td>6</td><td>Elvis</td><td>2019-01-06</td><td>140</td></tr><tr><td>7</td><td>Anna</td><td>2019-01-07</td><td>150</td></tr><tr><td>8</td><td>Maria</td><td>2019-01-08</td><td>80</td></tr><tr><td>9</td><td>Jaze</td><td>2019-01-09</td><td>110</td></tr><tr><td>1</td><td>Jhon</td><td>2019-01-10</td><td>130</td></tr><tr><td>3</td><td>Jade</td><td>2019-01-10</td><td>150</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>visited_on</th><th>amount</th><th>average_amount</th></tr></thead><tbody><tr><td>2019-01-07</td><td>860</td><td>122.86</td></tr><tr><td>2019-01-08</td><td>840</td><td>120</td></tr><tr><td>2019-01-09</td><td>840</td><td>120</td></tr><tr><td>2019-01-10</td><td>1000</td><td>142.86</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Customer",
+          "columns": [
+            {
+              "name": "customer_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "name",
+              "type": "TEXT"
+            },
+            {
+              "name": "visited_on",
+              "type": "TEXT"
+            },
+            {
+              "name": "amount",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": true,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/restaurant-growth/",
+      "verifiedAt": "2026-09-12T10:04:26.410325+00:00",
+      "contentUrl": "https://leetcode.com/problems/restaurant-growth/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "7b0ec940ad0501446794849de45e120db20163a20a63635c9b4834be2f188cbb"
+      }
+    }
+  },
+  {
+    "id": "sql-602",
+    "displayId": "602",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "好友申请 II：谁有最多的好友",
+    "slug": "friend-requests-ii-who-has-the-most-friends",
+    "difficulty": "Medium",
+    "category": "子查询",
+    "tags": [
+      "SQL",
+      "子查询"
+    ],
+    "url": "https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/",
+    "content": "<p>好友关系视为双向。返回好友数最多者的 id 和好友数 num。</p><h3>表结构</h3><h4>RequestAccepted</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>requester_id</td><td>INTEGER</td></tr><tr><td>accepter_id</td><td>INTEGER</td></tr><tr><td>accept_date</td><td>TEXT</td></tr></tbody></table><h3>说明与约束</h3><p>RequestAccepted 的 (requester_id, accepter_id) 是联合主键，accept_date 为接受日期。测试保证只有一位好友数最多者。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>RequestAccepted</h4><table><thead><tr><th>requester_id</th><th>accepter_id</th><th>accept_date</th></tr></thead><tbody><tr><td>1</td><td>2</td><td>2016/06/03</td></tr><tr><td>1</td><td>3</td><td>2016/06/08</td></tr><tr><td>2</td><td>3</td><td>2016/06/08</td></tr><tr><td>3</td><td>4</td><td>2016/06/09</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>id</th><th>num</th></tr></thead><tbody><tr><td>3</td><td>3</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "RequestAccepted",
+          "columns": [
+            {
+              "name": "requester_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "accepter_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "accept_date",
+              "type": "TEXT"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/",
+      "verifiedAt": "2026-09-12T10:04:26.410325+00:00",
+      "contentUrl": "https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "cd2963acd0c1b61806283d8fda15789f0e3b8a6aec6973e96ad9b27bc4437ce8"
+      }
+    }
+  },
+  {
+    "id": "sql-585",
+    "displayId": "585",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "2016年的投资",
+    "slug": "investments-in-2016",
+    "difficulty": "Medium",
+    "category": "子查询",
+    "tags": [
+      "SQL",
+      "子查询"
+    ],
+    "url": "https://leetcode.com/problems/investments-in-2016/",
+    "content": "<p>累计满足以下两个条件的投保人在 2016 年的投资额 tiv_2016，并四舍五入到两位小数：其 tiv_2015 与至少一位其他投保人相同；其所在地 (lat, lon) 与所有其他人均不同。返回一列 tiv_2016。</p><h3>表结构</h3><h4>Insurance</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>pid</td><td>INTEGER</td></tr><tr><td>tiv_2015</td><td>REAL</td></tr><tr><td>tiv_2016</td><td>REAL</td></tr><tr><td>lat</td><td>REAL</td></tr><tr><td>lon</td><td>REAL</td></tr></tbody></table><h3>说明与约束</h3><p>Insurance.pid 是主键，lat 和 lon 保证非 NULL。tiv_2015、tiv_2016 分别为两年的投资额，经纬度的组合表示城市。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Insurance</h4><table><thead><tr><th>pid</th><th>tiv_2015</th><th>tiv_2016</th><th>lat</th><th>lon</th></tr></thead><tbody><tr><td>1</td><td>10.0</td><td>5.0</td><td>10.0</td><td>10.0</td></tr><tr><td>2</td><td>20.0</td><td>20.0</td><td>20.0</td><td>20.0</td></tr><tr><td>3</td><td>10.0</td><td>30.0</td><td>20.0</td><td>20.0</td></tr><tr><td>4</td><td>10.0</td><td>40.0</td><td>40.0</td><td>40.0</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>tiv_2016</th></tr></thead><tbody><tr><td>45.0</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Insurance",
+          "columns": [
+            {
+              "name": "pid",
+              "type": "INTEGER"
+            },
+            {
+              "name": "tiv_2015",
+              "type": "REAL"
+            },
+            {
+              "name": "tiv_2016",
+              "type": "REAL"
+            },
+            {
+              "name": "lat",
+              "type": "REAL"
+            },
+            {
+              "name": "lon",
+              "type": "REAL"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/investments-in-2016/",
+      "verifiedAt": "2026-09-12T10:04:26.411322+00:00",
+      "contentUrl": "https://leetcode.com/problems/investments-in-2016/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "159a517313444ae5dfaa341d25cd0fc35d315e150b77066e2438c6a86aa17fe1"
+      }
+    }
+  },
+  {
+    "id": "sql-185",
+    "displayId": "185",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "部门工资前三高的所有员工",
+    "slug": "department-top-three-salaries",
+    "difficulty": "Hard",
+    "category": "子查询",
+    "tags": [
+      "SQL",
+      "子查询"
+    ],
+    "url": "https://leetcode.com/problems/department-top-three-salaries/",
+    "content": "<p>返回各部门中工资位列前三个不同工资档位的所有员工，列名为 Department、Employee、Salary。同工资并列不能占用多个档位，部门不足三个工资档位时保留全部。</p><h3>表结构</h3><h4>Employee</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>id</td><td>INTEGER</td></tr><tr><td>name</td><td>TEXT</td></tr><tr><td>salary</td><td>INTEGER</td></tr><tr><td>departmentId</td><td>INTEGER</td></tr></tbody></table><h4>Department</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>id</td><td>INTEGER</td></tr><tr><td>name</td><td>TEXT</td></tr></tbody></table><h3>说明与约束</h3><p>Employee.id、Department.id 分别为主键。Employee.departmentId 引用 Department.id；工资并列时所有符合条件的员工均应返回。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Employee</h4><table><thead><tr><th>id</th><th>name</th><th>salary</th><th>departmentId</th></tr></thead><tbody><tr><td>1</td><td>Joe</td><td>85000</td><td>1</td></tr><tr><td>2</td><td>Henry</td><td>80000</td><td>2</td></tr><tr><td>3</td><td>Sam</td><td>60000</td><td>2</td></tr><tr><td>4</td><td>Max</td><td>90000</td><td>1</td></tr><tr><td>5</td><td>Janet</td><td>69000</td><td>1</td></tr><tr><td>6</td><td>Randy</td><td>85000</td><td>1</td></tr><tr><td>7</td><td>Will</td><td>70000</td><td>1</td></tr></tbody></table><h4>Department</h4><table><thead><tr><th>id</th><th>name</th></tr></thead><tbody><tr><td>1</td><td>IT</td></tr><tr><td>2</td><td>Sales</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>Department</th><th>Employee</th><th>Salary</th></tr></thead><tbody><tr><td>IT</td><td>Max</td><td>90000</td></tr><tr><td>IT</td><td>Joe</td><td>85000</td></tr><tr><td>IT</td><td>Randy</td><td>85000</td></tr><tr><td>IT</td><td>Will</td><td>70000</td></tr><tr><td>Sales</td><td>Henry</td><td>80000</td></tr><tr><td>Sales</td><td>Sam</td><td>60000</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Employee",
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "name",
+              "type": "TEXT"
+            },
+            {
+              "name": "salary",
+              "type": "INTEGER"
+            },
+            {
+              "name": "departmentId",
+              "type": "INTEGER"
+            }
+          ]
+        },
+        {
+          "name": "Department",
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "name",
+              "type": "TEXT"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/department-top-three-salaries/",
+      "verifiedAt": "2026-09-12T10:04:26.411322+00:00",
+      "contentUrl": "https://leetcode.com/problems/department-top-three-salaries/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "d984c32c9609d9def246b0baad6dc6fa8447191e0d6ef4250dc486639a666364"
+      }
+    }
+  },
+  {
+    "id": "sql-1667",
+    "displayId": "1667",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "修复表中的名字",
+    "slug": "fix-names-in-a-table",
+    "difficulty": "Easy",
+    "category": "字符串与正则",
+    "tags": [
+      "SQL",
+      "字符串与正则"
+    ],
+    "url": "https://leetcode.com/problems/fix-names-in-a-table/",
+    "content": "<p>修正每个用户的 name，使首字母大写，其余字母小写；输出 user_id、name，按 user_id 升序。</p><h3>表结构</h3><h4>Users</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>user_id</td><td>INTEGER</td></tr><tr><td>name</td><td>TEXT</td></tr></tbody></table><h3>说明与约束</h3><p>Users.user_id 是主键，name 只包含大小写英文字母。</p><p>结果按上述要求排序。</p><h3>示例 1</h3><p>输入：</p><h4>Users</h4><table><thead><tr><th>user_id</th><th>name</th></tr></thead><tbody><tr><td>1</td><td>aLice</td></tr><tr><td>2</td><td>bOB</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>user_id</th><th>name</th></tr></thead><tbody><tr><td>1</td><td>Alice</td></tr><tr><td>2</td><td>Bob</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。SQLite 使用 substr 截取，|| 拼接字符串；此题只涉及英文字母。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Users",
+          "columns": [
+            {
+              "name": "user_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "name",
+              "type": "TEXT"
+            }
+          ]
+        }
+      ],
+      "orderMatters": true,
+      "dialectNotes": "SQLite 使用 substr 截取，|| 拼接字符串；此题只涉及英文字母。"
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/fix-names-in-a-table/",
+      "verifiedAt": "2026-09-12T10:04:26.411322+00:00",
+      "contentUrl": "https://leetcode.com/problems/fix-names-in-a-table/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "8c4ba7ee152dd1fc9683dc3061300c5ca1f8933fc0392ad9327729fa17b483c2"
+      }
+    }
+  },
+  {
+    "id": "sql-1527",
+    "displayId": "1527",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "患某种疾病的患者",
+    "slug": "patients-with-a-condition",
+    "difficulty": "Easy",
+    "category": "字符串与正则",
+    "tags": [
+      "SQL",
+      "字符串与正则"
+    ],
+    "url": "https://leetcode.com/problems/patients-with-a-condition/",
+    "content": "<p>返回患 I 型糖尿病者的 patient_id、patient_name、conditions。疾病代码以空格分隔，I 型糖尿病的某个完整疾病代码必须以 DIAB1 开头。</p><h3>表结构</h3><h4>Patients</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>patient_id</td><td>INTEGER</td></tr><tr><td>patient_name</td><td>TEXT</td></tr><tr><td>conditions</td><td>TEXT</td></tr></tbody></table><h3>说明与约束</h3><p>Patients.patient_id 是主键，conditions 可以为空字符串，每个代码不含空格。必须匹配代码开头，不能只在任意位置查找 DIAB1。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Patients</h4><table><thead><tr><th>patient_id</th><th>patient_name</th><th>conditions</th></tr></thead><tbody><tr><td>1</td><td>Daniel</td><td>YFEV COUGH</td></tr><tr><td>2</td><td>Alice</td><td></td></tr><tr><td>3</td><td>Bob</td><td>DIAB100 MYOP</td></tr><tr><td>4</td><td>George</td><td>ACNE DIAB100</td></tr><tr><td>5</td><td>Alain</td><td>DIAB201</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>patient_id</th><th>patient_name</th><th>conditions</th></tr></thead><tbody><tr><td>3</td><td>Bob</td><td>DIAB100 MYOP</td></tr><tr><td>4</td><td>George</td><td>ACNE DIAB100</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。SQLite 不内建 REGEXP，可用 GLOB 匹配字符串；GLOB 的 * 表示任意长度字符。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Patients",
+          "columns": [
+            {
+              "name": "patient_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "patient_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "conditions",
+              "type": "TEXT"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": "SQLite 不内建 REGEXP，可用 GLOB 匹配字符串；GLOB 的 * 表示任意长度字符。"
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/patients-with-a-condition/",
+      "verifiedAt": "2026-09-12T10:04:26.412321+00:00",
+      "contentUrl": "https://leetcode.com/problems/patients-with-a-condition/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "13133d2bfeab65dfe45b95a785f549f89346a1e4d5ff72fdaeea4d063ae25b60"
+      }
+    }
+  },
+  {
+    "id": "sql-196",
+    "displayId": "196",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "删除重复的电子邮箱",
+    "slug": "delete-duplicate-emails",
+    "difficulty": "Easy",
+    "category": "字符串与正则",
+    "tags": [
+      "SQL",
+      "字符串与正则"
+    ],
+    "url": "https://leetcode.com/problems/delete-duplicate-emails/",
+    "content": "<p>删除 Person 中重复的电子邮箱记录，每种邮箱仅保留 id 最小的一行。必须编写 DELETE，判题比较执行后 Person 的剩余全部记录，结果行顺序不限。</p><h3>表结构</h3><h4>Person</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>Id</td><td>INTEGER</td></tr><tr><td>Email</td><td>TEXT</td></tr></tbody></table><h3>说明与约束</h3><p>Person.id 是主键，email 保证仅包含小写字母。编辑器无需建表，删除只作用于本用例的临时内存表。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Person</h4><table><thead><tr><th>Id</th><th>Email</th></tr></thead><tbody><tr><td>1</td><td>john@example.com</td></tr><tr><td>2</td><td>bob@example.com</td></tr><tr><td>3</td><td>john@example.com</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>id</th><th>email</th></tr></thead><tbody><tr><td>1</td><td>john@example.com</td></tr><tr><td>2</td><td>bob@example.com</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。SQLite 使用 DELETE FROM Person ...；不支持 MySQL 的 DELETE p1 FROM ... 多表删除形式。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite DELETE 语句\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Person",
+          "columns": [
+            {
+              "name": "Id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "Email",
+              "type": "TEXT"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": "SQLite 使用 DELETE FROM Person ...；不支持 MySQL 的 DELETE p1 FROM ... 多表删除形式。",
+      "mode": "delete",
+      "resultTable": "Person"
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/delete-duplicate-emails/",
+      "verifiedAt": "2026-09-12T10:04:26.412321+00:00",
+      "contentUrl": "https://leetcode.com/problems/delete-duplicate-emails/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "af4ebf48e317ee8f1ec134c574d3d2b8a7eb3c957854b7246d0a2091f51e3b75"
+      }
+    }
+  },
+  {
+    "id": "sql-176",
+    "displayId": "176",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "第二高的薪水",
+    "slug": "second-highest-salary",
+    "difficulty": "Medium",
+    "category": "字符串与正则",
+    "tags": [
+      "SQL",
+      "字符串与正则"
+    ],
+    "url": "https://leetcode.com/problems/second-highest-salary/",
+    "content": "<p>返回 Employee 中第二高的不同薪水，列名为 SecondHighestSalary。若不足两个不同薪水，返回一行 NULL。</p><h3>表结构</h3><h4>Employee</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>id</td><td>INTEGER</td></tr><tr><td>salary</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Employee.id 是主键；相同工资只算一个工资档位。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Employee</h4><table><thead><tr><th>id</th><th>salary</th></tr></thead><tbody><tr><td>1</td><td>100</td></tr><tr><td>2</td><td>200</td></tr><tr><td>3</td><td>300</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>SecondHighestSalary</th></tr></thead><tbody><tr><td>200</td></tr></tbody></table><h3>示例 2</h3><p>输入：</p><h4>Employee</h4><table><thead><tr><th>id</th><th>salary</th></tr></thead><tbody><tr><td>1</td><td>100</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>SecondHighestSalary</th></tr></thead><tbody><tr><td><em>NULL</em></td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Employee",
+          "columns": [
+            {
+              "name": "id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "salary",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/second-highest-salary/",
+      "verifiedAt": "2026-09-12T10:04:26.413322+00:00",
+      "contentUrl": "https://leetcode.com/problems/second-highest-salary/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "67917f75b2c577e1fddc12bad30bff20980e7e3a21b4b82592fd4482c0f33d1f"
+      }
+    }
+  },
+  {
+    "id": "sql-1484",
+    "displayId": "1484",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "按日期分组销售产品",
+    "slug": "group-sold-products-by-the-date",
+    "difficulty": "Easy",
+    "category": "字符串与正则",
+    "tags": [
+      "SQL",
+      "字符串与正则"
+    ],
+    "url": "https://leetcode.com/problems/group-sold-products-by-the-date/",
+    "content": "<p>按日期返回 sell_date、该日不同商品数量 num_sold、不同商品名组成的 products。商品名去重后按字典序排列，使用英文逗号连接，不添加空格；结果按 sell_date 升序。</p><h3>表结构</h3><h4>Activities</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>sell_date</td><td>TEXT</td></tr><tr><td>product</td><td>TEXT</td></tr></tbody></table><h3>说明与约束</h3><p>Activities 没有主键，允许重复行；product 是商品名。</p><p>结果按上述要求排序。</p><h3>示例 1</h3><p>输入：</p><h4>Activities</h4><table><thead><tr><th>sell_date</th><th>product</th></tr></thead><tbody><tr><td>2020-05-30</td><td>Headphone</td></tr><tr><td>2020-06-01</td><td>Pencil</td></tr><tr><td>2020-06-02</td><td>Mask</td></tr><tr><td>2020-05-30</td><td>Basketball</td></tr><tr><td>2020-06-01</td><td>Bible</td></tr><tr><td>2020-06-02</td><td>Mask</td></tr><tr><td>2020-05-30</td><td>T-Shirt</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>sell_date</th><th>num_sold</th><th>products</th></tr></thead><tbody><tr><td>2020-05-30</td><td>3</td><td>Basketball,Headphone,T-Shirt</td></tr><tr><td>2020-06-01</td><td>2</td><td>Bible,Pencil</td></tr><tr><td>2020-06-02</td><td>1</td><td>Mask</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。SQLite 的 group_concat 语法与 MySQL 不同，可先在子查询去重、排序，再聚合连接。 原题公开示例将输入 T-Shirt 写为输出 T-shirt；此处修正输出大小写，与输入商品名保持一致，原文缓存保留。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Activities",
+          "columns": [
+            {
+              "name": "sell_date",
+              "type": "TEXT"
+            },
+            {
+              "name": "product",
+              "type": "TEXT"
+            }
+          ]
+        }
+      ],
+      "orderMatters": true,
+      "dialectNotes": "SQLite 的 group_concat 语法与 MySQL 不同，可先在子查询去重、排序，再聚合连接。 原题公开示例将输入 T-Shirt 写为输出 T-shirt；此处修正输出大小写，与输入商品名保持一致，原文缓存保留。"
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/group-sold-products-by-the-date/",
+      "verifiedAt": "2026-09-12T10:04:26.413322+00:00",
+      "contentUrl": "https://leetcode.com/problems/group-sold-products-by-the-date/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "380f9135fade67abef819cc75a604ffce834b921dcbce772b4c3950950eeb29b"
+      }
+    }
+  },
+  {
+    "id": "sql-1327",
+    "displayId": "1327",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "列出指定时间段内所有的下单产品",
+    "slug": "list-the-products-ordered-in-a-period",
+    "difficulty": "Easy",
+    "category": "字符串与正则",
+    "tags": [
+      "SQL",
+      "字符串与正则"
+    ],
+    "url": "https://leetcode.com/problems/list-the-products-ordered-in-a-period/",
+    "content": "<p>返回 2020 年 2 月累计订购至少 100 件的商品名 product_name，以及当月总件数 unit。只统计该月份，包含 2 月 29 日。</p><h3>表结构</h3><h4>Products</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>product_id</td><td>INTEGER</td></tr><tr><td>product_name</td><td>TEXT</td></tr><tr><td>product_category</td><td>TEXT</td></tr></tbody></table><h4>Orders</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>product_id</td><td>INTEGER</td></tr><tr><td>order_date</td><td>TEXT</td></tr><tr><td>unit</td><td>INTEGER</td></tr></tbody></table><h3>说明与约束</h3><p>Products.product_id 是主键；Orders 可能有重复行，product_id 引用 Products。unit 为每笔订单的商品件数。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Products</h4><table><thead><tr><th>product_id</th><th>product_name</th><th>product_category</th></tr></thead><tbody><tr><td>1</td><td>Leetcode Solutions</td><td>Book</td></tr><tr><td>2</td><td>Jewels of Stringology</td><td>Book</td></tr><tr><td>3</td><td>HP</td><td>Laptop</td></tr><tr><td>4</td><td>Lenovo</td><td>Laptop</td></tr><tr><td>5</td><td>Leetcode Kit</td><td>T-shirt</td></tr></tbody></table><h4>Orders</h4><table><thead><tr><th>product_id</th><th>order_date</th><th>unit</th></tr></thead><tbody><tr><td>1</td><td>2020-02-05</td><td>60</td></tr><tr><td>1</td><td>2020-02-10</td><td>70</td></tr><tr><td>2</td><td>2020-01-18</td><td>30</td></tr><tr><td>2</td><td>2020-02-11</td><td>80</td></tr><tr><td>3</td><td>2020-02-17</td><td>2</td></tr><tr><td>3</td><td>2020-02-24</td><td>3</td></tr><tr><td>4</td><td>2020-03-01</td><td>20</td></tr><tr><td>4</td><td>2020-03-04</td><td>30</td></tr><tr><td>4</td><td>2020-03-04</td><td>60</td></tr><tr><td>5</td><td>2020-02-25</td><td>50</td></tr><tr><td>5</td><td>2020-02-27</td><td>50</td></tr><tr><td>5</td><td>2020-03-01</td><td>50</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>product_name</th><th>unit</th></tr></thead><tbody><tr><td>Leetcode Solutions</td><td>130</td></tr><tr><td>Leetcode Kit</td><td>100</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。表数据已自动装入独立内存库，无需创建表或插入数据。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Products",
+          "columns": [
+            {
+              "name": "product_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "product_name",
+              "type": "TEXT"
+            },
+            {
+              "name": "product_category",
+              "type": "TEXT"
+            }
+          ]
+        },
+        {
+          "name": "Orders",
+          "columns": [
+            {
+              "name": "product_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "order_date",
+              "type": "TEXT"
+            },
+            {
+              "name": "unit",
+              "type": "INTEGER"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": ""
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/list-the-products-ordered-in-a-period/",
+      "verifiedAt": "2026-09-12T10:04:26.414315+00:00",
+      "contentUrl": "https://leetcode.com/problems/list-the-products-ordered-in-a-period/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "cc8da09938560ca05a20a4e98ddd7176ad882d97d7aa2afe06dd6808d9f1999f"
+      }
+    }
+  },
+  {
+    "id": "sql-1517",
+    "displayId": "1517",
+    "kind": "sql",
+    "collection": "sql50",
+    "title": "查找拥有有效邮箱的用户",
+    "slug": "find-users-with-valid-e-mails",
+    "difficulty": "Easy",
+    "category": "字符串与正则",
+    "tags": [
+      "SQL",
+      "字符串与正则"
+    ],
+    "url": "https://leetcode.com/problems/find-users-with-valid-e-mails/",
+    "content": "<p>返回拥有有效邮箱的用户全部列 user_id、name、mail。邮箱前缀必须以英文字母开头，后续仅允许大小写英文字母、数字、下划线 _、点 . 和短横线 -；域名必须严格为小写 @leetcode.com。</p><h3>表结构</h3><h4>Users</h4><table><thead><tr><th>字段</th><th>本地类型</th></tr></thead><tbody><tr><td>user_id</td><td>INTEGER</td></tr><tr><td>name</td><td>TEXT</td></tr><tr><td>mail</td><td>TEXT</td></tr></tbody></table><h3>说明与约束</h3><p>Users.user_id 是主键；邮箱可能非法。不得接受额外的 @、空前缀、其他域名或大写域名。</p><p>结果可以按任意顺序返回。</p><h3>示例 1</h3><p>输入：</p><h4>Users</h4><table><thead><tr><th>user_id</th><th>name</th><th>mail</th></tr></thead><tbody><tr><td>1</td><td>Winston</td><td>winston@leetcode.com</td></tr><tr><td>2</td><td>Jonathan</td><td>jonathanisgreat</td></tr><tr><td>3</td><td>Annabelle</td><td>bella-@leetcode.com</td></tr><tr><td>4</td><td>Sally</td><td>sally.come@leetcode.com</td></tr><tr><td>5</td><td>Marwan</td><td>quarz#2020@leetcode.com</td></tr><tr><td>6</td><td>David</td><td>david69@gmail.com</td></tr><tr><td>7</td><td>Shapiro</td><td>.shapo@leetcode.com</td></tr></tbody></table><p>输出：</p><table><thead><tr><th>user_id</th><th>name</th><th>mail</th></tr></thead><tbody><tr><td>1</td><td>Winston</td><td>winston@leetcode.com</td></tr><tr><td>3</td><td>Annabelle</td><td>bella-@leetcode.com</td></tr><tr><td>4</td><td>Sally</td><td>sally.come@leetcode.com</td></tr></tbody></table><h3>本地 SQL 方言</h3><p>本地使用 SQLite 3。SQLite 不内建 REGEXP；GLOB 区分大小写，可组合字符集合校验。LIKE 默认对 ASCII 不区分大小写，单用 LIKE 匹配域名会接受大写域名。</p>",
+    "contentFormat": "html",
+    "templates": {
+      "sql": "-- 在下方编写 SQLite 查询\n"
+    },
+    "available": true,
+    "meta": {},
+    "sql": {
+      "dialect": "sqlite",
+      "tables": [
+        {
+          "name": "Users",
+          "columns": [
+            {
+              "name": "user_id",
+              "type": "INTEGER"
+            },
+            {
+              "name": "name",
+              "type": "TEXT"
+            },
+            {
+              "name": "mail",
+              "type": "TEXT"
+            }
+          ]
+        }
+      ],
+      "orderMatters": false,
+      "dialectNotes": "SQLite 不内建 REGEXP；GLOB 区分大小写，可组合字符集合校验。LIKE 默认对 ASCII 不区分大小写，单用 LIKE 匹配域名会接受大写域名。"
+    },
+    "source": {
+      "url": "https://leetcode.com/problems/find-users-with-valid-e-mails/",
+      "verifiedAt": "2026-09-12T10:04:26.414315+00:00",
+      "contentUrl": "https://leetcode.com/problems/find-users-with-valid-e-mails/",
+      "contentLanguage": "zh-CN",
+      "contentMethod": "依据缓存的官方英文题面编写中文译文，保留官方表结构与公开示例",
+      "translation": {
+        "kind": "项目中文译文",
+        "translatedAt": "2026-09-12",
+        "originalLanguage": "en",
+        "originalSha256": "62d02451081d9078aed61791ec9e058b4258172dd2107cab95e50c021de8ceeb"
+      }
+    }
+  }
+]

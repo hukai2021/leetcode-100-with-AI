@@ -1,16 +1,20 @@
 # Hot100 AI Coach
 
-[下载 Windows 安装包](https://github.com/hukai2021/leetcode-100-with-AI/releases/download/v0.1.1/Hot100-AI-Coach-Setup-0.1.1-x64.exe) · [版本与附件](https://github.com/hukai2021/leetcode-100-with-AI/releases/tag/v0.1.1) · [验收摘要](docs/ACCEPTANCE.md)
+[下载 Windows 安装包](https://github.com/hukai2021/leetcode-100-with-AI/releases/download/v0.2.0/Hot100-AI-Coach-Setup-0.2.0-x64.exe) · [版本与附件](https://github.com/hukai2021/leetcode-100-with-AI/releases/tag/v0.2.0) · [验收摘要](docs/ACCEPTANCE.md)
 
 Windows 10/11 x64 桌面刷题软件：本地题库、Python 3 / C++17 编辑与真实运行、通过官方 Codex App Server 使用 ChatGPT 账户批改代码，以及每题独立的右侧辅导对话。
 
 已在 Windows Electron 窗口完成真实账户识别、算法代码批改、连续追问、修正代码测试、关闭重启恢复，并在重启后继续同一官方对话。准确验收范围和证据见 [验收记录](docs/ACCEPTANCE.md)。
 
-**0.1.1 中文题面版已构建并安装验证。** 安装包为 `release/Hot100-AI-Coach-Setup-0.1.1-x64.exe`（357,610,847 字节，约 341 MiB）。安装后可通过桌面「Hot100 AI Coach」快捷方式启动。100 道题均显示中文题意、示例解释、约束及进阶要求；学习数据保留。
+**0.2.0 新增独立 SQL 50 题单。** 左侧点击「热题 100 / SQL 50」切换，分别统计进度并保存每题学习记录。原 Hot100 题库、Python/C++ 模板与算法运行器保留。安装包为 `release/Hot100-AI-Coach-Setup-0.2.0-x64.exe`（357,629,693 字节，约 341 MiB），安装后可双击桌面「Hot100 AI Coach」启动。
 
 安装包未做数字签名；Windows 可能显示未知发布者。本次已在 Windows 10 x64 实机安装运行，Windows 11 干净机器和多显示器环境尚未逐一验证。
 
-![中文题面与代码编辑界面](docs/screenshots/chinese-ui.png)
+![SQL50 独立题单](docs/screenshots/sql50-ui.png)
+
+SQL 50 的 50 题 / 103 个本地用例、真实 ChatGPT SQL 批改和右侧连续追问均已完成验证。原 Hot100 Python/C++、格式化与保存流程回归通过；详见 [SQL50 实测摘要](docs/sql50-validation.json)。
+
+![原 Hot100 中文题面与代码编辑界面](docs/screenshots/chinese-ui.png)
 
 ## 安装与首次登录
 
@@ -41,9 +45,33 @@ Windows 10/11 x64 桌面刷题软件：本地题库、Python 3 / C++17 编辑与
 
 `Ctrl+S` 保存，`Ctrl+F` 查找，`Ctrl+H` 替换，`Ctrl+Z` 撤销。主题和字体大小在设置中调整。
 
+## 练习力扣 SQL 50
+
+在左侧题库选择器切换到「SQL 50」。软件按力扣官方 [SQL 50 学习计划](https://leetcode.com/studyplan/top-sql-50/) 收录 50 题，提供中文题意、表结构、输入数据和预期结果。热题 100 与 SQL 50 分别统计进度，每题的草稿、笔记、收藏、提交和聊天独立保存。
+
+1. 选择一道 SQL 题，阅读表结构和示例。编辑器会自动切换到 SQL。
+2. 编写单条 SQLite 查询（可使用 WITH、JOIN、聚合和窗口函数），点击「运行 SQL」或按 Ctrl+Enter。测试库已建表并装入数据，无需自行 CREATE TABLE 或 INSERT。
+3. 在结果中对照预期与实际表格。判题检查列名、值和重复次数；题目要求排序时也检查行顺序。NULL 与空字符串分别显示。
+4. 点击「提交并让 GPT 批改」，查看基于本次 SQL 和实际测试结果的点评，再在右侧继续追问。请在本地验证 AI 建议后自行标记完成。
+5. 第 196 题使用单条 DELETE 删除 Person 表的重复数据；测试比较删除后剩余的整张表。每个用例都从原始数据重新建立内存库，重复运行不会污染后续测试。
+
+本地运行的是随包 **SQLite 3**，力扣原题常用 MySQL。题面提供适用的方言提示；例如日期计算可使用 date/julianday/strftime，字符串拼接用 ||，整数相除计算比例时应转为浮点。SQLite 未内建 MySQL 的 DATE_FORMAT、DATEDIFF 或 REGEXP，不能直接运行所有 MySQL 答案。软件保留官方原题链接，提交前请按力扣选择的数据库方言调整。更多见 [SQL50 题库说明](docs/SQL50.md) 和 [SQLite 日期函数文档](https://www.sqlite.org/lang_datefunc.html)。
+
+SQL 暂不提供自动格式化。每例限制 3 秒、256 MiB，结果最多 1000 行 / 128 KiB；只允许访问本例的内存表，禁止附加数据库、加载扩展及其他写入。自定义用例的 input 为一个包含表数据对象的数组，列顺序以题目表结构为准：
+
+```json
+[
+  {
+    "input": [{"Products": [[1, "Y", "Y"], [2, "Y", "N"]]}],
+    "expected": {"columns": ["product_id"], "rows": [[1]]},
+    "source": "自行核验"
+  }
+]
+```
+
 ## 题库与本地判题范围
 
-当前缓存为官方 Hot 100 的 **100 题中文题面、247 个官方题面样例、两种语言模板**。其中 2 题为官方中文正文，98 题依据项目已缓存的官方英文原文逐题翻译并交叉核对，在界面标记为「中文译文」，来源详情保留原文链接。原始英文缓存仍随源码保存。69 个图示来源均已缓存，42 题中的 73 个图片元素已内嵌；变量、公式、示例数据、代码模板及判题用例保持不变。
+Hot 100 题单缓存为官方 Hot 100 的 **100 题中文题面、247 个官方题面样例、两种语言模板**。其中 2 题为官方中文正文，98 题依据项目已缓存的官方英文原文逐题翻译并交叉核对，在界面标记为「中文译文」，来源详情保留原文链接。原始英文缓存仍随源码保存。69 个图示来源均已缓存，42 题中的 73 个图片元素已内嵌；变量、公式、示例数据、代码模板及判题用例保持不变。
 
 Python 本地参考实现已通过全部 100 题的 247 个样例。C++ 已完成全部 100 题官方模板的编译与调用适配验证，另有代表性题型的真实算法测试；这不等于已经对全部 100 题 C++ 算法做过正确性验证。详见 [运行器与测试说明](docs/RUNNER.md)。
 
@@ -185,4 +213,4 @@ node tests/desktop-flow.cjs
 | `scripts`、`tests` | 构建、采集、参考实现及实际测试 |
 | `docs` | 使用边界、公开验收摘要、算法测试JSON和无账户信息的界面截图 |
 
-上游题目及运行依赖保留各自权利和许可。GCC 等依赖对应的完整上游源码压缩包作为单独附件保存在 `runtime/downloads/w64devkit-source-v2.9.1.tar`，不装入日常安装包；[Release](https://github.com/hukai2021/leetcode-100-with-AI/releases/tag/v0.1.1) 提供该源码附件及许可。
+上游题目及运行依赖保留各自权利和许可。GCC 等依赖对应的完整上游源码压缩包作为单独附件保存在 `runtime/downloads/w64devkit-source-v2.9.1.tar`，不装入日常安装包；[Release](https://github.com/hukai2021/leetcode-100-with-AI/releases/tag/v0.2.0) 提供该源码附件及许可。

@@ -31,7 +31,7 @@ class CodexClient extends EventEmitter {
       }
       this.emit('notification',m);
     });
-    const info=await this.request('initialize',{clientInfo:{name:'hot100_ai_coach',title:'Hot100 AI Coach',version:'0.1.0'}});
+    const info=await this.request('initialize',{clientInfo:{name:'hot100_ai_coach',title:'Hot100 AI Coach',version:require('../package.json').version}});
     this.send({method:'initialized',params:{}});return info;
   }
   send(value){if(!this.child?.stdin.writable)throw new Error('App Server 未连接');this.child.stdin.write(JSON.stringify(value)+'\n');}
