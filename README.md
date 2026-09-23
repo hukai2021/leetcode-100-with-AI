@@ -1,12 +1,14 @@
 # Hot100 AI Coach
 
-[下载 Windows 安装包](https://github.com/hukai2021/leetcode-100-with-AI/releases/download/v0.2.0/Hot100-AI-Coach-Setup-0.2.0-x64.exe) · [版本与附件](https://github.com/hukai2021/leetcode-100-with-AI/releases/tag/v0.2.0) · [验收摘要](docs/ACCEPTANCE.md)
+[下载 Windows 安装包](https://github.com/hukai2021/leetcode-100-with-AI/releases/download/v0.2.1/Hot100-AI-Coach-Setup-0.2.1-x64.exe) · [版本与附件](https://github.com/hukai2021/leetcode-100-with-AI/releases/tag/v0.2.1) · [验收摘要](docs/ACCEPTANCE.md)
 
 Windows 10/11 x64 桌面刷题软件：本地题库、Python 3 / C++17 编辑与真实运行、通过官方 Codex App Server 使用 ChatGPT 账户批改代码，以及每题独立的右侧辅导对话。
 
 已在 Windows Electron 窗口完成真实账户识别、算法代码批改、连续追问、修正代码测试、关闭重启恢复，并在重启后继续同一官方对话。准确验收范围和证据见 [验收记录](docs/ACCEPTANCE.md)。
 
-**0.2.0 新增独立 SQL 50 题单。** 左侧点击「热题 100 / SQL 50」切换，分别统计进度并保存每题学习记录。原 Hot100 题库、Python/C++ 模板与算法运行器保留。安装包为 `release/Hot100-AI-Coach-Setup-0.2.0-x64.exe`（357,629,693 字节，约 341 MiB），安装后可双击桌面「Hot100 AI Coach」启动。
+**0.2.1 修复代码补全列表文字不可见。** SQL、Python、C++ 的浅色/深色显示及键盘接受均通过开发版和安装版实测，详见 [补全验证记录](docs/completion-validation.json)。
+
+**0.2.0 新增独立 SQL 50 题单。** 左侧点击「热题 100 / SQL 50」切换，分别统计进度并保存每题学习记录。原 Hot100 题库、Python/C++ 模板与算法运行器保留。安装包为 `release/Hot100-AI-Coach-Setup-0.2.1-x64.exe`（357,646,997 字节，约 341 MiB），安装后可双击桌面「Hot100 AI Coach」启动。
 
 安装包未做数字签名；Windows 可能显示未知发布者。本次已在 Windows 10 x64 实机安装运行，Windows 11 干净机器和多显示器环境尚未逐一验证。
 
@@ -213,4 +215,4 @@ node tests/desktop-flow.cjs
 | `scripts`、`tests` | 构建、采集、参考实现及实际测试 |
 | `docs` | 使用边界、公开验收摘要、算法测试JSON和无账户信息的界面截图 |
 
-上游题目及运行依赖保留各自权利和许可。GCC 等依赖对应的完整上游源码压缩包作为单独附件保存在 `runtime/downloads/w64devkit-source-v2.9.1.tar`，不装入日常安装包；[Release](https://github.com/hukai2021/leetcode-100-with-AI/releases/tag/v0.2.0) 提供该源码附件及许可。
+上游题目及运行依赖保留各自权利和许可。GCC 等依赖对应的完整上游源码压缩包作为单独附件保存在 `runtime/downloads/w64devkit-source-v2.9.1.tar`，不装入日常安装包；[Release](https://github.com/hukai2021/leetcode-100-with-AI/releases/tag/v0.2.1) 提供该源码附件及许可。

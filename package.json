@@ -1,7 +1,7 @@
 {
   "name": "hot100-ai-coach",
   "productName": "Hot100 AI Coach",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "本地 Hot 100、SQL 50 刷题、真实测试与 ChatGPT 辅导",
   "author": "Hot100 AI Coach",
   "private": true,

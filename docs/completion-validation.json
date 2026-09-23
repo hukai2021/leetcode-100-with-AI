@@ -1,0 +1,139 @@
+{
+  "version": "0.2.1",
+  "testedAt": "2026-09-23T04:03:59.291Z",
+  "scope": "仅限定两处主界面 CSS 选择器；未修改题库、运行器或补全逻辑",
+  "reproducedBeforeFix": {
+    "typed": "p",
+    "offered": [
+      "price",
+      "product_name",
+      "Product"
+    ],
+    "labelOffsetBelowRow": 16.8,
+    "cause": "全局 .main 的 flex-direction:column 将候选文字挤出固定行高"
+  },
+  "checks": [
+    {
+      "mode": "desktop",
+      "language": "sql",
+      "theme": "light",
+      "passed": true,
+      "typed": "p",
+      "accepted": "price",
+      "screenshot": "completion-desktop-sql-light.png"
+    },
+    {
+      "mode": "desktop",
+      "language": "sql",
+      "theme": "dark",
+      "passed": true,
+      "typed": "p",
+      "accepted": "price",
+      "screenshot": "completion-desktop-sql-dark.png"
+    },
+    {
+      "mode": "desktop",
+      "language": "python",
+      "theme": "light",
+      "passed": true,
+      "typed": "p",
+      "accepted": "price",
+      "screenshot": "completion-desktop-python-light.png"
+    },
+    {
+      "mode": "desktop",
+      "language": "python",
+      "theme": "dark",
+      "passed": true,
+      "typed": "p",
+      "accepted": "price",
+      "screenshot": "completion-desktop-python-dark.png"
+    },
+    {
+      "mode": "desktop",
+      "language": "cpp",
+      "theme": "light",
+      "passed": true,
+      "typed": "p",
+      "accepted": "price",
+      "screenshot": "completion-desktop-cpp-light.png"
+    },
+    {
+      "mode": "desktop",
+      "language": "cpp",
+      "theme": "dark",
+      "passed": true,
+      "typed": "p",
+      "accepted": "price",
+      "screenshot": "completion-desktop-cpp-dark.png"
+    },
+    {
+      "mode": "installed",
+      "language": "sql",
+      "theme": "light",
+      "passed": true,
+      "typed": "p",
+      "accepted": "price",
+      "screenshot": "completion-installed-sql-light.png"
+    },
+    {
+      "mode": "installed",
+      "language": "sql",
+      "theme": "dark",
+      "passed": true,
+      "typed": "p",
+      "accepted": "price",
+      "screenshot": "completion-installed-sql-dark.png"
+    },
+    {
+      "mode": "installed",
+      "language": "python",
+      "theme": "light",
+      "passed": true,
+      "typed": "p",
+      "accepted": "price",
+      "screenshot": "completion-installed-python-light.png"
+    },
+    {
+      "mode": "installed",
+      "language": "python",
+      "theme": "dark",
+      "passed": true,
+      "typed": "p",
+      "accepted": "price",
+      "screenshot": "completion-installed-python-dark.png"
+    },
+    {
+      "mode": "installed",
+      "language": "cpp",
+      "theme": "light",
+      "passed": true,
+      "typed": "p",
+      "accepted": "price",
+      "screenshot": "completion-installed-cpp-light.png"
+    },
+    {
+      "mode": "installed",
+      "language": "cpp",
+      "theme": "dark",
+      "passed": true,
+      "typed": "p",
+      "accepted": "price",
+      "screenshot": "completion-installed-cpp-dark.png"
+    }
+  ],
+  "typeCheckAndProductionBuild": true,
+  "installerExitCode": 0,
+  "learningDatabaseUnchanged": true,
+  "isolatedTestProfiles": true,
+  "aiRequested": false,
+  "installer": {
+    "file": "Hot100-AI-Coach-Setup-0.2.1-x64.exe",
+    "size": 357646997,
+    "sha256": "97c409c2cb354eb55621f9ee83f482ee69aaf4da10c937488c9f35b2b161ed98"
+  },
+  "limits": [
+    "本次仅验证补全显示与键盘接受，未重新调用 AI 或重新执行全部题目。",
+    "保持原有基础补全能力，未新增语言服务器或补全来源。"
+  ]
+}
