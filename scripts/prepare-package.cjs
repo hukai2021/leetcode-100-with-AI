@@ -4,4 +4,8 @@ const source=roots.find(p=>fs.existsSync(path.join(p,'bin','codex.exe')));if(!so
 fs.mkdirSync('runtime/codex',{recursive:true});fs.cpSync(path.join(source,'bin'),'runtime/codex',{recursive:true});
 for(const dir of ['codex-resources','codex-path'])if(fs.existsSync(path.join(source,dir)))fs.cpSync(path.join(source,dir),path.join('runtime',dir),{recursive:true});
 for(const f of ['LICENSE','README.md']){const p=path.join('node_modules/@openai/codex',f);if(fs.existsSync(p))fs.copyFileSync(p,path.join('runtime/codex',f))}
+const bundledLicense=path.join('node_modules','@openai','codex','LICENSE');
+const sourceLicense=fs.existsSync(bundledLicense)?bundledLicense:path.join('docs','licenses','Codex-Apache-2.0.txt');
+if(!fs.existsSync(sourceLicense))throw new Error('missing official Codex license');
+fs.copyFileSync(sourceLicense,path.join('runtime','codex','LICENSE'));
 console.log('官方 Codex 运行依赖已备妥');

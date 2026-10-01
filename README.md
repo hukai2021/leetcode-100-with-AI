@@ -1,14 +1,16 @@
 # Hot100 AI Coach
 
-[下载 Windows 安装包](https://github.com/hukai2021/leetcode-100-with-AI/releases/download/v0.2.1/Hot100-AI-Coach-Setup-0.2.1-x64.exe) · [版本与附件](https://github.com/hukai2021/leetcode-100-with-AI/releases/tag/v0.2.1) · [验收摘要](docs/ACCEPTANCE.md)
+[下载 Windows 安装包](https://github.com/hukai2021/leetcode-100-with-AI/releases/download/v0.3.0/Hot100-AI-Coach-Setup-0.3.0-x64.exe) · [版本与附件](https://github.com/hukai2021/leetcode-100-with-AI/releases/tag/v0.3.0) · [验收摘要](docs/ACCEPTANCE.md)
 
 Windows 10/11 x64 桌面刷题软件：本地题库、Python 3 / C++17 编辑与真实运行、通过官方 Codex App Server 使用 ChatGPT 账户批改代码，以及每题独立的右侧辅导对话。
 
 已在 Windows Electron 窗口完成真实账户识别、算法代码批改、连续追问、修正代码测试、关闭重启恢复，并在重启后继续同一官方对话。准确验收范围和证据见 [验收记录](docs/ACCEPTANCE.md)。
 
+**0.3.0 新增最新模型刷新与思考强度选择。** 升级随包官方 Codex 到 0.159.3，在聊天底部点击「刷新模型」，即可重新读取官方模型目录。2026-10-01 的真实账户返回 8 个模型，包含 GPT-6.1-Sol、GPT-6-Sol 和 GPT-6-Luna；GPT-6.1-Sol 的高强度批改、中等强度追问及刷新后恢复同一对话均通过真实请求验证。其他模型仅验证了目录与显示，详见 [模型与思考强度测试记录](docs/models-validation.json)。
+
 **0.2.1 修复代码补全列表文字不可见。** SQL、Python、C++ 的浅色/深色显示及键盘接受均通过开发版和安装版实测，详见 [补全验证记录](docs/completion-validation.json)。
 
-**0.2.0 新增独立 SQL 50 题单。** 左侧点击「热题 100 / SQL 50」切换，分别统计进度并保存每题学习记录。原 Hot100 题库、Python/C++ 模板与算法运行器保留。安装包为 `release/Hot100-AI-Coach-Setup-0.2.1-x64.exe`（357,646,997 字节，约 341 MiB），安装后可双击桌面「Hot100 AI Coach」启动。
+**0.2.0 新增独立 SQL 50 题单。** 左侧点击「热题 100 / SQL 50」切换，分别统计进度并保存每题学习记录。原 Hot100 题库、Python/C++ 模板与算法运行器保留。安装包为 `release/Hot100-AI-Coach-Setup-0.3.0-x64.exe`（371,476,441 字节，约 354 MiB），安装后可双击桌面「Hot100 AI Coach」启动。
 
 安装包未做数字签名；Windows 可能显示未知发布者。本次已在 Windows 10 x64 实机安装运行，Windows 11 干净机器和多显示器环境尚未逐一验证。
 
@@ -29,9 +31,23 @@ SQL 50 的 50 题 / 103 个本地用例、真实 ChatGPT SQL 批改和右侧连�
 
 账户接入使用官方 Codex App Server 的 stdio 协议。登录与凭据刷新交给官方认证组件，应用使用单独的 Codex 数据目录及 Windows 凭据存储，不改写已有全局 Codex 配置。不要把登录链接、凭据目录或系统凭据导出给别人。
 
-这里使用的是账户可用的 **Codex 权限、模型和额度**，不保证继承 ChatGPT 网页全部模型、记忆或现有聊天记录。验收中实际服务返回并使用过 `gpt-6-astra`；软件的模型列表动态读取，不把这个测试值写死为可用模型。
+这里使用的是账户可用的 **Codex 权限、模型和额度**，不保证继承 ChatGPT 网页全部模型、记忆或现有聊天记录。历史验收使用过 `gpt-6-astra`，0.3.0 本次实测使用 `gpt-6.1-sol`；软件动态读取模型目录及支持的思考档位，不把测试模型写死为可用模型。
 
 如果额度用尽、授权过期或网络失败，界面会展示实际错误；本地浏览、编辑和测试仍可用。额度不足时等待账户额度恢复；授权失效时可在设置中退出并重新登录。当前版本没有 API Key 备用入口，也不会自动切换到另行付费服务。
+
+## 切换模型与思考强度
+
+1. 在右侧聊天输入框下方点击「刷新模型」。成功后会显示本次同步数量和时间；设置页的「刷新账户与模型」执行同样的刷新。
+2. 在模型下拉框选择模型，再在旁边的「思考强度」选择档位。候选档位按官方服务返回的能力显示：无、极低、低、中、高、很高、最高、极致。不同模型可能只支持其中一部分；服务没有返回档位时显示「默认」。
+3. 之后的「提交并让 GPT 批改」和聊天追问都使用当前选择，每一轮请求都会发送对应强度。主窗口与独立聊天窗口同步选择，关闭软件后再次打开也会恢复。
+
+切换模型时会保留仍支持的强度，否则采用新模型的默认档位。当前模型被移出目录时会提示并回到服务默认模型。刷新失败会显示原因并保留已有列表；AI 正在生成时，请等待结束或先停止，再刷新。刷新模型不会要求重新登录，已保存的学习记录和对话仍保留。
+
+本次按官方 [Codex App Server 文档](https://learn.chatgpt.com/docs/app-server) 的 model/list 能力字段和 turn/start 的 effort 参数实现，具体可用模型、档位及额度以实际服务为准。
+
+![安装版模型与思考强度控件](docs/screenshots/models-installed.png)
+
+图为 0.3.0 安装版的独立测试档案：展示目录刷新、思考强度控件及原 Hot100 / SQL50 切换，不含个人账户信息。
 
 ## 完成一题
 
@@ -197,6 +213,10 @@ node tests/runner-format.cjs
 node tests/runner-catalog-cpp.cjs
 node scripts/catalog-verify.cjs
 node tests/desktop-offline.cjs
+node tests/model-desktop.cjs # 模拟模型/AI传输，真实 Electron 窗口
+node tests/model-installed.cjs # 已安装版本，独立学习档案，不发 AI 请求
+# 需要已在本软件登录；会使用真实账户、发起 AI 请求并消耗 Codex 额度
+node tests/model-live.cjs
 # 需要已登录；会发起真实 AI 请求并消耗账户 Codex 额度
 node tests/desktop-flow.cjs
 ```
@@ -215,4 +235,4 @@ node tests/desktop-flow.cjs
 | `scripts`、`tests` | 构建、采集、参考实现及实际测试 |
 | `docs` | 使用边界、公开验收摘要、算法测试JSON和无账户信息的界面截图 |
 
-上游题目及运行依赖保留各自权利和许可。GCC 等依赖对应的完整上游源码压缩包作为单独附件保存在 `runtime/downloads/w64devkit-source-v2.9.1.tar`，不装入日常安装包；[Release](https://github.com/hukai2021/leetcode-100-with-AI/releases/tag/v0.2.1) 提供该源码附件及许可。
+上游题目及运行依赖保留各自权利和许可。GCC 等依赖对应的完整上游源码压缩包作为单独附件保存在 `runtime/downloads/w64devkit-source-v2.9.1.tar`，不装入日常安装包；[Release](https://github.com/hukai2021/leetcode-100-with-AI/releases/tag/v0.3.0) 提供该源码附件及许可。

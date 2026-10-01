@@ -30,3 +30,17 @@ html,body,#root,.app{width:100%;max-width:100%;min-width:0}.app-body{position:re
 .sql-library .problem-content table{border-collapse:collapse;display:block;overflow:auto;max-width:100%;margin:12px 0;font-size:12px}
 .sql-library .problem-content table th,.sql-library .problem-content table td{padding:7px 10px;border:1px solid var(--line);white-space:nowrap}
 .sql-library .problem-content table th{background:var(--subtle)}
+
+
+.model-row{flex-wrap:wrap;gap:5px 10px;align-items:center}
+.model-row select.model-picker{flex:1 1 125px;max-width:100%;width:0;min-width:100px;text-overflow:ellipsis}
+.reasoning-picker{display:inline-flex;align-items:center;gap:5px;flex:none;font-size:9px;white-space:nowrap}
+.model-row .reasoning-picker select{max-width:none;min-width:54px;font-size:9px;padding:3px 0}
+.model-actions{display:flex;align-items:center;gap:10px;flex:1 0 100%;min-width:0}
+.model-actions>span{margin-left:auto;white-space:nowrap;font-size:8px}
+.model-actions .model-refresh{padding:3px 0;color:var(--accent)}
+.model-feedback{margin-top:4px;font-size:9px;line-height:1.7;color:var(--muted);overflow-wrap:anywhere}
+.model-feedback-error{color:#c67739}
+.is-refreshing{animation:model-refresh-spin 1s linear infinite}
+@keyframes model-refresh-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.is-refreshing{animation:none}}

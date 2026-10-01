@@ -1,0 +1,215 @@
+{
+  "version": "0.3.0",
+  "verifiedAt": "2026-10-01",
+  "platform": "Windows 10 x64",
+  "officialDocumentation": "https://learn.chatgpt.com/docs/app-server",
+  "officialCodex": {
+    "previousVersion": "0.153.4",
+    "bundledVersion": "0.159.3",
+    "installedBinaryVersionVerified": true,
+    "packagePinned": true
+  },
+  "scope": {
+    "features": [
+      "刷新最新模型目录",
+      "按模型能力选择思考强度",
+      "批改与连续追问发送每轮 effort",
+      "主窗口与独立聊天窗口同步",
+      "重启恢复选择"
+    ],
+    "unchanged": [
+      "Hot100 和 SQL50 题库与用例",
+      "Python/C++/SQL 运行器",
+      "原有题单切换与刷题流程"
+    ]
+  },
+  "catalog": {
+    "source": "official model/list",
+    "oldClientModelCount": 5,
+    "verifiedModelCount": 8,
+    "models": [
+      "gpt-6.1-sol",
+      "gpt-6-astra",
+      "gpt-6-sol",
+      "gpt-6-luna",
+      "gpt-5.6-sol",
+      "gpt-5.6-terra",
+      "gpt-5.6-luna",
+      "gpt-5.5"
+    ],
+    "newEntries": [
+      "gpt-6.1-sol",
+      "gpt-6-sol",
+      "gpt-6-luna"
+    ],
+    "paginationAndHiddenFilteringUnitTested": true,
+    "availabilityCaveat": "目录记录不等于所有模型均已完成真实请求；实际权限与强度以服务返回为准。"
+  },
+  "unitTests": {
+    "passed": 24,
+    "failed": 0,
+    "scripts": [
+      "tests/model-client.test.cjs",
+      "tests/model-service.test.cjs",
+      "tests/sql-service.test.cjs",
+      "tests/store.test.cjs"
+    ]
+  },
+  "desktopUI": {
+    "passed": 11,
+    "failed": 0,
+    "realElectron": true,
+    "realSQLRunner": true,
+    "modelAndAITransport": "mocked; no real AI requested",
+    "checks": [
+      {
+        "name": "中文思考档位按模型能力变化，默认档位与选择持久化",
+        "passed": true
+      },
+      {
+        "name": "真实 SQL 本地运行与 UI 提交，模拟 transport 的 turn/start 收到 effort=high，生成中配置禁用",
+        "passed": true
+      },
+      {
+        "name": "聊天 UI 传 xhigh；未返回能力的模型显示默认并省略 effort",
+        "passed": true
+      },
+      {
+        "name": "主窗口和独立聊天窗口双向同步模型与思考选择",
+        "passed": true
+      },
+      {
+        "name": "普通 account 刷新同步全窗口目录，新增模型选择保持稳定且不会被旧目录反向回退",
+        "passed": true
+      },
+      {
+        "name": "弹出窗口手动强制刷新新增模型，两窗口同步且显示成功反馈",
+        "passed": true
+      },
+      {
+        "name": "刷新移除当前模型，回退服务默认模型、提示用户并持久化",
+        "passed": true
+      },
+      {
+        "name": "模拟刷新失败保留已有模型和选择，并在两窗口显示错误",
+        "passed": true
+      },
+      {
+        "name": "设置页使用相同强制刷新，恢复后清除错误",
+        "passed": true
+      },
+      {
+        "name": "1300 像素窗口、290 像素聊天栏控件可见无裁切",
+        "passed": true
+      },
+      {
+        "name": "同一独立学习档案重启恢复模型与思考强度",
+        "passed": true
+      }
+    ],
+    "script": "tests/model-desktop.cjs"
+  },
+  "realAccountAndAI": {
+    "accountType": "chatgpt",
+    "learningProfileIsolated": true,
+    "credentialExported": false,
+    "model": "gpt-6.1-sol",
+    "review": {
+      "problem": "SQL50 第1757题",
+      "localResult": "0/2：OR 错解",
+      "reasoningEffort": "high",
+      "status": "completed",
+      "reviewIdentifiedError": true
+    },
+    "followUp": {
+      "reasoningEffort": "medium",
+      "status": "completed"
+    },
+    "afterForcedRefresh": {
+      "accountStillLoggedIn": true,
+      "sameThreadResumed": true,
+      "reasoningEffort": "medium",
+      "status": "completed"
+    },
+    "protocolCalls": [
+      {
+        "method": "turn/start",
+        "model": "gpt-6.1-sol",
+        "effort": "high"
+      },
+      {
+        "method": "turn/start",
+        "model": "gpt-6.1-sol",
+        "effort": "medium"
+      },
+      {
+        "method": "thread/resume",
+        "model": "gpt-6.1-sol"
+      },
+      {
+        "method": "turn/start",
+        "model": "gpt-6.1-sol",
+        "effort": "medium"
+      }
+    ],
+    "script": "tests/model-live.cjs"
+  },
+  "installed": {
+    "version": "0.3.0",
+    "checks": [
+      {
+        "name": "安装版加载官方新模型目录",
+        "passed": true
+      },
+      {
+        "name": "切模型更新支持档位并回退到新模型默认强度",
+        "passed": true
+      },
+      {
+        "name": "强制刷新实际随包AppServer并保留有效模型与强度选择",
+        "passed": true
+      },
+      {
+        "name": "安装版关闭重启恢复模型与思考强度",
+        "passed": true
+      }
+    ],
+    "isolatedLearningProfile": true,
+    "realAIRequested": false,
+    "script": "tests/model-installed.cjs",
+    "actualExistingAccount": {
+      "type": "chatgpt",
+      "modelCount": 8,
+      "reasoningChoicesDisplayed": true,
+      "learningStatesUnchanged": true,
+      "aiRequested": false
+    }
+  },
+  "upgrade": {
+    "installerExitCode": 0,
+    "databaseHashIdenticalBeforeAndAfterInstall": true,
+    "learningDatabaseBackedUpLocally": true,
+    "existingLoginPreserved": true,
+    "desktopShortcutStarted": true
+  },
+  "productionBuild": {
+    "typeScript": "passed",
+    "vite": "passed",
+    "nsisInstaller": "passed",
+    "packagedBackendMatchesTestedSource": true
+  },
+  "installer": {
+    "file": "Hot100-AI-Coach-Setup-0.3.0-x64.exe",
+    "bytes": 371476441,
+    "sha256": "8dc36286dd130acf68591535f351cb912449e05af9a1bd0e2c058006c22764b6",
+    "signature": "NotSigned"
+  },
+  "notVerifiedThisRelease": [
+    "其他七个模型的真实AI请求",
+    "所有思考档位的真实AI请求",
+    "全部Hot100与SQL50算法重新执行；历史结果另列",
+    "Windows11干净机器和多显示器环境"
+  ],
+  "blocked": [],
+  "privacy": "公开记录仅包含测试项目、模型、思考档位和结果；不包含邮箱、账户ID、线程ID、凭据或学习数据库。"
+}

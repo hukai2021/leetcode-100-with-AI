@@ -1,7 +1,7 @@
 {
   "name": "hot100-ai-coach",
   "productName": "Hot100 AI Coach",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "本地 Hot 100、SQL 50 刷题、真实测试与 ChatGPT 辅导",
   "author": "Hot100 AI Coach",
   "private": true,
@@ -25,7 +25,7 @@
     "sql.js": "1.14.2"
   },
   "devDependencies": {
-    "@openai/codex": "0.153.4",
+    "@openai/codex": "0.159.3",
     "@types/react": "19.2.18",
     "@types/react-dom": "19.2.7",
     "@vitejs/plugin-react": "4.7.0",
