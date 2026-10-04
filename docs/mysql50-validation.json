@@ -1188,5 +1188,14 @@
     "scriptSha256": "8be7bc0baad31c5d0f34686421ab951fdfc5ed9e3793fdbca266ccd255b904dd",
     "runtimeBinaryBytesMatchOriginal": true,
     "passed": true
+  },
+  "sourceFormatterBootstrap": {
+    "status": "passed",
+    "file": "scripts/format-python.py",
+    "bytes": 318,
+    "sha256": "39051dd60c9b8037acdb5751774f84b8f4a705976ca38a5c3f3051039f13e851",
+    "copiedByPreparePackage": true,
+    "installedRuntimeBytesIdentical": true,
+    "existingFormatterBehaviorPreserved": true
   }
 }
