@@ -211,6 +211,8 @@ npm start
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build.ps1 -Package
 ```
 
+`runner-setup.ps1` 校验官方 Python/C++ 档案和对应 GCC 源码的 SHA256，使用 npm 锁定的解压工具提取；不执行下载的自解压程序。源码准备可通过 `-RuntimeDirectory` 指定项目内子目录进行隔离验证。
+
 `build.ps1` 检查 TypeScript、构建本地界面、准备官方 Codex Windows 程序；`-Package` 继续调用 Electron Builder。输出目录是 `release`。没有必要单独启动 Vite 才能使用桌面软件。首次安装开发依赖和下载运行包需要联网，已安装应用的本地功能不依赖网络。
 
 验证命令：
@@ -223,6 +225,7 @@ node tests/runner-catalog-cpp.cjs
 node scripts/catalog-verify.cjs
 node tests/desktop-offline.cjs
 node tests/mysql-desktop.cjs # 真实 MySQL/SQLite、真实 Electron，模拟 AI 传输
+node tests/mysql-installed.cjs # 已安装版本，两种 SQL 引擎，独立档案，不发 AI 请求
 node tests/completion-desktop.cjs # SQL/Python/C++ 补全显示与键盘接受
 node tests/model-desktop.cjs # 模拟模型/AI传输，真实 Electron 窗口
 node tests/model-installed.cjs # 已安装版本，独立学习档案，不发 AI 请求

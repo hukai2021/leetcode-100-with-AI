@@ -22,6 +22,8 @@ SQL 50 默认切换到随包官方 MySQL 8.4.11，支持本题单常见 MySQL �
 | 0.4.0 安装升级与桌面启动 | NSIS 退出码 0；先正常关闭旧窗口并本地备份，安装前后学习数据库 SHA256 一致；原 ChatGPT 登录及草稿/笔记/收藏/进度保留；桌面快捷方式已打开新版 |
 | 安装包与源码一致性 | TypeScript、Vite、NSIS 通过；安装后的 app.asar 中后端、题库/用例字节与受测源码一致；随包 MySQL 133 个文件逐个校验 SHA256 通过，含应用目录内 CRT 与许可 |
 
+| 源码运行环境准备 | 原下载并直接运行自解压程序的 PowerShell 脚本曾被火绒启发式隔离；新脚本将 SHA256 校验过的档案交由 npm 锁定解压工具提取。Windows PowerShell 5.1 隔离目录准备通过，新提取 Python/C++ 两数之和各 3/3；脚本保持存在，未改安全软件设置 |
+
 公开总摘要见 [MySQL SQL50 验证记录](mysql50-validation.json)，安装版、真实原账户与升级结果在该摘要中单独记录。可复现脚本为 tests/mysql-catalog.test.cjs、tests/mysql-runner.test.cjs、tests/sql-catalog.test.cjs、tests/mysql-desktop.cjs、tests/completion-desktop.cjs、tests/mysql-live.cjs 和 tests/mysql-installed.cjs。源码构建前先运行 scripts/mysql-setup.ps1，获取官方引擎、依赖及对应 MySQL 8.4.11 源码并校验 SHA256；[0.4.0 Release](https://github.com/hukai2021/leetcode-100-with-AI/releases/tag/v0.4.0) 提供对应 MySQL 源码发行附件和第三方许可。
 
 真实 AI 测试使用独立学习档案，通过官方认证组件读取现有 ChatGPT 登录，不复制凭据、不触碰真实学习记录；只请求了 GPT-6.1-Sol 的 high 和 medium，不将其他模型/档位计为已验证。公开摘要不含账户邮箱、账户/线程 ID 或完整个人对话。当前运行面板的结果不持久化，历史提交里的真实测试结果会保存；重启后的 2/2 来自再次实际执行。

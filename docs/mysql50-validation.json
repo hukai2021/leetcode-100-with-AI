@@ -1163,5 +1163,30 @@
     "originalLearningStatesPreserved": true,
     "passed": true
   },
-  "completedAt": "2026-10-04T12:20:04.145722+00:00"
+  "completedAt": "2026-10-04T12:20:04.145722+00:00",
+  "sourceRuntimePreparation": {
+    "version": "0.4.0",
+    "testedAt": "2026-10-04T12:33:37.318Z",
+    "powershell51": true,
+    "isolatedRuntimeDirectory": true,
+    "downloadedSelfExtractorExecuted": false,
+    "securitySettingsChanged": false,
+    "checks": [
+      {
+        "language": "python",
+        "passed": 3,
+        "total": 3,
+        "status": "passed"
+      },
+      {
+        "language": "cpp",
+        "passed": 3,
+        "total": 3,
+        "status": "passed"
+      }
+    ],
+    "scriptSha256": "8be7bc0baad31c5d0f34686421ab951fdfc5ed9e3793fdbca266ccd255b904dd",
+    "runtimeBinaryBytesMatchOriginal": true,
+    "passed": true
+  }
 }
