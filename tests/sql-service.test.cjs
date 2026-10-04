@@ -9,7 +9,7 @@ const root=path.resolve(__dirname,'..');
 async function service(t){
  const userData=fs.mkdtempSync(path.join(os.tmpdir(),'hot100-sql-service-'));
  const s=await CoachService.open({userData,dataRoot:path.join(root,'data'),runtimeRoot:path.join(root,'runtime'),codexExe:path.join(root,'runtime/codex/codex.exe')});
- t.after(()=>{s.close();fs.rmSync(userData,{recursive:true,force:true});});
+ t.after(async()=>{await s.close();fs.rmSync(userData,{recursive:true,force:true});});
  return s;
 }
 test('catalog keeps Hot100 IDs and adds exactly 50 SQL questions with separate drafts',async t=>{
@@ -24,7 +24,7 @@ test('catalog keeps Hot100 IDs and adds exactly 50 SQL questions with separate d
   assert.ok(s.cases[p.id].length>=2,p.id+' missing fixtures');
  }
  await s.invoke('saveState',{id:'1',patch:{drafts:{python:'old python',cpp:'old cpp'},notes:'保留旧笔记',favorite:true,status:'done'}});
- await s.invoke('applySuggestion',{problemId:'sql-1757',language:'sql',code:'SELECT product_id FROM Products;'});
+ await s.invoke('applySuggestion',{problemId:'sql-1757',language:'sql',sqlDialect:'sqlite',code:'SELECT product_id FROM Products;'});
  await s.invoke('settings',{patch:{collection:'sql50',sqlLastProblemId:'sql-1757',algorithmLanguage:'cpp',arbitrary:'ignored'}});
  const after=await s.bootstrap();
  assert.equal(after.states['1'].drafts.python,'old python');
@@ -33,9 +33,9 @@ test('catalog keeps Hot100 IDs and adds exactly 50 SQL questions with separate d
  assert.equal(after.states['1'].status,'done');
  assert.equal(after.states['sql-1757'].drafts.sql,'SELECT product_id FROM Products;');
  assert.equal(after.settings.collection,'sql50');assert.equal(after.settings.arbitrary,undefined);
- assert.throws(()=>s.validateInput({problemId:'1',language:'sql',code:'SELECT 1'}),/语言/);
+ assert.throws(()=>s.validateInput({problemId:'1',language:'sql',sqlDialect:'sqlite',code:'SELECT 1'}),/语言/);
  assert.throws(()=>s.validateInput({problemId:'sql-1757',language:'python',code:'print(1)'}),/语言/);
- await assert.rejects(s.invoke('format',{problemId:'sql-1757',language:'sql',code:'select 1'}),/暂不提供/);
+ await assert.rejects(s.invoke('format',{problemId:'sql-1757',language:'sql',sqlDialect:'sqlite',code:'select 1'}),/暂不提供/);
  const backup=s.store.export();
  assert.ok(backup.records.state['sql-1757']);
  assert.equal(backup.records.thread,undefined);
@@ -53,9 +53,9 @@ test('SQL service routes actual SQLite execution and preserves query snapshots t
  };
  s.client.close=()=>{};
  const code="SELECT product_id FROM Products WHERE low_fats = 'Y' AND recyclable = 'Y';";
- const wrong=await s.run({problemId:'sql-1757',language:'sql',code:'SELECT product_id FROM Products;'});
+ const wrong=await s.run({problemId:'sql-1757',language:'sql',sqlDialect:'sqlite',code:'SELECT product_id FROM Products;'});
  assert.notEqual(wrong.status,'passed');
- const r=await s.review({problemId:'sql-1757',language:'sql',code});
+ const r=await s.review({problemId:'sql-1757',language:'sql',sqlDialect:'sqlite',code});
  assert.equal(r.tests.status,'passed',JSON.stringify(r.tests));
  assert.ok(r.tests.cases[0].actual.columns.includes('product_id'));
  const payload=calls.filter(x=>x.method==='turn/start').at(-1).params.input[0].text;
@@ -69,9 +69,9 @@ test('SQL service routes actual SQLite execution and preserves query snapshots t
  const active=s.active.get('sql-1757');
  active.text='FAKE: 服务契约测试，不是真实 AI 验证。';
  s.finish(active,'completed');
- await s.invoke('applySuggestion',{problemId:'sql-1757',language:'sql',code:'SELECT 0;'});
+ await s.invoke('applySuggestion',{problemId:'sql-1757',language:'sql',sqlDialect:'sqlite',code:'SELECT 0;'});
  assert.equal(s.store.get('submission',r.submissionId).code,code);
- await s.chat({problemId:'sql-1757',language:'sql',code:'SELECT 0;',message:'为什么需要 AND？'});
+ await s.chat({problemId:'sql-1757',language:'sql',sqlDialect:'sqlite',code:'SELECT 0;',message:'为什么需要 AND？'});
  const follow=calls.filter(x=>x.method==='turn/start').at(-1);
  assert.equal(follow.params.threadId,'sql-thread');
  const ctx=JSON.parse(follow.params.input[0].text.split('以下 JSON 是本题上下文数据：\n')[1]);
@@ -94,7 +94,7 @@ test('SQL cancellation does not create a submission or start a billed review',as
  const s=await service(t);let started=false;
  s.run=async()=>({status:'cancelled',passed:0,total:2,cases:[]});
  s.startAI=async()=>{started=true};
- await assert.rejects(s.review({problemId:'sql-1757',language:'sql',code:'SELECT product_id FROM Products;'}),/测试已停止/);
+ await assert.rejects(s.review({problemId:'sql-1757',language:'sql',sqlDialect:'sqlite',code:'SELECT product_id FROM Products;'}),/测试已停止/);
  assert.equal(started,false);assert.equal(s.store.history('sql-1757').submissions.length,0);
 });
 test('ORDER BY comparison accepts legal ties and rejects a true inversion',()=>{

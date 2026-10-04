@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T15:21:22.516Z",
+  "generatedAt": "2026-10-04",
   "dependencies": [
     {
       "name": "@monaco-editor/react",
@@ -37,6 +37,22 @@
         "type": "git",
         "url": "https://github.com/microsoft/monaco-editor"
       }
+    },
+    {
+      "name": "mysql2",
+      "version": "3.24.5",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sidorares/node-mysql2.git"
+      },
+      "sourceUrl": "https://github.com/sidorares/node-mysql2.git",
+      "packageUrl": "https://registry.npmjs.org/mysql2/-/mysql2-3.24.5.tgz",
+      "integrity": "sha512-X6Ujsr2QSkkLpkQGjxzpKRAPn9nu4axpR63ntBzquFVEvPOArgbUQ1sJjFKI7hnaYtiVZxa17Z7q18KSubW0IQ==",
+      "packageSha256": "c9bba82eff3ad73f2e48655ee3e5333504030ba42c70c1651e71bcba33855027",
+      "licenseFile": "node_modules/mysql2/License",
+      "licenseSha256": "f17f1be30bce27fe6324513a35fa61f6e6766d3028e42e45bdf668a0db7c8d4f",
+      "sourceDescription": "The npm release includes the JavaScript protocol implementation; the upstream repository provides the development source."
     },
     {
       "name": "react",
@@ -103,6 +119,69 @@
       "source": "https://pypi.org/",
       "licenses": "formatters/*dist-info/LICENSE or licenses/"
     },
-    "security": "Job Object is a resource/lifetime guard, not a filesystem or network sandbox. Runtime code has the current user permissions."
+    "security": "Job Object is a resource/lifetime guard, not a filesystem or network sandbox. Runtime code has the current user permissions.",
+    "codex": {
+      "version": "0.159.3",
+      "package": "@openai/codex",
+      "registry": "https://registry.npmjs.org/@openai/codex/0.159.3",
+      "executable": "codex/codex.exe",
+      "sha256": "57e1bdab42c0559a74558ca17e85d5c7893caa5f1e582f67e9ddd6d97fa705a7",
+      "license": "codex/LICENSE",
+      "licenseSource": "https://raw.githubusercontent.com/openai/codex/rust-v0.159.3/LICENSE",
+      "verifiedAt": "2026-10-01"
+    },
+    "mysql": {
+      "version": "8.4.11",
+      "distribution": "MySQL Community Server (GPL), official Windows x64 ZIP",
+      "platform": "win32-x64",
+      "verifiedAt": "2026-10-04",
+      "upstream": "https://dev.mysql.com/downloads/mysql/8.4.html",
+      "url": "https://cdn.mysql.com/Downloads/MySQL-8.4/mysql-8.4.11-winx64.zip",
+      "sha256": "a492371d687d2bab088b0062581144a0044b8964baefdf4faa579292b423d25c",
+      "md5": "2e833921898a9a030ea6bfe81bd811bc",
+      "sourceUrl": "https://cdn.mysql.com/Downloads/MySQL-8.4/mysql-8.4.11.tar.gz",
+      "sourceSha256": "eb3051164d625dd346a8203f76e0d5d5d9aec51dbe9d51788e39ec6b3f1394c2",
+      "sourceMd5": "7e36429318298eb05a79054309f18cb2",
+      "sourceArchive": "downloads/mysql-8.4.11.tar.gz",
+      "executable": "mysql/bin/mysqld.exe",
+      "clientExecutable": "mysql/bin/mysql.exe",
+      "license": "mysql/LICENSE",
+      "runtimeBytes": 103527629,
+      "minimumWindows": "Windows 10 x64; Universal CRT supplied by Windows",
+      "vcRuntime": {
+        "version": "14.44.35211",
+        "distribution": "Official Microsoft Visual Studio 2022 x64 non-debug CRT; application-local DLLs only",
+        "url": "https://download.visualstudio.microsoft.com/download/pr/45d3b8dd-bced-4b37-9974-142f748d710c/4aaf54db0bfc9435f7c3660e1a00237a4b556042bfeea64bde44c2e0194e6ee5/Microsoft.VC.14.44.17.14.CRT.Redist.X64.base.vsix",
+        "sha256": "4aaf54db0bfc9435f7c3660e1a00237a4b556042bfeea64bde44c2e0194e6ee5",
+        "license": "mysql/LICENSE.Microsoft-VC-CRT.txt",
+        "licenseSource": "https://visualstudio.microsoft.com/wp-content/uploads/2021/11/Visual-Studio-2022-Community-License-EN.docx",
+        "licenseSourceSha256": "41a207b10c8ab91d0d2f10a854715f73dca54509581692d2fe179aa3ffcb8540",
+        "redistributionRules": "https://learn.microsoft.com/en-us/visualstudio/releases/2022/redistribution",
+        "files": {
+          "concrt140.dll": "2405355f0a58067b258f8df33c327e3a3d716eaac5a3a5aebb757842d85bd376",
+          "msvcp140_1.dll": "bfad5aef4c63a669e3c140655cdfdf395b6c979b400a447bd5dcb65ed8826c3d",
+          "msvcp140_2.dll": "3ea06f0ee098b4823cb79599df3780e7f23cce52c19aac31d2a0d47efe33a5e9",
+          "msvcp140_atomic_wait.dll": "640b2aefced484d0368eea5bdd06addd0658a3a70a49256e560d6923b404a479",
+          "msvcp140_codecvt_ids.dll": "f2069a52880ec885ee7f0511186100eb7fada0411a2b4948fafea7735b878a18",
+          "msvcp140.dll": "0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9",
+          "vccorlib140.dll": "19839407c3fdbc824e5bce189bf68ddf8097f12ec28b757797ffa0415c144ddd",
+          "vcruntime140_1.dll": "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f",
+          "vcruntime140_threads.dll": "219915cf20822f34d5e7c1fdd4e21ae7f3396881096c51036225fb8f84b47afa",
+          "vcruntime140.dll": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066"
+        },
+        "licenseTerms": "Microsoft Visual Studio Community 2022 Software License Terms and Visual Studio 2022 Distributable Code rules",
+        "licenseDocument": "licenses/Microsoft-VC-CRT.txt",
+        "licenseSha256": "93ccca3c236d04dcd09777ccb8f1e147e90cf0af002d6112be6184fbcad29e3c",
+        "sourceAvailability": "Proprietary Microsoft runtime. Original unmodified non-debug DLLs are obtained from the fixed official redistribution package; no source code is provided upstream."
+      },
+      "isolation": "Application starts its own private data directory on 127.0.0.1 and a random port. No system service is registered; pre-existing MySQL installations are not connected or modified.",
+      "licenseIdentifier": "GPL-2.0-only",
+      "additionalPermissions": "The official license grants linking permission for separately licensed software included or referenced by this MySQL distribution. The bundled LICENSE also preserves third-party notices.",
+      "licenseDocument": "licenses/MySQL-GPL-2.0.txt",
+      "licenseSha256": "cb104b45f22bdecc7517916f792726056912586ffa5f4b1b0322d687bc3f3f1e",
+      "sourceBytes": 479170675,
+      "releaseSourceAsset": "https://github.com/hukai2021/leetcode-100-with-AI/releases/download/v0.4.0/mysql-8.4.11.tar.gz"
+    },
+    "mysqlJobLauncher": "Built from scripts/mysql-job.cs; Windows Job Object 768 MiB, parent stdin EOF terminates the private server."
   }
 }

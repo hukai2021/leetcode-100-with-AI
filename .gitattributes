@@ -1,3 +1,6 @@
 # Preserve bytes: cached data and test evidence include SHA-256 hashes.
 * -text
 * whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Keep upstream license texts byte-for-byte, including their original whitespace.
+docs/licenses/* -whitespace

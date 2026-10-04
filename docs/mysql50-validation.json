@@ -1,0 +1,1167 @@
+{
+  "version": "0.4.0",
+  "testedAt": "2026-10-04T07:54:58.271Z",
+  "dialect": "MySQL 8.4.11",
+  "status": "passed",
+  "scope": "实际本地MySQL执行项目参考解，对比缓存官方公开示例与独立预期边界用例；不包含力扣隐藏判题或官方AC同步。",
+  "totalProblems": 50,
+  "passedProblems": 50,
+  "totalCases": 103,
+  "passedCases": 103,
+  "officialExamples": 53,
+  "independentBoundaryCases": 50,
+  "correctedOfficialExampleIds": [
+    "sql-1484"
+  ],
+  "rejectedWrongCount": 7,
+  "hashes": {
+    "data/sql-problems.json": "c23a7aa2312c7a209f9b695b7cc559c6e468dddb65bcd2217d3af00922b71bd8",
+    "data/sql-cases.json": "5397efdfa5f34e1bae6ffde8e28cb698af5adddf5f066c0b74e3030d23f3682b",
+    "scripts/mysql-reference-solutions.json": "0822883cb8056e6ea930c9b31ba4e26128b805f6e867f0ffccc16af97d4ff33b",
+    "electron/mysql-runner.cjs": "2ea808b450a804e8139b9fec405a1c1f3c410b69d7adedbb9dc9db59ee3320d3"
+  },
+  "records": [
+    {
+      "id": "sql-1757",
+      "title": "可回收且低脂的产品",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-584",
+      "title": "寻找用户推荐人",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-595",
+      "title": "大的国家",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1148",
+      "title": "文章浏览 I",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1683",
+      "title": "无效的推文",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1378",
+      "title": "使用唯一标识码替换员工 ID",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1068",
+      "title": "产品销售分析 I",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1581",
+      "title": "进店却未进行过交易的顾客",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-197",
+      "title": "上升的温度",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1661",
+      "title": "每台机器的进程平均运行时间",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-577",
+      "title": "员工奖金",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1280",
+      "title": "学生们参加各科测试的次数",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-570",
+      "title": "至少有 5 名直接下属的经理",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1934",
+      "title": "确认率",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-620",
+      "title": "有趣的电影",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1251",
+      "title": "平均售价",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1075",
+      "title": "项目员工 I",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1633",
+      "title": "各赛事的用户注册率",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1211",
+      "title": "查询结果的质量和占比",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1193",
+      "title": "每月交易 I",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1174",
+      "title": "即时食物配送 II",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-550",
+      "title": "游戏玩法分析 IV",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-2356",
+      "title": "每位教师所教授的科目种类的数量",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1141",
+      "title": "查询近30天活跃用户数",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1070",
+      "title": "产品销售分析 III",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-596",
+      "title": "至少有5名学生的课",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1729",
+      "title": "求关注者的数量",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-619",
+      "title": "只出现一次的最大数字",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1045",
+      "title": "买下所有产品的客户",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1731",
+      "title": "每位经理的下属员工数量",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1789",
+      "title": "员工的直属部门",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-610",
+      "title": "判断三角形",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-180",
+      "title": "连续出现的数字",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1164",
+      "title": "指定日期的产品价格",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1204",
+      "title": "最后一个能进入巴士的人",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1907",
+      "title": "按分类统计薪水",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1978",
+      "title": "上级经理已离职的公司员工",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-626",
+      "title": "换座位",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1341",
+      "title": "电影评分",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1321",
+      "title": "餐馆营业额变化增长",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-602",
+      "title": "好友申请 II：谁有最多的好友",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-585",
+      "title": "2016年的投资",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-185",
+      "title": "部门工资前三高的所有员工",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1667",
+      "title": "修复表中的名字",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1527",
+      "title": "患某种疾病的患者",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-196",
+      "title": "删除重复的电子邮箱",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-176",
+      "title": "第二高的薪水",
+      "status": "passed",
+      "passed": 3,
+      "total": 3,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1484",
+      "title": "按日期分组销售产品",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1327",
+      "title": "列出指定时间段内所有的下单产品",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    },
+    {
+      "id": "sql-1517",
+      "title": "查找拥有有效邮箱的用户",
+      "status": "passed",
+      "passed": 2,
+      "total": 2,
+      "runtime": "MySQL 8.4.11"
+    }
+  ],
+  "rejectedWrongSolutions": [
+    {
+      "id": "sql-1757",
+      "code": "SELECT product_id FROM Products WHERE low_fats='Y' OR recyclable='Y';",
+      "rejected": true,
+      "status": "failed",
+      "passed": 0,
+      "total": 2,
+      "executionErrors": [
+        null,
+        null
+      ]
+    },
+    {
+      "id": "sql-584",
+      "code": "SELECT name FROM Customer WHERE referee_id != 2;",
+      "rejected": true,
+      "status": "failed",
+      "passed": 0,
+      "total": 2,
+      "executionErrors": [
+        null,
+        null
+      ]
+    },
+    {
+      "id": "sql-1280",
+      "code": "SELECT s.student_id, s.student_name, sub.subject_name, COUNT(e.subject_name) AS attended_exams FROM Students s CROSS JOIN Subjects sub INNER JOIN Examinations e ON e.student_id = s.student_id AND e.subject_name = sub.subject_name GROUP BY s.student_id, s.student_name, sub.subject_name ORDER BY s.student_id, sub.subject_name;",
+      "rejected": true,
+      "status": "failed",
+      "passed": 0,
+      "total": 2,
+      "executionErrors": [
+        null,
+        null
+      ]
+    },
+    {
+      "id": "sql-197",
+      "code": "SELECT w.id FROM Weather w JOIN Weather p ON DATEDIFF(w.recordDate,p.recordDate)<=1 WHERE w.temperature>p.temperature;",
+      "rejected": true,
+      "status": "failed",
+      "passed": 1,
+      "total": 2,
+      "executionErrors": [
+        null,
+        null
+      ]
+    },
+    {
+      "id": "sql-1517",
+      "code": "SELECT user_id,name,mail FROM Users WHERE REGEXP_LIKE(mail,'^[A-Za-z][A-Za-z0-9_.-]*@leetcode[.]com$','i');",
+      "rejected": true,
+      "status": "failed",
+      "passed": 1,
+      "total": 2,
+      "executionErrors": [
+        null,
+        null
+      ]
+    },
+    {
+      "id": "sql-1484",
+      "code": "SELECT sell_date,COUNT(product) AS num_sold,GROUP_CONCAT(product ORDER BY product SEPARATOR ',') AS products FROM Activities GROUP BY sell_date ORDER BY sell_date;",
+      "rejected": true,
+      "status": "failed",
+      "passed": 0,
+      "total": 2,
+      "executionErrors": [
+        null,
+        null
+      ]
+    },
+    {
+      "id": "sql-196",
+      "code": "DELETE FROM Person;",
+      "rejected": true,
+      "status": "failed",
+      "passed": 0,
+      "total": 2,
+      "executionErrors": [
+        null,
+        null
+      ]
+    }
+  ],
+  "deleteIsolation": {
+    "startedAt": "2026-10-04T07:54:58.284Z",
+    "passed": true,
+    "wrongDeleteReturnedEmptyRows": true,
+    "restoredReferencePassedCases": 2,
+    "repeatedReferencePassedCases": 1,
+    "runtime": "MySQL 8.4.11",
+    "completedAt": "2026-10-04T07:55:04.788Z"
+  },
+  "sqliteRegression": {
+    "testedAt": "2026-10-04T07:54:43Z",
+    "status": "passed",
+    "totalProblems": 50,
+    "passedProblems": 50,
+    "totalCases": 103,
+    "passedCases": 103,
+    "rejectedWrongCount": 5,
+    "hashes": {
+      "data/sql-problems.json": "c23a7aa2312c7a209f9b695b7cc559c6e468dddb65bcd2217d3af00922b71bd8",
+      "data/sql-cases.json": "5397efdfa5f34e1bae6ffde8e28cb698af5adddf5f066c0b74e3030d23f3682b",
+      "scripts/sql-reference-solutions.json": "acd4d59972edc0cee802cd6ff89e92a3e7ea67148de5bd661b73f5c29ef78226",
+      "electron/sql-runner.cjs": "d64aa2c6ea4be07d842cbdd17a27e2e248077792b9278883bf30f13b36c23a63",
+      "electron/sql-harness.py": "98065efc77a9b53ff4fb9e618483a37ec1e39472fb67527bcbbf0240152b0c05"
+    }
+  },
+  "originalSqliteCatalogFieldsPreserved": true,
+  "unchangedFiles": {
+    "data/problems.json": "86f0cd334a6d8f3bf823ebe39c0516a6d01c9b1a6651a327f1e1123c1998bd1f",
+    "data/cases.json": "693a8cf49242beac3a46cb34f2ffa8ae2b62b155e5a429c477b1f629946449f5",
+    "electron/runner.cjs": "cf56518a170ce7b1ac42f6eb4c59fd70440bc04453419bca2f80a6f2c0fa82d2",
+    "electron/runner-harness.cjs": "c101374d44fe0c825c199e4c6a283a6865ed9764202f481002e832299f4be6df",
+    "data/sql-cases.json": "5397efdfa5f34e1bae6ffde8e28cb698af5adddf5f066c0b74e3030d23f3682b",
+    "scripts/sql-reference-solutions.json": "acd4d59972edc0cee802cd6ff89e92a3e7ea67148de5bd661b73f5c29ef78226"
+  },
+  "typeAdaptations": [
+    "保留原官方ENUM成员大小写、VARCHAR(n)、DATE/DATETIME、INT/BIGINT等MySQL类型。",
+    "FLOAT(2,1)归一化为FLOAT，避免官方两位小数评分导入时被舍入。",
+    "缺少长度的VARCHAR或缺少枚举成员的ENUM兼容类型归一化为VARCHAR(4096)，当前SQL50官方schema均有完整长度/成员。"
+  ],
+  "limits": [
+    "本地样例通过不代表官方隐藏测试全部通过。",
+    "只验证随包 MySQL 8.4.11；不宣称 MySQL 5.7 等其他版本支持本题单所有参考解。",
+    "UI14场景使用模拟AI传输；liveAI 7项使用真实ChatGPT账户，共3次实际AI请求。",
+    "当前运行面板不会跨重启持久化，历史提交中的测试结果会保存。",
+    "未进行 Windows 11 全新虚拟机安装验证。"
+  ],
+  "unitTests": {
+    "status": "passed",
+    "tests": 54,
+    "passed": 54,
+    "failed": 0,
+    "durationMs": 114821.5756,
+    "command": "node --test tests/*.test.cjs",
+    "log": "本地 .local/mysql-all-tests.log（不包含在源码归档内）"
+  },
+  "runnerBoundaries": {
+    "version": "0.4.0",
+    "testedAt": "2026-10-04T07:55:07.079Z",
+    "realMySQL": true,
+    "realAI": false,
+    "checks": [
+      {
+        "name": "Actual MySQL date functions, regex, Unicode and NULL",
+        "passed": true
+      },
+      {
+        "name": "Restricted account denies system data, writes, extra statements and executable comments",
+        "passed": true
+      },
+      {
+        "name": "Every case resets tables and DELETE is restricted to its declared table",
+        "passed": true
+      },
+      {
+        "name": "Row, byte and binary result limits are enforced",
+        "passed": true
+      },
+      {
+        "name": "Timeout and user cancellation stop real SQL then permit the next query",
+        "passed": true
+      },
+      {
+        "name": "Unexpected private server exit cleans its old directory and restarts",
+        "passed": true
+      },
+      {
+        "name": "Application process death terminates the owned MySQL server",
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "closed": true
+  },
+  "desktop": {
+    "version": "0.4.0",
+    "testedAt": "2026-10-04T07:55:36.977Z",
+    "mode": "real-desktop-databases-mocked-ai",
+    "isolatedProfile": true,
+    "realAiRequested": false,
+    "checks": [
+      {
+        "name": "旧档案默认选择 MySQL，SQL/C++ 草稿笔记收藏原样保留",
+        "passed": true,
+        "detail": {
+          "runtime": "MySQL 8.4.11"
+        }
+      },
+      {
+        "name": "SQLite 兼容选择真实执行并显示 SQLite 运行环境",
+        "passed": true,
+        "detail": {
+          "passed": 2,
+          "total": 2,
+          "runtime": "SQLite 3.50.4"
+        }
+      },
+      {
+        "name": "切回 MySQL 后原草稿仍保留；SQL 由 MySQL 执行",
+        "passed": true,
+        "detail": {
+          "passed": 2,
+          "total": 2,
+          "runtime": "MySQL 8.4.11"
+        }
+      },
+      {
+        "name": "MySQL/SQLite 首字母补全显示关键词、方言函数和本题字段，键盘接受可用",
+        "passed": true,
+        "detail": [
+          {
+            "typed": "S",
+            "accepted": "SELECT",
+            "visibleLabels": [
+              "SELECT",
+              "SUBSTRING",
+              "SUM",
+              "DATE_SUB"
+            ]
+          },
+          {
+            "typed": "D",
+            "accepted": "DATE_FORMAT",
+            "visibleLabels": [
+              "DATE_ADD",
+              "DATE_FORMAT",
+              "DATE_SUB",
+              "DATEDIFF",
+              "DAY",
+              "DELETE",
+              "DENSE_RANK",
+              "DESC",
+              "DISTINCT",
+              "display"
+            ]
+          },
+          {
+            "typed": "p",
+            "accepted": "product_id",
+            "visibleLabels": [
+              "product_id",
+              "PARTITION BY",
+              "Products"
+            ]
+          },
+          {
+            "typed": "S",
+            "accepted": "STRFTIME",
+            "visibleLabels": [
+              "SELECT",
+              "STRFTIME",
+              "SUBSTR",
+              "SUM"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "编辑器运行按钮真实执行 MySQL DATEDIFF",
+        "passed": true,
+        "detail": {
+          "problemId": "sql-197",
+          "passed": 2,
+          "total": 2,
+          "runtime": "MySQL 8.4.11"
+        }
+      },
+      {
+        "name": "编辑器运行按钮真实执行 MySQL DATE_FORMAT",
+        "passed": true,
+        "detail": {
+          "problemId": "sql-1193",
+          "passed": 2,
+          "total": 2,
+          "runtime": "MySQL 8.4.11"
+        }
+      },
+      {
+        "name": "编辑器运行按钮真实执行 MySQL REGEXP_LIKE",
+        "passed": true,
+        "detail": {
+          "problemId": "sql-1517",
+          "passed": 2,
+          "total": 2,
+          "runtime": "MySQL 8.4.11"
+        }
+      },
+      {
+        "name": "编辑器运行按钮真实执行 MySQL GROUP_CONCAT ORDER BY SEPARATOR",
+        "passed": true,
+        "detail": {
+          "problemId": "sql-1484",
+          "passed": 2,
+          "total": 2,
+          "runtime": "MySQL 8.4.11"
+        }
+      },
+      {
+        "name": "题面与方言提示随引擎切换，MySQL 不混入 SQLite 专属说明",
+        "passed": true
+      },
+      {
+        "name": "独立聊天窗口同步主窗口的 SQL 引擎选择",
+        "passed": true
+      },
+      {
+        "name": "模拟 AI 传输验证提交快照和独立窗口追问携带真实 MySQL 方言",
+        "passed": true,
+        "detail": {
+          "realAiRequested": false,
+          "submissionDialect": "mysql",
+          "chatDialect": "mysql"
+        }
+      },
+      {
+        "name": "返回 Hot100 后原 C++ 语言、草稿、笔记、收藏与完成状态不变",
+        "passed": true
+      },
+      {
+        "name": "重启恢复 SQL 引擎偏好并保留原 SQL 草稿",
+        "passed": true
+      },
+      {
+        "name": "全过程无 renderer pageerror",
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "completedAt": "2026-10-04T07:56:18.905Z"
+  },
+  "liveAI": {
+    "version": "0.4.0",
+    "testedAt": "2026-10-04T07:55:41.430Z",
+    "mode": "real-mysql-and-real-chatgpt",
+    "realAI": true,
+    "learningProfileIsolated": true,
+    "credentialsCopied": false,
+    "problemId": "sql-197",
+    "checks": [
+      {
+        "name": "真实 ChatGPT 账户与随包 MySQL 引擎可用",
+        "passed": true,
+        "accountType": "chatgpt",
+        "modelCount": 8,
+        "runtime": "MySQL 8.4.11"
+      },
+      {
+        "name": "错误 SQLite 日期函数在真实 MySQL 上失败并获中文真实批改",
+        "passed": true,
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "high",
+        "sqlDialect": "mysql",
+        "localPassed": 0,
+        "total": 2,
+        "status": "completed",
+        "reviewLength": 1310,
+        "reviewMentions": [
+          "julianday",
+          "DATEDIFF",
+          "MySQL"
+        ]
+      },
+      {
+        "name": "软件右侧真实连续追问使用 MySQL 方言与中等思考强度",
+        "passed": true,
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "medium",
+        "sqlDialect": "mysql",
+        "status": "completed",
+        "responseLength": 165
+      },
+      {
+        "name": "修正为 DATEDIFF 后真实 MySQL 2/2，笔记与完成状态保存",
+        "passed": true,
+        "localPassed": 2,
+        "total": 2,
+        "runtime": "MySQL 8.4.11",
+        "sqlDialect": "mysql",
+        "state": "done",
+        "notesSaved": true
+      },
+      {
+        "name": "重启恢复 MySQL 选择、正解草稿、笔记、完成状态、原批改快照测试与对话",
+        "passed": true,
+        "sqlDialect": "mysql",
+        "state": "done",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "medium",
+        "submissions": 1,
+        "messages": 4,
+        "originalSubmissionPassed": 0,
+        "originalSubmissionTotal": 2,
+        "recoverableWrongDraft": true,
+        "currentRunResultPersisted": false
+      },
+      {
+        "name": "重启后正解再运行仍为真实 MySQL 2/2",
+        "passed": true,
+        "localPassed": 2,
+        "total": 2,
+        "runtime": "MySQL 8.4.11",
+        "sqlDialect": "mysql"
+      },
+      {
+        "name": "关闭并重开软件后真实恢复同一官方线程继续追问",
+        "passed": true,
+        "threadResume": true,
+        "sameThread": true,
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "medium",
+        "sqlDialect": "mysql",
+        "status": "completed",
+        "responseLength": 112
+      }
+    ],
+    "accountProbe": {
+      "type": "chatgpt",
+      "modelCount": 8,
+      "selectedModelAvailable": true
+    },
+    "protocolCalls": [
+      {
+        "method": "turn/start",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "sameSavedThread": true
+      },
+      {
+        "method": "turn/start",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "sameSavedThread": true
+      },
+      {
+        "method": "thread/resume",
+        "model": "gpt-6.1-sol",
+        "sameSavedThread": true
+      },
+      {
+        "method": "turn/start",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "sameSavedThread": true
+      }
+    ],
+    "actualAITurns": 3,
+    "passed": true,
+    "completedAt": "2026-10-04T07:57:12.184Z"
+  },
+  "completionRegression": {
+    "version": "0.4.0",
+    "status": "passed",
+    "scenarios": 6,
+    "languages": [
+      "SQL",
+      "Python",
+      "C++"
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "source": "tests/completion-desktop.cjs"
+  },
+  "packagedDesktop": {
+    "version": "0.4.0",
+    "testedAt": "2026-10-04T08:09:21.453Z",
+    "mode": "unpacked",
+    "isolatedProfile": true,
+    "realAI": false,
+    "productionRunButton": true,
+    "checks": [
+      {
+        "name": "生产包载入真实 MySQL/SQLite 运行环境，无开发测试桥",
+        "passed": true,
+        "detail": {
+          "mysql": "MySQL 8.4.11",
+          "sqlite": "SQLite 3.50.4"
+        }
+      },
+      {
+        "name": "SQL 50 新学习档案默认 MySQL",
+        "passed": true
+      },
+      {
+        "name": "生产运行按钮执行 DATEDIFF",
+        "passed": true,
+        "detail": {
+          "problemId": "sql-197",
+          "passed": 2,
+          "total": 2,
+          "runtime": "MySQL 8.4.11"
+        }
+      },
+      {
+        "name": "生产运行按钮执行 DATE_FORMAT",
+        "passed": true,
+        "detail": {
+          "problemId": "sql-1193",
+          "passed": 2,
+          "total": 2,
+          "runtime": "MySQL 8.4.11"
+        }
+      },
+      {
+        "name": "生产运行按钮执行 REGEXP_LIKE",
+        "passed": true,
+        "detail": {
+          "problemId": "sql-1517",
+          "passed": 2,
+          "total": 2,
+          "runtime": "MySQL 8.4.11"
+        }
+      },
+      {
+        "name": "生产运行按钮执行 自连接 DELETE",
+        "passed": true,
+        "detail": {
+          "problemId": "sql-196",
+          "passed": 2,
+          "total": 2,
+          "runtime": "MySQL 8.4.11"
+        }
+      },
+      {
+        "name": "生产运行按钮执行 GROUP_CONCAT ORDER BY SEPARATOR",
+        "passed": true,
+        "detail": {
+          "problemId": "sql-1484",
+          "passed": 2,
+          "total": 2,
+          "runtime": "MySQL 8.4.11"
+        }
+      },
+      {
+        "name": "SQLite 兼容运行按钮仍能执行旧语法",
+        "passed": true,
+        "detail": {
+          "problemId": "sql-197",
+          "passed": 2,
+          "total": 2,
+          "runtime": "SQLite 3.50.4"
+        }
+      },
+      {
+        "name": "生产包重启保存 MySQL 选择与原草稿",
+        "passed": true
+      },
+      {
+        "name": "原 Hot100 Python/C++ 题单仍可独立切回",
+        "passed": true
+      },
+      {
+        "name": "生产应用退出回收私有 MySQL 数据目录",
+        "passed": true
+      }
+    ],
+    "rendererErrors": [],
+    "passed": true
+  },
+  "runtimeSmoke": {
+    "testedAt": "2026-10-04",
+    "passed": true,
+    "version": "8.4.11",
+    "loopbackOnly": true,
+    "privateDataDirectory": true,
+    "registeredWindowsService": false,
+    "queryOutput": "version\tdays\tmonth\ttext\tmatched\n8.4.11\t3\t2026-10\t中文正常\t1\n",
+    "vcRuntimeLoadedFromApplication": true,
+    "fileBytes": 103544485
+  },
+  "build": {
+    "typeScript": "passed",
+    "vite": "passed",
+    "nsis": "passed",
+    "windowsPowerShell51Scripts": "parsed-and-build-executed",
+    "installerName": "Hot100-AI-Coach-Setup-0.4.0-x64.exe",
+    "installerBytes": 394718778,
+    "installerSha256": "c01ed95e89c22c4f56f4081021c29ea0adb5a2fa1719d2d00679b348f23e21d3",
+    "installedUpgrade": "passed"
+  },
+  "installedDesktop": {
+    "version": "0.4.0",
+    "testedAt": "2026-10-04T12:15:11.526Z",
+    "mode": "installed",
+    "isolatedProfile": true,
+    "realAI": false,
+    "productionRunButton": true,
+    "checks": [
+      {
+        "name": "生产包载入真实 MySQL/SQLite 运行环境，无开发测试桥",
+        "passed": true,
+        "detail": {
+          "mysql": "MySQL 8.4.11",
+          "sqlite": "SQLite 3.50.4"
+        }
+      },
+      {
+        "name": "SQL 50 新学习档案默认 MySQL",
+        "passed": true
+      },
+      {
+        "name": "生产运行按钮执行 DATEDIFF",
+        "passed": true,
+        "detail": {
+          "problemId": "sql-197",
+          "passed": 2,
+          "total": 2,
+          "runtime": "MySQL 8.4.11"
+        }
+      },
+      {
+        "name": "生产运行按钮执行 DATE_FORMAT",
+        "passed": true,
+        "detail": {
+          "problemId": "sql-1193",
+          "passed": 2,
+          "total": 2,
+          "runtime": "MySQL 8.4.11"
+        }
+      },
+      {
+        "name": "生产运行按钮执行 REGEXP_LIKE",
+        "passed": true,
+        "detail": {
+          "problemId": "sql-1517",
+          "passed": 2,
+          "total": 2,
+          "runtime": "MySQL 8.4.11"
+        }
+      },
+      {
+        "name": "生产运行按钮执行 自连接 DELETE",
+        "passed": true,
+        "detail": {
+          "problemId": "sql-196",
+          "passed": 2,
+          "total": 2,
+          "runtime": "MySQL 8.4.11"
+        }
+      },
+      {
+        "name": "生产运行按钮执行 GROUP_CONCAT ORDER BY SEPARATOR",
+        "passed": true,
+        "detail": {
+          "problemId": "sql-1484",
+          "passed": 2,
+          "total": 2,
+          "runtime": "MySQL 8.4.11"
+        }
+      },
+      {
+        "name": "SQLite 兼容运行按钮仍能执行旧语法",
+        "passed": true,
+        "detail": {
+          "problemId": "sql-197",
+          "passed": 2,
+          "total": 2,
+          "runtime": "SQLite 3.50.4"
+        }
+      },
+      {
+        "name": "生产包重启保存 MySQL 选择与原草稿",
+        "passed": true
+      },
+      {
+        "name": "原 Hot100 Python/C++ 题单仍可独立切回",
+        "passed": true
+      },
+      {
+        "name": "生产应用退出回收私有 MySQL 数据目录",
+        "passed": true
+      }
+    ],
+    "rendererErrors": [],
+    "passed": true
+  },
+  "installedAccount": {
+    "version": "0.4.0",
+    "testedAt": "2026-10-04T12:17:00.244Z",
+    "actualInstalledAccountType": "chatgpt",
+    "refreshedModels": [
+      "gpt-6.1-sol",
+      "gpt-6-astra",
+      "gpt-6-sol",
+      "gpt-6-luna",
+      "gpt-5.6-sol",
+      "gpt-5.6-terra",
+      "gpt-5.6-luna",
+      "gpt-5.5"
+    ],
+    "reasoningChoicesDisplayed": true,
+    "learningStatesUnchanged": true,
+    "mysqlAvailable": true,
+    "mysqlVersion": "MySQL 8.4.11",
+    "sqliteAvailable": true,
+    "aiRequested": false,
+    "passed": true
+  },
+  "packageIntegrity": {
+    "version": "0.4.0",
+    "checkedAt": "2026-10-04T12:16:07.329Z",
+    "passed": true,
+    "sourceBytesMatched": true,
+    "hashes": {
+      "electron/main.cjs": "172f326dd33f31ecea4db76efb75dedfbccb6b74268225d2ffd3045c2d922480",
+      "electron/service.cjs": "888628828e3c417cffe1da973aefecaf05c678b239a643f1b2e39a9ed66e905e",
+      "electron/mysql-runner.cjs": "2ea808b450a804e8139b9fec405a1c1f3c410b69d7adedbb9dc9db59ee3320d3",
+      "electron/sql-runner.cjs": "d64aa2c6ea4be07d842cbdd17a27e2e248077792b9278883bf30f13b36c23a63",
+      "electron/runner.cjs": "cf56518a170ce7b1ac42f6eb4c59fd70440bc04453419bca2f80a6f2c0fa82d2",
+      "data/problems.json": "86f0cd334a6d8f3bf823ebe39c0516a6d01c9b1a6651a327f1e1123c1998bd1f",
+      "data/cases.json": "693a8cf49242beac3a46cb34f2ffa8ae2b62b155e5a429c477b1f629946449f5",
+      "data/sql-problems.json": "c23a7aa2312c7a209f9b695b7cc559c6e468dddb65bcd2217d3af00922b71bd8",
+      "data/sql-cases.json": "5397efdfa5f34e1bae6ffde8e28cb698af5adddf5f066c0b74e3030d23f3682b"
+    },
+    "driver": "3.24.5",
+    "runtimeFilesPresent": true,
+    "verifiedRuntimeFiles": 133,
+    "mode": "installed",
+    "sourceDownloadsExcluded": true
+  },
+  "upgrade": {
+    "version": "0.4.0",
+    "testedAt": "2026-10-04T12:15:10.4908041Z",
+    "sourceVersion": "0.3.0",
+    "installerExitCode": 0,
+    "backupCreated": true,
+    "learningDatabaseUnchanged": true,
+    "oldWindowsClosed": true,
+    "installedUi": "passed-11-checks",
+    "desktopShortcutVerified": true,
+    "desktopLaunchVerified": true,
+    "originalChatGPTLoginPreserved": true,
+    "originalLearningStatesPreserved": true,
+    "passed": true
+  },
+  "completedAt": "2026-10-04T12:20:04.145722+00:00"
+}

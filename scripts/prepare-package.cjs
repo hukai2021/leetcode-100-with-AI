@@ -9,3 +9,7 @@ const sourceLicense=fs.existsSync(bundledLicense)?bundledLicense:path.join('docs
 if(!fs.existsSync(sourceLicense))throw new Error('missing official Codex license');
 fs.copyFileSync(sourceLicense,path.join('runtime','codex','LICENSE'));
 console.log('官方 Codex 运行依赖已备妥');
+
+if(!fs.existsSync(path.join('runtime','mysql','bin','mysqld.exe')))throw new Error('缺少官方MySQL运行包，请先运行scripts/mysql-setup.ps1');
+require('node:child_process').execFileSync('powershell.exe',['-NoProfile','-ExecutionPolicy','Bypass','-File',path.resolve('scripts/mysql-build-job.ps1')],{stdio:'inherit',windowsHide:true});
+console.log('官方 MySQL 运行依赖及进程管理程序已备妥');

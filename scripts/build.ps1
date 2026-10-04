@@ -18,8 +18,8 @@ if ($LASTEXITCODE -ne 0) { throw '界面构建失败。' }
 & $coachNode './scripts/prepare-package.cjs'
 if ($LASTEXITCODE -ne 0) { throw 'Codex 打包准备失败。' }
 if ($Package) {
-  foreach ($runtimeFile in @('runtime/python/python.exe','runtime/w64devkit/bin/g++.exe','runtime/runner-job.exe')) {
-    if (-not (Test-Path -LiteralPath $runtimeFile)) { throw "缺少运行依赖 $runtimeFile，请运行 scripts/runner-setup.ps1。" }
+  foreach ($runtimeFile in @('runtime/python/python.exe','runtime/w64devkit/bin/g++.exe','runtime/runner-job.exe','runtime/mysql/bin/mysqld.exe','runtime/mysql-job.exe')) {
+    if (-not (Test-Path -LiteralPath $runtimeFile)) { throw "缺少运行依赖 $runtimeFile，请先运行 scripts/runner-setup.ps1 和 scripts/mysql-setup.ps1。" }
   }
   & $coachNode './node_modules/electron-builder/cli.js' --win nsis --x64
   if ($LASTEXITCODE -ne 0) { throw 'Windows 安装包构建失败。' }

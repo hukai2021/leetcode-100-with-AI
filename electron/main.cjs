@@ -58,5 +58,6 @@ app.whenReady().then(async()=>{
   service.account().then(()=>service.event({type:'accountChanged'}));
   if(!app.isPackaged&&process.env.COACH_TEST==='1')globalThis.coachTest={service,mainWindow};
 }).catch(e=>{dialog.showErrorBox('Hot100 AI Coach 启动失败',e.message);app.quit()});
-app.on('before-quit',()=>{quitting=true;service?.close()});
+let mysqlQuitPending=false,mysqlQuitReady=false;
+app.on('before-quit',event=>{quitting=true;const mysql=service?.mysqlRunner;if(mysql&&(mysql.child||mysql.startPromise||mysql.cwd)&&!mysqlQuitReady){event.preventDefault();if(!mysqlQuitPending){mysqlQuitPending=true;Promise.resolve(service.close()).catch(()=>{}).finally(()=>{mysqlQuitReady=true;app.quit()})}}else service?.close()});
 app.on('window-all-closed',()=>app.quit());

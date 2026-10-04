@@ -37,5 +37,48 @@
     "license": "codex/LICENSE",
     "licenseSource": "https://raw.githubusercontent.com/openai/codex/rust-v0.159.3/LICENSE",
     "verifiedAt": "2026-10-01"
-  }
+  },
+  "mysql": {
+    "version": "8.4.11",
+    "distribution": "MySQL Community Server (GPL), official Windows x64 ZIP",
+    "platform": "win32-x64",
+    "verifiedAt": "2026-10-04",
+    "upstream": "https://dev.mysql.com/downloads/mysql/8.4.html",
+    "url": "https://cdn.mysql.com/Downloads/MySQL-8.4/mysql-8.4.11-winx64.zip",
+    "sha256": "a492371d687d2bab088b0062581144a0044b8964baefdf4faa579292b423d25c",
+    "md5": "2e833921898a9a030ea6bfe81bd811bc",
+    "sourceUrl": "https://cdn.mysql.com/Downloads/MySQL-8.4/mysql-8.4.11.tar.gz",
+    "sourceSha256": "eb3051164d625dd346a8203f76e0d5d5d9aec51dbe9d51788e39ec6b3f1394c2",
+    "sourceMd5": "7e36429318298eb05a79054309f18cb2",
+    "sourceArchive": "downloads/mysql-8.4.11.tar.gz",
+    "executable": "mysql/bin/mysqld.exe",
+    "clientExecutable": "mysql/bin/mysql.exe",
+    "license": "mysql/LICENSE",
+    "runtimeBytes": 103527629,
+    "minimumWindows": "Windows 10 x64; Universal CRT supplied by Windows",
+    "vcRuntime": {
+      "version": "14.44.35211",
+      "distribution": "Official Microsoft Visual Studio 2022 x64 non-debug CRT; application-local DLLs only",
+      "url": "https://download.visualstudio.microsoft.com/download/pr/45d3b8dd-bced-4b37-9974-142f748d710c/4aaf54db0bfc9435f7c3660e1a00237a4b556042bfeea64bde44c2e0194e6ee5/Microsoft.VC.14.44.17.14.CRT.Redist.X64.base.vsix",
+      "sha256": "4aaf54db0bfc9435f7c3660e1a00237a4b556042bfeea64bde44c2e0194e6ee5",
+      "license": "mysql/LICENSE.Microsoft-VC-CRT.txt",
+      "licenseSource": "https://visualstudio.microsoft.com/wp-content/uploads/2021/11/Visual-Studio-2022-Community-License-EN.docx",
+      "licenseSourceSha256": "41a207b10c8ab91d0d2f10a854715f73dca54509581692d2fe179aa3ffcb8540",
+      "redistributionRules": "https://learn.microsoft.com/en-us/visualstudio/releases/2022/redistribution",
+      "files": {
+        "concrt140.dll": "2405355f0a58067b258f8df33c327e3a3d716eaac5a3a5aebb757842d85bd376",
+        "msvcp140_1.dll": "bfad5aef4c63a669e3c140655cdfdf395b6c979b400a447bd5dcb65ed8826c3d",
+        "msvcp140_2.dll": "3ea06f0ee098b4823cb79599df3780e7f23cce52c19aac31d2a0d47efe33a5e9",
+        "msvcp140_atomic_wait.dll": "640b2aefced484d0368eea5bdd06addd0658a3a70a49256e560d6923b404a479",
+        "msvcp140_codecvt_ids.dll": "f2069a52880ec885ee7f0511186100eb7fada0411a2b4948fafea7735b878a18",
+        "msvcp140.dll": "0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9",
+        "vccorlib140.dll": "19839407c3fdbc824e5bce189bf68ddf8097f12ec28b757797ffa0415c144ddd",
+        "vcruntime140_1.dll": "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f",
+        "vcruntime140_threads.dll": "219915cf20822f34d5e7c1fdd4e21ae7f3396881096c51036225fb8f84b47afa",
+        "vcruntime140.dll": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066"
+      }
+    },
+    "isolation": "Application starts its own private data directory on 127.0.0.1 and a random port. No system service is registered; pre-existing MySQL installations are not connected or modified."
+  },
+  "mysqlJobLauncher": "Built from scripts/mysql-job.cs; Windows Job Object 768 MiB, parent stdin EOF terminates the private server."
 }

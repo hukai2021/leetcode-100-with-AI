@@ -1,28 +1,30 @@
 # Hot100 AI Coach
 
-[下载 Windows 安装包](https://github.com/hukai2021/leetcode-100-with-AI/releases/download/v0.3.0/Hot100-AI-Coach-Setup-0.3.0-x64.exe) · [版本与附件](https://github.com/hukai2021/leetcode-100-with-AI/releases/tag/v0.3.0) · [验收摘要](docs/ACCEPTANCE.md)
+[下载 Windows 安装包](https://github.com/hukai2021/leetcode-100-with-AI/releases/download/v0.4.0/Hot100-AI-Coach-Setup-0.4.0-x64.exe) · [版本与附件](https://github.com/hukai2021/leetcode-100-with-AI/releases/tag/v0.4.0) · [验收摘要](docs/ACCEPTANCE.md)
 
-Windows 10/11 x64 桌面刷题软件：本地题库、Python 3 / C++17 编辑与真实运行、通过官方 Codex App Server 使用 ChatGPT 账户批改代码，以及每题独立的右侧辅导对话。
+Windows 10/11 x64 桌面刷题软件：独立 Hot100 / SQL50 题单、Python 3 / C++17 / MySQL 编辑与真实运行、通过官方 Codex App Server 使用 ChatGPT 账户批改代码，以及每题独立的右侧辅导对话。
 
 已在 Windows Electron 窗口完成真实账户识别、算法代码批改、连续追问、修正代码测试、关闭重启恢复，并在重启后继续同一官方对话。准确验收范围和证据见 [验收记录](docs/ACCEPTANCE.md)。
+
+**0.4.0 将 SQL 50 默认引擎改为真实 MySQL 8.4.11。** 安装包自带 MySQL，SQL 编辑器可以直接运行 `DATEDIFF`、`DATE_FORMAT`、`REGEXP_LIKE` 和 `GROUP_CONCAT(... ORDER BY ... SEPARATOR ...)`。保留 SQLite 3 兼容选择和原 SQL 草稿，切换引擎不会自动重写查询。Hot100 题库、Python/C++ 模板和算法运行器保留，两个题单继续分别切换、统计与保存。2026-10-04 已验证 MySQL 与 SQLite 各 50 题 / 103 例，完成真实 MySQL 错解批改、连续追问、修正后 2/2 和重启续问；详见 [MySQL SQL50 实测摘要](docs/mysql50-validation.json)。
 
 **0.3.0 新增最新模型刷新与思考强度选择。** 升级随包官方 Codex 到 0.159.3，在聊天底部点击「刷新模型」，即可重新读取官方模型目录。2026-10-01 的真实账户返回 8 个模型，包含 GPT-6.1-Sol、GPT-6-Sol 和 GPT-6-Luna；GPT-6.1-Sol 的高强度批改、中等强度追问及刷新后恢复同一对话均通过真实请求验证。其他模型仅验证了目录与显示，详见 [模型与思考强度测试记录](docs/models-validation.json)。
 
 **0.2.1 修复代码补全列表文字不可见。** SQL、Python、C++ 的浅色/深色显示及键盘接受均通过开发版和安装版实测，详见 [补全验证记录](docs/completion-validation.json)。
 
-**0.2.0 新增独立 SQL 50 题单。** 左侧点击「热题 100 / SQL 50」切换，分别统计进度并保存每题学习记录。原 Hot100 题库、Python/C++ 模板与算法运行器保留。安装包为 `release/Hot100-AI-Coach-Setup-0.3.0-x64.exe`（371,476,441 字节，约 354 MiB），安装后可双击桌面「Hot100 AI Coach」启动。
+**0.2.0 新增独立 SQL 50 题单。** 左侧点击「热题 100 / SQL 50」切换，分别统计进度并保存每题学习记录。原 Hot100 题库、Python/C++ 模板与算法运行器保留。当前安装包为 `Hot100-AI-Coach-Setup-0.4.0-x64.exe`，附件大小与 SHA256 见 [本次 Release](https://github.com/hukai2021/leetcode-100-with-AI/releases/tag/v0.4.0)。安装后可双击桌面「Hot100 AI Coach」启动。
 
-安装包未做数字签名；Windows 可能显示未知发布者。本次已在 Windows 10 x64 实机安装运行，Windows 11 干净机器和多显示器环境尚未逐一验证。
+安装包未做数字签名；Windows 可能显示未知发布者。0.4.0 已在 Windows 10 x64 实机升级并完成 11 项安装版检查；原 ChatGPT 登录与学习记录保留，桌面快捷方式已启动新版。Windows 11 干净机器和多显示器环境尚未逐一验证。
 
-![SQL50 独立题单](docs/screenshots/sql50-ui.png)
+![SQL50 安装版 MySQL 界面](docs/screenshots/mysql-installed.png)
 
-SQL 50 的 50 题 / 103 个本地用例、真实 ChatGPT SQL 批改和右侧连续追问均已完成验证。原 Hot100 Python/C++、格式化与保存流程回归通过；详见 [SQL50 实测摘要](docs/sql50-validation.json)。
+上图为 0.4.0 安装版的独立测试档案，不含个人账户信息；SQL 引擎默认显示「SQL · MySQL 8.4」，第 197 题 DATEDIFF 查询实际通过 2/2。本次 Node 测试 54/54、真实数据库桌面流程 14 项和补全显示 6 组通过；桌面专项的 AI 传输使用模拟数据，真实 AI 另有 7 项检查、3 轮实际请求。原 Hot100 的题库与算法运行器未修改，详见 [当前 MySQL 实测摘要](docs/mysql50-validation.json) 和 [历史 SQL50 记录](docs/sql50-validation.json)。
 
 ![原 Hot100 中文题面与代码编辑界面](docs/screenshots/chinese-ui.png)
 
 ## 安装与首次登录
 
-取得已完成验证的安装包后，双击安装，选择目录并保留桌面快捷方式。日常双击「Hot100 AI Coach」启动，无需打开终端、浏览器或开发服务器。完整安装包包含 Python、C++ 编译器、格式化工具和官方 Codex 程序；只有 AI 请求和首次授权需要联网。
+双击本次安装包，选择目录并保留桌面快捷方式。日常双击「Hot100 AI Coach」启动，无需打开终端、浏览器或开发服务器。完整安装包包含 Python、C++ 编译器、MySQL、SQLite、格式化工具和官方 Codex 程序；只有 AI 请求和首次授权需要联网。第一次运行 MySQL 时，需要短暂初始化应用私有数据库实例，等待本次结果返回即可。软件不安装 Windows MySQL 系统服务，也不需要你提供数据库密码或单独配置 MySQL。
 
 1. 在软件右上角点击「使用 ChatGPT 账户登录」。
 2. 系统浏览器将打开官方授权页。登录你要使用的 ChatGPT 账户，按页面提示允许 Codex 访问。
@@ -31,7 +33,7 @@ SQL 50 的 50 题 / 103 个本地用例、真实 ChatGPT SQL 批改和右侧连�
 
 账户接入使用官方 Codex App Server 的 stdio 协议。登录与凭据刷新交给官方认证组件，应用使用单独的 Codex 数据目录及 Windows 凭据存储，不改写已有全局 Codex 配置。不要把登录链接、凭据目录或系统凭据导出给别人。
 
-这里使用的是账户可用的 **Codex 权限、模型和额度**，不保证继承 ChatGPT 网页全部模型、记忆或现有聊天记录。历史验收使用过 `gpt-6-astra`，0.3.0 本次实测使用 `gpt-6.1-sol`；软件动态读取模型目录及支持的思考档位，不把测试模型写死为可用模型。
+这里使用的是账户可用的 **Codex 权限、模型和额度**，不保证继承 ChatGPT 网页全部模型、记忆或现有聊天记录。历史验收使用过 `gpt-6-astra`，0.3.0 模型专项与 0.4.0 MySQL 真实刷题实测使用 `gpt-6.1-sol`；软件动态读取模型目录及支持的思考档位，不把测试模型写死为可用模型。
 
 如果额度用尽、授权过期或网络失败，界面会展示实际错误；本地浏览、编辑和测试仍可用。额度不足时等待账户额度恢复；授权失效时可在设置中退出并重新登录。当前版本没有 API Key 备用入口，也不会自动切换到另行付费服务。
 
@@ -67,15 +69,20 @@ SQL 50 的 50 题 / 103 个本地用例、真实 ChatGPT SQL 批改和右侧连�
 
 在左侧题库选择器切换到「SQL 50」。软件按力扣官方 [SQL 50 学习计划](https://leetcode.com/studyplan/top-sql-50/) 收录 50 题，提供中文题意、表结构、输入数据和预期结果。热题 100 与 SQL 50 分别统计进度，每题的草稿、笔记、收藏、提交和聊天独立保存。
 
-1. 选择一道 SQL 题，阅读表结构和示例。编辑器会自动切换到 SQL。
-2. 编写单条 SQLite 查询（可使用 WITH、JOIN、聚合和窗口函数），点击「运行 SQL」或按 Ctrl+Enter。测试库已建表并装入数据，无需自行 CREATE TABLE 或 INSERT。
-3. 在结果中对照预期与实际表格。判题检查列名、值和重复次数；题目要求排序时也检查行顺序。NULL 与空字符串分别显示。
-4. 点击「提交并让 GPT 批改」，查看基于本次 SQL 和实际测试结果的点评，再在右侧继续追问。请在本地验证 AI 建议后自行标记完成。
-5. 第 196 题使用单条 DELETE 删除 Person 表的重复数据；测试比较删除后剩余的整张表。每个用例都从原始数据重新建立内存库，重复运行不会污染后续测试。
+1. 选择一道 SQL 题，阅读表结构和示例。编辑器默认显示「SQL · MySQL 8.4」，本地由随包 MySQL 8.4.11 真实执行。
+2. 编写单条 MySQL 查询（可使用 WITH、JOIN、聚合和窗口函数），点击「运行 SQL」或按 `Ctrl+Enter`。测试已建表并装入数据，无需自行 CREATE TABLE 或 INSERT。首次启动私有实例会短暂初始化。
+3. 在结果中对照预期与实际表格。判题检查列名、值和重复次数；题目要求排序时也检查行顺序。NULL 与空字符串分别显示，结果注明实际 MySQL / SQLite 环境。
+4. 点击「提交并让 GPT 批改」，查看基于本次 SQL、实际引擎和测试结果的点评，再在右侧继续追问。批改快照记录当时的 SQL 方言，后续改草稿不改变旧提交。
+5. 第 196 题使用单条 DELETE 删除 Person 表的重复数据；测试比较删除后剩余的整张表。每个用例都会重建原始表和数据，重复运行不会污染后续测试。
+6. 在「笔记」记录易错点，自行标记完成。关闭重启后恢复草稿、笔记、完成状态和历史；当前运行面板不持久化，提交历史中的测试结果会保留，需要查看最新草稿结果时再运行。
 
-本地运行的是随包 **SQLite 3**，力扣原题常用 MySQL。题面提供适用的方言提示；例如日期计算可使用 date/julianday/strftime，字符串拼接用 ||，整数相除计算比例时应转为浮点。SQLite 未内建 MySQL 的 DATE_FORMAT、DATEDIFF 或 REGEXP，不能直接运行所有 MySQL 答案。软件保留官方原题链接，提交前请按力扣选择的数据库方言调整。更多见 [SQL50 题库说明](docs/SQL50.md) 和 [SQLite 日期函数文档](https://www.sqlite.org/lang_datefunc.html)。
+编辑器顶部「SQL 引擎」可切换为 SQLite 3，兼容旧版练习。两个引擎共用原有 SQL 草稿，切换不会自动转换或重写代码：旧草稿可保持 SQLite 写法继续运行，使用 MySQL 时请自行调整 `julianday`、`strftime` 等函数。题面说明、补全函数、运行结果和 AI 上下文会按所选引擎更新。更多见 [SQL50 题库说明](docs/SQL50.md)。
 
-SQL 暂不提供自动格式化。每例限制 3 秒、256 MiB，结果最多 1000 行 / 128 KiB；只允许访问本例的内存表，禁止附加数据库、加载扩展及其他写入。自定义用例的 input 为一个包含表数据对象的数组，列顺序以题目表结构为准：
+MySQL 可以直接执行本题单使用的 `DATEDIFF`、`DATE_FORMAT`、`REGEXP_LIKE` 和有序 `GROUP_CONCAT`。本次两个引擎各通过 50/50 题、103/103 个本地用例；这些是缓存公开示例与独立编写边界例，不是力扣隐藏判题或官方 AC。提交到力扣时仍需确认所选数据库版本。
+
+MySQL 以应用自己的后台进程运行，仅监听本机随机端口，不安装系统服务；退出软件时回收。每例使用新建数据库和随机受限账户，仅开放题目表的 SELECT，删除题另开放指定表的 DELETE；不开放 FILE、DDL 或跨库修改。每例查询默认限制 3 秒、结果最多 1000 行 / 128 KiB；MySQL 私有实例的 Windows Job Object 内存上限为 768 MiB，SQLite 每例为 256 MiB。SQL 暂不提供自动格式化。
+
+自定义用例的 input 为一个包含表数据对象的数组，列顺序以题目表结构为准：
 
 ```json
 [
@@ -193,6 +200,8 @@ Markdown 文件的开头必须是 **JSON 元数据，不是 YAML**：把元数�
 npm ci
 # 若源码中没有完整运行依赖，先准备 Python/C++ 和 Job Object 启动器
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/runner-setup.ps1
+# 构建默认 MySQL 功能前，下载官方 8.4.11 引擎、依赖与对应源码并校验 SHA256
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/mysql-setup.ps1
 # 若没有 runtime/formatters，使用有 pip 的开发用 Python 安装（安装后日常无需该 Python）
 python -m pip install --index-url https://pypi.org/simple --target runtime/formatters autopep8==2.3.2 pycodestyle==2.14.0 clang-format==23.1.0
 
@@ -213,10 +222,13 @@ node tests/runner-format.cjs
 node tests/runner-catalog-cpp.cjs
 node scripts/catalog-verify.cjs
 node tests/desktop-offline.cjs
+node tests/mysql-desktop.cjs # 真实 MySQL/SQLite、真实 Electron，模拟 AI 传输
+node tests/completion-desktop.cjs # SQL/Python/C++ 补全显示与键盘接受
 node tests/model-desktop.cjs # 模拟模型/AI传输，真实 Electron 窗口
 node tests/model-installed.cjs # 已安装版本，独立学习档案，不发 AI 请求
 # 需要已在本软件登录；会使用真实账户、发起 AI 请求并消耗 Codex 额度
 node tests/model-live.cjs
+node tests/mysql-live.cjs # 隔离学习档案：真实 MySQL 批改、追问、修正与重启续问
 # 需要已登录；会发起真实 AI 请求并消耗账户 Codex 额度
 node tests/desktop-flow.cjs
 ```
@@ -230,9 +242,10 @@ node tests/desktop-flow.cjs
 | `electron/service.cjs`、`codex.cjs` | 题目会话、提交快照、官方 App Server stdio |
 | `electron/store.cjs` | SQLite 持久化及备份 |
 | `electron/runner*.cjs` | Python/C++ 适配、真实执行与比较 |
+| `electron/mysql-runner.cjs`、`sql-runner.cjs` | 真实 MySQL 私有实例与 SQLite 兼容判题 |
 | `data` | 官方题库、样例和来源记录 |
 | `runtime` | 随包运行依赖、许可、SHA256 清单 |
 | `scripts`、`tests` | 构建、采集、参考实现及实际测试 |
 | `docs` | 使用边界、公开验收摘要、算法测试JSON和无账户信息的界面截图 |
 
-上游题目及运行依赖保留各自权利和许可。GCC 等依赖对应的完整上游源码压缩包作为单独附件保存在 `runtime/downloads/w64devkit-source-v2.9.1.tar`，不装入日常安装包；[Release](https://github.com/hukai2021/leetcode-100-with-AI/releases/tag/v0.3.0) 提供该源码附件及许可。
+上游题目及运行依赖保留各自权利和许可。`scripts/mysql-setup.ps1` 默认同时获取对应官方 MySQL 8.4.11 源码 `runtime/downloads/mysql-8.4.11.tar.gz`；GCC 等依赖的对应完整源码为 `runtime/downloads/w64devkit-source-v2.9.1.tar`。两份源码不装入日常安装包，在 [本次 Release](https://github.com/hukai2021/leetcode-100-with-AI/releases/tag/v0.4.0) 作为单独附件提供。重新分发安装包时应同时提供对应源码与 [第三方许可说明](docs/THIRD-PARTY-NOTICES.md)。

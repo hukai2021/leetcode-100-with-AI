@@ -1,7 +1,7 @@
 {
   "name": "hot100-ai-coach",
   "productName": "Hot100 AI Coach",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "本地 Hot 100、SQL 50 刷题、真实测试与 ChatGPT 辅导",
   "author": "Hot100 AI Coach",
   "private": true,
@@ -19,6 +19,7 @@
     "dompurify": "3.4.15",
     "lucide-react": "1.41.0",
     "monaco-editor": "0.56.0",
+    "mysql2": "3.24.5",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "react-markdown": "10.1.0",
